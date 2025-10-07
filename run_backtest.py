@@ -3,6 +3,7 @@ import argparse
 import logging
 from datetime import datetime, timedelta
 import pandas as pd
+import re
 
 from ib_insync import IB, Stock, util
 
@@ -11,6 +12,23 @@ from algotrade.analysis import AnalysisEngine
 
 # Configure logging for the backtest
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - [Backtest] - %(levelname)s - %(message)s')
+
+def _convert_tf_to_ib_format(tf_string: str) -> str:
+    """Converts a timeframe string like '1m' or '2h' to the IB format like '1 min' or '2 hours'."""
+    match = re.match(r"(\d+)([mh])$", tf_string.lower())
+    if not match:
+        raise ValueError(f"Invalid timeframe format for backtesting: {tf_string}")
+    
+    value, unit_short = int(match.group(1)), match.group(2)
+    
+    if unit_short == 'm':
+        unit_full = "min" if value == 1 else "mins"
+    elif unit_short == 'h':
+        unit_full = "hour" if value == 1 else "hours"
+    else:
+        raise ValueError(f"Unsupported timeframe unit: {unit_short}")
+
+    return f"{value} {unit_full}"
 
 def run_backtest(start_date_str: str, end_date_str: str):
     """
@@ -24,7 +42,8 @@ def run_backtest(start_date_str: str, end_date_str: str):
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
         
         analysis_tf = config.ZONE_TIMEFRAMES[0]
-        logging.info(f"Downloading historical data for {analysis_tf} timeframe...")
+        ib_bar_size = _convert_tf_to_ib_format(analysis_tf)
+        logging.info(f"Downloading historical data for {analysis_tf} timeframe (IB format: '{ib_bar_size}')...")
         
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
         end_dt = datetime.strptime(end_date_str, '%Y-%m-%d')
@@ -33,13 +52,14 @@ def run_backtest(start_date_str: str, end_date_str: str):
             duration_days = 1
         duration_str = f"{duration_days} D"
 
-        end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S")
+        # Per IBKR API requirements, the end date must include a timezone.
+        end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S") + " US/Eastern"
 
         bars = ib.reqHistoricalData(
             contract,
             endDateTime=end_date_formatted,
             durationStr=duration_str,
-            barSizeSetting=analysis_tf,
+            barSizeSetting=ib_bar_size,
             whatToShow='TRADES',
             useRTH=config.USE_RTH_ONLY,
             formatDate=1
