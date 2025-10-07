@@ -96,23 +96,23 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             c1, c2 = candle_history[0], candle_history[1]
 
             # --- Re-using the exact same logic as the live TradeService ---
-            c1_patterns = patterns.classify_candle(c1)
+            # 1. Check c1 (Indecision Candle)
             is_c1_valid = (
-                c1_patterns['doji'] or
-                c1_patterns['dragonfly_doji'] or
-                c1_patterns['hammer'] or
-                c1_patterns['spinning_top']
+                patterns.is_doji(c1) or
+                patterns.is_dragonfly_doji(c1) or
+                patterns.is_hammer(c1) or
+                patterns.is_spinning_top(c1)
             )
 
             if not is_c1_valid:
                 continue
 
-            c2_patterns = patterns.classify_candle(c2)
-            is_engulfing = patterns.is_bullish_engulfing(c1, c2)
+            # 2. Check c2 (Confirmation Candle)
+            # Note: is_strong_bullish_candle is the new name for the user's "Bullish Neutral" / "Near Marubozu"
             is_c2_valid = (
-                c2_patterns['bullish_marubozu'] or
-                is_engulfing or
-                c2_patterns['bullish_neutral']
+                patterns.is_bullish_marubozu(c2) or
+                patterns.is_bullish_engulfing(c1, c2) or
+                patterns.is_strong_bullish_candle(c2)
             )
 
             if is_c2_valid:
