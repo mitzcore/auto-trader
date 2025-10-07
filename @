@@ -1,0 +1,42 @@
+# ===================================================================================
+# --- Configuration File ---
+# ===================================================================================
+
+# IB Gateway/TWS connection settings
+IB_HOST = '127.0.0.1'
+IB_PORT = 4001  # 4001 for TWS, 4002 for Gateway
+IB_CLIENT_ID = 1
+
+# Ticker and contract details
+SYMBOL = 'SPY'
+EXCHANGE = 'SMART'  # Use SMART for aggregated data from all available exchanges
+CURRENCY = 'USD'
+
+# Timeframes for candlestick aggregation
+# TIME_FRAMES = ['2m', '3m', '5m', '10m', '15m', '20m', '30m', '1h', '2h', '3h', '4h', '8h', '1D', '1W']
+TIME_FRAMES = ['15m']
+
+# Duration for each timeframe for historical data requests
+TIME_FRAME_DURATIONS = {
+    '2m': "2 D",
+    '3m': "2 D",
+    '5m': "1 D",
+    '10m': "1 D",
+    '15m': "1 D",
+    '20m': "3 D",
+    '30m': "5 D",
+    '1h': "10 D",
+    '2h': "20 D",
+    '3h': "30 D",
+    '4h': "30 D",
+    '8h': "60 D",
+    '1D': "1 Y",
+    '1W': "1 Y"
+}
+
+# Data collection settings
+POLL_INTERVAL_SECONDS = 25  # Collect ticks every 5 seconds
+DATA_WINDOW_HOURS = 4      # Keep the last 4 hours of tick data in memory
+
+# Log file configuration
+LOG_FILE = "trading_bot.log"
