@@ -8,6 +8,7 @@ import sys
 try:
     from algotrade.analysis_service import start_analysis_service
     from algotrade.trade_service import start_trade_service
+    from algotrade.invalidation_service import start_invalidation_service
 except ImportError as e:
     print(f"Error importing services: {e}")
     print("Please ensure all dependencies are installed and the algotrade package is correctly structured.")
@@ -16,7 +17,7 @@ except ImportError as e:
 def main():
     """
     Main entry point for the application.
-    Launches the Analysis Service and Trade Service as separate processes.
+    Launches the Analysis, Trade, and Invalidation Services as separate processes.
     """
     # Configure basic logging for the main orchestrator process
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - [Main] - %(levelname)s - %(message)s')
@@ -34,6 +35,10 @@ def main():
         # Create and add the Trade Service process
         trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
         processes.append(trade_process)
+        
+        # Create and add the Invalidation Service process
+        invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
+        processes.append(invalidation_process)
 
         # Start all processes
         for p in processes:

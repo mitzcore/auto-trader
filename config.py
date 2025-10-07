@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['30m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
+ZONE_TIMEFRAMES = ['5m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 25  # Collect ticks every 5 seconds
