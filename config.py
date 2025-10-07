@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-SIGNAL_TIMEFRAMES = ['2m'] # Lower timeframes for finding entry signals
+ZONE_TIMEFRAMES = ['2m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 25  # Collect ticks every 5 seconds
