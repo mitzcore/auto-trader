@@ -96,28 +96,32 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             c1, c2 = candle_history[0], candle_history[1]
 
             # --- Re-using the exact same logic as the live TradeService ---
-            # 1. Check c1 (Indecision Candle)
-            is_c1_valid = (
-                patterns.is_doji(c1) or
-                patterns.is_dragonfly_doji(c1) or
-                patterns.is_hammer(c1) or
-                patterns.is_spinning_top(c1)
-            )
+            
+            # 1. Identify all matching patterns for c1 (Indecision Candle)
+            c1_triggered = []
+            if patterns.is_doji(c1): c1_triggered.append("Doji")
+            if patterns.is_dragonfly_doji(c1): c1_triggered.append("Dragonfly Doji")
+            if patterns.is_hammer(c1): c1_triggered.append("Hammer")
+            if patterns.is_spinning_top(c1): c1_triggered.append("Spinning Top")
 
-            if not is_c1_valid:
+            if not c1_triggered:
                 continue
 
-            # 2. Check c2 (Confirmation Candle)
-            # Note: is_strong_bullish_candle is the new name for the user's "Bullish Neutral" / "Near Marubozu"
-            is_c2_valid = (
-                patterns.is_bullish_marubozu(c2) or
-                patterns.is_bullish_engulfing(c1, c2) or
-                patterns.is_strong_bullish_candle(c2)
-            )
+            # 2. Identify all matching patterns for c2 (Confirmation Candle)
+            c2_triggered = []
+            if patterns.is_bullish_marubozu(c2): c2_triggered.append("Bullish Marubozu")
+            if patterns.is_bullish_engulfing(c1, c2): c2_triggered.append("Bullish Engulfing")
+            if patterns.is_strong_bullish_candle(c2): c2_triggered.append("Strong Bullish Candle")
 
-            if is_c2_valid:
-                logging.info(f"PATTERN CONFIRMED at {c2.name}")
-                found_patterns += 1
+            if not c2_triggered:
+                continue
+            
+            # 3. Log the detailed confirmation
+            logging.info(
+                f"PATTERN CONFIRMED at {c2.name}: "
+                f"c1={', '.join(c1_triggered)}, c2={', '.join(c2_triggered)}"
+            )
+            found_patterns += 1
         
         logging.info(f"Backtest finished. Found {found_patterns} valid patterns.")
 
