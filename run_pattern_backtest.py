@@ -1,0 +1,138 @@
+
+import argparse
+import logging
+from datetime import datetime
+import pandas as pd
+import re
+from collections import deque
+
+from ib_insync import IB, Stock, util
+
+import config
+from algotrade import patterns
+
+# Configure logging for the backtest
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - [PatternBacktest] - %(levelname)s - %(message)s')
+
+def _convert_tf_to_ib_format(tf_string: str) -> str:
+    """Converts a timeframe string like '5m' to the IB format like '5 mins'."""
+    match = re.match(r"(\d+)([mh])$", tf_string.lower())
+    if not match:
+        raise ValueError(f"Invalid timeframe format: {tf_string}")
+    
+    value, unit_short = int(match.group(1)), match.group(2)
+    
+    if unit_short == 'm':
+        unit_full = "min" if value == 1 else "mins"
+    elif unit_short == 'h':
+        unit_full = "hour" if value == 1 else "hours"
+    else:
+        raise ValueError(f"Unsupported timeframe unit: {unit_short}")
+
+    return f"{value} {unit_full}"
+
+def run_pattern_backtest(start_date_str: str, end_date_str: str):
+    """
+    Main backtesting function to identify candlestick patterns from historical data.
+    """
+    ib = IB()
+    try:
+        # Use a different client ID for the backtest connection
+        ib.connect(config.IB_HOST, config.IB_PORT, clientId=config.IB_CLIENT_ID + 3)
+        logging.info("Connected to IB for historical data download.")
+
+        contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
+        
+        ib_bar_size = _convert_tf_to_ib_format(config.PATTERN_TIMEFRAME)
+        logging.info(f"Downloading historical data for {config.PATTERN_TIMEFRAME} timeframe (IB format: '{ib_bar_size}')...")
+        
+        start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
+        end_dt = datetime.strptime(end_date_str, '%Y-%m-%d')
+        duration_days = (end_dt - start_dt).days
+        if duration_days < 1:
+            duration_days = 1
+        duration_str = f"{duration_days} D"
+
+        end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S") + " US/Eastern"
+
+        bars = ib.reqHistoricalData(
+            contract,
+            endDateTime=end_date_formatted,
+            durationStr=duration_str,
+            barSizeSetting=ib_bar_size,
+            whatToShow='TRADES',
+            useRTH=config.USE_RTH_ONLY,
+            formatDate=1
+        )
+        
+        if not bars:
+            logging.error("Could not download historical data. Aborting.")
+            return
+
+        df = util.df(bars)
+        df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
+        logging.info(f"Downloaded and filtered {len(df)} bars.")
+
+        # Use a deque to keep track of the last 2 candles
+        candle_history = deque(maxlen=2)
+        found_patterns = 0
+
+        logging.info("Starting pattern identification...")
+        for index, bar in df.iterrows():
+            bar_series = pd.Series(bar, name=bar['date'])
+            candle_history.append(bar_series)
+
+            if len(candle_history) < 2:
+                continue
+
+            c1, c2 = candle_history[0], candle_history[1]
+
+            # --- Re-using the exact same logic as the live TradeService ---
+            c1_patterns = patterns.classify_candle(c1)
+            is_c1_valid = (
+                c1_patterns['doji'] or
+                c1_patterns['dragonfly_doji'] or
+                c1_patterns['hammer'] or
+                c1_patterns['spinning_top']
+            )
+
+            if not is_c1_valid:
+                continue
+
+            c2_patterns = patterns.classify_candle(c2)
+            is_engulfing = patterns.is_bullish_engulfing(c1, c2)
+            is_c2_valid = (
+                c2_patterns['bullish_marubozu'] or
+                is_engulfing or
+                c2_patterns['bullish_neutral']
+            )
+
+            if is_c2_valid:
+                logging.info(f"PATTERN CONFIRMED at {c2.name}")
+                found_patterns += 1
+        
+        logging.info(f"Backtest finished. Found {found_patterns} valid patterns.")
+
+    except Exception as e:
+        logging.error(f"An error occurred during the backtest: {e}", exc_info=True)
+    finally:
+        if ib.isConnected():
+            ib.disconnect()
+            logging.info("Disconnected from IB.")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run a backtest to identify candlestick confirmation patterns.")
+    parser.add_argument("--start-date", required=True, help="Start date for backtest (YYYY-MM-DD).")
+    parser.add_argument("--end-date", required=True, help="End date for backtest (YYYY-MM-DD).")
+    
+    args = parser.parse_args()
+    
+    try:
+        datetime.strptime(args.start_date, '%Y-%m-%d')
+        datetime.strptime(args.end_date, '%Y-%m-%d')
+    except ValueError:
+        print("Error: Dates must be in YYYY-MM-DD format.")
+        exit(1)
+
+    run_pattern_backtest(start_date_str=args.start_date, end_date_str=args.end_date)
