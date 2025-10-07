@@ -1,0 +1,226 @@
+Given one candle with open, high, low, close. Define:
+
+body = close - open
+
+abs_body = |body|
+
+range = high - low (true high-low range)
+
+upper_wick = high - max(open, close)
+
+lower_wick = min(open, close) - low
+
+If range == 0 treat specially to avoid division by zero. Use a small epsilon eps = 1e-9.
+
+Useful normalized measures (dimensionless):
+
+body_pct = abs_body / (range + eps) — fraction of full range taken by the real body (0..1).
+
+upper_wick_pct = upper_wick / (range + eps)
+
+lower_wick_pct = lower_wick / (range + eps)
+
+Robust detection should use two kinds of thresholds:
+
+Absolute thresholds (tick-size or price scaled) if you know instrument tick/price scale (e.g., min_body_px = 0.01).
+
+Relative thresholds (recommended): fractions of range or rolling average ATR.
+
+Default relative thresholds (good starting values — tunable):
+
+small_body_thresh = 0.15 (body ≤ 15% of range → “small” body)
+
+very_small_body_thresh = 0.05 (≤ 5% → near-equal open/close → doji)
+
+long_wick_factor = 2.0 (wick ≥ 2 × body measured in px or wick_pct ≥ 0.5 vs body_pct)
+
+no_upper_wick_thresh = 0.02 (upper_wick_pct ≤ 2% → "no upper shadow")
+
+no_lower_wick_thresh = 0.02 (lower_wick_pct ≤ 2%)
+
+Where helpful I’ll suggest using a rolling average avg_range = mean(range over N bars) or ATR for more stability; replace range with max(range, avg_range*0.25) to avoid tiny-range noise.
+
+Detection formulas & logic (each is single candle)
+
+I present the formula, the intuitive rule, and a short pseudo-code snippet.
+
+1) Doji
+
+Definition (from sources): open ≈ close, small body relative to range → cross-like candle signaling indecision. 
+Investopedia
+
+Mathematical rule:
+
+abs_body <= very_small_body_thresh * range
+OR (if you prefer absolute tick): abs_body <= min_body_px
+
+Pseudo-code:
+
+is_doji = (abs_body <= very_small_body_thresh * range)
+
+
+Notes: If range is extremely small, compare abs_body to a price tolerance instead.
+
+2) Dragonfly Doji
+
+Definition: open ≈ close ≈ high, long lower shadow, little/no upper shadow → T-shaped. Usually bullish if occurs after a downtrend. 
+Investopedia
+
+Mathematical rule:
+
+is_doji AND upper_wick_pct <= no_upper_wick_thresh AND lower_wick_pct >= 0.5 (i.e., lower wick is large fraction of range)
+
+Pseudo-code:
+
+is_dragonfly_doji = is_doji
+                    and upper_wick_pct <= no_upper_wick_thresh
+                    and lower_wick_pct >= 0.5
+
+
+Tweak 0.5 depending on how strict you want the lower shadow to be.
+
+3) Hammer
+
+Definition: small body near top of the range, long lower shadow at least ~2× body, little/no upper shadow; bullish reversal context. 
+Investopedia
+
+Mathematical rule:
+
+body_pct <= small_body_thresh
+
+lower_wick >= long_wick_factor * abs_body (or lower_wick_pct >= 2/3 is another heuristic)
+
+upper_wick_pct <= no_upper_wick_thresh
+
+body located near top: max(open, close) >= high - 0.25 * range (i.e., body top is within top 25% of range)
+
+Pseudo-code:
+
+is_hammer = (body_pct <= small_body_thresh)
+            and (lower_wick >= long_wick_factor * abs_body)
+            and (upper_wick_pct <= no_upper_wick_thresh)
+            and (max(open,close) >= high - 0.25*range)
+
+
+You can allow either green or red body. If you require bullish color: close > open.
+
+4) Spinning Top
+
+Definition: small body, long upper and lower shadows → indecision. 
+LuxAlgo
++1
+
+Mathematical rule:
+
+body_pct <= small_body_thresh
+
+upper_wick_pct >= 0.25 AND lower_wick_pct >= 0.25 (both shadows significant)
+
+Pseudo-code:
+
+is_spinning_top = (body_pct <= small_body_thresh)
+                  and (upper_wick_pct >= 0.25)
+                  and (lower_wick_pct >= 0.25)
+
+
+Adjust 0.25 based on how “long” you require wicks to be.
+
+5) Bullish Marubozu
+
+Definition: no upper or lower shadow — open == low and close == high (or virtually equal). Strong bullish conviction. 
+Investopedia
++1
+
+Mathematical rule:
+
+upper_wick_pct <= no_upper_wick_thresh
+
+lower_wick_pct <= no_lower_wick_thresh
+
+close > open (for bullish marubozu)
+
+Pseudo-code:
+
+is_bullish_marubozu = (upper_wick_pct <= no_upper_wick_thresh)
+                      and (lower_wick_pct <= no_lower_wick_thresh)
+                      and (close > open)
+
+
+If you want a strict equality version: open == low and close == high (with price tolerance).
+
+6) Engulfing Candle — Important: requires two candles, not single
+
+Definition: Bullish engulfing is a two-bar pattern where the second candle's body completely engulfs the prior candle's body with opposite color. You cannot detect an engulfing pattern from a single candle. 
+Investopedia
+
+What to do instead: If you must classify a single bar, you can compute whether its body is “large” relative to previous bar's body and in the opposite direction, but that becomes a two-bar test. So the correct answer: engulfing is not a single-candle pattern. Implement two-bar logic when you want engulfing detection.
+
+Two-bar pseudo (for completeness):
+
+is_bullish_engulfing = (prev_close < prev_open)          # prev bearish
+                       and (close > open)                # current bullish
+                       and (open <= prev_close)
+                       and (close >= prev_open)
+
+7) Bullish Neutral (interpretation)
+
+"Bullish neutral" is not a standard canonical name. I'll interpret as a small bullish body (close>open) that is not strongly directional — i.e., small body but slightly bullish.
+
+Mathematical rule:
+
+abs_body <= small_body_thresh * range (small body)
+
+close > open (bullish sign)
+
+body center is near middle of range (not extreme): abs( (open+close)/2 - (low+high)/2 ) <= 0.15*range
+
+Pseudo-code:
+
+is_bullish_neutral = (abs_body <= small_body_thresh*range)
+                     and (close > open)
+                     and (abs( (open+close)/2 - (low+high)/2 ) <= 0.15*range)
+
+
+This means “slightly bullish but essentially neutral.”
+
+Example consolidated function (pseudocode / implementable)
+
+This is a compact version you can drop into Python/JS and tune thresholds:
+
+def classify_single_candle(open, high, low, close, avg_range=None):
+    eps = 1e-9
+    body = close - open
+    abs_body = abs(body)
+    range_ = max(high - low, eps)
+    body_pct = abs_body / range_
+    upper_wick = high - max(open, close)
+    lower_wick = min(open, close) - low
+    upper_wick_pct = upper_wick / range_
+    lower_wick_pct = lower_wick / range_
+
+    # thresholds (tune)
+    very_small_body = 0.05
+    small_body = 0.15
+    no_wick = 0.02
+    long_wick_factor = 2.0
+
+    is_doji = body_pct <= very_small_body
+    is_dragonfly = is_doji and upper_wick_pct <= no_wick and lower_wick_pct >= 0.5
+    is_hammer = (body_pct <= small_body and
+                 lower_wick >= long_wick_factor * abs_body and
+                 upper_wick_pct <= no_wick and
+                 max(open, close) >= high - 0.25*range_)
+    is_spinning_top = body_pct <= small_body and upper_wick_pct >= 0.25 and lower_wick_pct >= 0.25
+    is_bullish_marubozu = upper_wick_pct <= no_wick and lower_wick_pct <= no_wick and close > open
+    is_bullish_neutral = (abs_body <= small_body*range_ and close > open and
+                         abs((open+close)/2 - (low+high)/2) <= 0.15*range_)
+
+    return {
+      "doji": is_doji,
+      "dragonfly_doji": is_dragonfly,
+      "hammer": is_hammer,
+      "spinning_top": is_spinning_top,
+      "bullish_marubozu": is_bullish_marubozu,
+      "bullish_neutral": is_bullish_neutral,
+      # "engulfing": N/A (requires 2 bars)
+    }
