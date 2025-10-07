@@ -70,8 +70,16 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             return
 
         df = util.df(bars)
+        
+        if df is None or df.empty:
+            logging.error("No historical data returned or DataFrame is empty. Aborting.")
+            return
+            
+        # CRITICAL: Ensure data is sorted chronologically before processing.
+        df = df.sort_values(by='date', ascending=True)
+        
         df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-        logging.info(f"Downloaded and filtered {len(df)} bars.")
+        logging.info(f"Downloaded, sorted, and filtered {len(df)} bars.")
 
         # Use a deque to keep track of the last 2 candles
         candle_history = deque(maxlen=2)
