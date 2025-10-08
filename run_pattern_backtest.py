@@ -115,8 +115,16 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
             if not c2_triggered:
                 continue
-            
-            # 3. Log the detailed confirmation
+
+            # 3. Final check on c2's bottom wick as per user rule
+            # All c2 patterns are bullish, so open < close
+            body_c2 = c2['close'] - c2['open']
+            lower_wick_c2 = c2['open'] - c2['low']
+
+            if lower_wick_c2 >= body_c2:
+                continue
+
+            # 4. Log the detailed confirmation
             logging.info(
                 f"PATTERN CONFIRMED at {c2.name}: "
                 f"c1={', '.join(c1_triggered)}, c2={', '.join(c2_triggered)}"

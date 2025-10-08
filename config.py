@@ -37,5 +37,5 @@ PATTERN_TIMEFRAME = '15m' # Timeframe for candlestick pattern confirmation
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
-DOJI_PRECISION = 0.1           # Max body size (as % of range) for a standard Doji.
-DRAGONFLY_DOJI_PRECISION = 0.05 # Max body size (as % of range) for the stricter Dragonfly Doji check.
+DOJI_PRECISION = 0.3           # Max body size (as % of range) for a standard Doji.
+DRAGONFLY_DOJI_PRECISION = 0.10 # Max body size (as % of range) for the stricter Dragonfly Doji check.
