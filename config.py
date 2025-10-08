@@ -35,9 +35,7 @@ BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative t
 # Pattern Detection settings
 PATTERN_TIMEFRAME = '15m' # Timeframe for candlestick pattern confirmation
 
-# --- Candlestick Pattern Thresholds (from candlestick.txt) ---
+# --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
-CANDLE_VERY_SMALL_BODY = 0.05  # Threshold for a body to be considered a Doji (<= 5% of range)
-CANDLE_SMALL_BODY = 0.15       # Threshold for a body to be considered "small" (e.g., for Hammer, Spinning Top)
-CANDLE_NO_WICK = 0.02          # Threshold for a wick to be considered non-existent (<= 2% of range)
-CANDLE_LONG_WICK_FACTOR = 2.0  # Factor for a wick to be considered "long" relative to the body (e.g., Hammer)
+DOJI_PRECISION = 0.1           # Max body size (as % of range) for a standard Doji.
+DRAGONFLY_DOJI_PRECISION = 0.05 # Max body size (as % of range) for the stricter Dragonfly Doji check.
