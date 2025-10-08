@@ -114,7 +114,6 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             # 2. Identify all matching patterns for c2 (Confirmation Candle)
             c2_triggered = []
             if patterns.is_bullish_marubozu(c2): c2_triggered.append("Bullish Marubozu")
-            if patterns.is_bullish_engulfing(c1, c2): c2_triggered.append("Bullish Engulfing")
             if patterns.is_strong_bullish_candle(c2): c2_triggered.append("Strong Bullish Candle")
 
             if not c2_triggered:

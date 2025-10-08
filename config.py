@@ -42,5 +42,5 @@ DRAGONFLY_DOJI_PRECISION = 0.10  # Max body size (as % of range) for the stricte
 DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a Dragonfly Doji.
 
 # Thresholds for a "Strong Bullish Candle"
-STRONG_BULLISH_MIN_BODY_PCT = 0.7  # Body must be at least 70% of the total candle range.
-STRONG_BULLISH_MAX_WICK_PCT = 0.25 # Wicks must be less than 25% of the total candle range.
+STRONG_BULLISH_MIN_BODY_PCT = 0.5  # Body must be at least 70% of the total candle range.
+STRONG_BULLISH_MAX_WICK_PCT = 0.30 # Wicks must be less than 25% of the total candle range.
