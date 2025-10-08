@@ -35,6 +35,10 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
     """
     Main backtesting function to identify candlestick patterns from historical data.
     """
+    # --- Definitive Test for Config Value ---
+    print(f"--- SCRIPT STARTED: Reading DRAGONFLY_DOJI_MAX_UPPER_WICK = {config.DRAGONFLY_DOJI_MAX_UPPER_WICK} ---")
+    # --- End of Test ---
+    
     ib = IB()
     try:
         # Use a different client ID for the backtest connection
