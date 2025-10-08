@@ -110,9 +110,6 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
             if not c1_triggered:
                 continue
-            
-            # Log that a valid c1 was found, as per user's debugging request
-            logging.info(f"VALID C1 FOUND at {c1.name}: Matched patterns: {', '.join(c1_triggered)}")
 
             # 2. Identify all matching patterns for c2 (Confirmation Candle)
             c2_triggered = []

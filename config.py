@@ -40,3 +40,7 @@ PATTERN_TIMEFRAME = '15m' # Timeframe for candlestick pattern confirmation
 DOJI_PRECISION = 0.15           # Max body size (as % of range) for a standard Doji.
 DRAGONFLY_DOJI_PRECISION = 0.10  # Max body size (as % of range) for the stricter Dragonfly Doji check.
 DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a Dragonfly Doji.
+
+# Thresholds for a "Strong Bullish Candle"
+STRONG_BULLISH_MIN_BODY_PCT = 0.7  # Body must be at least 70% of the total candle range.
+STRONG_BULLISH_MAX_WICK_PCT = 0.25 # Wicks must be less than 25% of the total candle range.
