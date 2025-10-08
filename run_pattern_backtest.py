@@ -35,9 +35,7 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
     """
     Main backtesting function to identify candlestick patterns from historical data.
     """
-    # --- Definitive Test for Config Value ---
-    print(f"--- SCRIPT STARTED: Reading DRAGONFLY_DOJI_MAX_UPPER_WICK = {config.DRAGONFLY_DOJI_MAX_UPPER_WICK} ---")
-    # --- End of Test ---
+    
     
     ib = IB()
     try:
@@ -99,19 +97,7 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
             c1, c2 = candle_history[0], candle_history[1]
 
-            # --- Temporary Debug Logging ---
-            try:
-                c1_range = c1.high - c1.low
-                if c1_range > 0:
-                    c1_body_pct = abs(c1.close - c1.open) / c1_range
-                    c1_upper_wick_pct = (c1.high - max(c1.open, c1.close)) / c1_range
-                    logging.info(
-                        f"DEBUG C1 at {c1.name}: Body={c1_body_pct:.4f}, "
-                        f"UpperWick={c1_upper_wick_pct:.4f}"
-                    )
-            except Exception:
-                pass # Ignore any errors in debug logging
-            # --- End of Debug Logging ---
+            
 
             # --- Re-using the exact same logic as the live TradeService ---
             
@@ -125,24 +111,7 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             if not c1_triggered:
                 continue
             
-            # --- Temporary Debug Logging for C2 ---
-            try:
-                # Check all c2 conditions and log them
-                c2_body = c2.close - c2.open
-                c2_lower_wick = c2.open - c2.low
-                is_strong = patterns.is_strong_bullish_candle(c2)
-                is_engulfing = patterns.is_bullish_engulfing(c1, c2)
-                is_marubozu = patterns.is_bullish_marubozu(c2)
-                wick_check_passed = c2_lower_wick < c2_body
-                
-                logging.info(
-                    f"DEBUG C2 at {c2.name}: IsStrong={is_strong}, IsEngulfing={is_engulfing}, "
-                    f"IsMarubozu={is_marubozu}, WickCheckOK={wick_check_passed} "
-                    f"(Wick:{c2_lower_wick:.4f}, Body:{c2_body:.4f})"
-                )
-            except Exception:
-                pass # Ignore any errors in debug logging
-            # --- End of Debug Logging ---
+            
 
             # 2. Identify all matching patterns for c2 (Confirmation Candle)
             c2_triggered = []

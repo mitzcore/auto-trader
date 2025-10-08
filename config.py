@@ -39,4 +39,4 @@ PATTERN_TIMEFRAME = '15m' # Timeframe for candlestick pattern confirmation
 # These values are tunable to adjust pattern sensitivity.
 DOJI_PRECISION = 0.15           # Max body size (as % of range) for a standard Doji.
 DRAGONFLY_DOJI_PRECISION = 0.10  # Max body size (as % of range) for the stricter Dragonfly Doji check.
-DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.1 # Max upper wick size (as % of range) for a Dragonfly Doji.
+DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a Dragonfly Doji.
