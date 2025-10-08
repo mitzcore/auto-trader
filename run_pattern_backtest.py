@@ -95,6 +95,20 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
             c1, c2 = candle_history[0], candle_history[1]
 
+            # --- Temporary Debug Logging ---
+            try:
+                c1_range = c1.high - c1.low
+                if c1_range > 0:
+                    c1_body_pct = abs(c1.close - c1.open) / c1_range
+                    c1_upper_wick_pct = (c1.high - max(c1.open, c1.close)) / c1_range
+                    logging.info(
+                        f"DEBUG C1 at {c1.name}: Body={c1_body_pct:.4f}, "
+                        f"UpperWick={c1_upper_wick_pct:.4f}"
+                    )
+            except Exception:
+                pass # Ignore any errors in debug logging
+            # --- End of Debug Logging ---
+
             # --- Re-using the exact same logic as the live TradeService ---
             
             # 1. Identify all matching patterns for c1 (Indecision Candle)
