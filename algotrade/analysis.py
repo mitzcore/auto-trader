@@ -47,12 +47,18 @@ class AnalysisEngine:
         if demand_zone:
             self._last_demand_zone = demand_zone
 
-            # Convert UTC timestamp from the demand zone to local time for logging
+            # Convert UTC timestamp from the demand zone to a specific timezone for logging
             utc_time = pd.to_datetime(demand_zone['timestamp'])
-            local_time = utc_time.tz_convert(None) # tz_convert(None) converts to local system time
+            try:
+                # Convert to US/Eastern timezone for user-friendly logs
+                local_time = utc_time.tz_convert('US/Eastern')
+                log_timestamp = local_time.strftime('%Y-%m-%d %H:%M:%S %Z') # Include timezone abbreviation
+            except Exception as e:
+                logging.warning(f"Could not convert timestamp to local time for logging: {e}")
+                log_timestamp = demand_zone['timestamp'] # Fallback to UTC
 
             logging.info(
-                f"Demand Zone Published from {timeframe} at {local_time.strftime('%Y-%m-%d %H:%M:%S')}: "
+                f"Demand Zone Published from {timeframe} at {log_timestamp}: "
                 f"Top={demand_zone['zone_top']:.2f}, Bottom={demand_zone['zone_bottom']:.2f}, "
                 f"ID={demand_zone['id']}"
             )
