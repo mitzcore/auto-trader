@@ -5657,3 +5657,110 @@
 2025-10-09 12:22:56,067 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.57 below bottom of zone 1760027865.0 (670.61). Removing from Redis.
 2025-10-09 12:23:45,504 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:38:40 EDT: Top=670.72, Bottom=670.71, ID=1760027920.0
 2025-10-09 12:24:20,481 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:39:15 EDT: Top=670.78, Bottom=670.78, ID=1760027955.0
+2025-10-09 12:25:00,453 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:39:55 EDT: Top=670.90, Bottom=670.90, ID=1760027995.0
+2025-10-09 12:25:06,214 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-09 12:25:06,214 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 170 B sent in 9 messages, 20.2 kB received in 397 messages, session time 400 s.
+2025-10-09 12:25:09,412 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 12:25:09,413 - [AnalysisService] - INFO - Analysis Service initialized.
+2025-10-09 12:25:09,413 - [TradeService] - INFO - Trade Service initialized for pattern detection.
+2025-10-09 12:25:09,414 - [InvalidationService] - INFO - Invalidation Service initialized.
+2025-10-09 12:25:09,414 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 12:25:09,414 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 12:25:09,415 - [AnalysisService] - INFO - Connected
+2025-10-09 12:25:09,415 - [TradeService] - INFO - Connected
+2025-10-09 12:25:09,415 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 12:25:09,417 - [InvalidationService] - INFO - Connected
+2025-10-09 12:25:09,423 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 12:25:09,424 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 12:25:09,433 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 12:25:09,446 - [AnalysisService] - INFO - API connection ready
+2025-10-09 12:25:09,446 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:25:09,447 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:25:09,447 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:25:09,523 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:25:09,524 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:25:09,524 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:25:09,525 - [TradeService] - INFO - API connection ready
+2025-10-09 12:25:09,623 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:25:09,625 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:25:09,626 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:25:09,627 - [InvalidationService] - INFO - API connection ready
+2025-10-09 12:25:10,624 - [TradeService] - INFO - Synchronization complete
+2025-10-09 12:25:10,624 - [AnalysisService] - INFO - Synchronization complete
+2025-10-09 12:25:10,626 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-09 12:25:10,626 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-09 12:25:10,628 - [TradeService] - INFO - Requesting 5m real-time bars for pattern detection.
+2025-10-09 12:25:10,628 - [AnalysisService] - INFO - Requesting real-time bars for timeframe: 15m (900s)
+2025-10-09 12:25:10,630 - [AnalysisService] - INFO - Analysis Service is running and listening for bars.
+2025-10-09 12:25:10,630 - [TradeService] - INFO - Trade Service is running and listening for 5m bars.
+2025-10-09 12:25:10,724 - [InvalidationService] - INFO - Synchronization complete
+2025-10-09 12:25:10,726 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-09 12:25:10,736 - [InvalidationService] - INFO - Found existing demand zone in Redis on startup:
+2025-10-09 12:25:10,736 - [InvalidationService] - INFO - {
+    "id": "1760027995.0",
+    "status": "active",
+    "zone_top": 670.9,
+    "zone_bottom": 670.9,
+    "timestamp": "2025-10-09 16:39:55+00:00"
+}
+2025-10-09 12:25:10,737 - [InvalidationService] - INFO - Requesting 1-minute real-time bars for invalidation checks.
+2025-10-09 12:25:10,738 - [InvalidationService] - INFO - Invalidation Service is running and listening for 1-min bars.
+2025-10-09 12:25:16,063 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 671.0, 'low': 670.93, 'close': 670.94}
+C2 (Current):  {'open': 670.96, 'high': 671.0, 'low': 670.95, 'close': 671.0}
+2025-10-09 12:25:20,950 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.96, 'high': 671.0, 'low': 670.95, 'close': 671.0}
+C2 (Current):  {'open': 671.01, 'high': 671.04, 'low': 670.99, 'close': 671.0}
+2025-10-09 12:25:25,538 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.01, 'high': 671.04, 'low': 670.99, 'close': 671.0}
+C2 (Current):  {'open': 670.99, 'high': 671.02, 'low': 670.98, 'close': 671.02}
+2025-10-09 12:25:30,555 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 671.02, 'low': 670.98, 'close': 671.02}
+C2 (Current):  {'open': 671.06, 'high': 671.07, 'low': 671.01, 'close': 671.02}
+2025-10-09 12:25:36,058 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.06, 'high': 671.07, 'low': 671.01, 'close': 671.02}
+C2 (Current):  {'open': 671.01, 'high': 671.02, 'low': 670.99, 'close': 670.99}
+2025-10-09 12:25:40,845 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.01, 'high': 671.02, 'low': 670.99, 'close': 670.99}
+C2 (Current):  {'open': 671.0, 'high': 671.04, 'low': 671.0, 'close': 671.04}
+2025-10-09 12:25:45,397 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.0, 'high': 671.04, 'low': 671.0, 'close': 671.04}
+C2 (Current):  {'open': 671.04, 'high': 671.05, 'low': 671.02, 'close': 671.03}
+2025-10-09 12:25:50,559 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.04, 'high': 671.05, 'low': 671.02, 'close': 671.03}
+C2 (Current):  {'open': 671.03, 'high': 671.03, 'low': 670.98, 'close': 670.98}
+2025-10-09 12:25:55,573 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.03, 'high': 671.03, 'low': 670.98, 'close': 670.98}
+C2 (Current):  {'open': 670.99, 'high': 671.01, 'low': 670.99, 'close': 671.0}
+2025-10-09 12:26:00,308 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 671.01, 'low': 670.99, 'close': 671.0}
+C2 (Current):  {'open': 670.99, 'high': 670.99, 'low': 670.73, 'close': 670.78}
+2025-10-09 12:26:00,308 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.78 below bottom of zone 1760027995.0 (670.90). Removing from Redis.
+2025-10-09 12:26:05,813 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 670.99, 'low': 670.73, 'close': 670.78}
+C2 (Current):  {'open': 670.79, 'high': 670.94, 'low': 670.78, 'close': 670.87}
+2025-10-09 12:26:10,317 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.79, 'high': 670.94, 'low': 670.78, 'close': 670.87}
+C2 (Current):  {'open': 670.86, 'high': 670.86, 'low': 670.75, 'close': 670.78}
+2025-10-09 12:26:15,285 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.86, 'high': 670.86, 'low': 670.75, 'close': 670.78}
+C2 (Current):  {'open': 670.76, 'high': 670.79, 'low': 670.73, 'close': 670.75}
+2025-10-09 12:26:20,952 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.76, 'high': 670.79, 'low': 670.73, 'close': 670.75}
+C2 (Current):  {'open': 670.74, 'high': 670.84, 'low': 670.74, 'close': 670.84}
+2025-10-09 12:26:21,010 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:41:15 EDT: Top=670.76, Bottom=670.73, ID=1760028075.0
+2025-10-09 12:26:25,287 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.74, 'high': 670.84, 'low': 670.74, 'close': 670.84}
+C2 (Current):  {'open': 670.84, 'high': 670.86, 'low': 670.84, 'close': 670.86}
+2025-10-09 12:26:30,295 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.84, 'high': 670.86, 'low': 670.84, 'close': 670.86}
+C2 (Current):  {'open': 670.87, 'high': 670.92, 'low': 670.87, 'close': 670.92}
+2025-10-09 12:26:36,062 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.87, 'high': 670.92, 'low': 670.87, 'close': 670.92}
+C2 (Current):  {'open': 670.91, 'high': 670.91, 'low': 670.83, 'close': 670.87}
+2025-10-09 12:26:40,433 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.91, 'low': 670.83, 'close': 670.87}
+C2 (Current):  {'open': 670.85, 'high': 670.85, 'low': 670.85, 'close': 670.85}
+2025-10-09 12:26:44,548 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-09 12:26:44,547 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 169 B sent in 9 messages, 15.3 kB received in 327 messages, session time 95.1 s.
+2025-10-09 12:26:44,549 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 170 B sent in 9 messages, 15.3 kB received in 327 messages, session time 95.1 s.
