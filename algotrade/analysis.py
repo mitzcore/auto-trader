@@ -94,13 +94,8 @@ class AnalysisEngine:
                 return None
 
             # All conditions passed, a valid demand zone is detected
-            timeframe_delta = timeframe_to_timedelta(zone_timeframe)
-            if not timeframe_delta:
-                logging.warning(f"Invalid timeframe string '{zone_timeframe}', cannot calculate zone end time.")
-                return None
+            confirmation_time = c2.name  # Use the start time of the confirmation candle
 
-            confirmation_time = c2.name + timeframe_delta
-            
             # Generate a unique ID for the zone using the timestamp
             zone_id = str(confirmation_time.timestamp())
 
