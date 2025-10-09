@@ -5595,3 +5595,19 @@
 2025-10-09 12:00:05,837 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:15:00 EDT: Top=671.34, Bottom=671.30, ID=1760026500.0
 2025-10-09 12:01:25,598 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:16:20 EDT: Top=671.53, Bottom=671.51, ID=1760026580.0
 2025-10-09 12:01:45,569 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.50 below bottom of zone 1760026580.0 (671.51). Removing from Redis.
+2025-10-09 12:04:46,088 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:19:40 EDT: Top=671.47, Bottom=671.45, ID=1760026780.0
+2025-10-09 12:05:16,061 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.39 below bottom of zone 1760026780.0 (671.45). Removing from Redis.
+2025-10-09 12:05:46,069 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:20:40 EDT: Top=671.44, Bottom=671.41, ID=1760026840.0
+2025-10-09 12:06:40,466 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:21:35 EDT: Top=671.47, Bottom=671.45, ID=1760026895.0
+2025-10-09 12:06:45,604 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.44 below bottom of zone 1760026895.0 (671.45). Removing from Redis.
+2025-10-09 12:07:50,329 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:22:45 EDT: Top=671.13, Bottom=671.06, ID=1760026965.0
+2025-10-09 12:08:15,480 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:23:10 EDT: Top=671.21, Bottom=671.18, ID=1760026990.0
+2025-10-09 12:08:45,800 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:23:40 EDT: Top=671.23, Bottom=671.23, ID=1760027020.0
+2025-10-09 12:08:55,631 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:23:50 EDT: Top=671.25, Bottom=671.25, ID=1760027030.0
+2025-10-09 12:09:55,666 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.24 below bottom of zone 1760027030.0 (671.25). Removing from Redis.
+2025-10-09 12:11:05,529 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:26:00 EDT: Top=671.18, Bottom=671.16, ID=1760027160.0
+2025-10-09 12:12:55,327 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:27:50 EDT: Top=671.17, Bottom=671.16, ID=1760027270.0
+2025-10-09 12:14:10,643 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.08 below bottom of zone 1760027270.0 (671.16). Removing from Redis.
+2025-10-09 12:14:45,623 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-09 12:14:45,624 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 170 B sent in 9 messages, 29.4 kB received in 529 messages, session time 998 s.
+2025-10-09 12:14:45,624 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 169 B sent in 9 messages, 29.4 kB received in 529 messages, session time 998 s.
