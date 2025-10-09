@@ -19,9 +19,6 @@ def main():
     Main entry point for the application.
     Launches the Analysis, Trade, and Invalidation Services as separate processes.
     """
-    # Configure basic logging for the main orchestrator process
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - [Main] - %(levelname)s - %(message)s')
-
     logging.info("Initializing application services...")
 
     # A list to hold the process objects
