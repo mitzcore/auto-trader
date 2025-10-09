@@ -10,7 +10,7 @@ try:
     from algotrade.trade_service import start_trade_service
     from algotrade.invalidation_service import start_invalidation_service
 except ImportError as e:
-    print(f"Error importing services: {e}")
+    print("Error importing services: " + str(e))
     print("Please ensure all dependencies are installed and the algotrade package is correctly structured.")
     sys.exit(1)
 
@@ -19,9 +19,6 @@ def main():
     Main entry point for the application.
     Launches the Analysis, Trade, and Invalidation Services as separate processes.
     """
-    # Configure basic logging for the main orchestrator process
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - [Main] - %(levelname)s - %(message)s')
-
     logging.info("Initializing application services...")
 
     # A list to hold the process objects

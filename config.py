@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['5m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
+ZONE_TIMEFRAMES = ['15m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 25  # Collect ticks every 5 seconds
@@ -27,8 +27,8 @@ DATA_WINDOW_HOURS = 2      # Keep the last 4 hours of tick data in memory
 LOG_FILE = "trading_bot.log"
 
 # Demand Zone settings
-DEMAND_ZONE_OFFSET_TOP = 0.0
-DEMAND_ZONE_OFFSET_BOTTOM = 0.0
+DEMAND_ZONE_OFFSET_TOP = 0.20
+DEMAND_ZONE_OFFSET_BOTTOM = 0.20
 BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle.
 BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative to the bullish body.
 
