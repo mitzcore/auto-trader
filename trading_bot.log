@@ -5547,3 +5547,51 @@
 2025-10-09 11:54:50,646 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 16:09:45: Top=671.25, Bottom=671.20, ID=1760026185.0
 2025-10-09 11:55:35,914 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 16:10:30: Top=671.33, Bottom=671.31, ID=1760026230.0
 2025-10-09 11:56:16,072 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.30 below bottom of zone 1760026230.0 (671.31). Removing from Redis.
+2025-10-09 11:56:31,064 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 16:11:25: Top=671.31, Bottom=671.29, ID=1760026285.0
+2025-10-09 11:56:56,081 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.28 below bottom of zone 1760026285.0 (671.29). Removing from Redis.
+2025-10-09 11:57:20,605 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 16:12:15: Top=671.30, Bottom=671.26, ID=1760026335.0
+2025-10-09 11:57:55,514 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 16:12:50: Top=671.38, Bottom=671.37, ID=1760026370.0
+2025-10-09 11:57:59,354 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-09 11:57:59,356 - [AnalysisService] - INFO - Disconnecting from 127.0.0.1:4001, 170 B sent in 9 messages, 24.3 kB received in 457 messages, session time 662 s.
+2025-10-09 11:57:59,356 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 169 B sent in 9 messages, 24.3 kB received in 456 messages, session time 662 s.
+2025-10-09 11:58:07,466 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 11:58:07,467 - [AnalysisService] - INFO - Analysis Service initialized.
+2025-10-09 11:58:07,467 - [TradeService] - INFO - Trade Service initialized for pattern detection.
+2025-10-09 11:58:07,468 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 11:58:07,468 - [InvalidationService] - INFO - Invalidation Service initialized.
+2025-10-09 11:58:07,469 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 11:58:07,470 - [TradeService] - INFO - Connected
+2025-10-09 11:58:07,470 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 11:58:07,470 - [AnalysisService] - INFO - Connected
+2025-10-09 11:58:07,471 - [InvalidationService] - INFO - Connected
+2025-10-09 11:58:07,477 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 11:58:07,478 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 11:58:07,479 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 11:58:07,485 - [AnalysisService] - INFO - API connection ready
+2025-10-09 11:58:07,486 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:58:07,487 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:58:07,488 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:58:07,579 - [TradeService] - INFO - API connection ready
+2025-10-09 11:58:07,580 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:58:07,580 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:58:07,581 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:58:07,679 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:58:07,681 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:58:07,682 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:58:07,683 - [InvalidationService] - INFO - API connection ready
+2025-10-09 11:58:08,679 - [TradeService] - INFO - Synchronization complete
+2025-10-09 11:58:08,679 - [AnalysisService] - INFO - Synchronization complete
+2025-10-09 11:58:08,680 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-09 11:58:08,680 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-09 11:58:08,682 - [TradeService] - INFO - Requesting 5m real-time bars for pattern detection.
+2025-10-09 11:58:08,682 - [AnalysisService] - INFO - Requesting real-time bars for timeframe: 15m (900s)
+2025-10-09 11:58:08,683 - [TradeService] - INFO - Trade Service is running and listening for 5m bars.
+2025-10-09 11:58:08,683 - [AnalysisService] - INFO - Analysis Service is running and listening for bars.
+2025-10-09 11:58:08,778 - [InvalidationService] - INFO - Synchronization complete
+2025-10-09 11:58:08,780 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-09 11:58:08,782 - [InvalidationService] - INFO - Requesting 1-minute real-time bars for invalidation checks.
+2025-10-09 11:58:08,783 - [InvalidationService] - INFO - Invalidation Service is running and listening for 1-min bars.
+2025-10-09 11:59:05,798 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.34 below bottom of zone 1760026370.0 (671.37). Removing from Redis.
+2025-10-09 12:00:05,837 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:15:00 EDT: Top=671.34, Bottom=671.30, ID=1760026500.0
+2025-10-09 12:01:25,598 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:16:20 EDT: Top=671.53, Bottom=671.51, ID=1760026580.0
+2025-10-09 12:01:45,569 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.50 below bottom of zone 1760026580.0 (671.51). Removing from Redis.
