@@ -74,6 +74,18 @@ def main():
 
 
 if __name__ == "__main__":
+    # Configure logging for the main orchestrator process
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - [MainOrchestrator] - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(sys.stdout)  # Ensure logs go to standard output
+        ]
+    )
+    
     # Set start method for multiprocessing for compatibility across platforms (e.g., macOS, Windows)
+    # 'fork' is generally fine for Unix-like systems, but 'spawn' is safer and more cross-platform.
+    # Consider 'spawn' if you encounter issues on different OSes.
     multiprocessing.set_start_method('fork')
+    
     main()
