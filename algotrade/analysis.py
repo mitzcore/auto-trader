@@ -70,6 +70,7 @@ class AnalysisEngine:
         """
         Detects a demand zone using the refined logic and publishes it to Redis if found.
         """
+        logging.info(f"[{zone_timeframe}] Analyzing candles for demand zone:\nC1 (Previous): {c1.to_dict()}\nC2 (Current):  {c2.to_dict()}")
         try:
             # Core Condition 1: Second candle must be Bullish
             if not c2['close'] > c2['open']:
