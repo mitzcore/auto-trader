@@ -5417,3 +5417,71 @@
 2025-10-06 16:24:38,804 - INFO - Disconnecting from 127.0.0.1:4001, 306 B sent in 10 messages, 31.0 kB received in 310 messages, session time 667 ms.
 2025-10-06 16:24:38,804 - INFO - Disconnecting
 2025-10-06 16:24:38,804 - INFO - Disconnected from IB Gateway.
+2025-10-09 11:36:37,439 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 11:36:37,440 - [TradeService] - INFO - Trade Service initialized for pattern detection.
+2025-10-09 11:36:37,440 - [AnalysisService] - INFO - Analysis Service initialized.
+2025-10-09 11:36:37,442 - [InvalidationService] - INFO - Invalidation Service initialized.
+2025-10-09 11:36:37,443 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 11:36:37,443 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 11:36:37,445 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 11:36:37,445 - [TradeService] - INFO - Connected
+2025-10-09 11:36:37,445 - [AnalysisService] - INFO - Connected
+2025-10-09 11:36:37,449 - [InvalidationService] - INFO - Connected
+2025-10-09 11:36:37,475 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 11:36:37,476 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 11:36:37,478 - [AnalysisService] - INFO - API connection ready
+2025-10-09 11:36:37,479 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:36:37,479 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:36:37,480 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:36:37,487 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 11:36:37,576 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:36:37,577 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:36:37,578 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:36:37,578 - [TradeService] - INFO - API connection ready
+2025-10-09 11:36:38,077 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:36:38,078 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:36:38,080 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:36:38,081 - [InvalidationService] - INFO - API connection ready
+2025-10-09 11:36:38,676 - [TradeService] - INFO - Synchronization complete
+2025-10-09 11:36:38,676 - [AnalysisService] - INFO - Synchronization complete
+2025-10-09 11:36:38,677 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-09 11:36:38,678 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-09 11:36:38,679 - [TradeService] - INFO - Requesting 5m real-time bars for pattern detection.
+2025-10-09 11:36:38,679 - [AnalysisService] - INFO - Requesting real-time bars for timeframe: 15m (900s)
+2025-10-09 11:36:38,681 - [AnalysisService] - INFO - Analysis Service is running and listening for bars.
+2025-10-09 11:36:38,681 - [TradeService] - INFO - Trade Service is running and listening for 5m bars.
+2025-10-09 11:36:38,776 - [InvalidationService] - INFO - Synchronization complete
+2025-10-09 11:36:38,778 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-09 11:36:38,780 - [InvalidationService] - INFO - Requesting 1-minute real-time bars for invalidation checks.
+2025-10-09 11:36:38,781 - [InvalidationService] - INFO - Invalidation Service is running and listening for 1-min bars.
+2025-10-09 11:36:55,317 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 15:51:50+00:00: Top=670.41, Bottom=670.38, ID=1760025110.0
+2025-10-09 11:38:15,283 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 15:53:10+00:00: Top=670.62, Bottom=670.59, ID=1760025190.0
+2025-10-09 11:38:25,320 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 15:53:20+00:00: Top=670.64, Bottom=670.60, ID=1760025200.0
+2025-10-09 11:39:05,279 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 15:54:00+00:00: Top=670.70, Bottom=670.67, ID=1760025240.0
+2025-10-09 11:39:15,404 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.57 below bottom of zone 1760025240.0 (670.67). Removing from Redis.
+2025-10-09 11:39:25,528 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 15:54:20+00:00: Top=670.57, Bottom=670.55, ID=1760025260.0
+2025-10-09 11:46:19,089 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 11:46:19,095 - [AnalysisService] - INFO - Analysis Service initialized.
+2025-10-09 11:46:19,095 - [InvalidationService] - INFO - Invalidation Service initialized.
+2025-10-09 11:46:19,096 - [TradeService] - INFO - Trade Service initialized for pattern detection.
+2025-10-09 11:46:19,097 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 11:46:19,097 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 11:46:19,097 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 11:46:19,099 - [AnalysisService] - INFO - Connected
+2025-10-09 11:46:19,100 - [InvalidationService] - INFO - Connected
+2025-10-09 11:46:19,100 - [TradeService] - INFO - Connected
+2025-10-09 11:46:19,129 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 11:46:19,129 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 11:46:19,129 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 11:46:19,133 - [InvalidationService] - INFO - API connection ready
+2025-10-09 11:46:19,134 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:46:19,134 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:46:19,134 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:46:19,135 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:46:19,135 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:46:19,135 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:46:19,136 - [TradeService] - INFO - API connection ready
+2025-10-09 11:46:19,230 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 11:46:19,231 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 11:46:19,231 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 11:46:19,232 - [AnalysisService] - INFO - API connection ready
