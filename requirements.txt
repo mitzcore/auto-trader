@@ -1,3 +1,4 @@
 pandas
 ib_insync
 redis
+nest_asyncio

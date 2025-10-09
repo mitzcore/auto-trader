@@ -5764,3 +5764,232 @@ C2 (Current):  {'open': 670.85, 'high': 670.85, 'low': 670.85, 'close': 670.85}
 2025-10-09 12:26:44,548 - [AnalysisService] - INFO - Analysis Service shutting down.
 2025-10-09 12:26:44,547 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 169 B sent in 9 messages, 15.3 kB received in 327 messages, session time 95.1 s.
 2025-10-09 12:26:44,549 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 170 B sent in 9 messages, 15.3 kB received in 327 messages, session time 95.1 s.
+2025-10-09 12:30:49,841 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 12:30:49,842 - [AnalysisService] - INFO - Analysis Service initialized.
+2025-10-09 12:30:49,843 - [TradeService] - INFO - Trade Service initialized for pattern detection.
+2025-10-09 12:30:49,844 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 12:30:49,843 - [InvalidationService] - INFO - Invalidation Service initialized.
+2025-10-09 12:30:49,846 - [AnalysisService] - INFO - Connected
+2025-10-09 12:30:49,846 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 12:30:49,846 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 12:30:49,849 - [TradeService] - INFO - Connected
+2025-10-09 12:30:49,849 - [InvalidationService] - INFO - Connected
+2025-10-09 12:30:49,860 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 12:30:49,860 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 12:30:49,862 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 12:30:49,863 - [AnalysisService] - INFO - API connection ready
+2025-10-09 12:30:49,863 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:30:49,864 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:30:49,864 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:30:49,961 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:30:49,962 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:30:49,962 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:30:49,963 - [TradeService] - INFO - API connection ready
+2025-10-09 12:30:50,062 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:30:50,063 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:30:50,064 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:30:50,065 - [InvalidationService] - INFO - API connection ready
+2025-10-09 12:30:51,062 - [AnalysisService] - INFO - Synchronization complete
+2025-10-09 12:30:51,062 - [TradeService] - INFO - Synchronization complete
+2025-10-09 12:30:51,063 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-09 12:30:51,063 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-09 12:30:51,065 - [AnalysisService] - INFO - Requesting real-time bars for timeframe: 15m (900s)
+2025-10-09 12:30:51,065 - [TradeService] - INFO - Requesting 5m real-time bars for pattern detection.
+2025-10-09 12:30:51,067 - [AnalysisService] - INFO - Analysis Service is running and listening for bars.
+2025-10-09 12:30:51,067 - [TradeService] - INFO - Trade Service is running and listening for 5m bars.
+2025-10-09 12:30:51,161 - [InvalidationService] - INFO - Synchronization complete
+2025-10-09 12:30:51,164 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-09 12:30:51,175 - [InvalidationService] - INFO - Found existing demand zone in Redis on startup:
+2025-10-09 12:30:51,176 - [InvalidationService] - INFO - {
+    "id": "1760028075.0",
+    "status": "active",
+    "zone_top": 670.76,
+    "zone_bottom": 670.73,
+    "timestamp": "2025-10-09 16:41:15+00:00"
+}
+2025-10-09 12:30:51,176 - [InvalidationService] - INFO - Requesting 1-minute real-time bars for invalidation checks.
+2025-10-09 12:30:51,177 - [InvalidationService] - INFO - Invalidation Service is running and listening for 1-min bars.
+2025-10-09 12:30:52,095 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:30:56,061 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:30:56,063 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.93, 'low': 670.9, 'close': 670.9}
+C2 (Current):  {'open': 670.91, 'high': 670.93, 'low': 670.9, 'close': 670.9}
+2025-10-09 12:31:00,264 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:00,266 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.93, 'low': 670.9, 'close': 670.9}
+C2 (Current):  {'open': 670.9, 'high': 670.93, 'low': 670.9, 'close': 670.93}
+2025-10-09 12:31:05,441 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:05,444 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.9, 'high': 670.93, 'low': 670.9, 'close': 670.93}
+C2 (Current):  {'open': 670.94, 'high': 670.97, 'low': 670.94, 'close': 670.97}
+2025-10-09 12:31:10,401 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:10,404 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.94, 'high': 670.97, 'low': 670.94, 'close': 670.97}
+C2 (Current):  {'open': 670.98, 'high': 670.99, 'low': 670.96, 'close': 670.97}
+2025-10-09 12:31:16,194 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:16,195 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.98, 'high': 670.99, 'low': 670.96, 'close': 670.97}
+C2 (Current):  {'open': 670.97, 'high': 670.99, 'low': 670.93, 'close': 670.96}
+2025-10-09 12:31:21,009 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:21,013 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.97, 'high': 670.99, 'low': 670.93, 'close': 670.96}
+C2 (Current):  {'open': 670.96, 'high': 670.96, 'low': 670.95, 'close': 670.95}
+2025-10-09 12:31:25,560 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:25,564 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.96, 'high': 670.96, 'low': 670.95, 'close': 670.95}
+C2 (Current):  {'open': 670.97, 'high': 671.01, 'low': 670.97, 'close': 670.98}
+2025-10-09 12:31:31,142 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:31,145 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.97, 'high': 671.01, 'low': 670.97, 'close': 670.98}
+C2 (Current):  {'open': 670.97, 'high': 671.05, 'low': 670.97, 'close': 671.05}
+2025-10-09 12:31:35,782 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:35,784 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.97, 'high': 671.05, 'low': 670.97, 'close': 671.05}
+C2 (Current):  {'open': 671.03, 'high': 671.04, 'low': 671.02, 'close': 671.04}
+2025-10-09 12:31:41,175 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:41,177 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.03, 'high': 671.04, 'low': 671.02, 'close': 671.04}
+C2 (Current):  {'open': 671.04, 'high': 671.05, 'low': 671.02, 'close': 671.02}
+2025-10-09 12:31:46,062 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:46,065 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.04, 'high': 671.05, 'low': 671.02, 'close': 671.02}
+C2 (Current):  {'open': 671.01, 'high': 671.03, 'low': 671.01, 'close': 671.02}
+2025-10-09 12:31:50,790 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:50,792 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.01, 'high': 671.03, 'low': 671.01, 'close': 671.02}
+C2 (Current):  {'open': 671.02, 'high': 671.02, 'low': 671.0, 'close': 671.0}
+2025-10-09 12:31:55,277 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:31:55,280 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.02, 'high': 671.02, 'low': 671.0, 'close': 671.0}
+C2 (Current):  {'open': 670.98, 'high': 670.98, 'low': 670.97, 'close': 670.97}
+2025-10-09 12:32:00,444 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:00,448 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.98, 'high': 670.98, 'low': 670.97, 'close': 670.97}
+C2 (Current):  {'open': 670.98, 'high': 671.0, 'low': 670.93, 'close': 670.93}
+2025-10-09 12:32:05,278 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:05,281 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.98, 'high': 671.0, 'low': 670.93, 'close': 670.93}
+C2 (Current):  {'open': 670.93, 'high': 670.93, 'low': 670.86, 'close': 670.88}
+2025-10-09 12:32:11,063 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:11,066 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.93, 'high': 670.93, 'low': 670.86, 'close': 670.88}
+C2 (Current):  {'open': 670.89, 'high': 670.9, 'low': 670.87, 'close': 670.87}
+2025-10-09 12:32:15,379 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:15,382 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.89, 'high': 670.9, 'low': 670.87, 'close': 670.87}
+C2 (Current):  {'open': 670.87, 'high': 670.88, 'low': 670.83, 'close': 670.86}
+2025-10-09 12:32:20,484 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:20,486 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.87, 'high': 670.88, 'low': 670.83, 'close': 670.86}
+C2 (Current):  {'open': 670.86, 'high': 670.89, 'low': 670.86, 'close': 670.89}
+2025-10-09 12:32:20,553 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:47:15 EDT: Top=670.87, Bottom=670.83, ID=1760028435.0
+2025-10-09 12:32:25,976 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:25,979 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.86, 'high': 670.89, 'low': 670.86, 'close': 670.89}
+C2 (Current):  {'open': 670.91, 'high': 670.91, 'low': 670.89, 'close': 670.91}
+2025-10-09 12:32:30,554 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:30,557 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.91, 'low': 670.89, 'close': 670.91}
+C2 (Current):  {'open': 670.91, 'high': 670.94, 'low': 670.91, 'close': 670.91}
+2025-10-09 12:32:35,883 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:35,887 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.94, 'low': 670.91, 'close': 670.91}
+C2 (Current):  {'open': 670.89, 'high': 670.9, 'low': 670.85, 'close': 670.85}
+2025-10-09 12:32:40,535 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:40,538 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.89, 'high': 670.9, 'low': 670.85, 'close': 670.85}
+C2 (Current):  {'open': 670.87, 'high': 670.87, 'low': 670.84, 'close': 670.85}
+2025-10-09 12:32:46,062 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:46,066 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.87, 'high': 670.87, 'low': 670.84, 'close': 670.85}
+C2 (Current):  {'open': 670.88, 'high': 670.91, 'low': 670.86, 'close': 670.91}
+2025-10-09 12:32:50,684 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:50,686 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.88, 'high': 670.91, 'low': 670.86, 'close': 670.91}
+C2 (Current):  {'open': 670.9, 'high': 670.9, 'low': 670.89, 'close': 670.89}
+2025-10-09 12:32:55,466 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:32:55,468 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.9, 'high': 670.9, 'low': 670.89, 'close': 670.89}
+C2 (Current):  {'open': 670.86, 'high': 670.93, 'low': 670.86, 'close': 670.91}
+2025-10-09 12:32:55,481 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:47:50 EDT: Top=670.90, Bottom=670.89, ID=1760028470.0
+2025-10-09 12:33:00,438 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:00,439 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.86, 'high': 670.93, 'low': 670.86, 'close': 670.91}
+C2 (Current):  {'open': 670.91, 'high': 670.96, 'low': 670.91, 'close': 670.96}
+2025-10-09 12:33:06,065 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:06,068 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.96, 'low': 670.91, 'close': 670.96}
+C2 (Current):  {'open': 670.97, 'high': 670.99, 'low': 670.96, 'close': 670.97}
+2025-10-09 12:33:10,800 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:10,802 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.97, 'high': 670.99, 'low': 670.96, 'close': 670.97}
+C2 (Current):  {'open': 670.91, 'high': 670.91, 'low': 670.9, 'close': 670.9}
+2025-10-09 12:33:16,050 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:16,055 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.91, 'high': 670.91, 'low': 670.9, 'close': 670.9}
+C2 (Current):  {'open': 670.92, 'high': 670.95, 'low': 670.92, 'close': 670.95}
+2025-10-09 12:33:16,067 - [AnalysisService] - INFO - Demand Zone Published from 15m at 2025-10-09 12:48:10 EDT: Top=670.91, Bottom=670.90, ID=1760028490.0
+2025-10-09 12:33:20,898 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:20,899 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.92, 'high': 670.95, 'low': 670.92, 'close': 670.95}
+C2 (Current):  {'open': 670.97, 'high': 671.02, 'low': 670.96, 'close': 671.0}
+2025-10-09 12:33:25,695 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:25,698 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.97, 'high': 671.02, 'low': 670.96, 'close': 671.0}
+C2 (Current):  {'open': 670.98, 'high': 670.98, 'low': 670.95, 'close': 670.98}
+2025-10-09 12:33:30,608 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:30,610 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.98, 'high': 670.98, 'low': 670.95, 'close': 670.98}
+C2 (Current):  {'open': 670.98, 'high': 670.98, 'low': 670.98, 'close': 670.98}
+2025-10-09 12:33:36,069 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:36,072 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.98, 'high': 670.98, 'low': 670.98, 'close': 670.98}
+C2 (Current):  {'open': 670.95, 'high': 670.97, 'low': 670.93, 'close': 670.95}
+2025-10-09 12:33:40,790 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:40,794 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.95, 'high': 670.97, 'low': 670.93, 'close': 670.95}
+C2 (Current):  {'open': 670.96, 'high': 670.98, 'low': 670.96, 'close': 670.98}
+2025-10-09 12:33:46,062 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:46,066 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.96, 'high': 670.98, 'low': 670.96, 'close': 670.98}
+C2 (Current):  {'open': 670.99, 'high': 671.0, 'low': 670.96, 'close': 670.99}
+2025-10-09 12:33:50,421 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:50,422 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 671.0, 'low': 670.96, 'close': 670.99}
+C2 (Current):  {'open': 670.99, 'high': 671.0, 'low': 670.98, 'close': 671.0}
+2025-10-09 12:33:55,732 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:33:55,735 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.99, 'high': 671.0, 'low': 670.98, 'close': 671.0}
+C2 (Current):  {'open': 671.02, 'high': 671.02, 'low': 671.0, 'close': 671.0}
+2025-10-09 12:34:00,629 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:00,633 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.02, 'high': 671.02, 'low': 671.0, 'close': 671.0}
+C2 (Current):  {'open': 671.0, 'high': 671.0, 'low': 670.98, 'close': 670.98}
+2025-10-09 12:34:06,066 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:06,069 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.0, 'high': 671.0, 'low': 670.98, 'close': 670.98}
+C2 (Current):  {'open': 671.0, 'high': 671.02, 'low': 671.0, 'close': 671.01}
+2025-10-09 12:34:11,078 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:11,080 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.0, 'high': 671.02, 'low': 671.0, 'close': 671.01}
+C2 (Current):  {'open': 671.01, 'high': 671.02, 'low': 671.0, 'close': 671.02}
+2025-10-09 12:34:15,862 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:15,863 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.01, 'high': 671.02, 'low': 671.0, 'close': 671.02}
+C2 (Current):  {'open': 671.03, 'high': 671.07, 'low': 671.03, 'close': 671.05}
+2025-10-09 12:34:20,689 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:20,691 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.03, 'high': 671.07, 'low': 671.03, 'close': 671.05}
+C2 (Current):  {'open': 671.05, 'high': 671.05, 'low': 671.03, 'close': 671.05}
+2025-10-09 12:34:26,074 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:26,078 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.05, 'high': 671.05, 'low': 671.03, 'close': 671.05}
+C2 (Current):  {'open': 671.05, 'high': 671.05, 'low': 671.01, 'close': 671.01}
+2025-10-09 12:34:31,164 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:31,166 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.05, 'high': 671.05, 'low': 671.01, 'close': 671.01}
+C2 (Current):  {'open': 671.03, 'high': 671.04, 'low': 671.0, 'close': 671.04}
+2025-10-09 12:34:36,182 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:34:36,185 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 671.03, 'high': 671.04, 'low': 671.0, 'close': 671.04}
+C2 (Current):  {'open': 671.04, 'high': 671.04, 'low': 671.01, 'close': 671.02}

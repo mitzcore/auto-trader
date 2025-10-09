@@ -20,8 +20,7 @@ USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. 
 ZONE_TIMEFRAMES = ['15m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
-POLL_INTERVAL_SECONDS = 25  # Collect ticks every 5 seconds
-DATA_WINDOW_HOURS = 2      # Keep the last 4 hours of tick data in memory
+POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to poll for new completed bars.
 
 # Log file configuration
 LOG_FILE = "trading_bot.log"
