@@ -6208,3 +6208,111 @@ C2 (Current):  {'open': 670.88, 'high': 670.88, 'low': 670.84, 'close': 670.87}
 2025-10-09 12:39:00,816 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
 C1 (Previous): {'open': 670.88, 'high': 670.88, 'low': 670.84, 'close': 670.87}
 C2 (Current):  {'open': 670.87, 'high': 670.89, 'low': 670.87, 'close': 670.88}
+2025-10-09 12:39:05,880 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:05,891 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.87, 'high': 670.89, 'low': 670.87, 'close': 670.88}
+C2 (Current):  {'open': 670.88, 'high': 670.89, 'low': 670.83, 'close': 670.84}
+2025-10-09 12:39:10,318 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:10,320 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.88, 'high': 670.89, 'low': 670.83, 'close': 670.84}
+C2 (Current):  {'open': 670.84, 'high': 670.88, 'low': 670.84, 'close': 670.88}
+2025-10-09 12:39:15,734 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:15,737 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.84, 'high': 670.88, 'low': 670.84, 'close': 670.88}
+C2 (Current):  {'open': 670.89, 'high': 670.93, 'low': 670.88, 'close': 670.92}
+2025-10-09 12:39:20,371 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:20,374 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.89, 'high': 670.93, 'low': 670.88, 'close': 670.92}
+C2 (Current):  {'open': 670.89, 'high': 670.93, 'low': 670.89, 'close': 670.93}
+2025-10-09 12:39:25,827 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:25,831 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.89, 'high': 670.93, 'low': 670.89, 'close': 670.93}
+C2 (Current):  {'open': 670.93, 'high': 670.98, 'low': 670.92, 'close': 670.97}
+2025-10-09 12:39:31,059 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:31,062 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.93, 'high': 670.98, 'low': 670.92, 'close': 670.97}
+C2 (Current):  {'open': 670.96, 'high': 670.96, 'low': 670.92, 'close': 670.92}
+2025-10-09 12:39:35,379 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:35,381 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.96, 'high': 670.96, 'low': 670.92, 'close': 670.92}
+C2 (Current):  {'open': 670.94, 'high': 670.95, 'low': 670.94, 'close': 670.95}
+2025-10-09 12:39:40,364 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:40,365 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.94, 'high': 670.95, 'low': 670.94, 'close': 670.95}
+C2 (Current):  {'open': 670.95, 'high': 670.96, 'low': 670.94, 'close': 670.95}
+2025-10-09 12:39:46,146 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:46,150 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.95, 'high': 670.96, 'low': 670.94, 'close': 670.95}
+C2 (Current):  {'open': 670.95, 'high': 670.95, 'low': 670.91, 'close': 670.95}
+2025-10-09 12:39:50,558 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:50,561 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.95, 'high': 670.95, 'low': 670.91, 'close': 670.95}
+C2 (Current):  {'open': 670.93, 'high': 670.93, 'low': 670.91, 'close': 670.92}
+2025-10-09 12:39:56,061 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:39:56,064 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.93, 'high': 670.93, 'low': 670.91, 'close': 670.92}
+C2 (Current):  {'open': 670.92, 'high': 670.92, 'low': 670.86, 'close': 670.86}
+2025-10-09 12:40:00,943 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:40:00,946 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.92, 'high': 670.92, 'low': 670.86, 'close': 670.86}
+C2 (Current):  {'open': 670.85, 'high': 670.86, 'low': 670.85, 'close': 670.85}
+2025-10-09 12:40:05,291 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:40:05,295 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.85, 'high': 670.86, 'low': 670.85, 'close': 670.85}
+C2 (Current):  {'open': 670.85, 'high': 670.87, 'low': 670.83, 'close': 670.84}
+2025-10-09 12:40:10,287 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:40:10,290 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.85, 'high': 670.87, 'low': 670.83, 'close': 670.84}
+C2 (Current):  {'open': 670.86, 'high': 670.86, 'low': 670.8, 'close': 670.82}
+2025-10-09 12:40:15,431 - [AnalysisService] - INFO - New completed 15m bar received. Analyzing for demand zone.
+2025-10-09 12:40:15,435 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 670.86, 'high': 670.86, 'low': 670.8, 'close': 670.82}
+C2 (Current):  {'open': 670.81, 'high': 670.81, 'low': 670.76, 'close': 670.78}
+2025-10-09 12:40:20,245 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-09 12:50:58,521 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['15m']
+2025-10-09 12:50:58,522 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-09 12:50:58,522 - [TradeService] - INFO - Trade Service initialized for polling.
+2025-10-09 12:50:58,524 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-09 12:50:58,525 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-09 12:50:58,525 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-09 12:50:58,528 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-09 12:50:58,528 - [AnalysisService] - INFO - Connected
+2025-10-09 12:50:58,529 - [TradeService] - INFO - Connected
+2025-10-09 12:50:58,530 - [InvalidationService] - INFO - Connected
+2025-10-09 12:50:58,558 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-09 12:50:58,558 - [TradeService] - INFO - Logged on to server version 176
+2025-10-09 12:50:58,558 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-09 12:50:58,561 - [TradeService] - INFO - API connection ready
+2025-10-09 12:50:58,562 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:50:58,562 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:50:58,563 - [AnalysisService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-09 12:50:58,563 - [TradeService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-09 12:50:58,564 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:50:58,564 - [AnalysisService] - INFO - API connection ready
+2025-10-09 12:50:58,566 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:50:58,659 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-09 12:50:58,660 - [InvalidationService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-09 12:50:58,660 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-09 12:50:58,661 - [InvalidationService] - INFO - API connection ready
+2025-10-09 12:50:59,860 - [TradeService] - INFO - Synchronization complete
+2025-10-09 12:50:59,862 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-09 12:50:59,959 - [AnalysisService] - INFO - Synchronization complete
+2025-10-09 12:50:59,960 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-09 12:51:00,059 - [InvalidationService] - INFO - Synchronization complete
+2025-10-09 12:51:00,062 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-09 12:51:00,076 - [InvalidationService] - INFO - No existing demand zone found in Redis on startup.
+2025-10-09 12:51:00,986 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:51:00,986 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:51:00,986 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-09 12:51:01,262 - [TradeService] - INFO - New completed 5m bar found with timestamp 2025-10-09 12:50:00-04:00. Checking for trade pattern.
+2025-10-09 12:51:01,267 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 182 B sent in 9 messages, 29.2 kB received in 310 messages, session time 2.75 s.
+2025-10-09 12:51:01,267 - [TradeService] - INFO - Disconnecting
+2025-10-09 12:51:01,268 - [TradeService] - INFO - Trade Service disconnected from IB.
+2025-10-09 12:51:01,276 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-09 12:45:00-04:00. Analyzing.
+2025-10-09 12:51:01,278 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-09 12:50:00-04:00. Checking for invalidation.
+2025-10-09 12:51:01,278 - [AnalysisService] - INFO - Disconnecting from 127.0.0.1:4001, 183 B sent in 9 messages, 19.2 kB received in 310 messages, session time 2.76 s.
+2025-10-09 12:51:01,279 - [AnalysisService] - INFO - Disconnecting
+2025-10-09 12:51:01,279 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 183 B sent in 9 messages, 14.3 kB received in 310 messages, session time 2.76 s.
+2025-10-09 12:51:01,279 - [InvalidationService] - INFO - Disconnecting
+2025-10-09 12:51:01,279 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
+2025-10-09 12:51:01,280 - [InvalidationService] - INFO - Invalidation Service disconnected from IB.
