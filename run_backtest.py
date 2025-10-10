@@ -4,6 +4,7 @@ import logging
 from datetime import datetime, timedelta
 import pandas as pd
 import re
+import json
 
 from ib_insync import IB, Stock, util
 
@@ -33,9 +34,10 @@ def _convert_tf_to_ib_format(tf_string: str) -> str:
 def run_backtest(start_date_str: str, end_date_str: str):
     """
     Main backtesting function to identify demand zones from historical data
-    for all configured zone timeframes.
+    for all configured zone timeframes and save them to a file.
     """
     ib = IB()
+    all_found_zones = [] # List to store all zones found across all timeframes
     try:
         ib.connect(config.IB_HOST, config.IB_PORT, clientId=config.IB_CLIENT_ID + 2)
         logging.info("Connected to IB for historical data download.")
@@ -92,8 +94,18 @@ def run_backtest(start_date_str: str, end_date_str: str):
                     # Note: The log from process_new_bar is now the primary source of info.
                     # This additional log can be redundant but is kept for explicit backtest confirmation.
                     logging.info(f"BACKTEST: DEMAND ZONE IDENTIFIED on {timeframe} at {bar['date']}")
+                    all_found_zones.append(new_zone)
 
             logging.info(f"Backtest for {timeframe} finished.")
+
+        # After all timeframes are done, write the collected zones to a file
+        if all_found_zones:
+            logging.info(f"Found a total of {len(all_found_zones)} zones. Saving to backtest_zones.txt...")
+            with open("backtest_zones.txt", "w") as f:
+                json.dump(all_found_zones, f, indent=4)
+            logging.info("Successfully saved zones to backtest_zones.txt.")
+        else:
+            logging.warning("No demand zones were identified in this backtest run.")
 
     except Exception as e:
         logging.error(f"An error occurred during the backtest: {e}", exc_info=True)
