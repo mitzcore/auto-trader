@@ -32,7 +32,8 @@ def _convert_tf_to_ib_format(tf_string: str) -> str:
 
 def run_backtest(start_date_str: str, end_date_str: str):
     """
-    Main backtesting function to identify demand zones from historical data.
+    Main backtesting function to identify demand zones from historical data
+    for all configured zone timeframes.
     """
     ib = IB()
     try:
@@ -40,53 +41,59 @@ def run_backtest(start_date_str: str, end_date_str: str):
         logging.info("Connected to IB for historical data download.")
 
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
-        
-        analysis_tf = config.ZONE_TIMEFRAMES[0]
-        ib_bar_size = _convert_tf_to_ib_format(analysis_tf)
-        logging.info(f"Downloading historical data for {analysis_tf} timeframe (IB format: '{ib_bar_size}')...")
-        
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
         end_dt = datetime.strptime(end_date_str, '%Y-%m-%d')
         duration_days = (end_dt - start_dt).days
         if duration_days < 1:
             duration_days = 1
         duration_str = f"{duration_days} D"
-
-        # Per IBKR API requirements, the end date must include a timezone.
         end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S") + " US/Eastern"
 
-        bars = ib.reqHistoricalData(
-            contract,
-            endDateTime=end_date_formatted,
-            durationStr=duration_str,
-            barSizeSetting=ib_bar_size,
-            whatToShow='TRADES',
-            useRTH=config.USE_RTH_ONLY,
-            formatDate=1
-        )
-        
-        if not bars:
-            logging.error("Could not download historical data. Aborting.")
-            return
-
-        df = util.df(bars)
-        df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-        logging.info(f"Downloaded and filtered {len(df)} bars.")
-
-        analysis_engine = AnalysisEngine()
-
-        logging.info("Starting demand zone identification...")
-        for index, bar in df.iterrows():
-            bar_series = pd.Series(bar, name=bar['date'])
+        # Loop through each configured zone timeframe
+        for timeframe in config.ZONE_TIMEFRAMES:
+            logging.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
-            # Analyze the bar to find a new demand zone.
-            new_zone = analysis_engine.process_new_bar(bar_series, timeframe=analysis_tf)
-            
-            # If a zone is found, log its details.
-            if new_zone:
-                logging.info(f"DEMAND ZONE IDENTIFIED at {bar['date']}: Top={new_zone['zone_top']:.2f}, Bottom={new_zone['zone_bottom']:.2f}")
+            ib_bar_size = _convert_tf_to_ib_format(timeframe)
+            logging.info(f"Downloading historical data for {timeframe} timeframe (IB format: '{ib_bar_size}')...")
 
-        logging.info("Backtest finished.")
+            bars = ib.reqHistoricalData(
+                contract,
+                endDateTime=end_date_formatted,
+                durationStr=duration_str,
+                barSizeSetting=ib_bar_size,
+                whatToShow='TRADES',
+                useRTH=config.USE_RTH_ONLY,
+                formatDate=1
+            )
+            
+            if not bars:
+                logging.error(f"Could not download historical data for {timeframe}. Skipping.")
+                continue
+
+            df = util.df(bars)
+            if df is None or df.empty:
+                logging.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
+                continue
+
+            df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
+            logging.info(f"Downloaded and filtered {len(df)} bars for {timeframe}.")
+
+            # Important: A new AnalysisEngine is created for each timeframe
+            # to ensure no state (like previous candles) leaks between tests.
+            analysis_engine = AnalysisEngine()
+
+            logging.info(f"Starting demand zone identification for {timeframe}...")
+            for index, bar in df.iterrows():
+                bar_series = pd.Series(bar, name=bar['date'])
+                
+                new_zone = analysis_engine.process_new_bar(bar_series, timeframe=timeframe)
+                
+                if new_zone:
+                    # Note: The log from process_new_bar is now the primary source of info.
+                    # This additional log can be redundant but is kept for explicit backtest confirmation.
+                    logging.info(f"BACKTEST: DEMAND ZONE IDENTIFIED on {timeframe} at {bar['date']}")
+
+            logging.info(f"Backtest for {timeframe} finished.")
 
     except Exception as e:
         logging.error(f"An error occurred during the backtest: {e}", exc_info=True)

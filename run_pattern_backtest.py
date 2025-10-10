@@ -33,108 +33,91 @@ def _convert_tf_to_ib_format(tf_string: str) -> str:
 
 def run_pattern_backtest(start_date_str: str, end_date_str: str):
     """
-    Main backtesting function to identify candlestick patterns from historical data.
+    Main backtesting function to identify candlestick patterns from historical data
+    for all configured pattern timeframes.
     """
-    
-    
     ib = IB()
     try:
-        # Use a different client ID for the backtest connection
         ib.connect(config.IB_HOST, config.IB_PORT, clientId=config.IB_CLIENT_ID + 3)
         logging.info("Connected to IB for historical data download.")
 
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
-        
-        ib_bar_size = _convert_tf_to_ib_format(config.PATTERN_TIMEFRAME)
-        logging.info(f"Downloading historical data for {config.PATTERN_TIMEFRAME} timeframe (IB format: '{ib_bar_size}')...")
-        
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
         end_dt = datetime.strptime(end_date_str, '%Y-%m-%d')
         duration_days = (end_dt - start_dt).days
         if duration_days < 1:
             duration_days = 1
         duration_str = f"{duration_days} D"
-
         end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S") + " US/Eastern"
 
-        bars = ib.reqHistoricalData(
-            contract,
-            endDateTime=end_date_formatted,
-            durationStr=duration_str,
-            barSizeSetting=ib_bar_size,
-            whatToShow='TRADES',
-            useRTH=config.USE_RTH_ONLY,
-            formatDate=1
-        )
-        
-        if not bars:
-            logging.error("Could not download historical data. Aborting.")
-            return
-
-        df = util.df(bars)
-        
-        if df is None or df.empty:
-            logging.error("No historical data returned or DataFrame is empty. Aborting.")
-            return
+        # Loop through each configured pattern timeframe
+        for timeframe in config.PATTERN_TIMEFRAMES:
+            logging.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
-        # CRITICAL: Ensure data is sorted chronologically before processing.
-        df = df.sort_values(by='date', ascending=True)
-        
-        df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-        logging.info(f"Downloaded, sorted, and filtered {len(df)} bars.")
+            ib_bar_size = _convert_tf_to_ib_format(timeframe)
+            logging.info(f"Downloading historical data for {timeframe} (IB format: '{ib_bar_size}')...")
 
-        # Use a deque to keep track of the last 2 candles
-        candle_history = deque(maxlen=2)
-        found_patterns = 0
-
-        logging.info("Starting pattern identification...")
-        for index, bar in df.iterrows():
-            bar_series = pd.Series(bar, name=bar['date'])
-            candle_history.append(bar_series)
-
-            if len(candle_history) < 2:
-                continue
-
-            c1, c2 = candle_history[0], candle_history[1]
-
-            
-
-            # --- Re-using the exact same logic as the live TradeService ---
-            
-            # 1. Identify all matching patterns for c1 (Indecision Candle)
-            c1_triggered = []
-            if patterns.is_doji(c1): c1_triggered.append("Doji")
-            if patterns.is_dragonfly_doji(c1): c1_triggered.append("Dragonfly Doji")
-            if patterns.is_hammer(c1): c1_triggered.append("Hammer")
-            if patterns.is_spinning_top(c1): c1_triggered.append("Spinning Top")
-
-            if not c1_triggered:
-                continue
-
-            # 2. Identify all matching patterns for c2 (Confirmation Candle)
-            c2_triggered = []
-            if patterns.is_bullish_marubozu(c2): c2_triggered.append("Bullish Marubozu")
-            if patterns.is_strong_bullish_candle(c2): c2_triggered.append("Strong Bullish Candle")
-
-            if not c2_triggered:
-                continue
-
-            # 3. Final check on c2's bottom wick as per user rule
-            # All c2 patterns are bullish, so open < close
-            body_c2 = c2['close'] - c2['open']
-            lower_wick_c2 = c2['open'] - c2['low']
-
-            if lower_wick_c2 >= body_c2:
-                continue
-
-            # 4. Log the detailed confirmation
-            logging.info(
-                f"PATTERN CONFIRMED at {c2.name}: "
-                f"c1={', '.join(c1_triggered)}, c2={', '.join(c2_triggered)}"
+            bars = ib.reqHistoricalData(
+                contract,
+                endDateTime=end_date_formatted,
+                durationStr=duration_str,
+                barSizeSetting=ib_bar_size,
+                whatToShow='TRADES',
+                useRTH=config.USE_RTH_ONLY,
+                formatDate=1
             )
-            found_patterns += 1
-        
-        logging.info(f"Backtest finished. Found {found_patterns} valid patterns.")
+            
+            if not bars:
+                logging.error(f"Could not download historical data for {timeframe}. Skipping.")
+                continue
+
+            df = util.df(bars)
+            
+            if df is None or df.empty:
+                logging.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
+                continue
+                
+            df = df.sort_values(by='date', ascending=True)
+            df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
+            logging.info(f"Downloaded, sorted, and filtered {len(df)} bars for {timeframe}.")
+
+            candle_history = deque(maxlen=2)
+            found_patterns = 0
+
+            logging.info(f"Starting pattern identification for {timeframe}...")
+            for index, bar in df.iterrows():
+                bar_series = pd.Series(bar, name=bar['date'])
+                candle_history.append(bar_series)
+
+                if len(candle_history) < 2:
+                    continue
+
+                c1, c2 = candle_history[0], candle_history[1]
+
+                # Using the data-driven pattern check from patterns.py
+                c1_triggered = [p_name for p_name, p_func in patterns.INDECISION_PATTERNS.items() if p_func(c1)]
+                if not c1_triggered:
+                    continue
+
+                c2_triggered = [p_name for p_name, p_func in patterns.CONFIRMATION_PATTERNS.items() if p_func(c2)]
+                if not c2_triggered:
+                    continue
+
+                body_c2 = c2['close'] - c2['open']
+                if body_c2 <= 0: # Ensure c2 is bullish before checking wick
+                    continue
+                lower_wick_c2 = c2['open'] - c2['low']
+
+                if lower_wick_c2 >= body_c2:
+                    continue
+
+                logging.info(
+                    f"PATTERN CONFIRMED on {timeframe} at {c2.name}: "
+                    f"c1={', '.join(c1_triggered)}, c2={', '.join(c2_triggered)}"
+                )
+                found_patterns += 1
+            
+            logging.info(f"Backtest for {timeframe} finished. Found {found_patterns} valid patterns.")
 
     except Exception as e:
         logging.error(f"An error occurred during the backtest: {e}", exc_info=True)
