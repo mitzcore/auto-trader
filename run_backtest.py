@@ -36,6 +36,12 @@ def run_backtest(start_date_str: str, end_date_str: str):
     Main backtesting function to identify demand zones from historical data
     for all configured zone timeframes and save them to a file.
     """
+    # Start with a clean slate for backtest results
+    logging.info("Clearing previous backtest zone results...")
+    with open("backtest_zones.txt", "w") as f:
+        json.dump([], f) # Write an empty JSON array
+    logging.info("Previous results cleared. Starting new backtest run.")
+
     ib = IB()
     all_found_zones = [] # List to store all zones found across all timeframes
     try:
