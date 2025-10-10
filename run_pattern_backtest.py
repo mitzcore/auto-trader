@@ -110,10 +110,10 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
                 c1, c2 = candle_history[0], candle_history[1]
 
-                # Check if the current candle (c2) is inside any loaded demand zone
+                # Check if the candle's range overlaps with any loaded demand zone
                 active_zone = None
                 for zone in loaded_zones:
-                    if zone['zone_bottom'] <= c2['close'] <= zone['zone_top']:
+                    if c2['low'] <= zone['zone_top'] and c2['high'] >= zone['zone_bottom']:
                         active_zone = zone
                         break # Found a zone, no need to check others for this bar
                 
