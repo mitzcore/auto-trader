@@ -32,7 +32,7 @@ BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle
 BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative to the bullish body.
 
 # Pattern Detection settings
-PATTERN_TIMEFRAME = '3m' # Timeframe for candlestick pattern confirmation
+PATTERN_TIMEFRAMES = ['2m', '5m'] # Timeframes for candlestick pattern confirmation
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
