@@ -126,8 +126,8 @@ class AnalysisEngine:
             
             payload = json.dumps(demand_zone)
             
-            # Set the current state and publish the event
-            self._redis_client.set("current_demand_zone", payload)
+            # Set the current state in the hash and publish the event
+            self._redis_client.hset("active_demand_zones", zone_id, payload)
             self._redis_client.publish("demand_zones", payload)
             
             return demand_zone

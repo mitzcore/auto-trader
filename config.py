@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['15m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
+ZONE_TIMEFRAMES = ['3m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to poll for new completed bars.
@@ -32,7 +32,7 @@ BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle
 BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative to the bullish body.
 
 # Pattern Detection settings
-PATTERN_TIMEFRAME = '5m' # Timeframe for candlestick pattern confirmation
+PATTERN_TIMEFRAME = '3m' # Timeframe for candlestick pattern confirmation
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
