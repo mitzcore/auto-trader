@@ -29,26 +29,23 @@ def main():
 
     try:
         if config.CUSTOM_DEMAND_ZONES:
-            logging.info("Custom demand zones found in config. Loading first zone and disabling AnalysisService.")
+            logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones and disabling AnalysisService.")
             
             # Connect to Redis
             redis_client = redis.Redis(decode_responses=True)
             
-            # Prepare the custom zone
-            custom_zone_config = config.CUSTOM_DEMAND_ZONES[0]
-            zone = {
-                "zone_top": custom_zone_config["zone_top"],
-                "zone_bottom": custom_zone_config["zone_bottom"],
-                "zone_timeframe": "custom",
-                "status": "active",
-                "entry_confirmation": None,
-                "invalidation_confirmation": None,
-            }
-            
-            # Set the zone in Redis and publish it
-            redis_client.set("current_demand_zone", json.dumps(zone))
-            redis_client.publish("demand_zone_updates", json.dumps(zone))
-            logging.info(f"Published custom demand zone to Redis: {zone}")
+            # Publish each custom zone to the updates channel
+            for custom_zone_config in config.CUSTOM_DEMAND_ZONES:
+                zone = {
+                    "zone_top": custom_zone_config["zone_top"],
+                    "zone_bottom": custom_zone_config["zone_bottom"],
+                    "zone_timeframe": "custom",
+                    "status": "active",
+                    "entry_confirmation": None,
+                    "invalidation_confirmation": None,
+                }
+                redis_client.publish("demand_zone_updates", json.dumps(zone))
+                logging.info(f"Published custom demand zone to Redis channel: {zone}")
 
             # Only start Trade and Invalidation services
             trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
