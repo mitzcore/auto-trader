@@ -2,6 +2,9 @@ import multiprocessing
 import logging
 import time
 import sys
+import redis
+import json
+import config
 
 # It's good practice to put service imports in a try-except block 
 # to provide clearer error messages if dependencies are missing.
@@ -25,17 +28,48 @@ def main():
     processes = []
 
     try:
-        # Create and add the Analysis Service process
-        analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
-        processes.append(analysis_process)
+        if config.CUSTOM_DEMAND_ZONES:
+            logging.info("Custom demand zones found in config. Loading first zone and disabling AnalysisService.")
+            
+            # Connect to Redis
+            redis_client = redis.Redis(decode_responses=True)
+            
+            # Prepare the custom zone
+            custom_zone_config = config.CUSTOM_DEMAND_ZONES[0]
+            zone = {
+                "zone_top": custom_zone_config["zone_top"],
+                "zone_bottom": custom_zone_config["zone_bottom"],
+                "zone_timeframe": "custom",
+                "status": "active",
+                "entry_confirmation": None,
+                "invalidation_confirmation": None,
+            }
+            
+            # Set the zone in Redis and publish it
+            redis_client.set("current_demand_zone", json.dumps(zone))
+            redis_client.publish("demand_zone_updates", json.dumps(zone))
+            logging.info(f"Published custom demand zone to Redis: {zone}")
 
-        # Create and add the Trade Service process
-        trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
-        processes.append(trade_process)
-        
-        # Create and add the Invalidation Service process
-        invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
-        processes.append(invalidation_process)
+            # Only start Trade and Invalidation services
+            trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
+            processes.append(trade_process)
+            
+            invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
+            processes.append(invalidation_process)
+
+        else:
+            logging.info("No custom demand zones found. Starting all services.")
+            # Create and add the Analysis Service process
+            analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
+            processes.append(analysis_process)
+
+            # Create and add the Trade Service process
+            trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
+            processes.append(trade_process)
+            
+            # Create and add the Invalidation Service process
+            invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
+            processes.append(invalidation_process)
 
         # Start all processes
         for p in processes:

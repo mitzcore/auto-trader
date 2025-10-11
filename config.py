@@ -32,7 +32,13 @@ BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle
 BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative to the bullish body.
 
 # Pattern Detection settings
-PATTERN_TIMEFRAMES = ['2m', '5m'] # Timeframes for candlestick pattern confirmation
+PATTERN_TIMEFRAMES = ['3m','5m'] # Timeframes for candlestick pattern confirmation
+
+# --- Custom Demand Zones ---
+# Add custom demand zones here. If this list is not empty, the AnalysisService will be disabled
+# and the first zone in this list will be loaded as the active demand zone.
+# Example: CUSTOM_DEMAND_ZONES = [{"zone_top": 530.0, "zone_bottom": 529.5}]
+CUSTOM_DEMAND_ZONES = []
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
