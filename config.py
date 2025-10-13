@@ -29,7 +29,7 @@ LOG_FILE = "trading_bot.log"
 DEMAND_ZONE_OFFSET_TOP = 0.20
 DEMAND_ZONE_OFFSET_BOTTOM = 0.20
 BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle.
-BEARISH_WICK_RATIO = 0.5 # Max upper wick size for the bearish candle relative to the bullish body.
+BEARISH_WICK_RATIO = 0.7 # Max upper wick size for the bearish candle relative to the bullish body.
 
 # Pattern Detection settings
 PATTERN_TIMEFRAMES = ['2m','3m'] # Timeframes for candlestick pattern confirmation

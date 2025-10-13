@@ -58,9 +58,11 @@ class AnalysisEngine:
                 log_timestamp = demand_zone['timestamp'] # Fallback to UTC
 
             logging.info(
+                f"\n-------------------- DEMAND ZONE PUBLISHED --------------------\n"
                 f"Demand Zone Published from {timeframe} at {log_timestamp}: "
                 f"Top={demand_zone['zone_top']:.2f}, Bottom={demand_zone['zone_bottom']:.2f}, "
                 f"ID={demand_zone['id']}"
+                f"\n-----------------------------------------------------------------"
             )
             return demand_zone
 
