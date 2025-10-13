@@ -7553,3 +7553,15 @@ C2 (Current):  {'open': 661.49, 'high': 661.77, 'low': 661.41, 'close': 661.71}
 C1 (Previous): {'open': 661.49, 'high': 661.77, 'low': 661.41, 'close': 661.71}
 C2 (Current):  {'open': 660.93, 'high': 660.94, 'low': 660.68, 'close': 660.84}
 2025-10-13 10:50:56,729 - [TradeService] - INFO - New completed 2m bar found with timestamp 2025-10-13 10:50:00-04:00. Checking for trade pattern.
+2025-10-13 10:51:21,185 - [TradeService] - INFO - Trade Service shutting down.
+2025-10-13 10:51:21,187 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-13 10:51:21,185 - [InvalidationService] - INFO - Invalidation Service shutting down.
+2025-10-13 10:51:21,193 - [TradeService] - INFO - Disconnecting from 127.0.0.1:4001, 11.2 kB sent in 170 messages, 4.29 MB received in 578 messages, session time 4.84 ks.
+2025-10-13 10:51:21,193 - [AnalysisService] - INFO - Disconnecting from 127.0.0.1:4001, 11.3 kB sent in 170 messages, 1.41 MB received in 578 messages, session time 4.84 ks.
+2025-10-13 10:51:21,193 - [InvalidationService] - INFO - Disconnecting from 127.0.0.1:4001, 5.70 kB sent in 89 messages, 40.6 kB received in 497 messages, session time 4.84 ks.
+2025-10-13 10:51:21,194 - [AnalysisService] - INFO - Disconnecting
+2025-10-13 10:51:21,194 - [TradeService] - INFO - Disconnecting
+2025-10-13 10:51:21,194 - [InvalidationService] - INFO - Disconnecting
+2025-10-13 10:51:21,198 - [TradeService] - INFO - Trade Service disconnected from IB.
+2025-10-13 10:51:21,198 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
+2025-10-13 10:51:21,199 - [InvalidationService] - INFO - Invalidation Service disconnected from IB.
