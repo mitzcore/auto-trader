@@ -7607,3 +7607,112 @@ C2 (Current):  {'open': 660.93, 'high': 660.94, 'low': 660.68, 'close': 660.84}
 2025-10-13 10:54:56,987 - [TradeService] - INFO - New completed 2m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
 2025-10-13 10:54:57,049 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-13 10:45:00-04:00. Analyzing.
 2025-10-13 10:54:57,174 - [TradeService] - INFO - New completed 3m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
+2025-10-13 10:55:28,823 - [InvalidationService] - INFO - Invalidation Service shutting down.
+2025-10-13 10:55:31,771 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['5m', '15m']
+2025-10-13 10:55:31,772 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-13 10:55:31,772 - [TradeService] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m']
+2025-10-13 10:55:31,772 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-13 10:55:31,773 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-13 10:55:31,774 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-13 10:55:31,774 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-13 10:55:31,774 - [TradeService] - INFO - Connected
+2025-10-13 10:55:31,775 - [AnalysisService] - INFO - Connected
+2025-10-13 10:55:31,775 - [InvalidationService] - INFO - Connected
+2025-10-13 10:55:31,788 - [TradeService] - INFO - Logged on to server version 176
+2025-10-13 10:55:31,789 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-13 10:55:31,791 - [TradeService] - INFO - API connection ready
+2025-10-13 10:55:31,792 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-13 10:55:31,792 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:55:31,793 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:55:31,793 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:55:31,889 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:55:31,890 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:55:31,890 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:55:31,891 - [InvalidationService] - INFO - API connection ready
+2025-10-13 10:55:31,989 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:55:31,990 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:55:31,992 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:55:31,993 - [AnalysisService] - INFO - API connection ready
+2025-10-13 10:55:32,990 - [TradeService] - INFO - Synchronization complete
+2025-10-13 10:55:32,990 - [InvalidationService] - INFO - Synchronization complete
+2025-10-13 10:55:32,993 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-13 10:55:32,992 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-13 10:55:33,006 - [InvalidationService] - INFO - No existing demand zones found in Redis on startup.
+2025-10-13 10:55:33,089 - [AnalysisService] - INFO - Synchronization complete
+2025-10-13 10:55:33,091 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-13 10:55:33,118 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-10-13 10:55:33,292 - [TradeService] - INFO - New completed 2m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
+2025-10-13 10:55:33,315 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-13 10:55:00-04:00. Checking for invalidation.
+2025-10-13 10:55:33,421 - [AnalysisService] - INFO - [5m] Processing 18 initial historical bars.
+2025-10-13 10:55:33,425 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.65, 'high': 661.67, 'low': 660.53, 'close': 660.71}
+C2 (Current):  {'open': 660.72, 'high': 660.95, 'low': 659.8, 'close': 660.6}
+2025-10-13 10:55:33,428 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.72, 'high': 660.95, 'low': 659.8, 'close': 660.6}
+C2 (Current):  {'open': 660.58, 'high': 661.52, 'low': 659.93, 'close': 661.09}
+2025-10-13 10:55:33,429 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.58, 'high': 661.52, 'low': 659.93, 'close': 661.09}
+C2 (Current):  {'open': 661.08, 'high': 661.48, 'low': 660.34, 'close': 661.17}
+2025-10-13 10:55:33,430 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.08, 'high': 661.48, 'low': 660.34, 'close': 661.17}
+C2 (Current):  {'open': 661.17, 'high': 662.11, 'low': 660.87, 'close': 661.61}
+2025-10-13 10:55:33,430 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.17, 'high': 662.11, 'low': 660.87, 'close': 661.61}
+C2 (Current):  {'open': 661.62, 'high': 663.0, 'low': 661.51, 'close': 662.88}
+2025-10-13 10:55:33,431 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.62, 'high': 663.0, 'low': 661.51, 'close': 662.88}
+C2 (Current):  {'open': 662.87, 'high': 663.23, 'low': 662.06, 'close': 663.03}
+2025-10-13 10:55:33,431 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.87, 'high': 663.23, 'low': 662.06, 'close': 663.03}
+C2 (Current):  {'open': 663.03, 'high': 663.08, 'low': 662.3, 'close': 662.66}
+2025-10-13 10:55:33,432 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 663.03, 'high': 663.08, 'low': 662.3, 'close': 662.66}
+C2 (Current):  {'open': 662.65, 'high': 662.7, 'low': 661.92, 'close': 662.2}
+2025-10-13 10:55:33,432 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.65, 'high': 662.7, 'low': 661.92, 'close': 662.2}
+C2 (Current):  {'open': 662.2, 'high': 662.78, 'low': 662.01, 'close': 662.03}
+2025-10-13 10:55:33,433 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.2, 'high': 662.78, 'low': 662.01, 'close': 662.03}
+C2 (Current):  {'open': 662.03, 'high': 662.22, 'low': 660.38, 'close': 661.26}
+2025-10-13 10:55:33,434 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.03, 'high': 662.22, 'low': 660.38, 'close': 661.26}
+C2 (Current):  {'open': 661.26, 'high': 661.26, 'low': 660.11, 'close': 660.85}
+2025-10-13 10:55:33,434 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.26, 'high': 661.26, 'low': 660.11, 'close': 660.85}
+C2 (Current):  {'open': 660.88, 'high': 661.62, 'low': 660.16, 'close': 661.62}
+2025-10-13 10:55:33,435 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.88, 'high': 661.62, 'low': 660.16, 'close': 661.62}
+C2 (Current):  {'open': 661.62, 'high': 662.48, 'low': 661.55, 'close': 662.26}
+2025-10-13 10:55:33,435 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.62, 'high': 662.48, 'low': 661.55, 'close': 662.26}
+C2 (Current):  {'open': 662.25, 'high': 662.46, 'low': 661.26, 'close': 661.52}
+2025-10-13 10:55:33,436 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.25, 'high': 662.46, 'low': 661.26, 'close': 661.52}
+C2 (Current):  {'open': 661.49, 'high': 661.88, 'low': 660.86, 'close': 660.94}
+2025-10-13 10:55:33,436 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.49, 'high': 661.88, 'low': 660.86, 'close': 660.94}
+C2 (Current):  {'open': 660.93, 'high': 661.14, 'low': 660.33, 'close': 660.67}
+2025-10-13 10:55:33,437 - [AnalysisService] - INFO - [5m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.93, 'high': 661.14, 'low': 660.33, 'close': 660.67}
+C2 (Current):  {'open': 660.65, 'high': 660.67, 'low': 660.22, 'close': 660.25}
+2025-10-13 10:55:33,550 - [TradeService] - INFO - New completed 3m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
+2025-10-13 10:55:33,614 - [AnalysisService] - INFO - [15m] Processing 6 initial historical bars.
+2025-10-13 10:55:33,616 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.65, 'high': 661.67, 'low': 659.8, 'close': 661.09}
+C2 (Current):  {'open': 661.08, 'high': 663.0, 'low': 660.34, 'close': 662.88}
+2025-10-13 10:55:33,618 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 661.08, 'high': 663.0, 'low': 660.34, 'close': 662.88}
+C2 (Current):  {'open': 662.87, 'high': 663.23, 'low': 661.92, 'close': 662.2}
+2025-10-13 10:55:33,619 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.87, 'high': 663.23, 'low': 661.92, 'close': 662.2}
+C2 (Current):  {'open': 662.2, 'high': 662.78, 'low': 660.11, 'close': 660.85}
+2025-10-13 10:55:33,621 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 662.2, 'high': 662.78, 'low': 660.11, 'close': 660.85}
+C2 (Current):  {'open': 660.88, 'high': 662.48, 'low': 660.16, 'close': 661.52}
+2025-10-13 10:55:33,622 - [AnalysisService] - INFO - [15m] Analyzing candles for demand zone:
+C1 (Previous): {'open': 660.88, 'high': 662.48, 'low': 660.16, 'close': 661.52}
+C2 (Current):  {'open': 661.49, 'high': 661.88, 'low': 660.22, 'close': 660.25}
+2025-10-13 10:56:33,375 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-13 10:56:00-04:00. Checking for invalidation.
+2025-10-13 10:56:33,693 - [TradeService] - INFO - New completed 2m bar found with timestamp 2025-10-13 10:56:00-04:00. Checking for trade pattern.
+2025-10-13 10:57:33,502 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-13 10:57:00-04:00. Checking for invalidation.
+2025-10-13 10:57:33,982 - [TradeService] - INFO - New completed 3m bar found with timestamp 2025-10-13 10:57:00-04:00. Checking for trade pattern.
