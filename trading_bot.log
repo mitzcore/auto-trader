@@ -7565,3 +7565,45 @@ C2 (Current):  {'open': 660.93, 'high': 660.94, 'low': 660.68, 'close': 660.84}
 2025-10-13 10:51:21,198 - [TradeService] - INFO - Trade Service disconnected from IB.
 2025-10-13 10:51:21,198 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
 2025-10-13 10:51:21,199 - [InvalidationService] - INFO - Invalidation Service disconnected from IB.
+2025-10-13 10:54:55,090 - [AnalysisService] - INFO - Analysis Engine initialized for timeframes: ['5m', '15m']
+2025-10-13 10:54:55,091 - [TradeService] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m']
+2025-10-13 10:54:55,091 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-13 10:54:55,092 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-13 10:54:55,093 - [TradeService] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2025-10-13 10:54:55,093 - [AnalysisService] - INFO - Connecting to 127.0.0.1:4001 with clientId 1...
+2025-10-13 10:54:55,094 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-13 10:54:55,094 - [TradeService] - INFO - Connected
+2025-10-13 10:54:55,095 - [AnalysisService] - INFO - Connected
+2025-10-13 10:54:55,095 - [InvalidationService] - INFO - Connected
+2025-10-13 10:54:55,106 - [TradeService] - INFO - Logged on to server version 176
+2025-10-13 10:54:55,106 - [AnalysisService] - INFO - Logged on to server version 176
+2025-10-13 10:54:55,107 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-13 10:54:55,131 - [InvalidationService] - INFO - API connection ready
+2025-10-13 10:54:55,132 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:54:55,133 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:54:55,133 - [AnalysisService] - INFO - API connection ready
+2025-10-13 10:54:55,133 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:54:55,134 - [AnalysisService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:54:55,134 - [AnalysisService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:54:55,135 - [AnalysisService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:54:55,211 - [TradeService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-13 10:54:55,212 - [TradeService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-13 10:54:55,212 - [TradeService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-13 10:54:55,213 - [TradeService] - INFO - API connection ready
+2025-10-13 10:54:56,413 - [InvalidationService] - INFO - Synchronization complete
+2025-10-13 10:54:56,414 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-13 10:54:56,429 - [InvalidationService] - INFO - No existing demand zones found in Redis on startup.
+2025-10-13 10:54:56,511 - [AnalysisService] - INFO - Synchronization complete
+2025-10-13 10:54:56,513 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-13 10:54:56,549 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-10-13 10:54:56,607 - [AnalysisService] - ERROR - Error 10314, reqId 3: End Date/Time: The date, time, or time-zone entered is invalid. The correct format is yyyymmdd hh:mm:ss xx/xxxx where yyyymmdd and xx/xxxx are optional. E.g.: 20031126 15:59:00 US/Eastern  Note that there is a space between the date and time, and between the time and time-zone.  If no date is specified, current date is assumed. If no time-zone is specified, local time-zone is assumed(deprecated).  You can also provide yyyymmddd-hh:mm:ss time is in UTC. Note that there is a dash between the date and time in UTC notation., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+2025-10-13 10:54:56,607 - [AnalysisService] - WARNING - [5m] No initial historical data returned for today.
+2025-10-13 10:54:56,609 - [AnalysisService] - ERROR - Error 10314, reqId 4: End Date/Time: The date, time, or time-zone entered is invalid. The correct format is yyyymmdd hh:mm:ss xx/xxxx where yyyymmdd and xx/xxxx are optional. E.g.: 20031126 15:59:00 US/Eastern  Note that there is a space between the date and time, and between the time and time-zone.  If no date is specified, current date is assumed. If no time-zone is specified, local time-zone is assumed(deprecated).  You can also provide yyyymmddd-hh:mm:ss time is in UTC. Note that there is a dash between the date and time in UTC notation., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+2025-10-13 10:54:56,609 - [AnalysisService] - WARNING - [15m] No initial historical data returned for today.
+2025-10-13 10:54:56,611 - [TradeService] - INFO - Synchronization complete
+2025-10-13 10:54:56,611 - [TradeService] - INFO - Trade Service connected to IB.
+2025-10-13 10:54:56,751 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for invalidation.
+2025-10-13 10:54:56,869 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-13 10:50:00-04:00. Analyzing.
+2025-10-13 10:54:56,987 - [TradeService] - INFO - New completed 2m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
+2025-10-13 10:54:57,049 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-13 10:45:00-04:00. Analyzing.
+2025-10-13 10:54:57,174 - [TradeService] - INFO - New completed 3m bar found with timestamp 2025-10-13 10:54:00-04:00. Checking for trade pattern.
