@@ -12,7 +12,6 @@ from ib_insync import IB, Stock, util
 import config
 from algotrade import patterns
 
-# Configure logging for the backtest
 logging.basicConfig(level=config.BACKTEST_LOG_LEVEL, format='%(asctime)s - [PatternBacktest] - %(levelname)s - %(message)s')
 
 def _convert_tf_to_ib_format(tf_string: str) -> str:
