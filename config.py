@@ -24,6 +24,7 @@ POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to pol
 
 # Log file configuration
 LOG_FILE = "trading_bot.log"
+BACKTEST_LOG_LEVEL = "INFO"  # Logging level for backtests: DEBUG, INFO, WARNING, ERROR
 
 # Demand Zone settings
 DEMAND_ZONE_OFFSET_TOP = 0.20

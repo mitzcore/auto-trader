@@ -12,7 +12,7 @@ import config
 from algotrade.analysis import AnalysisEngine
 
 # Configure logging for the backtest
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - [Backtest] - %(levelname)s - %(message)s')
+logging.basicConfig(level=config.BACKTEST_LOG_LEVEL, format='%(asctime)s - [Backtest] - %(levelname)s - %(message)s')
 
 def _convert_tf_to_ib_format(tf_string: str) -> str:
     """Converts a timeframe string like '1m' or '2h' to the IB format like '1 min' or '2 hours'."""
