@@ -125,19 +125,24 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
                 logging.debug(f"Bar at {c2.name} is inside zone {active_zone['id']}. Checking for patterns.")
 
                 c1_triggered = [p_name for p_name, p_func in patterns.INDECISION_PATTERNS.items() if p_func(c1)]
+                logging.debug(f'c1 patterns: {c1_triggered}')
                 if not c1_triggered:
                     continue
 
                 c2_triggered = [p_name for p_name, p_func in patterns.CONFIRMATION_PATTERNS.items() if p_func(c2)]
+                logging.debug(f'c2 patterns: {c2_triggered}')
                 if not c2_triggered:
                     continue
 
                 body_c2 = c2['close'] - c2['open']
+                logging.debug(f'body_c2: {body_c2}')
                 if body_c2 <= 0: # Ensure c2 is bullish before checking wick
                     continue
                 lower_wick_c2 = c2['open'] - c2['low']
+                logging.debug(f'lower_wick_c2: {lower_wick_c2}')
 
                 if lower_wick_c2 >= body_c2:
+                    logging.debug('lower_wick_c2 is greater than or equal to body_c2')
                     continue
 
                 # Log the confirmation
