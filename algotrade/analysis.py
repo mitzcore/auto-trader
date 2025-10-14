@@ -7,6 +7,9 @@ import time
 
 import config
 from .util import timeframe_to_timedelta
+from .logger import setup_logger
+
+logger = setup_logger(__name__)
 
 class AnalysisEngine:
     """
@@ -21,14 +24,14 @@ class AnalysisEngine:
         self._candles = {tf: deque(maxlen=2) for tf in config.ZONE_TIMEFRAMES}
         self._last_demand_zone = None
         self._redis_client = redis.Redis(decode_responses=True)
-        logging.info(f"Analysis Engine initialized for timeframes: {config.ZONE_TIMEFRAMES}")
+        logger.info(f"Analysis Engine initialized for timeframes: {config.ZONE_TIMEFRAMES}")
 
     def process_new_bar(self, bar: pd.Series, timeframe: str) -> dict or None:
         """
         Processes a new candlestick bar for a specific timeframe.
         """
         if timeframe not in self._candles:
-            logging.warning(f"Received bar for unconfigured timeframe: {timeframe}")
+            logger.warning(f"Received bar for unconfigured timeframe: {timeframe}")
             return None
 
         # Append the new bar to the correct timeframe's deque.
@@ -36,7 +39,7 @@ class AnalysisEngine:
         
         candle_history = self._candles[timeframe]
         if len(candle_history) < 2:
-            logging.debug(f"Not enough data for {timeframe}, have {len(candle_history)} bars.")
+            logger.debug(f"Not enough data for {timeframe}, have {len(candle_history)} bars.")
             return None
 
         # c1 is the previous bar, c2 is the most recent (current) bar.
@@ -54,10 +57,10 @@ class AnalysisEngine:
                 local_time = utc_time.tz_convert('US/Eastern')
                 log_timestamp = local_time.strftime('%Y-%m-%d %H:%M:%S %Z') # Include timezone abbreviation
             except Exception as e:
-                logging.warning(f"Could not convert timestamp to local time for logging: {e}")
+                logger.warning(f"Could not convert timestamp to local time for logging: {e}")
                 log_timestamp = demand_zone['timestamp'] # Fallback to UTC
 
-            logging.info(
+            logger.info(
                 f"\n-------------------- DEMAND ZONE PUBLISHED --------------------\n"
                 f"Demand Zone Published from {timeframe} at {log_timestamp}: "
                 f"Top={demand_zone['zone_top']:.2f}, Bottom={demand_zone['zone_bottom']:.2f}, "
@@ -72,7 +75,7 @@ class AnalysisEngine:
         """
         Detects a demand zone using the refined logic and publishes it to Redis if found.
         """
-        logging.info(f"[{zone_timeframe}] Analyzing candles for demand zone:\nC1 [{c1.name} {zone_timeframe}]: {c1.to_dict()}\nC2 [{c2.name} {zone_timeframe}]: {c2.to_dict()}")
+        logger.info(f"[{zone_timeframe}] Analyzing candles for demand zone:\nC1 [{c1.name} {zone_timeframe}]: {c1.to_dict()}\nC2 [{c2.name} {zone_timeframe}]: {c2.to_dict()}")
         try:
             # Core Condition 1: Second candle must be Bullish
             if not c2['close'] > c2['open']:
@@ -110,7 +113,7 @@ class AnalysisEngine:
             # All conditions passed, a valid demand zone is detected
             timeframe_delta = timeframe_to_timedelta(zone_timeframe)
             if not timeframe_delta:
-                logging.warning(f"Invalid timeframe string '{zone_timeframe}', cannot calculate zone end time.")
+                logger.warning(f"Invalid timeframe string '{zone_timeframe}', cannot calculate zone end time.")
                 return None
 
             confirmation_time = c2.name + timeframe_delta
@@ -135,10 +138,10 @@ class AnalysisEngine:
             return demand_zone
 
         except (KeyError, AttributeError) as e:
-            logging.error(f"Error processing candles: {e}")
+            logger.error(f"Error processing candles: {e}")
             return None
         except redis.RedisError as e:
-            logging.error(f"Redis error: {e}")
+            logger.error(f"Redis error: {e}")
             return None
 
     def get_last_demand_zone(self) -> dict or None:

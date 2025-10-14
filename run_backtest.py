@@ -10,8 +10,9 @@ from ib_insync import IB, Stock, util
 
 import config
 from algotrade.analysis import AnalysisEngine
+from algotrade.logger import setup_logger
 
-logging.basicConfig(level=config.BACKTEST_LOG_LEVEL, format='%(asctime)s - [Backtest] - %(levelname)s - %(message)s')
+logger = setup_logger(__name__, level=config.BACKTEST_LOG_LEVEL)
 
 def _convert_tf_to_ib_format(tf_string: str) -> str:
     """Converts a timeframe string like '1m' or '2h' to the IB format like '1 min' or '2 hours'."""
@@ -36,16 +37,16 @@ def run_backtest(start_date_str: str, end_date_str: str):
     for all configured zone timeframes and save them to a file.
     """
     # Start with a clean slate for backtest results
-    logging.info("Clearing previous backtest zone results...")
+    logger.info("Clearing previous backtest zone results...")
     with open("backtest_zones.txt", "w") as f:
         json.dump([], f) # Write an empty JSON array
-    logging.info("Previous results cleared. Starting new backtest run.")
+    logger.info("Previous results cleared. Starting new backtest run.")
 
     ib = IB()
     all_found_zones = [] # List to store all zones found across all timeframes
     try:
         ib.connect(config.IB_HOST, config.IB_PORT, clientId=config.IB_CLIENT_ID + 2)
-        logging.info("Connected to IB for historical data download.")
+        logger.info("Connected to IB for historical data download.")
 
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
@@ -58,10 +59,10 @@ def run_backtest(start_date_str: str, end_date_str: str):
 
         # Loop through each configured zone timeframe
         for timeframe in config.ZONE_TIMEFRAMES:
-            logging.info(f"--- Starting backtest for timeframe: {timeframe} ---")
+            logger.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
             ib_bar_size = _convert_tf_to_ib_format(timeframe)
-            logging.info(f"Downloading historical data for {timeframe} timeframe (IB format: '{ib_bar_size}')...")
+            logger.info(f"Downloading historical data for {timeframe} timeframe (IB format: '{ib_bar_size}')...")
 
             bars = ib.reqHistoricalData(
                 contract,
@@ -74,22 +75,22 @@ def run_backtest(start_date_str: str, end_date_str: str):
             )
             
             if not bars:
-                logging.error(f"Could not download historical data for {timeframe}. Skipping.")
+                logger.error(f"Could not download historical data for {timeframe}. Skipping.")
                 continue
 
             df = util.df(bars)
             if df is None or df.empty:
-                logging.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
+                logger.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
                 continue
 
             df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-            logging.info(f"Downloaded and filtered {len(df)} bars for {timeframe}.")
+            logger.info(f"Downloaded and filtered {len(df)} bars for {timeframe}.")
 
             # Important: A new AnalysisEngine is created for each timeframe
             # to ensure no state (like previous candles) leaks between tests.
             analysis_engine = AnalysisEngine()
 
-            logging.info(f"Starting demand zone identification for {timeframe}...")
+            logger.info(f"Starting demand zone identification for {timeframe}...")
             for index, bar in df.iterrows():
                 bar_series = pd.Series(bar, name=bar['date'])
                 
@@ -98,26 +99,26 @@ def run_backtest(start_date_str: str, end_date_str: str):
                 if new_zone:
                     # Note: The log from process_new_bar is now the primary source of info.
                     # This additional log can be redundant but is kept for explicit backtest confirmation.
-                    logging.info(f"BACKTEST: DEMAND ZONE IDENTIFIED on {timeframe} at {bar['date']}")
+                    logger.info(f"BACKTEST: DEMAND ZONE IDENTIFIED on {timeframe} at {bar['date']}")
                     all_found_zones.append(new_zone)
 
-            logging.info(f"Backtest for {timeframe} finished.")
+            logger.info(f"Backtest for {timeframe} finished.")
 
         # After all timeframes are done, write the collected zones to a file
         if all_found_zones:
-            logging.info(f"Found a total of {len(all_found_zones)} zones. Saving to backtest_zones.txt...")
+            logger.info(f"Found a total of {len(all_found_zones)} zones. Saving to backtest_zones.txt...")
             with open("backtest_zones.txt", "w") as f:
                 json.dump(all_found_zones, f, indent=4)
-            logging.info("Successfully saved zones to backtest_zones.txt.")
+            logger.info("Successfully saved zones to backtest_zones.txt.")
         else:
-            logging.warning("No demand zones were identified in this backtest run.")
+            logger.warning("No demand zones were identified in this backtest run.")
 
     except Exception as e:
-        logging.error(f"An error occurred during the backtest: {e}", exc_info=True)
+        logger.error(f"An error occurred during the backtest: {e}", exc_info=True)
     finally:
         if ib.isConnected():
             ib.disconnect()
-            logging.info("Disconnected from IB.")
+            logger.info("Disconnected from IB.")
 
 
 if __name__ == "__main__":

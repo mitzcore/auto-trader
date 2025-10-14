@@ -11,8 +11,9 @@ from ib_insync import IB, Stock, util
 
 import config
 from algotrade import patterns
+from algotrade.logger import setup_logger
 
-logging.basicConfig(level=config.BACKTEST_LOG_LEVEL, format='%(asctime)s - [PatternBacktest] - %(levelname)s - %(message)s')
+logger = setup_logger(__name__, level=config.BACKTEST_LOG_LEVEL)
 
 def _convert_tf_to_ib_format(tf_string: str) -> str:
     """Converts a timeframe string like '5m' to the IB format like '5 mins'."""
@@ -41,20 +42,20 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
         with open("backtest_zones.txt", "r") as f:
             loaded_zones = json.load(f)
         if not loaded_zones:
-            logging.error("backtest_zones.txt is empty. Run the zone backtest first.")
+            logger.error("backtest_zones.txt is empty. Run the zone backtest first.")
             return
-        logging.info(f"Successfully loaded {len(loaded_zones)} demand zones from backtest_zones.txt.")
+        logger.info(f"Successfully loaded {len(loaded_zones)} demand zones from backtest_zones.txt.")
     except FileNotFoundError:
-        logging.error("backtest_zones.txt not found. Please run the demand zone backtest first.")
+        logger.error("backtest_zones.txt not found. Please run the demand zone backtest first.")
         return
     except json.JSONDecodeError:
-        logging.error("Could not parse backtest_zones.txt. The file may be corrupt.")
+        logger.error("Could not parse backtest_zones.txt. The file may be corrupt.")
         return
 
     ib = IB()
     try:
         ib.connect(config.IB_HOST, config.IB_PORT, clientId=config.IB_CLIENT_ID + 3)
-        logging.info("Connected to IB for historical data download.")
+        logger.info("Connected to IB for historical data download.")
 
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
@@ -67,10 +68,10 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
         # Loop through each configured pattern timeframe
         for timeframe in config.PATTERN_TIMEFRAMES:
-            logging.info(f"--- Starting backtest for timeframe: {timeframe} ---")
+            logger.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
             ib_bar_size = _convert_tf_to_ib_format(timeframe)
-            logging.info(f"Downloading historical data for {timeframe} (IB format: '{ib_bar_size}')...")
+            logger.info(f"Downloading historical data for {timeframe} (IB format: '{ib_bar_size}')...")
 
             bars = ib.reqHistoricalData(
                 contract,
@@ -83,23 +84,23 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             )
             
             if not bars:
-                logging.error(f"Could not download historical data for {timeframe}. Skipping.")
+                logger.error(f"Could not download historical data for {timeframe}. Skipping.")
                 continue
 
             df = util.df(bars)
             
             if df is None or df.empty:
-                logging.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
+                logger.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
                 continue
                 
             df = df.sort_values(by='date', ascending=True)
             df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-            logging.info(f"Downloaded, sorted, and filtered {len(df)} bars for {timeframe}.")
+            logger.info(f"Downloaded, sorted, and filtered {len(df)} bars for {timeframe}.")
 
             candle_history = deque(maxlen=2)
             found_patterns = 0
 
-            logging.info(f"Starting pattern identification for {timeframe} within loaded zones...")
+            logger.info(f"Starting pattern identification for {timeframe} within loaded zones...")
             for index, bar in df.iterrows():
                 bar_series = pd.Series(bar, name=bar['date'])
                 candle_history.append(bar_series)
@@ -120,46 +121,46 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
                     continue # Not in any zone, move to the next bar
 
                 # If in a zone, proceed with pattern matching
-                logging.debug(
+                logger.debug(
                     f"[{timeframe}] Price in zone {active_zone['id']}. Analyzing candles for trade confirmation:\n"
                     f"{timeframe} C1: {c1.to_dict()}\n"
                     f"{timeframe} C2: {c2.to_dict()}"
                 )
-                logging.debug(f"Bar at {c2.name} is inside zone {active_zone['id']}. Checking for patterns.")
+                logger.debug(f"Bar at {c2.name} is inside zone {active_zone['id']}. Checking for patterns.")
 
                 c1_triggered = [p_name for p_name, p_func in patterns.INDECISION_PATTERNS.items() if p_func(c1)]
-                logging.debug(f'c1 patterns: {c1_triggered}')
+                logger.debug(f'c1 patterns: {c1_triggered}')
                 if not c1_triggered:
                     continue
 
                 c2_triggered = [p_name for p_name, p_func in patterns.CONFIRMATION_PATTERNS.items() if p_func(c2)]
-                logging.debug(f'c2 patterns: {c2_triggered}')
+                logger.debug(f'c2 patterns: {c2_triggered}')
                 if not c2_triggered:
                     continue
 
                 body_c2 = c2['close'] - c2['open']
-                logging.debug(f'body_c2: {body_c2}')
+                logger.debug(f'body_c2: {body_c2}')
                 if body_c2 <= 0: # Ensure c2 is bullish before checking wick
                     continue
                 lower_wick_c2 = c2['open'] - c2['low']
-                logging.debug(f'lower_wick_c2: {lower_wick_c2}')
+                logger.debug(f'lower_wick_c2: {lower_wick_c2}')
 
                 if lower_wick_c2 >= body_c2:
-                    logging.debug('lower_wick_c2 is greater than or equal to body_c2')
+                    logger.debug('lower_wick_c2 is greater than or equal to body_c2')
                     continue
 
                 # Log the confirmation
-                logging.info(f"Trade confirmed with bar timestamp: {c2.name}")
+                logger.info(f"Trade confirmed with bar timestamp: {c2.name}")
                 found_patterns += 1
             
-            logging.info(f"Backtest for {timeframe} finished. Found {found_patterns} valid trade confirmations.")
+            logger.info(f"Backtest for {timeframe} finished. Found {found_patterns} valid trade confirmations.")
 
     except Exception as e:
-        logging.error(f"An error occurred during the backtest: {e}", exc_info=True)
+        logger.error(f"An error occurred during the backtest: {e}", exc_info=True)
     finally:
         if ib.isConnected():
             ib.disconnect()
-            logging.info("Disconnected from IB.")
+            logger.info("Disconnected from IB.")
 
 
 if __name__ == "__main__":
