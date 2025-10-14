@@ -13,7 +13,7 @@ import config
 from algotrade import patterns
 
 # Configure logging for the backtest
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - [PatternBacktest] - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - [PatternBacktest] - %(levelname)s - %(message)s')
 
 def _convert_tf_to_ib_format(tf_string: str) -> str:
     """Converts a timeframe string like '5m' to the IB format like '5 mins'."""
