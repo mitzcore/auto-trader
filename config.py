@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['5m','15m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
+ZONE_TIMEFRAMES = ['5m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to poll for new completed bars.
@@ -32,7 +32,7 @@ BULLISH_WICK_RATIO = 0.5 # Max wick size relative to body for the bullish candle
 BEARISH_WICK_RATIO = 0.7 # Max upper wick size for the bearish candle relative to the bullish body.
 
 # Pattern Detection settings
-PATTERN_TIMEFRAMES = ['2m','3m'] # Timeframes for candlestick pattern confirmation
+PATTERN_TIMEFRAMES = ['3m'] # Timeframes for candlestick pattern confirmation
 
 # --- Custom Demand Zones ---
 # Add custom demand zones here. If this list is not empty, the AnalysisService will be disabled
@@ -47,10 +47,10 @@ CUSTOM_DEMAND_ZONES = []
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
-DOJI_PRECISION = 0.15           # Max body size (as % of range) for a standard Doji.
-DRAGONFLY_DOJI_PRECISION = 0.10  # Max body size (as % of range) for the stricter Dragonfly Doji check.
+DOJI_PRECISION = 0.20           # Max body size (as % of range) for a standard Doji.
+DRAGONFLY_DOJI_PRECISION = 0.20  # Max body size (as % of range) for the stricter Dragonfly Doji check.
 DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a Dragonfly Doji.
 
 # Thresholds for a "Strong Bullish Candle"
-STRONG_BULLISH_MIN_BODY_PCT = 0.5  # Body must be at least 70% of the total candle range.
-STRONG_BULLISH_MAX_WICK_PCT = 0.30 # Wicks must be less than 25% of the total candle range.
+STRONG_BULLISH_MIN_BODY_PCT = 0.40  # Body must be at least 70% of the total candle range.
+STRONG_BULLISH_MAX_WICK_PCT = 0.40 # Wicks must be less than 25% of the total candle range.

@@ -110,6 +110,8 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
 
                 c1, c2 = candle_history[0], candle_history[1]
 
+                logging.debug(f"Analyzing candles:\nC1: {c1.to_dict()}\nC2: {c2.to_dict()}")
+
                 # Check if the candle's range overlaps with any loaded demand zone
                 active_zone = None
                 for zone in loaded_zones:
