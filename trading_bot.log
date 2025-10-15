@@ -11281,3 +11281,43 @@ C2 [2025-10-14 14:30:00-04:00 15m]: {'open': 665.11, 'high': 665.35, 'low': 664.
 2025-10-14 14:38:43,165 - [AnalysisService] - INFO - Analysis Service shutting down.
 2025-10-14 14:38:43,165 - [InvalidationService] - INFO - Invalidation Service shutting down.
 2025-10-14 14:38:43,165 - [TradeService] - INFO - Trade Service shutting down.
+2025-10-15 09:16:21,389 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-15 09:16:21,390 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-15 09:16:21,392 - [InvalidationService] - INFO - Connected
+2025-10-15 09:16:21,446 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-15 09:16:21,468 - [InvalidationService] - INFO - API connection ready
+2025-10-15 09:16:21,483 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-15 09:16:21,486 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-15 09:16:21,488 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-15 09:16:57,353 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-15 09:16:57,354 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-15 09:16:57,356 - [InvalidationService] - INFO - Connected
+2025-10-15 09:16:57,378 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-15 09:16:57,382 - [InvalidationService] - INFO - API connection ready
+2025-10-15 09:16:57,386 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-15 09:16:57,387 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-15 09:16:57,388 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-15 09:17:09,805 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-15 09:17:09,807 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-15 09:17:09,808 - [InvalidationService] - INFO - Connected
+2025-10-15 09:17:09,819 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-15 09:17:09,917 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-15 09:17:09,918 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-15 09:17:09,919 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-15 09:17:09,919 - [InvalidationService] - INFO - API connection ready
+2025-10-15 09:17:26,574 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-15 09:17:26,576 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-15 09:17:26,578 - [InvalidationService] - INFO - Connected
+2025-10-15 09:17:26,593 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-15 09:17:26,694 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-15 09:17:26,695 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-15 09:17:26,695 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-15 09:17:26,696 - [InvalidationService] - INFO - API connection ready
+2025-10-15 14:07:11,936 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-15 14:07:11,938 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-15 14:07:11,939 - [InvalidationService] - INFO - Connected
+2025-10-15 14:07:11,965 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-15 14:07:11,968 - [InvalidationService] - INFO - API connection ready
+2025-10-15 14:07:11,969 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-15 14:07:11,970 - [InvalidationService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-15 14:07:11,971 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
