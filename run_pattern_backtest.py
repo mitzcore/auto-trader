@@ -128,9 +128,16 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
                 )
                 logger.debug(f"Bar at {c2.name} is inside zone {active_zone['id']}. Checking for patterns.")
 
-                c1_triggered = [p_name for p_name, p_func in patterns.INDECISION_PATTERNS.items() if p_func(c1)]
-                logger.debug(f'c1 patterns: {c1_triggered}')
-                if not c1_triggered:
+                zone_top = active_zone['zone_top']
+                zone_bottom = active_zone['zone_bottom']
+                
+                c1_in_zone = (zone_bottom <= c1['open'] <= zone_top or
+                              zone_bottom <= c1['high'] <= zone_top or
+                              zone_bottom <= c1['low'] <= zone_top or
+                              zone_bottom <= c1['close'] <= zone_top)
+
+                logger.debug(f'c1 in zone: {c1_in_zone}')
+                if not c1_in_zone:
                     continue
 
                 c2_triggered = [p_name for p_name, p_func in patterns.CONFIRMATION_PATTERNS.items() if p_func(c2)]
