@@ -156,6 +156,10 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
                     logger.debug('lower_wick_c2 is greater than or equal to body_c2')
                     continue
 
+                if c2['close'] <= c1['open']:
+                    logger.debug(f"c2 close ({c2['close']}) is not > c1 open ({c1['open']})")
+                    continue
+
                 # Log the confirmation
                 logger.info(f"Trade confirmed with bar timestamp: {c2.name}")
                 found_patterns += 1
