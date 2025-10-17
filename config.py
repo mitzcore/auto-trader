@@ -55,3 +55,7 @@ DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a 
 # Thresholds for a "Strong Bullish Candle"
 STRONG_BULLISH_MIN_BODY_PCT = 0.50  # Body must be at least 70% of the total candle range.
 STRONG_BULLISH_MAX_WICK_PCT = 0.50 # Wicks must be less than 25% of the total candle range.
+
+# Thresholds for C1 (indecision candle) in a two-candle confirmation pattern
+C1_MIN_BODY_PCT = 0.20 # Minimum body size (as % of range) for C1 to be considered a valid indecision candle.
+C1_MIN_LOWER_WICK_PCT = 0.30 # Minimum lower wick size (as % of range) for C1, relative to its body.
