@@ -29,7 +29,7 @@ def main():
 
     try:
         if config.CUSTOM_DEMAND_ZONES:
-            logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones and disabling AnalysisService.")
+            logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones.")
             
             # Connect to Redis
             redis_client = redis.Redis(decode_responses=True)
@@ -46,27 +46,21 @@ def main():
                 }
                 redis_client.publish("demand_zone_updates", json.dumps(zone))
                 logging.info(f"Published custom demand zone to Redis channel: {zone}")
-
-            # Only start Trade and Invalidation services
-            trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
-            processes.append(trade_process)
-            
-            invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
-            processes.append(invalidation_process)
-
         else:
-            logging.info("No custom demand zones found. Starting all services.")
-            # Create and add the Analysis Service process
-            analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
-            processes.append(analysis_process)
+            logging.info("No custom demand zones found.")
 
-            # Create and add the Trade Service process
-            trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
-            processes.append(trade_process)
-            
-            # Create and add the Invalidation Service process
-            invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
-            processes.append(invalidation_process)
+        logging.info("Starting all services.")
+        # Create and add the Analysis Service process
+        analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
+        processes.append(analysis_process)
+
+        # Create and add the Trade Service process
+        trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
+        processes.append(trade_process)
+        
+        # Create and add the Invalidation Service process
+        invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
+        processes.append(invalidation_process)
 
         # Start all processes
         for p in processes:

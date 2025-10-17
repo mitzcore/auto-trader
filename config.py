@@ -39,12 +39,12 @@ PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confi
 # Add custom demand zones here. If this list is not empty, the AnalysisService will be disabled
 # and the first zone in this list will be loaded as the active demand zone.
 # Example: CUSTOM_DEMAND_ZONES = [{"zone_top": 530.0, "zone_bottom": 529.5}]
-CUSTOM_DEMAND_ZONES = []
-#    {"zone_top": 530.0, "zone_bottom": 529.5},
-#    {"zone_top": 525.0, "zone_bottom": 524.5},
-#    {"zone_top": 520.0, "zone_bottom": 519.5}
-#]
-# [{"zone_top": 530.0, "zone_bottom": 529.5}]
+
+CUSTOM_DEMAND_ZONES = [
+    {"zone_top": 655.26, "zone_bottom": 653.16},
+    {"zone_top": 652.33, "zone_bottom": 650.58},
+    {"zone_top": 657.21, "zone_bottom": 656.50},
+]
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
