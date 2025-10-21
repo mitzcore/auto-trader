@@ -24,15 +24,20 @@ def main():
     """
     logging.info("Initializing application services...")
 
+    # Connect to Redis for initial setup
+    redis_client = redis.Redis(decode_responses=True)
+
+    # Clear all existing demand zones from Redis on startup
+    logging.info("Clearing all existing demand zones from Redis...")
+    redis_client.delete("active_demand_zones")
+    logging.info("Existing demand zones cleared from Redis.")
+
     # A list to hold the process objects
     processes = []
 
     try:
         if config.CUSTOM_DEMAND_ZONES:
             logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones.")
-            
-            # Connect to Redis
-            redis_client = redis.Redis(decode_responses=True)
             
             # Publish each custom zone to the updates channel
             for custom_zone_config in config.CUSTOM_DEMAND_ZONES:
@@ -44,8 +49,10 @@ def main():
                     "entry_confirmation": None,
                     "invalidation_confirmation": None,
                 }
-                redis_client.publish("demand_zone_updates", json.dumps(zone))
-                logging.info(f"Published custom demand zone to Redis channel: {zone}")
+                # Use hset to store the zone in the hash, with zone_id as the field
+                zone_id = f"custom_zone_{custom_zone_config['zone_top']}_{custom_zone_config['zone_bottom']}"
+                redis_client.hset("active_demand_zones", zone_id, json.dumps(zone))
+                logging.info(f"Loaded custom demand zone into Redis: {zone}")
         else:
             logging.info("No custom demand zones found.")
 

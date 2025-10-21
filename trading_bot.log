@@ -12253,3 +12253,823 @@ C2 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.
 C1 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
 C2 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 670.97, 'low': 670.91, 'close': 670.92}
 2025-10-21 10:15:08,489 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:10:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:33,896 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:15:33,898 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:15:33,899 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:15:35,211 - [algotrade.trade_service] - INFO - Trade Service connected to IB.
+2025-10-21 10:15:35,310 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-21 10:15:35,333 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-10-21 10:15:35,557 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:12:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:35,648 - [AnalysisService] - INFO - [5m] Processing 10 initial historical bars.
+2025-10-21 10:15:35,653 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 5m]: {'open': 671.46, 'high': 671.69, 'low': 671.03, 'close': 671.5}
+C2 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+2025-10-21 10:15:35,658 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+2025-10-21 10:15:35,660 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+2025-10-21 10:15:35,661 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+2025-10-21 10:15:35,662 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+C2 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:35,663 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+2025-10-21 10:15:35,664 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+C2 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+2025-10-21 10:15:35,666 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+2025-10-21 10:15:35,668 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 5m]: {'open': 670.95, 'high': 670.97, 'low': 670.83, 'close': 670.93}
+2025-10-21 10:15:35,846 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:12:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:35,939 - [AnalysisService] - INFO - [10m] Processing 5 initial historical bars.
+2025-10-21 10:15:35,942 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 10m]: {'open': 671.46, 'high': 671.78, 'low': 671.03, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+2025-10-21 10:15:35,943 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:35,945 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+2025-10-21 10:15:35,946 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 10m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.93}
+2025-10-21 10:15:36,142 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:10:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:36,241 - [AnalysisService] - INFO - [15m] Processing 4 initial historical bars.
+2025-10-21 10:15:36,244 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 15m]: {'open': 671.46, 'high': 671.78, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:36,246 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+2025-10-21 10:15:36,247 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 670.97, 'low': 670.83, 'close': 670.93}
+2025-10-21 10:16:36,209 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:14:00-04:00. Checking for trade pattern.
+2025-10-21 10:16:36,213 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:18:36,482 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:16:00-04:00. Checking for trade pattern.
+2025-10-21 10:18:36,488 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:18:36,528 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:15:00-04:00. Checking for trade pattern.
+2025-10-21 10:18:36,529 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:20:36,774 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:18:00-04:00. Checking for trade pattern.
+2025-10-21 10:20:36,793 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:20:36,797 - [algotrade.trade_service] - INFO - 
+✨✨✨✨✨✨✨✨ TRADE CONFIRMED ✨✨✨✨✨✨✨✨
+TRADE CONFIRMED on 2m: Zone 1760977800.0. c1=C1 Strong Indecision, c2=Strong Bullish Candle
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+2025-10-21 10:20:36,975 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:15:00-04:00. Checking for trade pattern.
+2025-10-21 10:20:36,977 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:20:36,979 - [algotrade.trade_service] - INFO - 
+✨✨✨✨✨✨✨✨ TRADE CONFIRMED ✨✨✨✨✨✨✨✨
+TRADE CONFIRMED on 5m: Zone 1760971800.0. c1=C1 Strong Indecision, c2=Strong Bullish Candle
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+2025-10-21 10:21:37,101 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:18:00-04:00. Checking for trade pattern.
+2025-10-21 10:21:37,107 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:22:37,262 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:20:00-04:00. Checking for trade pattern.
+2025-10-21 10:22:37,269 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:24:37,638 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:22:00-04:00. Checking for trade pattern.
+2025-10-21 10:24:37,644 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:24:37,692 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:21:00-04:00. Checking for trade pattern.
+2025-10-21 10:24:37,698 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:25:37,736 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:20:00-04:00. Analyzing.
+2025-10-21 10:25:37,743 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:15:00-04:00 5m]: {'open': 670.95, 'high': 670.97, 'low': 670.83, 'close': 670.93}
+C2 [2025-10-21 10:20:00-04:00 5m]: {'open': 671.5, 'high': 671.9, 'low': 671.32, 'close': 671.56}
+2025-10-21 10:25:37,845 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:20:00-04:00. Checking for trade pattern.
+2025-10-21 10:25:37,850 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:26:37,908 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:24:00-04:00. Checking for trade pattern.
+2025-10-21 10:26:37,923 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:27:38,116 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:24:00-04:00. Checking for trade pattern.
+2025-10-21 10:27:38,123 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:28:38,225 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:26:00-04:00. Checking for trade pattern.
+2025-10-21 10:28:38,249 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:30:38,696 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:25:00-04:00. Analyzing.
+2025-10-21 10:30:38,704 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:20:00-04:00 5m]: {'open': 671.5, 'high': 671.9, 'low': 671.32, 'close': 671.56}
+C2 [2025-10-21 10:25:00-04:00 5m]: {'open': 671.57, 'high': 671.58, 'low': 670.41, 'close': 670.6}
+2025-10-21 10:30:38,753 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:28:00-04:00. Checking for trade pattern.
+2025-10-21 10:30:38,761 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:30:38,761 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 10:20:00-04:00. Analyzing.
+2025-10-21 10:30:38,763 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:10:00-04:00 10m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.93}
+C2 [2025-10-21 10:20:00-04:00 10m]: {'open': 671.5, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+2025-10-21 10:30:38,800 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:27:00-04:00. Checking for trade pattern.
+2025-10-21 10:30:38,803 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:30:38,841 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:25:00-04:00. Checking for trade pattern.
+2025-10-21 10:30:38,843 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:32:39,033 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:30:00-04:00. Checking for trade pattern.
+2025-10-21 10:32:39,053 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:33:39,215 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:30:00-04:00. Checking for trade pattern.
+2025-10-21 10:33:39,221 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:34:39,315 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:32:00-04:00. Checking for trade pattern.
+2025-10-21 10:34:39,320 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:35:39,398 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:30:00-04:00. Analyzing.
+2025-10-21 10:35:39,425 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:25:00-04:00 5m]: {'open': 671.57, 'high': 671.58, 'low': 670.41, 'close': 670.6}
+C2 [2025-10-21 10:30:00-04:00 5m]: {'open': 670.59, 'high': 670.91, 'low': 670.26, 'close': 670.9}
+2025-10-21 10:35:39,857 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:30:00-04:00. Checking for trade pattern.
+2025-10-21 10:35:39,864 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:36:39,906 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:34:00-04:00. Checking for trade pattern.
+2025-10-21 10:36:39,912 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:36:39,949 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:33:00-04:00. Checking for trade pattern.
+2025-10-21 10:36:39,967 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:38:40,218 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:36:00-04:00. Checking for trade pattern.
+2025-10-21 10:38:40,235 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:39:41,274 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:36:00-04:00. Checking for trade pattern.
+2025-10-21 10:39:41,280 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:40:40,373 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:35:00-04:00. Analyzing.
+2025-10-21 10:40:40,379 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 5m]: {'open': 670.59, 'high': 670.91, 'low': 670.26, 'close': 670.9}
+C2 [2025-10-21 10:35:00-04:00 5m]: {'open': 670.9, 'high': 671.51, 'low': 670.86, 'close': 671.37}
+2025-10-21 10:40:40,420 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 10:30:00-04:00. Analyzing.
+2025-10-21 10:40:40,426 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:20:00-04:00 10m]: {'open': 671.5, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+C2 [2025-10-21 10:30:00-04:00 10m]: {'open': 670.59, 'high': 671.51, 'low': 670.26, 'close': 671.37}
+2025-10-21 10:40:41,428 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:38:00-04:00. Checking for trade pattern.
+2025-10-21 10:40:41,434 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:40:41,518 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:35:00-04:00. Checking for trade pattern.
+2025-10-21 10:40:41,522 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:42:41,718 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:40:00-04:00. Checking for trade pattern.
+2025-10-21 10:42:41,727 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:42:41,924 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:39:00-04:00. Checking for trade pattern.
+2025-10-21 10:42:41,928 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:44:42,282 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:42:00-04:00. Checking for trade pattern.
+2025-10-21 10:44:42,289 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:45:41,050 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:40:00-04:00. Analyzing.
+2025-10-21 10:45:41,058 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:35:00-04:00 5m]: {'open': 670.9, 'high': 671.51, 'low': 670.86, 'close': 671.37}
+C2 [2025-10-21 10:40:00-04:00 5m]: {'open': 671.37, 'high': 671.75, 'low': 671.15, 'close': 671.31}
+2025-10-21 10:45:41,132 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-21 10:30:00-04:00. Analyzing.
+2025-10-21 10:45:41,134 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 670.97, 'low': 670.83, 'close': 670.93}
+C2 [2025-10-21 10:30:00-04:00 15m]: {'open': 670.59, 'high': 671.75, 'low': 670.26, 'close': 671.31}
+2025-10-21 10:45:42,462 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:42:00-04:00. Checking for trade pattern.
+2025-10-21 10:45:42,467 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:45:42,515 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:40:00-04:00. Checking for trade pattern.
+2025-10-21 10:45:42,518 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:46:42,652 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:44:00-04:00. Checking for trade pattern.
+2025-10-21 10:46:42,663 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:48:42,964 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:46:00-04:00. Checking for trade pattern.
+2025-10-21 10:48:42,973 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:48:43,020 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:45:00-04:00. Checking for trade pattern.
+2025-10-21 10:48:43,033 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:50:41,929 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:45:00-04:00. Analyzing.
+2025-10-21 10:50:41,939 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:40:00-04:00 5m]: {'open': 671.37, 'high': 671.75, 'low': 671.15, 'close': 671.31}
+C2 [2025-10-21 10:45:00-04:00 5m]: {'open': 671.3, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+2025-10-21 10:50:41,974 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 10:40:00-04:00. Analyzing.
+2025-10-21 10:50:41,976 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 10m]: {'open': 670.59, 'high': 671.51, 'low': 670.26, 'close': 671.37}
+C2 [2025-10-21 10:40:00-04:00 10m]: {'open': 671.37, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+2025-10-21 10:50:43,278 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:48:00-04:00. Checking for trade pattern.
+2025-10-21 10:50:43,285 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:50:43,380 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:45:00-04:00. Checking for trade pattern.
+2025-10-21 10:50:43,385 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:51:43,485 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:48:00-04:00. Checking for trade pattern.
+2025-10-21 10:51:43,491 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:52:43,601 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:50:00-04:00. Checking for trade pattern.
+2025-10-21 10:52:43,614 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:54:43,927 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:52:00-04:00. Checking for trade pattern.
+2025-10-21 10:54:43,939 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:54:44,003 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:51:00-04:00. Checking for trade pattern.
+2025-10-21 10:54:44,006 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:55:42,662 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:50:00-04:00. Analyzing.
+2025-10-21 10:55:42,668 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:45:00-04:00 5m]: {'open': 671.3, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+C2 [2025-10-21 10:50:00-04:00 5m]: {'open': 671.63, 'high': 672.18, 'low': 671.62, 'close': 672.1}
+2025-10-21 10:55:44,157 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:50:00-04:00. Checking for trade pattern.
+2025-10-21 10:55:44,161 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:56:44,603 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:54:00-04:00. Checking for trade pattern.
+2025-10-21 10:56:44,611 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:57:44,811 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:54:00-04:00. Checking for trade pattern.
+2025-10-21 10:57:44,816 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 10:58:44,928 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:56:00-04:00. Checking for trade pattern.
+2025-10-21 10:58:44,933 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:00:43,471 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:55:00-04:00. Analyzing.
+2025-10-21 11:00:43,484 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:50:00-04:00 5m]: {'open': 671.63, 'high': 672.18, 'low': 671.62, 'close': 672.1}
+C2 [2025-10-21 10:55:00-04:00 5m]: {'open': 672.08, 'high': 672.64, 'low': 672.03, 'close': 672.57}
+2025-10-21 11:00:43,520 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 10:50:00-04:00. Analyzing.
+2025-10-21 11:00:43,531 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:40:00-04:00 10m]: {'open': 671.37, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+C2 [2025-10-21 10:50:00-04:00 10m]: {'open': 671.63, 'high': 672.64, 'low': 671.62, 'close': 672.57}
+2025-10-21 11:00:43,597 - [algotrade.analysis] - INFO - 
+-------------------- DEMAND ZONE PUBLISHED --------------------
+Demand Zone Published from 10m at 2025-10-21 11:00:00 EDT: Top=671.57, Bottom=670.80, ID=1761058800.0
+-----------------------------------------------------------------
+2025-10-21 11:00:43,648 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-21 10:45:00-04:00. Analyzing.
+2025-10-21 11:00:43,649 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 15m]: {'open': 670.59, 'high': 671.75, 'low': 670.26, 'close': 671.31}
+C2 [2025-10-21 10:45:00-04:00 15m]: {'open': 671.3, 'high': 672.64, 'low': 671.0, 'close': 672.57}
+2025-10-21 11:00:45,239 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:58:00-04:00. Checking for trade pattern.
+2025-10-21 11:00:45,246 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:00:45,297 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:57:00-04:00. Checking for trade pattern.
+2025-10-21 11:00:45,300 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:00:45,350 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:55:00-04:00. Checking for trade pattern.
+2025-10-21 11:00:45,354 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:02:45,562 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:00:00-04:00. Checking for trade pattern.
+2025-10-21 11:02:45,583 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:03:45,789 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 11:00:00-04:00. Checking for trade pattern.
+2025-10-21 11:03:45,795 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:04:45,912 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:02:00-04:00. Checking for trade pattern.
+2025-10-21 11:04:45,921 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:05:44,325 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 11:00:00-04:00. Analyzing.
+2025-10-21 11:05:44,331 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:55:00-04:00 5m]: {'open': 672.08, 'high': 672.64, 'low': 672.03, 'close': 672.57}
+C2 [2025-10-21 11:00:00-04:00 5m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.33}
+2025-10-21 11:05:46,136 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 11:00:00-04:00. Checking for trade pattern.
+2025-10-21 11:05:46,143 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:06:46,206 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:04:00-04:00. Checking for trade pattern.
+2025-10-21 11:06:46,216 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:06:46,281 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 11:03:00-04:00. Checking for trade pattern.
+2025-10-21 11:06:46,283 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:08:46,504 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:06:00-04:00. Checking for trade pattern.
+2025-10-21 11:08:46,512 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:09:46,707 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 11:06:00-04:00. Checking for trade pattern.
+2025-10-21 11:09:46,713 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:10:45,060 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 11:05:00-04:00. Analyzing.
+2025-10-21 11:10:45,067 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:00:00-04:00 5m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.33}
+C2 [2025-10-21 11:05:00-04:00 5m]: {'open': 672.34, 'high': 672.57, 'low': 672.26, 'close': 672.46}
+2025-10-21 11:10:45,110 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 11:00:00-04:00. Analyzing.
+2025-10-21 11:10:45,113 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:50:00-04:00 10m]: {'open': 671.63, 'high': 672.64, 'low': 671.62, 'close': 672.57}
+C2 [2025-10-21 11:00:00-04:00 10m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.46}
+2025-10-21 11:10:46,838 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:08:00-04:00. Checking for trade pattern.
+2025-10-21 11:10:46,845 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:10:46,927 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 11:05:00-04:00. Checking for trade pattern.
+2025-10-21 11:10:46,929 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:12:47,143 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:10:00-04:00. Checking for trade pattern.
+2025-10-21 11:12:47,152 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:12:47,225 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 11:09:00-04:00. Checking for trade pattern.
+2025-10-21 11:12:47,227 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:14:47,463 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 11:12:00-04:00. Checking for trade pattern.
+2025-10-21 11:14:47,472 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - 1760971800.0: {"id": "1760971800.0", "status": "active", "zone_top": 670.46, "zone_bottom": 669.6099999999999, "timestamp": "2025-10-20 10:50:00-04:00"}
+  - 1760977800.0: {"id": "1760977800.0", "status": "active", "zone_top": 670.8000000000001, "zone_bottom": 670.13, "timestamp": "2025-10-20 12:30:00-04:00"}
+  - 1761058800.0: {"id": "1761058800.0", "status": "active", "zone_top": 671.57, "zone_bottom": 670.8, "timestamp": "2025-10-21 11:00:00-04:00"}
+  - 1760450400.0: {"id": "1760450400.0", "status": "active", "zone_top": 655.45, "zone_bottom": 652.9699999999999, "timestamp": "2025-10-14 10:00:00-04:00"}
+  - 1760717400.0: {"id": "1760717400.0", "status": "active", "zone_top": 661.47, "zone_bottom": 660.7299999999999, "timestamp": "2025-10-17 12:10:00-04:00"}
+  - 1760722500.0: {"id": "1760722500.0", "status": "active", "zone_top": 661.6, "zone_bottom": 660.8, "timestamp": "2025-10-17 13:35:00-04:00"}
+  - 1760716200.0: {"id": "1760716200.0", "status": "active", "zone_top": 659.6400000000001, "zone_bottom": 657.9399999999999, "timestamp": "2025-10-17 11:50:00-04:00"}
+  - 1760451300.0: {"id": "1760451300.0", "status": "active", "zone_top": 657.76, "zone_bottom": 656.8499999999999, "timestamp": "2025-10-14 10:15:00-04:00"}
+  - 1760710500.0: {"id": "1760710500.0", "status": "active", "zone_top": 661.1700000000001, "zone_bottom": 660.4699999999999, "timestamp": "2025-10-17 10:15:00-04:00"}
+  - 1760970600.0: {"id": "1760970600.0", "status": "active", "zone_top": 669.9200000000001, "zone_bottom": 668.81, "timestamp": "2025-10-20 10:30:00-04:00"}
+2025-10-21 11:15:45,855 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 11:10:00-04:00. Analyzing.
+2025-10-21 11:15:45,870 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:05:00-04:00 5m]: {'open': 672.34, 'high': 672.57, 'low': 672.26, 'close': 672.46}
+C2 [2025-10-21 11:10:00-04:00 5m]: {'open': 672.46, 'high': 672.74, 'low': 672.37, 'close': 672.46}
