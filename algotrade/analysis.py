@@ -127,7 +127,8 @@ class AnalysisEngine:
                 'status': 'active',
                 'zone_top': c1['open'] + config.DEMAND_ZONE_OFFSET_TOP,
                 'zone_bottom': c1['low'] - config.DEMAND_ZONE_OFFSET_BOTTOM,
-                'timestamp': str(confirmation_time)
+                'timestamp': str(confirmation_time),
+                'zone_timeframe': zone_timeframe # Add the timeframe here
             }
             
             payload = json.dumps(demand_zone)

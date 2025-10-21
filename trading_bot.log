@@ -14166,3 +14166,6 @@ C2 [2025-10-21 13:20:00-04:00 5m]: {'open': 671.47, 'high': 671.71, 'low': 671.0
 2025-10-21 13:25:40,129 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 13:20:00-04:00. Checking for trade pattern.
 2025-10-21 13:25:40,134 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
   - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:26:40,176 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:24:00-04:00. Checking for trade pattern.
+2025-10-21 13:26:40,180 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
