@@ -88,11 +88,12 @@ class AnalysisEngine:
             body_c1 = abs(c1['open'] - c1['close'])
             body_c2 = c2['close'] - c2['open']
 
-            # Core Condition 3: c1 open must be inside c2 body OR close to c2 open.
-            is_inside = (c1['open'] >= c2['open']) and (c1['open'] <= c2['close'])
-            is_close = abs(c1['open'] - c2['open']) <= body_c1
+            # Core Condition 3: c1 open should overlap with c2 body AND c1 close should either overlap or be close to c2 open.
+            c1_open_overlaps_c2_body = (c1['open'] >= c2['open']) and (c1['open'] <= c2['close'])
+            c1_close_overlaps_c2_body = (c1['close'] >= c2['open']) and (c1['close'] <= c2['close'])
+            c1_close_close_to_c2_open = abs(c1['close'] - c2['open']) <= body_c1
             
-            if not (is_inside or is_close):
+            if not (c1_open_overlaps_c2_body and (c1_close_overlaps_c2_body or c1_close_close_to_c2_open)):
                 return None
 
             # Core Condition 4: Base candle body (c1) must be less than 50% of the explosive candle body (c2)
