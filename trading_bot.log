@@ -12193,3 +12193,63 @@ C2 [2025-10-14 14:30:00-04:00 15m]: {'open': 665.11, 'high': 665.35, 'low': 664.
 2025-10-21 10:14:29,240 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
 2025-10-21 10:14:29,241 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
 2025-10-21 10:14:29,242 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:15:06,075 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:15:06,077 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:15:06,077 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:15:07,288 - [algotrade.trade_service] - INFO - Trade Service connected to IB.
+2025-10-21 10:15:07,388 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-21 10:15:07,413 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-10-21 10:15:08,360 - [AnalysisService] - INFO - [5m] Processing 10 initial historical bars.
+2025-10-21 10:15:08,365 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 5m]: {'open': 671.46, 'high': 671.69, 'low': 671.03, 'close': 671.5}
+C2 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+2025-10-21 10:15:08,368 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+2025-10-21 10:15:08,369 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+2025-10-21 10:15:08,370 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+2025-10-21 10:15:08,371 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+C2 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:08,373 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+2025-10-21 10:15:08,375 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+C2 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+2025-10-21 10:15:08,377 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+2025-10-21 10:15:08,379 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 5m]: {'open': 670.95, 'high': 670.97, 'low': 670.91, 'close': 670.92}
+2025-10-21 10:15:08,390 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 10:12:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:08,425 - [AnalysisService] - INFO - [10m] Processing 5 initial historical bars.
+2025-10-21 10:15:08,426 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 10m]: {'open': 671.46, 'high': 671.78, 'low': 671.03, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+2025-10-21 10:15:08,427 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:08,428 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+2025-10-21 10:15:08,429 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 10m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.92}
+2025-10-21 10:15:08,440 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 10:12:00-04:00. Checking for trade pattern.
+2025-10-21 10:15:08,463 - [AnalysisService] - INFO - [15m] Processing 4 initial historical bars.
+2025-10-21 10:15:08,464 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 15m]: {'open': 671.46, 'high': 671.78, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+2025-10-21 10:15:08,465 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+2025-10-21 10:15:08,466 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 670.97, 'low': 670.91, 'close': 670.92}
+2025-10-21 10:15:08,489 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 10:10:00-04:00. Checking for trade pattern.
