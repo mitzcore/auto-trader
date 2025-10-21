@@ -12181,3 +12181,15 @@ C2 [2025-10-14 14:30:00-04:00 15m]: {'open': 665.11, 'high': 665.35, 'low': 664.
 2025-10-21 10:11:05,720 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:10:00-04:00. Checking for invalidation.
 2025-10-21 10:12:05,917 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:11:00-04:00. Checking for invalidation.
 2025-10-21 10:12:18,088 - [InvalidationService] - INFO - Invalidation Service shutting down.
+2025-10-21 10:12:38,128 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:12:38,129 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:12:38,129 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:12:47,117 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:12:47,120 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:12:47,125 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:13:53,542 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:13:53,543 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:13:53,543 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 10:14:29,240 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 10:14:29,241 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 10:14:29,242 - [AnalysisService] - INFO - Analysis Service initialized for polling.
