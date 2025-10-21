@@ -1,86 +1,18 @@
 [
     {
-        "id": "1760975400.0",
+        "id": "1760454000.0",
         "status": "active",
-        "zone_top": 671.0,
-        "zone_bottom": 670.43,
-        "timestamp": "2025-10-20 11:50:00-04:00"
+        "zone_top": 657.38,
+        "zone_bottom": 652.9699999999999,
+        "timestamp": "2025-10-14 11:00:00-04:00",
+        "zone_timeframe": "1h"
     },
     {
-        "id": "1760977800.0",
+        "id": "1761058800.0",
         "status": "active",
-        "zone_top": 670.8000000000001,
-        "zone_bottom": 670.13,
-        "timestamp": "2025-10-20 12:30:00-04:00"
-    },
-    {
-        "id": "1760979600.0",
-        "status": "active",
-        "zone_top": 671.07,
-        "zone_bottom": 670.5799999999999,
-        "timestamp": "2025-10-20 13:00:00-04:00"
-    },
-    {
-        "id": "1760979900.0",
-        "status": "active",
-        "zone_top": 671.1,
-        "zone_bottom": 670.63,
-        "timestamp": "2025-10-20 13:05:00-04:00"
-    },
-    {
-        "id": "1760980800.0",
-        "status": "active",
-        "zone_top": 671.76,
-        "zone_bottom": 671.3,
-        "timestamp": "2025-10-20 13:20:00-04:00"
-    },
-    {
-        "id": "1760983500.0",
-        "status": "active",
-        "zone_top": 671.94,
-        "zone_bottom": 671.43,
-        "timestamp": "2025-10-20 14:05:00-04:00"
-    },
-    {
-        "id": "1760986800.0",
-        "status": "active",
-        "zone_top": 671.6,
-        "zone_bottom": 671.03,
-        "timestamp": "2025-10-20 15:00:00-04:00"
-    },
-    {
-        "id": "1760988600.0",
-        "status": "active",
-        "zone_top": 671.61,
-        "zone_bottom": 671.01,
-        "timestamp": "2025-10-20 15:30:00-04:00"
-    },
-    {
-        "id": "1760970600.0",
-        "status": "active",
-        "zone_top": 669.9200000000001,
-        "zone_bottom": 668.81,
-        "timestamp": "2025-10-20 10:30:00-04:00"
-    },
-    {
-        "id": "1760971800.0",
-        "status": "active",
-        "zone_top": 670.46,
-        "zone_bottom": 669.6099999999999,
-        "timestamp": "2025-10-20 10:50:00-04:00"
-    },
-    {
-        "id": "1760975400.0",
-        "status": "active",
-        "zone_top": 671.13,
-        "zone_bottom": 670.43,
-        "timestamp": "2025-10-20 11:50:00-04:00"
-    },
-    {
-        "id": "1760980200.0",
-        "status": "active",
-        "zone_top": 671.07,
-        "zone_bottom": 670.5799999999999,
-        "timestamp": "2025-10-20 13:10:00-04:00"
+        "zone_top": 671.6600000000001,
+        "zone_bottom": 669.9499999999999,
+        "timestamp": "2025-10-21 11:00:00-04:00",
+        "zone_timeframe": "1h"
     }
 ]
