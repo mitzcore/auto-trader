@@ -12177,3 +12177,7 @@ C2 [2025-10-14 14:30:00-04:00 15m]: {'open': 665.11, 'high': 665.35, 'low': 664.
 2025-10-21 10:06:05,317 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:06:00-04:00. Checking for invalidation.
 2025-10-21 10:07:05,414 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:07:00-04:00. Checking for invalidation.
 2025-10-21 10:08:05,486 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:08:00-04:00. Checking for invalidation.
+2025-10-21 10:10:05,622 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:09:00-04:00. Checking for invalidation.
+2025-10-21 10:11:05,720 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:10:00-04:00. Checking for invalidation.
+2025-10-21 10:12:05,917 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:11:00-04:00. Checking for invalidation.
+2025-10-21 10:12:18,088 - [InvalidationService] - INFO - Invalidation Service shutting down.
