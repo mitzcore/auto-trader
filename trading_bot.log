@@ -12017,3 +12017,163 @@ C2 [2025-10-14 14:30:00-04:00 15m]: {'open': 665.11, 'high': 665.35, 'low': 664.
 2025-10-17 12:02:03,451 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:01:00-04:00. Checking for invalidation.
 2025-10-17 12:03:03,524 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:02:00-04:00. Checking for invalidation.
 2025-10-17 12:04:03,577 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:03:00-04:00. Checking for invalidation.
+2025-10-17 12:12:29,141 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-17 12:12:29,143 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-17 12:12:29,144 - [InvalidationService] - INFO - Connected
+2025-10-17 12:12:29,162 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-17 12:12:29,362 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-17 12:12:29,363 - [InvalidationService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-17 12:12:29,364 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-17 12:12:29,366 - [InvalidationService] - INFO - API connection ready
+2025-10-17 12:12:30,462 - [InvalidationService] - INFO - Synchronization complete
+2025-10-17 12:12:30,464 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-17 12:12:30,469 - [InvalidationService] - INFO - Found 3 existing demand zone(s) in Redis on startup.
+2025-10-17 12:12:30,470 - [InvalidationService] - INFO - Zone IDs: ['1760716200.0', '1760450400.0', '1760451300.0']
+2025-10-17 12:12:30,785 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-17 12:12:30,845 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:12:00-04:00. Checking for invalidation.
+2025-10-17 12:13:30,906 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:13:00-04:00. Checking for invalidation.
+2025-10-17 12:14:30,970 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:14:00-04:00. Checking for invalidation.
+2025-10-17 12:15:31,032 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:15:00-04:00. Checking for invalidation.
+2025-10-17 12:16:31,084 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:16:00-04:00. Checking for invalidation.
+2025-10-17 12:17:31,144 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:17:00-04:00. Checking for invalidation.
+2025-10-17 12:18:31,201 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:18:00-04:00. Checking for invalidation.
+2025-10-17 12:19:31,289 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:19:00-04:00. Checking for invalidation.
+2025-10-17 12:20:31,405 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:20:00-04:00. Checking for invalidation.
+2025-10-17 12:21:31,482 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:21:00-04:00. Checking for invalidation.
+2025-10-17 12:22:31,567 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:22:00-04:00. Checking for invalidation.
+2025-10-17 12:23:31,653 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:23:00-04:00. Checking for invalidation.
+2025-10-17 12:24:31,724 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:24:00-04:00. Checking for invalidation.
+2025-10-17 12:25:31,800 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:25:00-04:00. Checking for invalidation.
+2025-10-17 12:26:31,854 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:26:00-04:00. Checking for invalidation.
+2025-10-17 12:27:31,911 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:27:00-04:00. Checking for invalidation.
+2025-10-17 12:28:31,982 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:28:00-04:00. Checking for invalidation.
+2025-10-17 12:29:32,079 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:29:00-04:00. Checking for invalidation.
+2025-10-17 12:30:32,148 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:30:00-04:00. Checking for invalidation.
+2025-10-17 12:31:32,214 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:31:00-04:00. Checking for invalidation.
+2025-10-17 12:32:32,270 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:32:00-04:00. Checking for invalidation.
+2025-10-17 12:33:32,321 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:33:00-04:00. Checking for invalidation.
+2025-10-17 12:34:32,390 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:34:00-04:00. Checking for invalidation.
+2025-10-17 12:35:32,449 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:35:00-04:00. Checking for invalidation.
+2025-10-17 12:36:32,618 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:36:00-04:00. Checking for invalidation.
+2025-10-17 12:37:32,688 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:37:00-04:00. Checking for invalidation.
+2025-10-17 12:38:32,738 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:38:00-04:00. Checking for invalidation.
+2025-10-17 12:39:34,084 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:39:00-04:00. Checking for invalidation.
+2025-10-17 12:40:34,150 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:40:00-04:00. Checking for invalidation.
+2025-10-17 12:41:34,239 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:41:00-04:00. Checking for invalidation.
+2025-10-17 12:42:34,295 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:42:00-04:00. Checking for invalidation.
+2025-10-17 12:43:34,350 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:43:00-04:00. Checking for invalidation.
+2025-10-17 12:44:34,398 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:44:00-04:00. Checking for invalidation.
+2025-10-17 12:45:34,478 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:45:00-04:00. Checking for invalidation.
+2025-10-17 12:46:34,557 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:46:00-04:00. Checking for invalidation.
+2025-10-17 12:47:34,637 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:47:00-04:00. Checking for invalidation.
+2025-10-17 12:48:34,716 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:48:00-04:00. Checking for invalidation.
+2025-10-17 12:49:34,793 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:49:00-04:00. Checking for invalidation.
+2025-10-17 12:50:34,984 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:50:00-04:00. Checking for invalidation.
+2025-10-17 12:51:35,066 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:51:00-04:00. Checking for invalidation.
+2025-10-17 12:52:35,122 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:52:00-04:00. Checking for invalidation.
+2025-10-17 12:53:35,190 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:53:00-04:00. Checking for invalidation.
+2025-10-17 12:54:35,271 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:54:00-04:00. Checking for invalidation.
+2025-10-17 12:55:35,373 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:55:00-04:00. Checking for invalidation.
+2025-10-17 12:56:35,425 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:56:00-04:00. Checking for invalidation.
+2025-10-17 12:57:35,514 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:57:00-04:00. Checking for invalidation.
+2025-10-17 12:58:35,566 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:58:00-04:00. Checking for invalidation.
+2025-10-17 12:59:35,633 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 12:59:00-04:00. Checking for invalidation.
+2025-10-17 13:00:35,716 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:00:00-04:00. Checking for invalidation.
+2025-10-17 13:01:35,804 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:01:00-04:00. Checking for invalidation.
+2025-10-17 13:02:35,858 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:02:00-04:00. Checking for invalidation.
+2025-10-17 13:03:35,932 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:03:00-04:00. Checking for invalidation.
+2025-10-17 13:04:36,019 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:04:00-04:00. Checking for invalidation.
+2025-10-17 13:05:36,078 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:05:00-04:00. Checking for invalidation.
+2025-10-17 13:06:36,131 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:06:00-04:00. Checking for invalidation.
+2025-10-17 13:07:36,216 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:07:00-04:00. Checking for invalidation.
+2025-10-17 13:08:36,266 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:08:00-04:00. Checking for invalidation.
+2025-10-17 13:09:36,343 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:09:00-04:00. Checking for invalidation.
+2025-10-17 13:10:36,419 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:10:00-04:00. Checking for invalidation.
+2025-10-17 13:11:36,514 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:11:00-04:00. Checking for invalidation.
+2025-10-17 13:12:36,614 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:12:00-04:00. Checking for invalidation.
+2025-10-17 13:13:36,684 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:13:00-04:00. Checking for invalidation.
+2025-10-17 13:14:36,711 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:14:00-04:00. Checking for invalidation.
+2025-10-17 13:15:36,820 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:15:00-04:00. Checking for invalidation.
+2025-10-17 13:16:36,876 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:16:00-04:00. Checking for invalidation.
+2025-10-17 13:17:36,955 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:17:00-04:00. Checking for invalidation.
+2025-10-17 13:18:36,996 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:18:00-04:00. Checking for invalidation.
+2025-10-17 13:19:37,074 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:19:00-04:00. Checking for invalidation.
+2025-10-17 13:20:37,163 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:20:00-04:00. Checking for invalidation.
+2025-10-17 13:21:37,250 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:21:00-04:00. Checking for invalidation.
+2025-10-17 13:22:37,299 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:22:00-04:00. Checking for invalidation.
+2025-10-17 13:23:37,387 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:23:00-04:00. Checking for invalidation.
+2025-10-17 13:24:37,456 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:24:00-04:00. Checking for invalidation.
+2025-10-17 13:25:37,529 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:25:00-04:00. Checking for invalidation.
+2025-10-17 13:26:37,581 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:26:00-04:00. Checking for invalidation.
+2025-10-17 13:27:37,655 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:27:00-04:00. Checking for invalidation.
+2025-10-17 13:28:37,706 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:28:00-04:00. Checking for invalidation.
+2025-10-17 13:29:37,784 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:29:00-04:00. Checking for invalidation.
+2025-10-17 13:30:37,830 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:30:00-04:00. Checking for invalidation.
+2025-10-17 13:31:37,891 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:31:00-04:00. Checking for invalidation.
+2025-10-17 13:32:37,964 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:32:00-04:00. Checking for invalidation.
+2025-10-17 13:33:38,047 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:33:00-04:00. Checking for invalidation.
+2025-10-17 13:34:38,133 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:34:00-04:00. Checking for invalidation.
+2025-10-17 13:35:38,207 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:35:00-04:00. Checking for invalidation.
+2025-10-17 13:36:38,293 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:36:00-04:00. Checking for invalidation.
+2025-10-17 13:37:38,397 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-17 13:37:00-04:00. Checking for invalidation.
+2025-10-17 13:38:37,345 - [InvalidationService] - INFO - Invalidation Service shutting down.
+2025-10-21 09:24:00,629 - [InvalidationService] - INFO - Invalidation Service initialized for polling.
+2025-10-21 09:24:00,630 - [InvalidationService] - INFO - Connecting to 127.0.0.1:4001 with clientId 3...
+2025-10-21 09:24:00,631 - [InvalidationService] - INFO - Connected
+2025-10-21 09:24:00,663 - [InvalidationService] - INFO - Logged on to server version 176
+2025-10-21 09:24:00,665 - [InvalidationService] - INFO - API connection ready
+2025-10-21 09:24:00,666 - [InvalidationService] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-10-21 09:24:00,667 - [InvalidationService] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-10-21 09:24:00,667 - [InvalidationService] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-10-21 09:24:01,965 - [InvalidationService] - INFO - Synchronization complete
+2025-10-21 09:24:01,968 - [InvalidationService] - INFO - Invalidation Service connected to IB.
+2025-10-21 09:24:01,977 - [InvalidationService] - INFO - Found 17 existing demand zone(s) in Redis on startup.
+2025-10-21 09:24:01,978 - [InvalidationService] - INFO - Zone IDs: ['1760979900.0', '1760971800.0', '1760988600.0', '1760980800.0', '1760977800.0', '1760450400.0', '1760983500.0', '1760717400.0', '1760722500.0', '1760979600.0', '1760980200.0', '1760986800.0', '1760716200.0', '1760451300.0', '1760710500.0', '1760970600.0', '1760975400.0']
+2025-10-21 09:24:02,453 - [InvalidationService] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-10-21 09:24:02,482 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-20 15:59:00-04:00. Checking for invalidation.
+2025-10-21 09:24:02,492 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.29 below bottom of zone 1760980800.0 (671.30). Removing from Redis.
+2025-10-21 09:24:02,494 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.29 below bottom of zone 1760983500.0 (671.43). Removing from Redis.
+2025-10-21 09:31:03,075 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:30:00-04:00. Checking for invalidation.
+2025-10-21 09:32:03,155 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:31:00-04:00. Checking for invalidation.
+2025-10-21 09:33:03,223 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:32:00-04:00. Checking for invalidation.
+2025-10-21 09:34:03,299 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:33:00-04:00. Checking for invalidation.
+2025-10-21 09:35:03,360 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:34:00-04:00. Checking for invalidation.
+2025-10-21 09:36:03,420 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:35:00-04:00. Checking for invalidation.
+2025-10-21 09:37:03,490 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:36:00-04:00. Checking for invalidation.
+2025-10-21 09:38:03,545 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:37:00-04:00. Checking for invalidation.
+2025-10-21 09:39:03,620 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:38:00-04:00. Checking for invalidation.
+2025-10-21 09:40:03,679 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:39:00-04:00. Checking for invalidation.
+2025-10-21 09:41:03,746 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:40:00-04:00. Checking for invalidation.
+2025-10-21 09:42:03,799 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:41:00-04:00. Checking for invalidation.
+2025-10-21 09:43:03,871 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:42:00-04:00. Checking for invalidation.
+2025-10-21 09:43:03,876 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 671.01 below bottom of zone 1760986800.0 (671.03). Removing from Redis.
+2025-10-21 09:44:03,935 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:43:00-04:00. Checking for invalidation.
+2025-10-21 09:45:03,986 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:44:00-04:00. Checking for invalidation.
+2025-10-21 09:46:04,053 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:45:00-04:00. Checking for invalidation.
+2025-10-21 09:46:04,057 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.86 below bottom of zone 1760988600.0 (671.01). Removing from Redis.
+2025-10-21 09:47:04,097 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:46:00-04:00. Checking for invalidation.
+2025-10-21 09:48:04,146 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:47:00-04:00. Checking for invalidation.
+2025-10-21 09:49:04,212 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:48:00-04:00. Checking for invalidation.
+2025-10-21 09:49:04,230 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.52 below bottom of zone 1760979900.0 (670.63). Removing from Redis.
+2025-10-21 09:49:04,232 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.52 below bottom of zone 1760979600.0 (670.58). Removing from Redis.
+2025-10-21 09:49:04,233 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.52 below bottom of zone 1760980200.0 (670.58). Removing from Redis.
+2025-10-21 09:50:04,283 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:49:00-04:00. Checking for invalidation.
+2025-10-21 09:51:04,344 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:50:00-04:00. Checking for invalidation.
+2025-10-21 09:52:04,396 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:51:00-04:00. Checking for invalidation.
+2025-10-21 09:53:04,463 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:52:00-04:00. Checking for invalidation.
+2025-10-21 09:54:04,540 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:53:00-04:00. Checking for invalidation.
+2025-10-21 09:55:04,601 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:54:00-04:00. Checking for invalidation.
+2025-10-21 09:56:04,636 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:55:00-04:00. Checking for invalidation.
+2025-10-21 09:57:04,680 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:56:00-04:00. Checking for invalidation.
+2025-10-21 09:58:04,726 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:57:00-04:00. Checking for invalidation.
+2025-10-21 09:58:04,729 - [InvalidationService] - WARNING - ZONE INVALIDATED: 1-min bar closed at 670.31 below bottom of zone 1760975400.0 (670.43). Removing from Redis.
+2025-10-21 09:59:04,803 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:58:00-04:00. Checking for invalidation.
+2025-10-21 10:00:04,869 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 09:59:00-04:00. Checking for invalidation.
+2025-10-21 10:01:04,942 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:00:00-04:00. Checking for invalidation.
+2025-10-21 10:02:05,001 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:01:00-04:00. Checking for invalidation.
+2025-10-21 10:03:05,089 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:02:00-04:00. Checking for invalidation.
+2025-10-21 10:04:05,161 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:03:00-04:00. Checking for invalidation.
+2025-10-21 10:05:05,248 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:04:00-04:00. Checking for invalidation.
+2025-10-21 10:06:05,317 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:06:00-04:00. Checking for invalidation.
+2025-10-21 10:07:05,414 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:07:00-04:00. Checking for invalidation.
+2025-10-21 10:08:05,486 - [InvalidationService] - INFO - New completed 1-min bar found with timestamp 2025-10-21 10:08:00-04:00. Checking for invalidation.

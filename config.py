@@ -41,9 +41,7 @@ PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confi
 # Example: CUSTOM_DEMAND_ZONES = [{"zone_top": 530.0, "zone_bottom": 529.5}]
 
 CUSTOM_DEMAND_ZONES = [
-    {"zone_top": 655.26, "zone_bottom": 653.16},
-    {"zone_top": 652.33, "zone_bottom": 650.58},
-    {"zone_top": 657.21, "zone_bottom": 656.50},
+    {"zone_top": 670.26, "zone_bottom": 669.89},
 ]
 
 # --- Candlestick Pattern Thresholds ---
