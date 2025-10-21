@@ -14169,3 +14169,320 @@ C2 [2025-10-21 13:20:00-04:00 5m]: {'open': 671.47, 'high': 671.71, 'low': 671.0
 2025-10-21 13:26:40,176 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:24:00-04:00. Checking for trade pattern.
 2025-10-21 13:26:40,180 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
   - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:27:40,355 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 13:24:00-04:00. Checking for trade pattern.
+2025-10-21 13:27:40,362 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:28:40,423 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:26:00-04:00. Checking for trade pattern.
+2025-10-21 13:28:40,427 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:30:40,787 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-21 13:25:00-04:00. Analyzing.
+2025-10-21 13:30:40,795 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:20:00-04:00 5m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.64}
+C2 [2025-10-21 13:25:00-04:00 5m]: {'open': 671.64, 'high': 671.67, 'low': 671.12, 'close': 671.61}
+2025-10-21 13:30:40,847 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:28:00-04:00. Checking for trade pattern.
+2025-10-21 13:30:40,852 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:30:40,897 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-21 13:20:00-04:00. Analyzing.
+2025-10-21 13:30:40,901 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:10:00-04:00 10m]: {'open': 671.7, 'high': 672.16, 'low': 671.28, 'close': 671.46}
+C2 [2025-10-21 13:20:00-04:00 10m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.61}
+2025-10-21 13:30:40,928 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 13:27:00-04:00. Checking for trade pattern.
+2025-10-21 13:30:40,930 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:30:40,938 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-10-21 13:15:00-04:00. Analyzing.
+2025-10-21 13:30:40,941 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:00:00-04:00 15m]: {'open': 671.51, 'high': 672.16, 'low': 670.76, 'close': 672.09}
+C2 [2025-10-21 13:15:00-04:00 15m]: {'open': 672.09, 'high': 672.14, 'low': 671.04, 'close': 671.61}
+2025-10-21 13:30:40,973 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 13:25:00-04:00. Checking for trade pattern.
+2025-10-21 13:30:40,975 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:32:41,171 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:30:00-04:00. Checking for trade pattern.
+2025-10-21 13:32:41,188 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:33:41,503 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 13:30:00-04:00. Checking for trade pattern.
+2025-10-21 13:33:41,510 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:33:47,217 - [algotrade.trade_service] - INFO - Trade Service shutting down.
+2025-10-21 13:33:47,217 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-21 13:33:55,545 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['5m', '10m', '15m']
+2025-10-21 13:33:55,546 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-21 13:33:55,546 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-21 13:33:56,773 - [algotrade.trade_service] - INFO - Trade Service connected to IB.
+2025-10-21 13:33:56,872 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-10-21 13:33:56,899 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-10-21 13:33:57,005 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:30:00-04:00. Checking for trade pattern.
+2025-10-21 13:33:57,211 - [AnalysisService] - INFO - [5m] Processing 49 initial historical bars.
+2025-10-21 13:33:57,215 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 5m]: {'open': 671.46, 'high': 671.69, 'low': 671.03, 'close': 671.5}
+C2 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+2025-10-21 13:33:57,216 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:35:00-04:00 5m]: {'open': 671.52, 'high': 671.78, 'low': 671.41, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+2025-10-21 13:33:57,218 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 5m]: {'open': 671.64, 'high': 671.69, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+2025-10-21 13:33:57,219 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 5m]: {'open': 671.15, 'high': 671.19, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+2025-10-21 13:33:57,220 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 5m]: {'open': 670.79, 'high': 671.11, 'low': 670.71, 'close': 670.95}
+C2 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+2025-10-21 13:33:57,221 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:55:00-04:00 5m]: {'open': 670.94, 'high': 670.97, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+2025-10-21 13:33:57,222 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 5m]: {'open': 670.56, 'high': 670.73, 'low': 669.98, 'close': 670.28}
+C2 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+2025-10-21 13:33:57,223 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:05:00-04:00 5m]: {'open': 670.29, 'high': 670.94, 'low': 670.2, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+2025-10-21 13:33:57,224 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:10:00-04:00 5m]: {'open': 670.56, 'high': 671.05, 'low': 670.4, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 5m]: {'open': 670.95, 'high': 671.58, 'low': 670.77, 'close': 671.51}
+2025-10-21 13:33:57,225 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:15:00-04:00 5m]: {'open': 670.95, 'high': 671.58, 'low': 670.77, 'close': 671.51}
+C2 [2025-10-21 10:20:00-04:00 5m]: {'open': 671.5, 'high': 671.9, 'low': 671.32, 'close': 671.56}
+2025-10-21 13:33:57,226 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:20:00-04:00 5m]: {'open': 671.5, 'high': 671.9, 'low': 671.32, 'close': 671.56}
+C2 [2025-10-21 10:25:00-04:00 5m]: {'open': 671.57, 'high': 671.58, 'low': 670.41, 'close': 670.6}
+2025-10-21 13:33:57,227 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:25:00-04:00 5m]: {'open': 671.57, 'high': 671.58, 'low': 670.41, 'close': 670.6}
+C2 [2025-10-21 10:30:00-04:00 5m]: {'open': 670.59, 'high': 670.91, 'low': 670.26, 'close': 670.9}
+2025-10-21 13:33:57,229 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 5m]: {'open': 670.59, 'high': 670.91, 'low': 670.26, 'close': 670.9}
+C2 [2025-10-21 10:35:00-04:00 5m]: {'open': 670.9, 'high': 671.51, 'low': 670.86, 'close': 671.37}
+2025-10-21 13:33:57,232 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:35:00-04:00 5m]: {'open': 670.9, 'high': 671.51, 'low': 670.86, 'close': 671.37}
+C2 [2025-10-21 10:40:00-04:00 5m]: {'open': 671.37, 'high': 671.75, 'low': 671.15, 'close': 671.31}
+2025-10-21 13:33:57,236 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:40:00-04:00 5m]: {'open': 671.37, 'high': 671.75, 'low': 671.15, 'close': 671.31}
+C2 [2025-10-21 10:45:00-04:00 5m]: {'open': 671.3, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+2025-10-21 13:33:57,237 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:45:00-04:00 5m]: {'open': 671.3, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+C2 [2025-10-21 10:50:00-04:00 5m]: {'open': 671.63, 'high': 672.18, 'low': 671.62, 'close': 672.1}
+2025-10-21 13:33:57,238 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:50:00-04:00 5m]: {'open': 671.63, 'high': 672.18, 'low': 671.62, 'close': 672.1}
+C2 [2025-10-21 10:55:00-04:00 5m]: {'open': 672.08, 'high': 672.64, 'low': 672.03, 'close': 672.57}
+2025-10-21 13:33:57,239 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:55:00-04:00 5m]: {'open': 672.08, 'high': 672.64, 'low': 672.03, 'close': 672.57}
+C2 [2025-10-21 11:00:00-04:00 5m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.33}
+2025-10-21 13:33:57,240 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:00:00-04:00 5m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.33}
+C2 [2025-10-21 11:05:00-04:00 5m]: {'open': 672.34, 'high': 672.57, 'low': 672.26, 'close': 672.46}
+2025-10-21 13:33:57,240 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:05:00-04:00 5m]: {'open': 672.34, 'high': 672.57, 'low': 672.26, 'close': 672.46}
+C2 [2025-10-21 11:10:00-04:00 5m]: {'open': 672.46, 'high': 672.74, 'low': 672.37, 'close': 672.46}
+2025-10-21 13:33:57,241 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:10:00-04:00 5m]: {'open': 672.46, 'high': 672.74, 'low': 672.37, 'close': 672.46}
+C2 [2025-10-21 11:15:00-04:00 5m]: {'open': 672.44, 'high': 672.45, 'low': 671.53, 'close': 672.04}
+2025-10-21 13:33:57,242 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:15:00-04:00 5m]: {'open': 672.44, 'high': 672.45, 'low': 671.53, 'close': 672.04}
+C2 [2025-10-21 11:20:00-04:00 5m]: {'open': 672.05, 'high': 672.08, 'low': 671.67, 'close': 671.84}
+2025-10-21 13:33:57,243 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:20:00-04:00 5m]: {'open': 672.05, 'high': 672.08, 'low': 671.67, 'close': 671.84}
+C2 [2025-10-21 11:25:00-04:00 5m]: {'open': 671.85, 'high': 672.05, 'low': 671.7, 'close': 671.9}
+2025-10-21 13:33:57,243 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:25:00-04:00 5m]: {'open': 671.85, 'high': 672.05, 'low': 671.7, 'close': 671.9}
+C2 [2025-10-21 11:30:00-04:00 5m]: {'open': 671.9, 'high': 672.21, 'low': 671.89, 'close': 672.0}
+2025-10-21 13:33:57,244 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:30:00-04:00 5m]: {'open': 671.9, 'high': 672.21, 'low': 671.89, 'close': 672.0}
+C2 [2025-10-21 11:35:00-04:00 5m]: {'open': 672.01, 'high': 672.05, 'low': 671.4, 'close': 671.76}
+2025-10-21 13:33:57,245 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:35:00-04:00 5m]: {'open': 672.01, 'high': 672.05, 'low': 671.4, 'close': 671.76}
+C2 [2025-10-21 11:40:00-04:00 5m]: {'open': 671.77, 'high': 672.12, 'low': 671.74, 'close': 671.9}
+2025-10-21 13:33:57,246 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:40:00-04:00 5m]: {'open': 671.77, 'high': 672.12, 'low': 671.74, 'close': 671.9}
+C2 [2025-10-21 11:45:00-04:00 5m]: {'open': 671.91, 'high': 672.52, 'low': 671.89, 'close': 672.3}
+2025-10-21 13:33:57,247 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:45:00-04:00 5m]: {'open': 671.91, 'high': 672.52, 'low': 671.89, 'close': 672.3}
+C2 [2025-10-21 11:50:00-04:00 5m]: {'open': 672.31, 'high': 672.49, 'low': 672.23, 'close': 672.28}
+2025-10-21 13:33:57,247 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:50:00-04:00 5m]: {'open': 672.31, 'high': 672.49, 'low': 672.23, 'close': 672.28}
+C2 [2025-10-21 11:55:00-04:00 5m]: {'open': 672.29, 'high': 672.37, 'low': 672.06, 'close': 672.28}
+2025-10-21 13:33:57,248 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:55:00-04:00 5m]: {'open': 672.29, 'high': 672.37, 'low': 672.06, 'close': 672.28}
+C2 [2025-10-21 12:00:00-04:00 5m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.44}
+2025-10-21 13:33:57,249 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:00:00-04:00 5m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.44}
+C2 [2025-10-21 12:05:00-04:00 5m]: {'open': 672.42, 'high': 672.53, 'low': 672.24, 'close': 672.48}
+2025-10-21 13:33:57,250 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:05:00-04:00 5m]: {'open': 672.42, 'high': 672.53, 'low': 672.24, 'close': 672.48}
+C2 [2025-10-21 12:10:00-04:00 5m]: {'open': 672.45, 'high': 672.54, 'low': 672.34, 'close': 672.46}
+2025-10-21 13:33:57,250 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:10:00-04:00 5m]: {'open': 672.45, 'high': 672.54, 'low': 672.34, 'close': 672.46}
+C2 [2025-10-21 12:15:00-04:00 5m]: {'open': 672.45, 'high': 672.59, 'low': 672.26, 'close': 672.26}
+2025-10-21 13:33:57,251 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:15:00-04:00 5m]: {'open': 672.45, 'high': 672.59, 'low': 672.26, 'close': 672.26}
+C2 [2025-10-21 12:20:00-04:00 5m]: {'open': 672.25, 'high': 672.64, 'low': 672.16, 'close': 672.55}
+2025-10-21 13:33:57,252 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:20:00-04:00 5m]: {'open': 672.25, 'high': 672.64, 'low': 672.16, 'close': 672.55}
+C2 [2025-10-21 12:25:00-04:00 5m]: {'open': 672.55, 'high': 672.69, 'low': 672.4, 'close': 672.63}
+2025-10-21 13:33:57,253 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:25:00-04:00 5m]: {'open': 672.55, 'high': 672.69, 'low': 672.4, 'close': 672.63}
+C2 [2025-10-21 12:30:00-04:00 5m]: {'open': 672.65, 'high': 672.8, 'low': 672.59, 'close': 672.76}
+2025-10-21 13:33:57,254 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:30:00-04:00 5m]: {'open': 672.65, 'high': 672.8, 'low': 672.59, 'close': 672.76}
+C2 [2025-10-21 12:35:00-04:00 5m]: {'open': 672.75, 'high': 672.79, 'low': 672.47, 'close': 672.62}
+2025-10-21 13:33:57,254 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:35:00-04:00 5m]: {'open': 672.75, 'high': 672.79, 'low': 672.47, 'close': 672.62}
+C2 [2025-10-21 12:40:00-04:00 5m]: {'open': 672.62, 'high': 672.72, 'low': 672.39, 'close': 672.62}
+2025-10-21 13:33:57,255 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:40:00-04:00 5m]: {'open': 672.62, 'high': 672.72, 'low': 672.39, 'close': 672.62}
+C2 [2025-10-21 12:45:00-04:00 5m]: {'open': 672.63, 'high': 672.93, 'low': 672.63, 'close': 672.83}
+2025-10-21 13:33:57,256 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:45:00-04:00 5m]: {'open': 672.63, 'high': 672.93, 'low': 672.63, 'close': 672.83}
+C2 [2025-10-21 12:50:00-04:00 5m]: {'open': 672.83, 'high': 672.99, 'low': 671.69, 'close': 671.72}
+2025-10-21 13:33:57,257 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:50:00-04:00 5m]: {'open': 672.83, 'high': 672.99, 'low': 671.69, 'close': 671.72}
+C2 [2025-10-21 12:55:00-04:00 5m]: {'open': 671.73, 'high': 671.95, 'low': 671.35, 'close': 671.49}
+2025-10-21 13:33:57,257 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:55:00-04:00 5m]: {'open': 671.73, 'high': 671.95, 'low': 671.35, 'close': 671.49}
+C2 [2025-10-21 13:00:00-04:00 5m]: {'open': 671.51, 'high': 671.58, 'low': 670.76, 'close': 671.25}
+2025-10-21 13:33:57,258 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:00:00-04:00 5m]: {'open': 671.51, 'high': 671.58, 'low': 670.76, 'close': 671.25}
+C2 [2025-10-21 13:05:00-04:00 5m]: {'open': 671.21, 'high': 671.85, 'low': 671.05, 'close': 671.7}
+2025-10-21 13:33:57,259 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:05:00-04:00 5m]: {'open': 671.21, 'high': 671.85, 'low': 671.05, 'close': 671.7}
+C2 [2025-10-21 13:10:00-04:00 5m]: {'open': 671.7, 'high': 672.16, 'low': 671.65, 'close': 672.09}
+2025-10-21 13:33:57,260 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:10:00-04:00 5m]: {'open': 671.7, 'high': 672.16, 'low': 671.65, 'close': 672.09}
+C2 [2025-10-21 13:15:00-04:00 5m]: {'open': 672.09, 'high': 672.14, 'low': 671.28, 'close': 671.46}
+2025-10-21 13:33:57,260 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:15:00-04:00 5m]: {'open': 672.09, 'high': 672.14, 'low': 671.28, 'close': 671.46}
+C2 [2025-10-21 13:20:00-04:00 5m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.64}
+2025-10-21 13:33:57,261 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:20:00-04:00 5m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.64}
+C2 [2025-10-21 13:25:00-04:00 5m]: {'open': 671.64, 'high': 671.67, 'low': 671.12, 'close': 671.61}
+2025-10-21 13:33:57,262 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:25:00-04:00 5m]: {'open': 671.64, 'high': 671.67, 'low': 671.12, 'close': 671.61}
+C2 [2025-10-21 13:30:00-04:00 5m]: {'open': 671.63, 'high': 671.8, 'low': 671.28, 'close': 671.45}
+2025-10-21 13:33:57,299 - [algotrade.trade_service] - INFO - New completed 3m bar found with timestamp 2025-10-21 13:30:00-04:00. Checking for trade pattern.
+2025-10-21 13:33:57,604 - [AnalysisService] - INFO - [10m] Processing 25 initial historical bars.
+2025-10-21 13:33:57,606 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 10m]: {'open': 671.46, 'high': 671.78, 'low': 671.03, 'close': 671.63}
+C2 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+2025-10-21 13:33:57,607 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:40:00-04:00 10m]: {'open': 671.64, 'high': 671.69, 'low': 670.36, 'close': 670.77}
+C2 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+2025-10-21 13:33:57,609 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:50:00-04:00 10m]: {'open': 670.79, 'high': 671.11, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+2025-10-21 13:33:57,610 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 10m]: {'open': 670.56, 'high': 670.94, 'low': 669.98, 'close': 670.56}
+C2 [2025-10-21 10:10:00-04:00 10m]: {'open': 670.56, 'high': 671.58, 'low': 670.4, 'close': 671.51}
+2025-10-21 13:33:57,612 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:10:00-04:00 10m]: {'open': 670.56, 'high': 671.58, 'low': 670.4, 'close': 671.51}
+C2 [2025-10-21 10:20:00-04:00 10m]: {'open': 671.5, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+2025-10-21 13:33:57,613 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:20:00-04:00 10m]: {'open': 671.5, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+C2 [2025-10-21 10:30:00-04:00 10m]: {'open': 670.59, 'high': 671.51, 'low': 670.26, 'close': 671.37}
+2025-10-21 13:33:57,614 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 10m]: {'open': 670.59, 'high': 671.51, 'low': 670.26, 'close': 671.37}
+C2 [2025-10-21 10:40:00-04:00 10m]: {'open': 671.37, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+2025-10-21 13:33:57,615 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:40:00-04:00 10m]: {'open': 671.37, 'high': 671.77, 'low': 671.0, 'close': 671.64}
+C2 [2025-10-21 10:50:00-04:00 10m]: {'open': 671.63, 'high': 672.64, 'low': 671.62, 'close': 672.57}
+2025-10-21 13:33:57,616 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:50:00-04:00 10m]: {'open': 671.63, 'high': 672.64, 'low': 671.62, 'close': 672.57}
+C2 [2025-10-21 11:00:00-04:00 10m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.46}
+2025-10-21 13:33:57,616 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:00:00-04:00 10m]: {'open': 672.58, 'high': 672.68, 'low': 672.2, 'close': 672.46}
+C2 [2025-10-21 11:10:00-04:00 10m]: {'open': 672.46, 'high': 672.74, 'low': 671.53, 'close': 672.04}
+2025-10-21 13:33:57,617 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:10:00-04:00 10m]: {'open': 672.46, 'high': 672.74, 'low': 671.53, 'close': 672.04}
+C2 [2025-10-21 11:20:00-04:00 10m]: {'open': 672.05, 'high': 672.08, 'low': 671.67, 'close': 671.9}
+2025-10-21 13:33:57,618 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:20:00-04:00 10m]: {'open': 672.05, 'high': 672.08, 'low': 671.67, 'close': 671.9}
+C2 [2025-10-21 11:30:00-04:00 10m]: {'open': 671.9, 'high': 672.21, 'low': 671.4, 'close': 671.76}
+2025-10-21 13:33:57,619 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:30:00-04:00 10m]: {'open': 671.9, 'high': 672.21, 'low': 671.4, 'close': 671.76}
+C2 [2025-10-21 11:40:00-04:00 10m]: {'open': 671.77, 'high': 672.52, 'low': 671.74, 'close': 672.3}
+2025-10-21 13:33:57,620 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:40:00-04:00 10m]: {'open': 671.77, 'high': 672.52, 'low': 671.74, 'close': 672.3}
+C2 [2025-10-21 11:50:00-04:00 10m]: {'open': 672.31, 'high': 672.49, 'low': 672.06, 'close': 672.28}
+2025-10-21 13:33:57,621 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:50:00-04:00 10m]: {'open': 672.31, 'high': 672.49, 'low': 672.06, 'close': 672.28}
+C2 [2025-10-21 12:00:00-04:00 10m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.48}
+2025-10-21 13:33:57,622 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:00:00-04:00 10m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.48}
+C2 [2025-10-21 12:10:00-04:00 10m]: {'open': 672.45, 'high': 672.59, 'low': 672.26, 'close': 672.26}
+2025-10-21 13:33:57,622 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:10:00-04:00 10m]: {'open': 672.45, 'high': 672.59, 'low': 672.26, 'close': 672.26}
+C2 [2025-10-21 12:20:00-04:00 10m]: {'open': 672.25, 'high': 672.69, 'low': 672.16, 'close': 672.63}
+2025-10-21 13:33:57,623 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:20:00-04:00 10m]: {'open': 672.25, 'high': 672.69, 'low': 672.16, 'close': 672.63}
+C2 [2025-10-21 12:30:00-04:00 10m]: {'open': 672.65, 'high': 672.8, 'low': 672.47, 'close': 672.62}
+2025-10-21 13:33:57,624 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:30:00-04:00 10m]: {'open': 672.65, 'high': 672.8, 'low': 672.47, 'close': 672.62}
+C2 [2025-10-21 12:40:00-04:00 10m]: {'open': 672.62, 'high': 672.93, 'low': 672.39, 'close': 672.83}
+2025-10-21 13:33:57,625 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:40:00-04:00 10m]: {'open': 672.62, 'high': 672.93, 'low': 672.39, 'close': 672.83}
+C2 [2025-10-21 12:50:00-04:00 10m]: {'open': 672.83, 'high': 672.99, 'low': 671.35, 'close': 671.49}
+2025-10-21 13:33:57,626 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:50:00-04:00 10m]: {'open': 672.83, 'high': 672.99, 'low': 671.35, 'close': 671.49}
+C2 [2025-10-21 13:00:00-04:00 10m]: {'open': 671.51, 'high': 671.85, 'low': 670.76, 'close': 671.7}
+2025-10-21 13:33:57,627 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:00:00-04:00 10m]: {'open': 671.51, 'high': 671.85, 'low': 670.76, 'close': 671.7}
+C2 [2025-10-21 13:10:00-04:00 10m]: {'open': 671.7, 'high': 672.16, 'low': 671.28, 'close': 671.46}
+2025-10-21 13:33:57,628 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:10:00-04:00 10m]: {'open': 671.7, 'high': 672.16, 'low': 671.28, 'close': 671.46}
+C2 [2025-10-21 13:20:00-04:00 10m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.61}
+2025-10-21 13:33:57,628 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:20:00-04:00 10m]: {'open': 671.47, 'high': 671.71, 'low': 671.04, 'close': 671.61}
+C2 [2025-10-21 13:30:00-04:00 10m]: {'open': 671.63, 'high': 671.8, 'low': 671.28, 'close': 671.45}
+2025-10-21 13:33:57,701 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 13:25:00-04:00. Checking for trade pattern.
+2025-10-21 13:33:57,801 - [AnalysisService] - INFO - [15m] Processing 17 initial historical bars.
+2025-10-21 13:33:57,804 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:30:00-04:00 15m]: {'open': 671.46, 'high': 671.78, 'low': 670.69, 'close': 671.15}
+C2 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+2025-10-21 13:33:57,806 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 09:45:00-04:00 15m]: {'open': 671.15, 'high': 671.19, 'low': 670.15, 'close': 670.57}
+C2 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+2025-10-21 13:33:57,807 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:00:00-04:00 15m]: {'open': 670.56, 'high': 671.05, 'low': 669.98, 'close': 670.96}
+C2 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+2025-10-21 13:33:57,809 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:15:00-04:00 15m]: {'open': 670.95, 'high': 671.9, 'low': 670.41, 'close': 670.6}
+C2 [2025-10-21 10:30:00-04:00 15m]: {'open': 670.59, 'high': 671.75, 'low': 670.26, 'close': 671.31}
+2025-10-21 13:33:57,810 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:30:00-04:00 15m]: {'open': 670.59, 'high': 671.75, 'low': 670.26, 'close': 671.31}
+C2 [2025-10-21 10:45:00-04:00 15m]: {'open': 671.3, 'high': 672.64, 'low': 671.0, 'close': 672.57}
+2025-10-21 13:33:57,811 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 10:45:00-04:00 15m]: {'open': 671.3, 'high': 672.64, 'low': 671.0, 'close': 672.57}
+C2 [2025-10-21 11:00:00-04:00 15m]: {'open': 672.58, 'high': 672.74, 'low': 672.2, 'close': 672.46}
+2025-10-21 13:33:57,812 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:00:00-04:00 15m]: {'open': 672.58, 'high': 672.74, 'low': 672.2, 'close': 672.46}
+C2 [2025-10-21 11:15:00-04:00 15m]: {'open': 672.44, 'high': 672.45, 'low': 671.53, 'close': 671.9}
+2025-10-21 13:33:57,814 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:15:00-04:00 15m]: {'open': 672.44, 'high': 672.45, 'low': 671.53, 'close': 671.9}
+C2 [2025-10-21 11:30:00-04:00 15m]: {'open': 671.9, 'high': 672.21, 'low': 671.4, 'close': 671.9}
+2025-10-21 13:33:57,815 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:30:00-04:00 15m]: {'open': 671.9, 'high': 672.21, 'low': 671.4, 'close': 671.9}
+C2 [2025-10-21 11:45:00-04:00 15m]: {'open': 671.91, 'high': 672.52, 'low': 671.89, 'close': 672.28}
+2025-10-21 13:33:57,817 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 11:45:00-04:00 15m]: {'open': 671.91, 'high': 672.52, 'low': 671.89, 'close': 672.28}
+C2 [2025-10-21 12:00:00-04:00 15m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.46}
+2025-10-21 13:33:57,818 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:00:00-04:00 15m]: {'open': 672.27, 'high': 672.66, 'low': 672.14, 'close': 672.46}
+C2 [2025-10-21 12:15:00-04:00 15m]: {'open': 672.45, 'high': 672.69, 'low': 672.16, 'close': 672.63}
+2025-10-21 13:33:57,819 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:15:00-04:00 15m]: {'open': 672.45, 'high': 672.69, 'low': 672.16, 'close': 672.63}
+C2 [2025-10-21 12:30:00-04:00 15m]: {'open': 672.65, 'high': 672.8, 'low': 672.39, 'close': 672.62}
+2025-10-21 13:33:57,820 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:30:00-04:00 15m]: {'open': 672.65, 'high': 672.8, 'low': 672.39, 'close': 672.62}
+C2 [2025-10-21 12:45:00-04:00 15m]: {'open': 672.63, 'high': 672.99, 'low': 671.35, 'close': 671.49}
+2025-10-21 13:33:57,821 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 12:45:00-04:00 15m]: {'open': 672.63, 'high': 672.99, 'low': 671.35, 'close': 671.49}
+C2 [2025-10-21 13:00:00-04:00 15m]: {'open': 671.51, 'high': 672.16, 'low': 670.76, 'close': 672.09}
+2025-10-21 13:33:57,821 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:00:00-04:00 15m]: {'open': 671.51, 'high': 672.16, 'low': 670.76, 'close': 672.09}
+C2 [2025-10-21 13:15:00-04:00 15m]: {'open': 672.09, 'high': 672.14, 'low': 671.04, 'close': 671.61}
+2025-10-21 13:33:57,822 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-10-21 13:15:00-04:00 15m]: {'open': 672.09, 'high': 672.14, 'low': 671.04, 'close': 671.61}
+C2 [2025-10-21 13:30:00-04:00 15m]: {'open': 671.63, 'high': 671.8, 'low': 671.28, 'close': 671.45}
+2025-10-21 13:34:57,761 - [algotrade.trade_service] - INFO - New completed 2m bar found with timestamp 2025-10-21 13:32:00-04:00. Checking for trade pattern.
+2025-10-21 13:34:57,767 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
+2025-10-21 13:35:57,972 - [algotrade.trade_service] - INFO - New completed 5m bar found with timestamp 2025-10-21 13:30:00-04:00. Checking for trade pattern.
+2025-10-21 13:35:57,979 - [algotrade.trade_service] - INFO - Active demand zones in Redis:
+  - custom_zone_670.26_669.89: {"zone_top": 670.26, "zone_bottom": 669.89, "zone_timeframe": "custom", "status": "active", "entry_confirmation": null, "invalidation_confirmation": null}
