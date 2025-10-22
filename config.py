@@ -17,7 +17,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['1h'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '1h']
+ZONE_TIMEFRAMES = ['30m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '30m']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to poll for new completed bars.

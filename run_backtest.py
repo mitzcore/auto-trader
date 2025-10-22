@@ -57,15 +57,8 @@ def run_backtest(start_date_str: str, end_date_str: str):
             logger.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
             ib_bar_size = _convert_tf_to_ib_format(timeframe)
-            should_resample = 'h' in timeframe.lower()
             
-            if should_resample:
-                logger.info(f"Resampling required for '{{timeframe}}'. Fetching 1-minute data as base.")
-                fetch_bar_size = '1 min'
-            else:
-                fetch_bar_size = ib_bar_size
-
-            logger.info(f"Downloading historical data with bar size: '{{fetch_bar_size}}'...")
+            logger.info(f"Downloading historical data with bar size: '{{ib_bar_size}}'...")
 
             all_bars = []
             current_dt = start_dt
@@ -77,7 +70,7 @@ def run_backtest(start_date_str: str, end_date_str: str):
                     contract,
                     endDateTime=end_date_formatted,
                     durationStr='1 D',
-                    barSizeSetting=fetch_bar_size,
+                    barSizeSetting=ib_bar_size,
                     whatToShow='TRADES',
                     useRTH=config.USE_RTH_ONLY,
                     formatDate=1
@@ -97,21 +90,6 @@ def run_backtest(start_date_str: str, end_date_str: str):
             if df is None or df.empty:
                 logger.error(f"No historical data for {{timeframe}} or DataFrame is empty. Skipping.")
                 continue
-            
-            if should_resample:
-                logger.info(f"Resampling 1-min data to {{timeframe}} bars, aligning to 9:30 AM EST.")
-                df.set_index('date', inplace=True)
-                
-                agg_rules = {
-                    'open': 'first', 'high': 'max', 'low': 'min', 'close': 'last',
-                    'volume': 'sum', 'average': 'mean', 'barCount': 'sum'
-                }
-                
-                origin_ts = df.index.min().normalize() + pd.Timedelta(hours=9, minutes=30)
-                
-                resampled_df = df.resample(timeframe, origin=origin_ts).agg(agg_rules).dropna()
-                df = resampled_df.reset_index()
-                logger.info(f"Resampling complete. Resulted in {{len(df)}} bars.")
 
             df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
             logger.info(f"Downloaded and filtered {{len(df)}} bars for {{timeframe}}.")
