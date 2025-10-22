@@ -51,40 +51,70 @@ def run_backtest(start_date_str: str, end_date_str: str):
         contract = Stock(config.SYMBOL, config.EXCHANGE, config.CURRENCY)
         start_dt = datetime.strptime(start_date_str, '%Y-%m-%d')
         end_dt = datetime.strptime(end_date_str, '%Y-%m-%d')
-        duration_days = (end_dt - start_dt).days
-        if duration_days < 1:
-            duration_days = 1
-        duration_str = f"{duration_days} D"
-        end_date_formatted = end_dt.strftime("%Y%m%d %H:%M:%S") + " US/Eastern"
 
         # Loop through each configured zone timeframe
         for timeframe in config.ZONE_TIMEFRAMES:
             logger.info(f"--- Starting backtest for timeframe: {timeframe} ---")
             
             ib_bar_size = _convert_tf_to_ib_format(timeframe)
-            logger.info(f"Downloading historical data for {timeframe} timeframe (IB format: '{ib_bar_size}')...")
+            should_resample = 'h' in timeframe.lower()
+            
+            if should_resample:
+                logger.info(f"Resampling required for '{{timeframe}}'. Fetching 1-minute data as base.")
+                fetch_bar_size = '1 min'
+            else:
+                fetch_bar_size = ib_bar_size
 
-            bars = ib.reqHistoricalData(
-                contract,
-                endDateTime=end_date_formatted,
-                durationStr=duration_str,
-                barSizeSetting=ib_bar_size,
-                whatToShow='TRADES',
-                useRTH=config.USE_RTH_ONLY,
-                formatDate=1
-            )
+            logger.info(f"Downloading historical data with bar size: '{{fetch_bar_size}}'...")
+
+            all_bars = []
+            current_dt = start_dt
+            while current_dt <= end_dt:
+                end_date_formatted = current_dt.strftime("%Y%m%d 23:59:59") + " US/Eastern"
+                logger.debug(f"Fetching data for {{current_dt.strftime('%Y-%m-%d')}}")
+                
+                bars_for_day = ib.reqHistoricalData(
+                    contract,
+                    endDateTime=end_date_formatted,
+                    durationStr='1 D',
+                    barSizeSetting=fetch_bar_size,
+                    whatToShow='TRADES',
+                    useRTH=config.USE_RTH_ONLY,
+                    formatDate=1
+                )
+                if bars_for_day:
+                    all_bars.extend(bars_for_day)
+                
+                current_dt += timedelta(days=1)
+
+            bars = all_bars
             
             if not bars:
-                logger.error(f"Could not download historical data for {timeframe}. Skipping.")
+                logger.error(f"Could not download historical data for {{timeframe}}. Skipping.")
                 continue
 
             df = util.df(bars)
             if df is None or df.empty:
-                logger.error(f"No historical data for {timeframe} or DataFrame is empty. Skipping.")
+                logger.error(f"No historical data for {{timeframe}} or DataFrame is empty. Skipping.")
                 continue
+            
+            if should_resample:
+                logger.info(f"Resampling 1-min data to {{timeframe}} bars, aligning to 9:30 AM EST.")
+                df.set_index('date', inplace=True)
+                
+                agg_rules = {
+                    'open': 'first', 'high': 'max', 'low': 'min', 'close': 'last',
+                    'volume': 'sum', 'average': 'mean', 'barCount': 'sum'
+                }
+                
+                origin_ts = df.index.min().normalize() + pd.Timedelta(hours=9, minutes=30)
+                
+                resampled_df = df.resample(timeframe, origin=origin_ts).agg(agg_rules).dropna()
+                df = resampled_df.reset_index()
+                logger.info(f"Resampling complete. Resulted in {{len(df)}} bars.")
 
             df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
-            logger.info(f"Downloaded and filtered {len(df)} bars for {timeframe}.")
+            logger.info(f"Downloaded and filtered {{len(df)}} bars for {{timeframe}}.")
 
             # Important: A new AnalysisEngine is created for each timeframe
             # to ensure no state (like previous candles) leaks between tests.

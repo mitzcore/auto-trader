@@ -1,18 +1,1 @@
-[
-    {
-        "id": "1760454000.0",
-        "status": "active",
-        "zone_top": 657.38,
-        "zone_bottom": 652.9699999999999,
-        "timestamp": "2025-10-14 11:00:00-04:00",
-        "zone_timeframe": "1h"
-    },
-    {
-        "id": "1761058800.0",
-        "status": "active",
-        "zone_top": 671.6600000000001,
-        "zone_bottom": 669.9499999999999,
-        "timestamp": "2025-10-21 11:00:00-04:00",
-        "zone_timeframe": "1h"
-    }
-]
+[]

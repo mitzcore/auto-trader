@@ -11,7 +11,7 @@ IB_PORT = 4001  # 4001 for TWS, 4002 for Gateway
 IB_CLIENT_ID = 1
 
 # Ticker and contract details
-SYMBOL = 'SPY'
+SYMBOL = 'NVDA'
 EXCHANGE = 'SMART'  # Use SMART for aggregated data from all available exchanges
 CURRENCY = 'USD'
 
