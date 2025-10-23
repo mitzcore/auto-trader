@@ -8,6 +8,7 @@ import time
 import config
 from .util import timeframe_to_timedelta
 from .logger import setup_logger
+from .database import log_demand_zone
 
 logger = setup_logger(__name__)
 
@@ -118,25 +119,36 @@ class AnalysisEngine:
                 return None
 
             confirmation_time = c2.name + timeframe_delta
-            
-            # Generate a unique ID for the zone using the timestamp
-            zone_id = str(confirmation_time.timestamp())
+
+            # Log to database and get the database ID
+            try:
+                db_id = log_demand_zone(
+                    bottom_price=round(c1['low'] - config.DEMAND_ZONE_OFFSET_BOTTOM, 2),
+                    top_price=round(c1['open'] + config.DEMAND_ZONE_OFFSET_TOP, 2),
+                    timeframe=zone_timeframe
+                )
+                if db_id is None:
+                    logger.error("Failed to get a valid ID from the database for the new demand zone.")
+                    return None
+            except Exception as e:
+                logger.error(f"Failed to log demand zone to database: {e}")
+                return None
 
             demand_zone = {
-                'id': zone_id,
+                'id': db_id,
                 'status': 'active',
                 'zone_top': round(c1['open'] + config.DEMAND_ZONE_OFFSET_TOP, 2),
                 'zone_bottom': round(c1['low'] - config.DEMAND_ZONE_OFFSET_BOTTOM, 2),
                 'timestamp': str(confirmation_time),
-                'zone_timeframe': zone_timeframe # Add the timeframe here
+                'zone_timeframe': zone_timeframe
             }
-            
-            payload = json.dumps(demand_zone)
-            
-            # Set the current state in the hash and publish the event
-            self._redis_client.hset("active_demand_zones", zone_id, payload)
+
+            payload = json.dumps(demand_zone, default=str)
+
+            # Set the current state in the hash (using db_id) and publish the event
+            self._redis_client.hset("active_demand_zones", str(db_id), payload)
             self._redis_client.publish("demand_zones", payload)
-            
+
             return demand_zone
 
         except (KeyError, AttributeError) as e:
