@@ -125,8 +125,8 @@ class AnalysisEngine:
             demand_zone = {
                 'id': zone_id,
                 'status': 'active',
-                'zone_top': c1['open'] + config.DEMAND_ZONE_OFFSET_TOP,
-                'zone_bottom': c1['low'] - config.DEMAND_ZONE_OFFSET_BOTTOM,
+                'zone_top': round(c1['open'] + config.DEMAND_ZONE_OFFSET_TOP, 2),
+                'zone_bottom': round(c1['low'] - config.DEMAND_ZONE_OFFSET_BOTTOM, 2),
                 'timestamp': str(confirmation_time),
                 'zone_timeframe': zone_timeframe # Add the timeframe here
             }
