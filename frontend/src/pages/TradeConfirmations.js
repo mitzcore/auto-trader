@@ -33,6 +33,17 @@ const TradeConfirmations = () => {
         return <Alert variant="danger">Error fetching data: {error}</Alert>;
     }
 
+    const getRowClass = (status) => {
+        switch (status) {
+            case 'Profit':
+                return 'table-success';
+            case 'Loss':
+                return 'table-danger';
+            default:
+                return '';
+        }
+    };
+
     return (
         <div>
             <h2>Trade Confirmations</h2>
@@ -53,7 +64,7 @@ const TradeConfirmations = () => {
                 <tbody>
                     {confirmations.length > 0 ? (
                         confirmations.map(conf => (
-                            <tr key={conf.id}>
+                            <tr key={conf.id} className={getRowClass(conf.status)}>
                                 <td>{conf.id}</td>
                                 <td>{new Date(conf.timestamp).toLocaleString()}</td>
                                 <td>{conf.demand_zone_id}</td>
