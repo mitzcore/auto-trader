@@ -61,7 +61,7 @@ const TradeConfirmations = () => {
                                 <td>{conf.strike_price}</td>
                                 <td>{conf.buy_price}</td>
                                 <td>{conf.sell_price}</td>
-                                <td>{conf.percentage}</td>
+                                <td>{conf.percentage !== null ? `${Math.floor(conf.percentage)}%` : ''}</td>
                                 <td>{conf.status}</td>
                             </tr>
                         ))
