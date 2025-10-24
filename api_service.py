@@ -6,8 +6,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from algotrade.database import (
     get_demand_zones,
     get_trade_confirmations,
-    get_trades_placed
+    get_trades_placed,
+    create_db_and_tables
 )
+
+# Create database and tables if they don't exist
+create_db_and_tables()
 
 app = FastAPI(
     title="AlgoTrade API",
