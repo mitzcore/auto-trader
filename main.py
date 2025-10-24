@@ -12,6 +12,7 @@ try:
     from algotrade.analysis_service import start_analysis_service
     from algotrade.trade_service import start_trade_service
     from algotrade.invalidation_service import start_invalidation_service
+    from algotrade.database import clear_demand_zones
 except ImportError as e:
     print(f"Error importing services: {e}")
     print("Please ensure all dependencies are installed and the algotrade package is correctly structured.")
@@ -23,6 +24,9 @@ def main():
     Launches the Analysis, Trade, and Invalidation Services as separate processes.
     """
     logging.info("Initializing application services...")
+
+    # Clear demand zones from the database at the start
+    clear_demand_zones()
 
     # Connect to Redis for initial setup
     redis_client = redis.Redis(decode_responses=True)
