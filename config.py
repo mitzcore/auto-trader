@@ -4,6 +4,7 @@
 
 # Trading settings
 TRADE_ORDERS = False # Master switch to enable/disable real order execution
+PAPER_TRADE = True # Set to True to enable paper trading mode
 
 # IB Gateway/TWS connection settings
 IB_HOST = '127.0.0.1'
