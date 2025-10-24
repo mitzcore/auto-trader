@@ -24106,3 +24106,17 @@ C2 [2025-10-23 15:50:00-04:00 5m]: {'open': 671.91, 'high': 671.91, 'low': 671.3
 2025-10-23 16:16:33,801 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
 2025-10-23 16:17:33,920 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
 2025-10-23 16:18:30,412 - [algotrade.trade_service] - INFO - Trade Service shutting down.
+2025-10-23 22:01:36,356 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['30m', '15m', '10m', '5m']
+2025-10-23 22:01:36,357 - [algotrade.trade_service] - INFO - Paper trading mode enabled.
+2025-10-23 22:01:36,357 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-23 22:01:36,358 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-23 22:01:36,361 - [algotrade.trade_service] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-10-23 22:01:36,362 - [AnalysisService] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-10-23 22:01:36,362 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
+2025-10-23 22:01:41,384 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['30m', '15m', '10m', '5m']
+2025-10-23 22:01:41,385 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-10-23 22:01:41,385 - [algotrade.trade_service] - INFO - Paper trading mode enabled.
+2025-10-23 22:01:41,386 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-10-23 22:01:41,389 - [AnalysisService] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-10-23 22:01:41,389 - [algotrade.trade_service] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-10-23 22:01:41,390 - [AnalysisService] - INFO - Analysis Service disconnected from IB.

@@ -44,7 +44,10 @@ const TradeConfirmations = () => {
                         <th>Demand Zone ID</th>
                         <th>Timeframe</th>
                         <th>Strike Price</th>
-                        <th>Price</th>
+                        <th>Buy Price</th>
+                        <th>Sell Price</th>
+                        <th>Percentage</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,12 +59,15 @@ const TradeConfirmations = () => {
                                 <td>{conf.demand_zone_id}</td>
                                 <td>{conf.timeframe}</td>
                                 <td>{conf.strike_price}</td>
-                                <td>{conf.price}</td>
+                                <td>{conf.buy_price}</td>
+                                <td>{conf.sell_price}</td>
+                                <td>{conf.percentage}</td>
+                                <td>{conf.status}</td>
                             </tr>
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="6" className="text-center">No trade confirmations found.</td>
+                            <td colSpan="9" className="text-center">No trade confirmations found.</td>
                         </tr>
                     )}
                 </tbody>
