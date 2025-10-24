@@ -43,6 +43,8 @@ const TradeConfirmations = () => {
                         <th>Timestamp</th>
                         <th>Demand Zone ID</th>
                         <th>Timeframe</th>
+                        <th>Strike Price</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,11 +55,13 @@ const TradeConfirmations = () => {
                                 <td>{new Date(conf.timestamp).toLocaleString()}</td>
                                 <td>{conf.demand_zone_id}</td>
                                 <td>{conf.timeframe}</td>
+                                <td>{conf.strike_price}</td>
+                                <td>{conf.price}</td>
                             </tr>
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="4" className="text-center">No trade confirmations found.</td>
+                            <td colSpan="6" className="text-center">No trade confirmations found.</td>
                         </tr>
                     )}
                 </tbody>
