@@ -18,7 +18,7 @@ CURRENCY = 'USD'
 
 # Timeframe Configuration
 USE_RTH_ONLY = True # Set to True to only fetch data for regular trading hours. False includes pre/post market.
-ZONE_TIMEFRAMES = ['30m','15m','10m','5m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '30m']
+ZONE_TIMEFRAMES = ['30m','15m','10m','5m','3m'] # Timeframes for finding demand zones. E.g., ['2m', '5m', '30m']
 
 # Data collection settings
 POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to poll for new completed bars.
@@ -42,7 +42,9 @@ PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confi
 # Example: CUSTOM_DEMAND_ZONES = [{"zone_top": 530.0, "zone_bottom": 529.5}]
 
 CUSTOM_DEMAND_ZONES = [
-    {"zone_top": 670.26, "zone_bottom": 669.89},
+    {"zone_top": 667.93, "zone_bottom": 667.32},
+    {"zone_top": 671.44, "zone_bottom": 670.40},
+    {"zone_top": 663.59, "zone_bottom": 660.61},
 ]
 
 # --- Candlestick Pattern Thresholds ---
