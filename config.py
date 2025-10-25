@@ -58,5 +58,9 @@ STRONG_BULLISH_MIN_BODY_PCT = 0.50  # Body must be at least 70% of the total can
 STRONG_BULLISH_MAX_WICK_PCT = 0.50 # Wicks must be less than 25% of the total candle range.
 
 # Thresholds for C1 (indecision candle) in a two-candle confirmation pattern
-C1_MIN_BODY_PCT = 0.20 # Minimum body size (as % of range) for C1 to be considered a valid indecision candle.
+C1_MAX_BODY_PCT = 0.10 # Maximum body size (as % of range) for C1 to be considered a valid indecision candle.
 C1_MIN_LOWER_WICK_PCT = 0.30 # Minimum lower wick size (as % of range) for C1, relative to its body.
+
+# --- Bearish Candle Definitions ---
+NORMAL_BEARISH_MIN_BODY_PCT = 0.70 # Min body size (as % of range) for a normal bearish candle.
+NEUTRAL_BEARISH_MIN_BODY_PCT = 0.25 # Min body size (as % of range) for a neutral bearish candle.

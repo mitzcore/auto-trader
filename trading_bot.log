@@ -1328,3 +1328,39 @@ C2 [2025-10-24 15:42:00-04:00 3m]: {'open': 677.86, 'high': 677.92, 'low': 677.7
 2025-10-24 15:48:49,300 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
 C1 [2025-10-24 15:42:00-04:00 3m]: {'open': 677.86, 'high': 677.92, 'low': 677.73, 'close': 677.73}
 C2 [2025-10-24 15:45:00-04:00 3m]: {'open': 677.73, 'high': 678.01, 'low': 677.71, 'close': 677.77}
+2025-10-24 15:50:49,584 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-10-24 15:40:00-04:00. Analyzing.
+2025-10-24 15:50:49,587 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:30:00-04:00 10m]: {'open': 678.24, 'high': 678.27, 'low': 677.94, 'close': 678.03}
+C2 [2025-10-24 15:40:00-04:00 10m]: {'open': 678.04, 'high': 678.1, 'low': 677.63, 'close': 677.72}
+2025-10-24 15:50:49,619 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-24 15:45:00-04:00. Analyzing.
+2025-10-24 15:50:49,620 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:40:00-04:00 5m]: {'open': 678.04, 'high': 678.1, 'low': 677.73, 'close': 677.73}
+C2 [2025-10-24 15:45:00-04:00 5m]: {'open': 677.73, 'high': 678.01, 'low': 677.63, 'close': 677.72}
+2025-10-24 15:51:49,810 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-10-24 15:48:00-04:00. Analyzing.
+2025-10-24 15:51:49,812 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:45:00-04:00 3m]: {'open': 677.73, 'high': 678.01, 'low': 677.71, 'close': 677.77}
+C2 [2025-10-24 15:48:00-04:00 3m]: {'open': 677.77, 'high': 677.89, 'low': 677.45, 'close': 677.81}
+2025-10-24 15:54:50,392 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-10-24 15:51:00-04:00. Analyzing.
+2025-10-24 15:54:50,399 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:48:00-04:00 3m]: {'open': 677.77, 'high': 677.89, 'low': 677.45, 'close': 677.81}
+C2 [2025-10-24 15:51:00-04:00 3m]: {'open': 677.79, 'high': 677.87, 'low': 677.56, 'close': 677.69}
+2025-10-24 15:55:50,556 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-10-24 15:50:00-04:00. Analyzing.
+2025-10-24 15:55:50,560 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:45:00-04:00 5m]: {'open': 677.73, 'high': 678.01, 'low': 677.63, 'close': 677.72}
+C2 [2025-10-24 15:50:00-04:00 5m]: {'open': 677.71, 'high': 677.89, 'low': 677.45, 'close': 677.67}
+2025-10-24 15:57:50,929 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-10-24 15:54:00-04:00. Analyzing.
+2025-10-24 15:57:50,933 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-10-24 15:51:00-04:00 3m]: {'open': 677.79, 'high': 677.87, 'low': 677.56, 'close': 677.69}
+C2 [2025-10-24 15:54:00-04:00 3m]: {'open': 677.69, 'high': 677.81, 'low': 677.23, 'close': 677.25}
+2025-10-24 16:00:51,346 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:01:51,608 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:02:51,790 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:03:51,975 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:04:52,172 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:05:52,353 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:06:52,538 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:07:52,706 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-10-24 16:08:36,708 - [AnalysisService] - INFO - Analysis Service shutting down.
+2025-10-24 16:08:36,707 - [algotrade.trade_service] - INFO - Trade Service shutting down.
+2025-10-24 16:08:36,713 - [algotrade.trade_service] - INFO - Trade Service disconnected from IB.
+2025-10-24 16:08:36,716 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
