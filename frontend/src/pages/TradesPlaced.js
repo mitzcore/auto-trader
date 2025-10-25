@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Spinner, Alert } from 'react-bootstrap';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const TradesPlaced = () => {
     const [trades, setTrades] = useState([]);
@@ -24,6 +25,16 @@ const TradesPlaced = () => {
 
         fetchTrades();
     }, []);
+
+    const formatTimestamp = (isoString) => {
+        if (!isoString) return '';
+        try {
+            return formatInTimeZone(isoString, 'America/New_York', 'yyyy-MM-dd HH:mm:ss zzz');
+        } catch (error) {
+            console.error("Error formatting date:", error);
+            return isoString;
+        }
+    };
 
     if (loading) {
         return <Spinner animation="border" />;
@@ -52,7 +63,7 @@ const TradesPlaced = () => {
                         trades.map(trade => (
                             <tr key={trade.id}>
                                 <td>{trade.id}</td>
-                                <td>{new Date(trade.timestamp).toLocaleString()}</td>
+                                <td>{formatTimestamp(trade.timestamp)}</td>
                                 <td>{trade.demand_zone_id}</td>
                                 <td>{trade.order_type}</td>
                                 <td>{trade.price.toFixed(2)}</td>

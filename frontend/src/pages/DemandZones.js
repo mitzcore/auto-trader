@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Spinner, Alert } from 'react-bootstrap';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const DemandZones = () => {
     const [zones, setZones] = useState([]);
@@ -24,6 +25,16 @@ const DemandZones = () => {
 
         fetchZones();
     }, []);
+
+    const formatTimestamp = (isoString) => {
+        if (!isoString) return '';
+        try {
+            return formatInTimeZone(isoString, 'America/New_York', 'yyyy-MM-dd HH:mm:ss zzz');
+        } catch (error) {
+            console.error("Error formatting date:", error);
+            return isoString;
+        }
+    };
 
     if (loading) {
         return <Spinner animation="border" />;
@@ -51,7 +62,7 @@ const DemandZones = () => {
                         zones.map(zone => (
                             <tr key={zone.id}>
                                 <td>{zone.id}</td>
-                                <td>{new Date(zone.timestamp).toLocaleString()}</td>
+                                <td>{formatTimestamp(zone.timestamp)}</td>
                                 <td>{zone.timeframe}</td>
                                 <td>{zone.top_price.toFixed(2)}</td>
                                 <td>{zone.bottom_price.toFixed(2)}</td>

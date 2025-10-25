@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Spinner, Alert } from 'react-bootstrap';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const TradeConfirmations = () => {
     const [confirmations, setConfirmations] = useState([]);
@@ -44,6 +45,17 @@ const TradeConfirmations = () => {
         }
     };
 
+    const formatTimestamp = (isoString) => {
+        if (!isoString) return '';
+        try {
+            // The backend provides a UTC string. We parse it and format it into the 'America/New_York' timezone.
+            return formatInTimeZone(isoString, 'America/New_York', 'yyyy-MM-dd HH:mm:ss zzz');
+        } catch (error) {
+            console.error("Error formatting date:", error);
+            return isoString; // Fallback to the original string
+        }
+    };
+
     return (
         <div>
             <h2>Trade Confirmations</h2>
@@ -66,7 +78,7 @@ const TradeConfirmations = () => {
                         confirmations.map(conf => (
                             <tr key={conf.id} className={getRowClass(conf.status)}>
                                 <td>{conf.id}</td>
-                                <td>{new Date(conf.timestamp).toLocaleString()}</td>
+                                <td>{formatTimestamp(conf.timestamp)}</td>
                                 <td>{conf.demand_zone_id}</td>
                                 <td>{conf.timeframe}</td>
                                 <td>{conf.strike_price}</td>
