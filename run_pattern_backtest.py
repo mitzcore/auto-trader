@@ -35,9 +35,9 @@ def _convert_tf_to_ib_format(tf_string: str) -> str:
 def run_pattern_backtest(start_date_str: str, end_date_str: str):
     """
     Main backtesting function. Loads demand zones from a file, then checks
-    for candlestick confirmation patterns within those zones.
+    for the 5-candle confirmation pattern within those zones.
     """
-    # 1. Load demand zones from the file
+    # 1. Load demand zones
     try:
         with open("backtest_zones.txt", "r") as f:
             loaded_zones = json.load(f)
@@ -104,72 +104,47 @@ def run_pattern_backtest(start_date_str: str, end_date_str: str):
             df = df[df['date'] >= pd.to_datetime(start_dt, utc=True)]
             logger.info(f"Downloaded, sorted, and filtered {{len(df)}} bars for {{timeframe}}.")
 
-            candle_history = deque(maxlen=2)
+            candle_history = deque(maxlen=5)
             found_patterns = 0
 
-            logger.info(f"Starting pattern identification for {timeframe} within loaded zones...")
+            logger.info(f"Starting 5-candle pattern identification for {timeframe} within loaded zones...")
             for index, bar in df.iterrows():
                 bar_series = pd.Series(bar, name=bar['date'])
                 candle_history.append(bar_series)
 
-                if len(candle_history) < 2:
+                if len(candle_history) < 5:
                     continue
 
-                c1, c2 = candle_history[0], candle_history[1]
+                candles = list(candle_history)
+                c5, c4, c3, c2, c1 = candles
 
-                # Check if the candle's range overlaps with any loaded demand zone
+                # Check if the indecision candle (c4) is inside any demand zone
                 active_zone = None
                 for zone in loaded_zones:
-                    if c2['low'] <= zone['zone_top'] and c2['high'] >= zone['zone_bottom']:
+                    zone_top = zone['zone_top']
+                    zone_bottom = zone['zone_bottom']
+                    
+                    c4_in_zone = (zone_bottom <= c4['open'] <= zone_top or
+                                  zone_bottom <= c4['high'] <= zone_top or
+                                  zone_bottom <= c4['low'] <= zone_top or
+                                  zone_bottom <= c4['close'] <= zone_top)
+                    
+                    if c4_in_zone:
                         active_zone = zone
-                        break # Found a zone, no need to check others for this bar
+                        break
                 
                 if not active_zone:
-                    continue # Not in any zone, move to the next bar
+                    continue # c4 not in any zone, move to the next bar
 
-                # If in a zone, proceed with pattern matching
-                logger.debug(
-                    f"[{timeframe}] Price in zone {active_zone['id']}. Analyzing candles for trade confirmation:\n"
-                    f"{timeframe} C1: {c1.to_dict()}\n"
-                    f"{timeframe} C2: {c2.to_dict()}"
-                )
-                logger.debug(f"Bar at {c2.name} is inside zone {active_zone['id']}. Checking for patterns.")
-
-                zone_top = active_zone['zone_top']
-                zone_bottom = active_zone['zone_bottom']
-                
-                c1_in_zone = (zone_bottom <= c1['open'] <= zone_top or
-                              zone_bottom <= c1['high'] <= zone_top or
-                              zone_bottom <= c1['low'] <= zone_top or
-                              zone_bottom <= c1['close'] <= zone_top)
-
-                logger.debug(f'c1 in zone: {c1_in_zone}')
-                if not c1_in_zone:
-                    continue
-
-                c2_triggered = [p_name for p_name, p_func in patterns.CONFIRMATION_PATTERNS.items() if p_func(c2)]
-                logger.debug(f'c2 patterns: {c2_triggered}')
-                if not c2_triggered:
-                    continue
-
-                body_c2 = c2['close'] - c2['open']
-                logger.debug(f'body_c2: {body_c2}')
-                if body_c2 <= 0: # Ensure c2 is bullish before checking wick
-                    continue
-                lower_wick_c2 = c2['open'] - c2['low']
-                logger.debug(f'lower_wick_c2: {lower_wick_c2}')
-
-                if lower_wick_c2 >= body_c2:
-                    logger.debug('lower_wick_c2 is greater than or equal to body_c2')
-                    continue
-
-                if c2['close'] <= c1['open']:
-                    logger.debug(f"c2 close ({c2['close']}) is not > c1 open ({c1['open']})")
-                    continue
-
-                # Log the confirmation
-                logger.info(f"Trade confirmed with bar timestamp: {c2.name}")
-                found_patterns += 1
+                # If c4 is in a zone, check the full 5-candle pattern
+                if patterns.check_5_candle_confirmation_pattern(candles):
+                    logger.info(
+                        f"\n✨✨✨✨✨✨✨✨ 5-CANDLE PATTERN CONFIRMED (Backtest) ✨✨✨✨✨✨✨✨\n"
+                        f"CONFIRMED on {timeframe} at {c1.name}: Zone {{active_zone['id']}}. "
+                        f"Pattern: c5 bullish, c4 indecision, c3-c1 bearish mix."
+                        f"\n✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨"
+                    )
+                    found_patterns += 1
             
             logger.info(f"Backtest for {timeframe} finished. Found {found_patterns} valid trade confirmations.")
 
