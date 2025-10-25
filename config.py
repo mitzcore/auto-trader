@@ -64,3 +64,6 @@ C1_MIN_LOWER_WICK_PCT = 0.30 # Minimum lower wick size (as % of range) for C1, r
 # --- Bearish Candle Definitions ---
 NORMAL_BEARISH_MIN_BODY_PCT = 0.70 # Min body size (as % of range) for a normal bearish candle.
 NEUTRAL_BEARISH_MIN_BODY_PCT = 0.25 # Min body size (as % of range) for a neutral bearish candle.
+
+# --- C5 Bullish Candle Definition ---
+C5_BULLISH_MIN_BODY_PCT = 0.50 # Min body size (as % of range) for the c5 bullish candle.
