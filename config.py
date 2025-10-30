@@ -27,12 +27,6 @@ POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to pol
 LOG_FILE = "trading_bot.log"
 BACKTEST_LOG_LEVEL = "DEBUG"  # Logging level for backtests: DEBUG, INFO, WARNING, ERROR
 
-# Demand Zone settings
-DEMAND_ZONE_OFFSET_TOP = 0.10
-DEMAND_ZONE_OFFSET_BOTTOM = 0.10
-BULLISH_WICK_RATIO = 0.3 # Max wick size relative to body for the bullish candle.
-BEARISH_WICK_RATIO = 0.4 # Max upper wick size for the bearish candle relative to the bullish body.
-
 # Pattern Detection settings
 PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confirmation
 
