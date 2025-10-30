@@ -31,7 +31,7 @@ The `Trade Service` confirms a trade by identifying the following sequence on th
 
 ## Configuration
 
-All major parameters for the system can be tuned in the `config.py` file. This includes IB connection settings, timeframes, and the sensitivity thresholds for all candlestick patterns (e.g., `DOJI_PRECISION`, `STRONG_BULLISH_MIN_BODY_PCT`).
+All major parameters for the system can be tuned in the `config.py` file. This includes IB connection settings, timeframes, and the sensitivity thresholds for all candlestick patterns (e.g., `DOJI_PRECISION`).
 
 ## Usage
 
