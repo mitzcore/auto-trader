@@ -27,6 +27,12 @@ POLL_INTERVAL_SECONDS = 60  # Interval in seconds for the AnalysisService to pol
 LOG_FILE = "trading_bot.log"
 BACKTEST_LOG_LEVEL = "DEBUG"  # Logging level for backtests: DEBUG, INFO, WARNING, ERROR
 
+# Demand Zone settings
+DEMAND_ZONE_OFFSET_TOP = 0.10
+DEMAND_ZONE_OFFSET_BOTTOM = 0.10
+BULLISH_WICK_RATIO = 0.70
+BEARISH_WICK_RATIO = 0.60
+
 # Pattern Detection settings
 PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confirmation
 
@@ -36,10 +42,7 @@ PATTERN_TIMEFRAMES = ['2m','3m','5m'] # Timeframes for candlestick pattern confi
 # Example: CUSTOM_DEMAND_ZONES = [{"zone_top": 530.0, "zone_bottom": 529.5}]
 
 CUSTOM_DEMAND_ZONES = [
-    {"zone_top": 687.09, "zone_bottom": 684.83},
-    {"zone_top": 683.93, "zone_bottom": 683.76},
-    {"zone_top": 683.62, "zone_bottom": 683.17},
-    {"zone_top": 682.78, "zone_bottom": 682.56},
+    {"zone_top": 682.13, "zone_bottom": 681.36},
 ]
 
 # --- Candlestick Pattern Thresholds ---
@@ -50,3 +53,16 @@ DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.7 # Max upper wick size (as % of range) for a 
 
 # --- C5 Bullish Candle Definition ---
 C5_BULLISH_MIN_BODY_PCT = 0.30 # Min body size (as % of range) for the c5 bullish candle.
+C1_MAX_BODY_PCT = 0.40
+
+# --- Hammer Pattern ---
+HAMMER_LOWER_WICK_RATIO = 2.0 # Lower wick must be at least this many times the body size.
+HAMMER_MAX_UPPER_WICK_RATIO = 1.0 # Upper wick must be less than this many times the body size.
+
+# --- Spinning Top Pattern ---
+SPINNING_TOP_MAX_BODY_PCT = 0.3 # Max body size (as % of range) for a Spinning Top.
+SPINNING_TOP_MIN_WICK_BODY_RATIO = 1.0 # Wicks must be at least this many times the body size.
+
+# --- Marubozu Pattern ---
+MARUBOZU_MAX_WICK_PCT = 0.05 # Max wick size (as % of range) for a Marubozu candle.
+
