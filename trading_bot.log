@@ -1328,3 +1328,538 @@ C2 [2025-10-24 15:42:00-04:00 3m]: {'open': 677.86, 'high': 677.92, 'low': 677.7
 2025-10-24 15:48:49,300 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
 C1 [2025-10-24 15:42:00-04:00 3m]: {'open': 677.86, 'high': 677.92, 'low': 677.73, 'close': 677.73}
 C2 [2025-10-24 15:45:00-04:00 3m]: {'open': 677.73, 'high': 678.01, 'low': 677.71, 'close': 677.77}
+2025-11-10 20:19:45,199 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['30m', '15m', '10m', '5m', '3m', '2m']
+2025-11-10 20:19:45,200 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-11-10 20:19:45,201 - [algotrade.trade_service] - INFO - Paper trading mode enabled.
+2025-11-10 20:19:45,202 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-11-10 20:19:45,204 - [AnalysisService] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-11-10 20:19:45,205 - [algotrade.trade_service] - ERROR - Failed to connect to IB: [Errno 61] Connect call failed ('127.0.0.1', 4001)
+2025-11-10 20:19:45,205 - [AnalysisService] - INFO - Analysis Service disconnected from IB.
+2025-11-10 20:20:22,219 - [algotrade.analysis] - INFO - Analysis Engine initialized for timeframes: ['30m', '15m', '10m', '5m', '3m', '2m']
+2025-11-10 20:20:22,221 - [algotrade.trade_service] - INFO - Paper trading mode enabled.
+2025-11-10 20:20:22,221 - [AnalysisService] - INFO - Analysis Service initialized for polling.
+2025-11-10 20:20:22,223 - [algotrade.trade_service] - INFO - Trade Service initialized for polling on timeframes: ['2m', '3m', '5m']
+2025-11-10 20:20:23,712 - [algotrade.trade_service] - INFO - Trade Service connected to IB.
+2025-11-10 20:20:26,355 - [AnalysisService] - INFO - Analysis Service connected to IB.
+2025-11-10 20:20:26,404 - [AnalysisService] - INFO - Fetching initial historical data for today...
+2025-11-10 20:20:27,329 - [AnalysisService] - INFO - [30m] Processing 1 initial historical bars.
+2025-11-10 20:20:27,988 - [AnalysisService] - INFO - [15m] Processing 2 initial historical bars.
+2025-11-10 20:20:27,992 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:30:00-05:00 15m]: {'open': 677.24, 'high': 679.09, 'low': 677.06, 'close': 678.77}
+C2 [2025-11-10 09:45:00-05:00 15m]: {'open': 678.78, 'high': 679.2, 'low': 678.21, 'close': 678.27}
+2025-11-10 20:20:28,752 - [AnalysisService] - INFO - [10m] Processing 3 initial historical bars.
+2025-11-10 20:20:28,756 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:30:00-05:00 10m]: {'open': 677.24, 'high': 678.86, 'low': 677.06, 'close': 678.8}
+C2 [2025-11-10 09:40:00-05:00 10m]: {'open': 678.8, 'high': 679.2, 'low': 678.49, 'close': 678.58}
+2025-11-10 20:20:28,758 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:40:00-05:00 10m]: {'open': 678.8, 'high': 679.2, 'low': 678.49, 'close': 678.58}
+C2 [2025-11-10 09:50:00-05:00 10m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+2025-11-10 20:20:29,426 - [AnalysisService] - INFO - [5m] Processing 5 initial historical bars.
+2025-11-10 20:20:29,428 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:30:00-05:00 5m]: {'open': 677.24, 'high': 678.13, 'low': 677.06, 'close': 677.8}
+C2 [2025-11-10 09:35:00-05:00 5m]: {'open': 677.82, 'high': 678.86, 'low': 677.81, 'close': 678.8}
+2025-11-10 20:20:29,430 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:35:00-05:00 5m]: {'open': 677.82, 'high': 678.86, 'low': 677.81, 'close': 678.8}
+C2 [2025-11-10 09:40:00-05:00 5m]: {'open': 678.8, 'high': 679.09, 'low': 678.49, 'close': 678.77}
+2025-11-10 20:20:29,432 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:40:00-05:00 5m]: {'open': 678.8, 'high': 679.09, 'low': 678.49, 'close': 678.77}
+C2 [2025-11-10 09:45:00-05:00 5m]: {'open': 678.78, 'high': 679.2, 'low': 678.5, 'close': 678.58}
+2025-11-10 20:20:29,433 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:45:00-05:00 5m]: {'open': 678.78, 'high': 679.2, 'low': 678.5, 'close': 678.58}
+C2 [2025-11-10 09:50:00-05:00 5m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+2025-11-10 20:20:30,095 - [AnalysisService] - INFO - [3m] Processing 7 initial historical bars.
+2025-11-10 20:20:30,098 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:30:00-05:00 3m]: {'open': 677.24, 'high': 678.13, 'low': 677.06, 'close': 677.75}
+C2 [2025-11-10 09:33:00-05:00 3m]: {'open': 677.76, 'high': 678.37, 'low': 677.69, 'close': 678.33}
+2025-11-10 20:20:30,100 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:33:00-05:00 3m]: {'open': 677.76, 'high': 678.37, 'low': 677.69, 'close': 678.33}
+C2 [2025-11-10 09:36:00-05:00 3m]: {'open': 678.34, 'high': 678.71, 'low': 678.19, 'close': 678.6}
+2025-11-10 20:20:30,102 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:36:00-05:00 3m]: {'open': 678.34, 'high': 678.71, 'low': 678.19, 'close': 678.6}
+C2 [2025-11-10 09:39:00-05:00 3m]: {'open': 678.6, 'high': 678.96, 'low': 678.58, 'close': 678.82}
+2025-11-10 20:20:30,103 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:39:00-05:00 3m]: {'open': 678.6, 'high': 678.96, 'low': 678.58, 'close': 678.82}
+C2 [2025-11-10 09:42:00-05:00 3m]: {'open': 678.82, 'high': 679.09, 'low': 678.49, 'close': 678.77}
+2025-11-10 20:20:30,105 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:42:00-05:00 3m]: {'open': 678.82, 'high': 679.09, 'low': 678.49, 'close': 678.77}
+C2 [2025-11-10 09:45:00-05:00 3m]: {'open': 678.78, 'high': 679.2, 'low': 678.76, 'close': 678.87}
+2025-11-10 20:20:30,107 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:45:00-05:00 3m]: {'open': 678.78, 'high': 679.2, 'low': 678.76, 'close': 678.87}
+C2 [2025-11-10 09:48:00-05:00 3m]: {'open': 678.89, 'high': 679.0, 'low': 678.21, 'close': 678.27}
+2025-11-10 20:20:30,757 - [AnalysisService] - INFO - [2m] Processing 11 initial historical bars.
+2025-11-10 20:20:30,765 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:30:00-05:00 2m]: {'open': 677.24, 'high': 678.13, 'low': 677.06, 'close': 677.96}
+C2 [2025-11-10 09:32:00-05:00 2m]: {'open': 677.98, 'high': 678.07, 'low': 677.56, 'close': 677.86}
+2025-11-10 20:20:30,767 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:32:00-05:00 2m]: {'open': 677.98, 'high': 678.07, 'low': 677.56, 'close': 677.86}
+C2 [2025-11-10 09:34:00-05:00 2m]: {'open': 677.85, 'high': 678.37, 'low': 677.76, 'close': 678.33}
+2025-11-10 20:20:30,790 - [algotrade.analysis] - INFO - 
+-------------------- DEMAND ZONE PUBLISHED --------------------
+Demand Zone Published from 2m bar at 2025-11-10 09:36:00 EST: Top=678.08, Bottom=677.46, ID=15
+-----------------------------------------------------------------
+2025-11-10 20:20:30,791 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:34:00-05:00 2m]: {'open': 677.85, 'high': 678.37, 'low': 677.76, 'close': 678.33}
+C2 [2025-11-10 09:36:00-05:00 2m]: {'open': 678.34, 'high': 678.62, 'low': 678.19, 'close': 678.52}
+2025-11-10 20:20:30,792 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:36:00-05:00 2m]: {'open': 678.34, 'high': 678.62, 'low': 678.19, 'close': 678.52}
+C2 [2025-11-10 09:38:00-05:00 2m]: {'open': 678.54, 'high': 678.86, 'low': 678.41, 'close': 678.8}
+2025-11-10 20:20:30,793 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:38:00-05:00 2m]: {'open': 678.54, 'high': 678.86, 'low': 678.41, 'close': 678.8}
+C2 [2025-11-10 09:40:00-05:00 2m]: {'open': 678.8, 'high': 678.96, 'low': 678.71, 'close': 678.82}
+2025-11-10 20:20:30,794 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:40:00-05:00 2m]: {'open': 678.8, 'high': 678.96, 'low': 678.71, 'close': 678.82}
+C2 [2025-11-10 09:42:00-05:00 2m]: {'open': 678.82, 'high': 678.95, 'low': 678.49, 'close': 678.89}
+2025-11-10 20:20:30,795 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:42:00-05:00 2m]: {'open': 678.82, 'high': 678.95, 'low': 678.49, 'close': 678.89}
+C2 [2025-11-10 09:44:00-05:00 2m]: {'open': 678.9, 'high': 679.13, 'low': 678.69, 'close': 678.91}
+2025-11-10 20:20:30,796 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:44:00-05:00 2m]: {'open': 678.9, 'high': 679.13, 'low': 678.69, 'close': 678.91}
+C2 [2025-11-10 09:46:00-05:00 2m]: {'open': 678.91, 'high': 679.2, 'low': 678.76, 'close': 678.87}
+2025-11-10 20:20:30,797 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:46:00-05:00 2m]: {'open': 678.91, 'high': 679.2, 'low': 678.76, 'close': 678.87}
+C2 [2025-11-10 09:48:00-05:00 2m]: {'open': 678.89, 'high': 679.0, 'low': 678.5, 'close': 678.58}
+2025-11-10 20:20:30,798 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:48:00-05:00 2m]: {'open': 678.89, 'high': 679.0, 'low': 678.5, 'close': 678.58}
+C2 [2025-11-10 09:50:00-05:00 2m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+2025-11-10 20:24:50,303 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 09:51:00-05:00. Analyzing.
+2025-11-10 20:24:50,307 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:48:00-05:00 3m]: {'open': 678.89, 'high': 679.0, 'low': 678.21, 'close': 678.27}
+C2 [2025-11-10 09:51:00-05:00 3m]: {'open': 678.28, 'high': 678.63, 'low': 678.04, 'close': 678.24}
+2025-11-10 20:24:50,947 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 09:52:00-05:00. Analyzing.
+2025-11-10 20:24:50,948 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:50:00-05:00 2m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+C2 [2025-11-10 09:52:00-05:00 2m]: {'open': 678.58, 'high': 678.59, 'low': 678.04, 'close': 678.24}
+2025-11-10 20:26:59,185 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 09:54:00-05:00. Analyzing.
+2025-11-10 20:26:59,187 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:52:00-05:00 2m]: {'open': 678.58, 'high': 678.59, 'low': 678.04, 'close': 678.24}
+C2 [2025-11-10 09:54:00-05:00 2m]: {'open': 678.23, 'high': 678.66, 'low': 678.2, 'close': 678.61}
+2025-11-10 20:28:03,092 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 09:54:00-05:00. Analyzing.
+2025-11-10 20:28:03,096 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:51:00-05:00 3m]: {'open': 678.28, 'high': 678.63, 'low': 678.04, 'close': 678.24}
+C2 [2025-11-10 09:54:00-05:00 3m]: {'open': 678.23, 'high': 678.66, 'low': 678.2, 'close': 678.45}
+2025-11-10 20:28:42,865 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 234, in evaluate_5_candle_confirmation_pattern
+    normal = is_normal_bearish(bar)
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 187, in is_normal_bearish
+    return (body / price_range) >= config.NORMAL_BEARISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:29:08,303 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 09:56:00-05:00. Analyzing.
+2025-11-10 20:29:08,306 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:54:00-05:00 2m]: {'open': 678.23, 'high': 678.66, 'low': 678.2, 'close': 678.61}
+C2 [2025-11-10 09:56:00-05:00 2m]: {'open': 678.6, 'high': 678.85, 'low': 678.22, 'close': 678.85}
+2025-11-10 20:30:11,089 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-11-10 09:55:00-05:00. Analyzing.
+2025-11-10 20:30:11,092 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:50:00-05:00 5m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+C2 [2025-11-10 09:55:00-05:00 5m]: {'open': 678.45, 'high': 679.04, 'low': 678.22, 'close': 678.55}
+2025-11-10 20:30:11,810 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 09:57:00-05:00. Analyzing.
+2025-11-10 20:30:11,811 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:54:00-05:00 3m]: {'open': 678.23, 'high': 678.66, 'low': 678.2, 'close': 678.45}
+C2 [2025-11-10 09:57:00-05:00 3m]: {'open': 678.47, 'high': 679.04, 'low': 678.42, 'close': 678.55}
+2025-11-10 20:30:12,842 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 09:58:00-05:00. Analyzing.
+2025-11-10 20:30:12,843 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:56:00-05:00 2m]: {'open': 678.6, 'high': 678.85, 'low': 678.22, 'close': 678.85}
+C2 [2025-11-10 09:58:00-05:00 2m]: {'open': 678.85, 'high': 679.04, 'low': 678.54, 'close': 678.55}
+2025-11-10 20:30:46,806 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:30:47,531 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:32:21,159 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:00:00-05:00. Analyzing.
+2025-11-10 20:32:21,162 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:58:00-05:00 2m]: {'open': 678.85, 'high': 679.04, 'low': 678.54, 'close': 678.55}
+C2 [2025-11-10 10:00:00-05:00 2m]: {'open': 678.54, 'high': 678.77, 'low': 678.31, 'close': 678.7}
+2025-11-10 20:32:51,169 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:33:24,510 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:00:00-05:00. Analyzing.
+2025-11-10 20:33:24,514 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:57:00-05:00 3m]: {'open': 678.47, 'high': 679.04, 'low': 678.42, 'close': 678.55}
+C2 [2025-11-10 10:00:00-05:00 3m]: {'open': 678.54, 'high': 678.77, 'low': 678.31, 'close': 678.47}
+2025-11-10 20:33:54,500 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 234, in evaluate_5_candle_confirmation_pattern
+    normal = is_normal_bearish(bar)
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 187, in is_normal_bearish
+    return (body / price_range) >= config.NORMAL_BEARISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:34:29,326 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:02:00-05:00. Analyzing.
+2025-11-10 20:34:29,331 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:00:00-05:00 2m]: {'open': 678.54, 'high': 678.77, 'low': 678.31, 'close': 678.7}
+C2 [2025-11-10 10:02:00-05:00 2m]: {'open': 678.72, 'high': 678.72, 'low': 678.38, 'close': 678.51}
+2025-11-10 20:34:55,904 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:35:32,152 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-11-10 10:00:00-05:00. Analyzing.
+2025-11-10 20:35:32,155 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:55:00-05:00 5m]: {'open': 678.45, 'high': 679.04, 'low': 678.22, 'close': 678.55}
+C2 [2025-11-10 10:00:00-05:00 5m]: {'open': 678.54, 'high': 678.84, 'low': 678.31, 'close': 678.74}
+2025-11-10 20:36:37,114 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:03:00-05:00. Analyzing.
+2025-11-10 20:36:37,124 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:00:00-05:00 3m]: {'open': 678.54, 'high': 678.77, 'low': 678.31, 'close': 678.47}
+C2 [2025-11-10 10:03:00-05:00 3m]: {'open': 678.48, 'high': 678.88, 'low': 678.38, 'close': 678.72}
+2025-11-10 20:36:38,027 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:04:00-05:00. Analyzing.
+2025-11-10 20:36:38,028 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:02:00-05:00 2m]: {'open': 678.72, 'high': 678.72, 'low': 678.38, 'close': 678.51}
+C2 [2025-11-10 10:04:00-05:00 2m]: {'open': 678.51, 'high': 678.88, 'low': 678.49, 'close': 678.72}
+2025-11-10 20:37:00,462 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:37:01,186 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:38:46,559 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:06:00-05:00. Analyzing.
+2025-11-10 20:38:46,563 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:04:00-05:00 2m]: {'open': 678.51, 'high': 678.88, 'low': 678.49, 'close': 678.72}
+C2 [2025-11-10 10:06:00-05:00 2m]: {'open': 678.73, 'high': 678.91, 'low': 678.56, 'close': 678.81}
+2025-11-10 20:39:04,911 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:39:49,981 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:06:00-05:00. Analyzing.
+2025-11-10 20:39:49,984 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:03:00-05:00 3m]: {'open': 678.48, 'high': 678.88, 'low': 678.38, 'close': 678.72}
+C2 [2025-11-10 10:06:00-05:00 3m]: {'open': 678.73, 'high': 678.97, 'low': 678.56, 'close': 678.81}
+2025-11-10 20:40:07,027 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:40:07,789 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:40:08,470 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 5m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:40:52,703 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-11-10 10:00:00-05:00. Analyzing.
+2025-11-10 20:40:52,707 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:50:00-05:00 10m]: {'open': 678.58, 'high': 678.6, 'low': 678.21, 'close': 678.27}
+C2 [2025-11-10 10:00:00-05:00 10m]: {'open': 678.54, 'high': 678.97, 'low': 678.31, 'close': 678.71}
+2025-11-10 20:40:53,346 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-11-10 10:05:00-05:00. Analyzing.
+2025-11-10 20:40:53,347 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:00:00-05:00 5m]: {'open': 678.54, 'high': 678.84, 'low': 678.31, 'close': 678.74}
+C2 [2025-11-10 10:05:00-05:00 5m]: {'open': 678.74, 'high': 678.97, 'low': 678.51, 'close': 678.71}
+2025-11-10 20:40:54,750 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:08:00-05:00. Analyzing.
+2025-11-10 20:40:54,751 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:06:00-05:00 2m]: {'open': 678.73, 'high': 678.91, 'low': 678.56, 'close': 678.81}
+C2 [2025-11-10 10:08:00-05:00 2m]: {'open': 678.78, 'high': 678.97, 'low': 678.51, 'close': 678.71}
+2025-11-10 20:42:11,789 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:42:12,714 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:43:02,703 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:09:00-05:00. Analyzing.
+2025-11-10 20:43:02,706 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:06:00-05:00 3m]: {'open': 678.73, 'high': 678.97, 'low': 678.56, 'close': 678.81}
+C2 [2025-11-10 10:09:00-05:00 3m]: {'open': 678.82, 'high': 679.13, 'low': 678.51, 'close': 679.0}
+2025-11-10 20:43:03,358 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:10:00-05:00. Analyzing.
+2025-11-10 20:43:03,359 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:08:00-05:00 2m]: {'open': 678.78, 'high': 678.97, 'low': 678.51, 'close': 678.71}
+C2 [2025-11-10 10:10:00-05:00 2m]: {'open': 678.72, 'high': 679.13, 'low': 678.72, 'close': 679.0}
+2025-11-10 20:44:07,259 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:12:00-05:00. Analyzing.
+2025-11-10 20:44:07,262 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:10:00-05:00 2m]: {'open': 678.72, 'high': 679.13, 'low': 678.72, 'close': 679.0}
+C2 [2025-11-10 10:12:00-05:00 2m]: {'open': 679.0, 'high': 679.18, 'low': 678.88, 'close': 679.0}
+2025-11-10 20:44:16,074 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:45:08,898 - [AnalysisService] - INFO - New completed 15m bar found with timestamp 2025-11-10 10:00:00-05:00. Analyzing.
+2025-11-10 20:45:08,904 - [algotrade.analysis] - INFO - [15m] Analyzing candles for demand zone:
+C1 [2025-11-10 09:45:00-05:00 15m]: {'open': 678.78, 'high': 679.2, 'low': 678.21, 'close': 678.27}
+C2 [2025-11-10 10:00:00-05:00 15m]: {'open': 678.54, 'high': 679.18, 'low': 678.31, 'close': 678.58}
+2025-11-10 20:45:10,590 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-11-10 10:10:00-05:00. Analyzing.
+2025-11-10 20:45:10,591 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:05:00-05:00 5m]: {'open': 678.74, 'high': 678.97, 'low': 678.51, 'close': 678.71}
+C2 [2025-11-10 10:10:00-05:00 5m]: {'open': 678.72, 'high': 679.18, 'low': 678.48, 'close': 678.58}
+2025-11-10 20:45:11,362 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:12:00-05:00. Analyzing.
+2025-11-10 20:45:11,363 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:09:00-05:00 3m]: {'open': 678.82, 'high': 679.13, 'low': 678.51, 'close': 679.0}
+C2 [2025-11-10 10:12:00-05:00 3m]: {'open': 679.0, 'high': 679.18, 'low': 678.48, 'close': 678.58}
+2025-11-10 20:47:12,059 - [AnalysisService] - WARNING - [30m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:48:12,064 - [AnalysisService] - WARNING - [15m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:49:12,070 - [AnalysisService] - WARNING - [10m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:50:12,074 - [AnalysisService] - WARNING - [5m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:51:12,079 - [AnalysisService] - WARNING - [3m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:52:12,032 - [AnalysisService] - WARNING - [2m] Not enough historical data returned to get a completed bar.
+2025-11-10 20:53:14,005 - [AnalysisService] - INFO - New completed 10m bar found with timestamp 2025-11-10 10:10:00-05:00. Analyzing.
+2025-11-10 20:53:14,016 - [algotrade.analysis] - INFO - [10m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:00:00-05:00 10m]: {'open': 678.54, 'high': 678.97, 'low': 678.31, 'close': 678.71}
+C2 [2025-11-10 10:10:00-05:00 10m]: {'open': 678.72, 'high': 679.18, 'low': 678.16, 'close': 678.33}
+2025-11-10 20:53:14,734 - [AnalysisService] - INFO - New completed 5m bar found with timestamp 2025-11-10 10:15:00-05:00. Analyzing.
+2025-11-10 20:53:14,735 - [algotrade.analysis] - INFO - [5m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:10:00-05:00 5m]: {'open': 678.72, 'high': 679.18, 'low': 678.48, 'close': 678.58}
+C2 [2025-11-10 10:15:00-05:00 5m]: {'open': 678.59, 'high': 678.96, 'low': 678.16, 'close': 678.33}
+2025-11-10 20:53:15,358 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:18:00-05:00. Analyzing.
+2025-11-10 20:53:15,359 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:12:00-05:00 3m]: {'open': 679.0, 'high': 679.18, 'low': 678.48, 'close': 678.58}
+C2 [2025-11-10 10:18:00-05:00 3m]: {'open': 678.87, 'high': 678.96, 'low': 678.16, 'close': 678.59}
+2025-11-10 20:53:15,999 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:20:00-05:00. Analyzing.
+2025-11-10 20:53:16,000 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:12:00-05:00 2m]: {'open': 679.0, 'high': 679.18, 'low': 678.88, 'close': 679.0}
+C2 [2025-11-10 10:20:00-05:00 2m]: {'open': 678.33, 'high': 678.84, 'low': 678.24, 'close': 678.79}
+2025-11-10 20:53:18,009 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:53:18,643 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:53:19,341 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 5m: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 234, in evaluate_5_candle_confirmation_pattern
+    normal = is_normal_bearish(bar)
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 187, in is_normal_bearish
+    return (body / price_range) >= config.NORMAL_BEARISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'NORMAL_BEARISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:54:19,076 - [AnalysisService] - INFO - New completed 3m bar found with timestamp 2025-11-10 10:21:00-05:00. Analyzing.
+2025-11-10 20:54:19,079 - [algotrade.analysis] - INFO - [3m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:18:00-05:00 3m]: {'open': 678.87, 'high': 678.96, 'low': 678.16, 'close': 678.59}
+C2 [2025-11-10 10:21:00-05:00 3m]: {'open': 678.58, 'high': 678.91, 'low': 678.54, 'close': 678.87}
+2025-11-10 20:54:19,895 - [AnalysisService] - INFO - New completed 2m bar found with timestamp 2025-11-10 10:22:00-05:00. Analyzing.
+2025-11-10 20:54:19,896 - [algotrade.analysis] - INFO - [2m] Analyzing candles for demand zone:
+C1 [2025-11-10 10:20:00-05:00 2m]: {'open': 678.33, 'high': 678.84, 'low': 678.24, 'close': 678.79}
+C2 [2025-11-10 10:22:00-05:00 2m]: {'open': 678.79, 'high': 678.91, 'low': 678.66, 'close': 678.87}
+2025-11-10 20:54:20,277 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 2m: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in evaluate_5_candle_confirmation_pattern
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 230, in <genexpr>
+    c4_is_indecision = any(pattern(c4) for pattern in INDECISION_PATTERNS.values())
+                           ~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 33, in is_hammer
+    return lower_wick >= config.HAMMER_LOWER_WICK_RATIO * body and upper_wick < config.HAMMER_MAX_UPPER_WICK_RATIO * body
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'HAMMER_LOWER_WICK_RATIO'
+2025-11-10 20:54:21,231 - [algotrade.trade_service] - ERROR - An error occurred in the trade service polling loop for 3m: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 227, in _poll_for_bars
+    self._process_5_candle_confirmation(candle_list, timeframe)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/trade_service.py", line 58, in _process_5_candle_confirmation
+    pattern_passed, evaluation = patterns.evaluate_5_candle_confirmation_pattern(candles)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 228, in evaluate_5_candle_confirmation_pattern
+    evaluation['c5'] = is_strong_c5_bullish(c5)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/patterns.py", line 167, in is_strong_c5_bullish
+    return (body / price_range) >= config.C5_BULLISH_MIN_BODY_PCT
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'C5_BULLISH_MIN_BODY_PCT'. Did you mean: 'STRONG_BULLISH_MIN_BODY_PCT'?
+2025-11-10 20:54:30,170 - [algotrade.trade_service] - INFO - Trade Service shutting down.
