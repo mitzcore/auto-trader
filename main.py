@@ -43,38 +43,41 @@ def main():
     processes = []
 
     try:
-        if config.CUSTOM_DEMAND_ZONES:
-            logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones.")
-            
-            # Publish each custom zone to the updates channel
-            for custom_zone_config in config.CUSTOM_DEMAND_ZONES:
-                zone = {
-                    "zone_top": custom_zone_config["zone_top"],
-                    "zone_bottom": custom_zone_config["zone_bottom"],
-                    "zone_timeframe": "custom",
-                    "status": "active",
-                    "entry_confirmation": None,
-                    "invalidation_confirmation": None,
-                }
-                # Use hset to store the zone in the hash, with zone_id as the field
-                zone_id = f"custom_zone_{custom_zone_config['zone_top']}_{custom_zone_config['zone_bottom']}"
-                redis_client.hset("active_demand_zones", zone_id, json.dumps(zone))
-                logging.info(f"Loaded custom demand zone into Redis: {zone}")
-        else:
-            logging.info("No custom demand zones found.")
+        if config.DEMAND_ZONE_TRADING:
+            if config.CUSTOM_DEMAND_ZONES:
+                logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones.")
+                
+                # Publish each custom zone to the updates channel
+                for custom_zone_config in config.CUSTOM_DEMAND_ZONES:
+                    zone = {
+                        "zone_top": custom_zone_config["zone_top"],
+                        "zone_bottom": custom_zone_config["zone_bottom"],
+                        "zone_timeframe": "custom",
+                        "status": "active",
+                        "entry_confirmation": None,
+                        "invalidation_confirmation": None,
+                    }
+                    # Use hset to store the zone in the hash, with zone_id as the field
+                    zone_id = f"custom_zone_{custom_zone_config['zone_top']}_{custom_zone_config['zone_bottom']}"
+                    redis_client.hset("active_demand_zones", zone_id, json.dumps(zone))
+                    logging.info(f"Loaded custom demand zone into Redis: {zone}")
+            else:
+                logging.info("No custom demand zones found.")
 
-        logging.info("Starting all services.")
-        # Create and add the Analysis Service process
-        analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
-        processes.append(analysis_process)
+            logging.info("Starting all services.")
+            # Create and add the Analysis Service process
+            analysis_process = multiprocessing.Process(target=start_analysis_service, name="AnalysisService")
+            processes.append(analysis_process)
+
+            # Create and add the Invalidation Service process
+            invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
+            processes.append(invalidation_process)
+        else:
+            logging.warning("DEMAND_ZONE_TRADING is disabled. Only starting TradeService.")
 
         # Create and add the Trade Service process
         trade_process = multiprocessing.Process(target=start_trade_service, name="TradeService")
         processes.append(trade_process)
-        
-        # Create and add the Invalidation Service process
-        invalidation_process = multiprocessing.Process(target=start_invalidation_service, name="InvalidationService")
-        processes.append(invalidation_process)
 
         # Start all processes
         for p in processes:

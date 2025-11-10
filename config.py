@@ -47,9 +47,13 @@ CUSTOM_DEMAND_ZONES = [
 
 # --- Candlestick Pattern Thresholds ---
 # These values are tunable to adjust pattern sensitivity.
-DOJI_PRECISION = 0.20           # Max body size (as % of range) for a standard Doji.
-DRAGONFLY_DOJI_PRECISION = 0.20  # Max body size (as % of range) for the stricter Dragonfly Doji check.
-DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.4 # Max upper wick size (as % of range) for a Dragonfly Doji.
+
+# Add a flag to enable/disable demand zone analysis
+DEMAND_ZONE_TRADING = True
+
+DOJI_PRECISION = 0.30           # Max body size (as % of range) for a standard Doji.
+DRAGONFLY_DOJI_PRECISION = 0.30  # Max body size (as % of range) for the stricter Dragonfly Doji check.
+DRAGONFLY_DOJI_MAX_UPPER_WICK = 0.5 # Max upper wick size (as % of range) for a Dragonfly Doji.
 
 # Thresholds for a "Strong Bullish Candle"
 STRONG_BULLISH_MIN_BODY_PCT = 0.50  # Body must be at least 70% of the total candle range.
@@ -68,7 +72,7 @@ SPINNING_TOP_MIN_WICK_BODY_RATIO = 1.5  # Wicks should be at least 1.5x the body
 
 MARUBOZU_MAX_WICK_PCT = 0.05  # Maximum wick size (as % of range) for a Marubozu.
 
-C5_BULLISH_MIN_BODY_PCT = 0.7  # Body must be at least 70% of the total range for a C5 bullish candle.
+C5_BULLISH_MIN_BODY_PCT = 0.6  # Body must be at least 70% of the total range for a C5 bullish candle.
 
 NORMAL_BEARISH_MIN_BODY_PCT = 0.7  # Body must be at least 70% of the total range for a normal bearish candle.
 NEUTRAL_BEARISH_MIN_BODY_PCT = 0.3 # Body must be at least 30% of the total range for a neutral bearish candle.
