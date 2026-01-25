@@ -1,0 +1,848 @@
+2026-01-06 13:19:05,162 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-06 13:19:05,164 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-06 13:19:05,167 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 13163.
+2026-01-06 13:19:05,167 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-06 13:19:05,170 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-06 13:19:05,170 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-06 13:19:05,171 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-06 13:19:05,406 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-06 13:19:05,407 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-06 13:19:05,407 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-06 13:19:05,409 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-06 13:19:05,410 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-06 13:19:05,422 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-06 13:19:05,425 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-06 13:19:05,426 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 13:19:05,426 - [MainOrchestrator-SPY] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-06 13:19:05,427 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-06 13:19:05,829 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-06 13:19:05,829 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-06 13:19:05,830 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-06 13:19:05,832 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-06 13:19:05,833 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 13:20:02
+2026-01-06 13:19:05,834 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 13:21:02
+2026-01-06 13:19:17,069 - [MainOrchestrator-SPY] - INFO - Shutdown signal received. Terminating all services...
+2026-01-06 13:19:17,070 - [MainOrchestrator-SPY] - INFO - Terminating process 'TradeService'...
+2026-01-06 13:19:17,074 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-06 13:19:47,721 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-06 13:19:47,722 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-06 13:19:47,725 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 13246.
+2026-01-06 13:19:47,725 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-06 13:19:47,728 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-06 13:19:47,729 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-06 13:19:47,729 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-06 13:19:47,923 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-06 13:19:47,923 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-06 13:19:47,924 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-06 13:19:47,925 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-06 13:19:47,927 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-06 13:19:47,940 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-06 13:19:47,942 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-06 13:19:47,943 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 13:19:47,943 - [MainOrchestrator-SPY] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-06 13:19:47,944 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-06 13:19:48,248 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-06 13:19:48,248 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-06 13:19:48,249 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-06 13:19:48,251 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-06 13:19:48,252 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 13:20:02
+2026-01-06 13:19:48,253 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 13:21:02
+2026-01-06 13:20:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:20:02.001
+2026-01-06 13:20:02,188 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-06 13:20:02,234 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:20:02.230 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:40:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:20:02,236 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:18:00-05:00 O:691.11 H:691.20 L:691.07 C:691.12 depth=20
+2026-01-06 13:20:02,238 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(8%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:21:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:21:02.002
+2026-01-06 13:21:02,063 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:21:02.060 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:21:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:21:02,064 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:18:00-05:00 O:691.11 H:691.20 L:691.06 C:691.10 depth=20
+2026-01-06 13:21:02,065 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(7%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:22:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:22:02.002
+2026-01-06 13:22:02,083 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:22:02.081 candle_end=2026-01-06 13:20:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:20:00-05:00
+2026-01-06 13:22:02,084 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:20:00-05:00 O:691.12 H:691.16 L:690.96 C:691.01 depth=20
+2026-01-06 13:22:02,086 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:20:00-05:00 TRIGGER=FAIL(55%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:24:02.002
+2026-01-06 13:24:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:24:02.060 candle_end=2026-01-06 13:22:00-05:00 bars=20 range=2026-01-06 12:44:00-05:00→2026-01-06 13:22:00-05:00
+2026-01-06 13:24:02,067 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:22:00-05:00 O:691.01 H:691.10 L:690.92 C:691.08 depth=20
+2026-01-06 13:24:02,068 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:22:00-05:00 TRIGGER=FAIL(39%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,070 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:24:02.002
+2026-01-06 13:24:02,242 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:24:02.240 candle_end=2026-01-06 13:21:00-05:00 bars=20 range=2026-01-06 12:24:00-05:00→2026-01-06 13:21:00-05:00
+2026-01-06 13:24:02,243 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:21:00-05:00 O:691.11 H:691.13 L:690.92 C:691.08 depth=20
+2026-01-06 13:24:02,244 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:21:00-05:00 TRIGGER=FAIL(14%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:26:02,001 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:26:02.001
+2026-01-06 13:26:02,145 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:26:02.144 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:46:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:26:02,146 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:24:00-05:00 O:691.08 H:691.12 L:690.94 C:690.96 depth=20
+2026-01-06 13:26:02,147 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(67%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:27:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:27:02.001
+2026-01-06 13:27:02,054 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:27:02.052 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:27:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:27:02,055 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:24:00-05:00 O:691.08 H:691.12 L:690.94 C:690.95 depth=20
+2026-01-06 13:27:02,056 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(72%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:28:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:28:02.002
+2026-01-06 13:28:02,080 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:28:02.077 candle_end=2026-01-06 13:26:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:26:00-05:00
+2026-01-06 13:28:02,082 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:26:00-05:00 O:690.96 H:691.04 L:690.83 C:690.83 depth=20
+2026-01-06 13:28:02,083 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:26:00-05:00 TRIGGER=FAIL(62%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:30:02.001
+2026-01-06 13:30:02,112 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:30:02.105 candle_end=2026-01-06 13:28:00-05:00 bars=20 range=2026-01-06 12:50:00-05:00→2026-01-06 13:28:00-05:00
+2026-01-06 13:30:02,115 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:28:00-05:00 O:690.83 H:690.95 L:690.83 C:690.87 depth=20
+2026-01-06 13:30:02,117 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:28:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,120 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:30:02.001
+2026-01-06 13:30:02,173 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:30:02.172 candle_end=2026-01-06 13:27:00-05:00 bars=20 range=2026-01-06 12:30:00-05:00→2026-01-06 13:27:00-05:00
+2026-01-06 13:30:02,175 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:27:00-05:00 O:690.95 H:690.95 L:690.83 C:690.87 depth=20
+2026-01-06 13:30:02,176 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:27:00-05:00 TRIGGER=FAIL(67%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:32:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:32:02.002
+2026-01-06 13:32:02,054 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:32:02.053 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:52:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:32:02,055 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:30:00-05:00 O:690.88 H:690.99 L:690.85 C:690.88 depth=20
+2026-01-06 13:32:02,057 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=FAIL(0%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:33:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:33:02.002
+2026-01-06 13:33:02,323 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:33:02.322 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:33:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:33:02,324 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:30:00-05:00 O:690.88 H:691.03 L:690.85 C:691.01 depth=20
+2026-01-06 13:33:02,326 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=PASS(72%) DROP=FAIL(0.09%/$0.65) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:33:02,327 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.55
+2026-01-06 13:33:02,327 - [MainOrchestrator-SPY] - INFO -   2026-01-06 12:48:00-05:00:H690.85/L690.61
+2026-01-06 13:33:02,328 - [MainOrchestrator-SPY] - INFO -   2026-01-06 12:51:00-05:00:H690.98/L690.77
+2026-01-06 13:33:02,329 - [MainOrchestrator-SPY] - INFO -   2026-01-06 12:54:00-05:00:H690.96/L690.84
+2026-01-06 13:33:02,330 - [MainOrchestrator-SPY] - INFO -   2026-01-06 12:57:00-05:00:H691.05/L690.91
+2026-01-06 13:33:02,331 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:00:00-05:00:H690.98/L690.66
+2026-01-06 13:33:02,332 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:03:00-05:00:H690.88/L690.63
+2026-01-06 13:33:02,333 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:06:00-05:00:H690.83/L690.55
+2026-01-06 13:33:02,334 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:09:00-05:00:H690.84/L690.76
+2026-01-06 13:33:02,335 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:12:00-05:00:H690.96/L690.80
+2026-01-06 13:33:02,336 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:15:00-05:00:H691.19/L690.92
+2026-01-06 13:33:02,337 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.06
+2026-01-06 13:33:02,337 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:21:00-05:00:H691.13/L690.92
+2026-01-06 13:33:02,338 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:33:02,339 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:27:00-05:00:H690.95/L690.83
+2026-01-06 13:34:02,006 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:34:02.002
+2026-01-06 13:34:02,078 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:34:02.074 candle_end=2026-01-06 13:32:00-05:00 bars=20 range=2026-01-06 12:54:00-05:00→2026-01-06 13:32:00-05:00
+2026-01-06 13:34:02,081 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:32:00-05:00 O:690.88 H:691.03 L:690.87 C:690.93 depth=20
+2026-01-06 13:34:02,083 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:32:00-05:00 TRIGGER=FAIL(31%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,086 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:36:02.080 candle_end=2026-01-06 13:34:00-05:00 bars=20 range=2026-01-06 12:56:00-05:00→2026-01-06 13:34:00-05:00
+2026-01-06 13:36:02,089 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:34:00-05:00 O:690.93 H:690.94 L:690.65 C:690.88 depth=20
+2026-01-06 13:36:02,092 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:34:00-05:00 TRIGGER=FAIL(17%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,095 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,316 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:36:02.315 candle_end=2026-01-06 13:33:00-05:00 bars=20 range=2026-01-06 12:36:00-05:00→2026-01-06 13:33:00-05:00
+2026-01-06 13:36:02,318 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:33:00-05:00 O:691.00 H:691.01 L:690.65 C:690.88 depth=20
+2026-01-06 13:36:02,319 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:33:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:38:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:38:02.002
+2026-01-06 13:38:02,144 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:38:02.142 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:58:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:38:02,145 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:36:00-05:00 O:690.89 H:691.03 L:690.84 C:691.03 depth=20
+2026-01-06 13:38:02,146 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=PASS(74%) DROP=FAIL(0.08%/$0.55) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:38:02,147 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.65
+2026-01-06 13:38:02,148 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:08:00-05:00:H690.84/L690.68
+2026-01-06 13:38:02,149 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:10:00-05:00:H690.84/L690.76
+2026-01-06 13:38:02,150 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:12:00-05:00:H690.96/L690.80
+2026-01-06 13:38:02,151 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:14:00-05:00:H691.11/L690.90
+2026-01-06 13:38:02,152 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:16:00-05:00:H691.19/L691.06
+2026-01-06 13:38:02,153 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.07
+2026-01-06 13:38:02,153 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:20:00-05:00:H691.16/L690.96
+2026-01-06 13:38:02,154 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:22:00-05:00:H691.10/L690.92
+2026-01-06 13:38:02,155 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:38:02,156 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:26:00-05:00:H691.04/L690.83
+2026-01-06 13:38:02,157 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:28:00-05:00:H690.95/L690.83
+2026-01-06 13:38:02,158 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:30:00-05:00:H690.99/L690.85
+2026-01-06 13:38:02,159 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:32:00-05:00:H691.03/L690.87
+2026-01-06 13:38:02,160 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:34:00-05:00:H690.94/L690.65
+2026-01-06 13:39:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:39:02.002
+2026-01-06 13:39:02,053 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:39:02.051 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:39:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:39:02,054 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:36:00-05:00 O:690.89 H:691.04 L:690.84 C:690.95 depth=20
+2026-01-06 13:39:02,055 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=FAIL(30%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:40:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:40:02.002
+2026-01-06 13:40:02,067 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:40:02.065 candle_end=2026-01-06 13:38:00-05:00 bars=20 range=2026-01-06 13:00:00-05:00→2026-01-06 13:38:00-05:00
+2026-01-06 13:40:02,068 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:38:00-05:00 O:691.02 H:691.04 L:690.93 C:691.03 depth=20
+2026-01-06 13:40:02,069 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:38:00-05:00 TRIGGER=FAIL(9%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,072 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:42:02.069 candle_end=2026-01-06 13:40:00-05:00 bars=20 range=2026-01-06 13:02:00-05:00→2026-01-06 13:40:00-05:00
+2026-01-06 13:42:02,073 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:40:00-05:00 O:691.02 H:691.14 L:691.02 C:691.12 depth=20
+2026-01-06 13:42:02,074 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:40:00-05:00 TRIGGER=PASS(83%) DROP=FAIL(0.08%/$0.55) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,075 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.65
+2026-01-06 13:42:02,076 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:12:00-05:00:H690.96/L690.80
+2026-01-06 13:42:02,077 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:14:00-05:00:H691.11/L690.90
+2026-01-06 13:42:02,078 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:16:00-05:00:H691.19/L691.06
+2026-01-06 13:42:02,079 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.07
+2026-01-06 13:42:02,080 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:20:00-05:00:H691.16/L690.96
+2026-01-06 13:42:02,081 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:22:00-05:00:H691.10/L690.92
+2026-01-06 13:42:02,082 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:42:02,083 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:26:00-05:00:H691.04/L690.83
+2026-01-06 13:42:02,084 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:28:00-05:00:H690.95/L690.83
+2026-01-06 13:42:02,085 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:30:00-05:00:H690.99/L690.85
+2026-01-06 13:42:02,086 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:32:00-05:00:H691.03/L690.87
+2026-01-06 13:42:02,087 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:34:00-05:00:H690.94/L690.65
+2026-01-06 13:42:02,087 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:36:00-05:00:H691.03/L690.84
+2026-01-06 13:42:02,088 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:38:00-05:00:H691.04/L690.93
+2026-01-06 13:42:02,090 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,384 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:42:02.383 candle_end=2026-01-06 13:39:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:39:00-05:00
+2026-01-06 13:42:02,385 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:39:00-05:00 O:690.96 H:691.14 L:690.93 C:691.12 depth=20
+2026-01-06 13:42:02,386 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:39:00-05:00 TRIGGER=PASS(76%) DROP=FAIL(0.09%/$0.65) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,387 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.55
+2026-01-06 13:42:02,388 - [MainOrchestrator-SPY] - INFO -   2026-01-06 12:57:00-05:00:H691.05/L690.91
+2026-01-06 13:42:02,389 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:00:00-05:00:H690.98/L690.66
+2026-01-06 13:42:02,390 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:03:00-05:00:H690.88/L690.63
+2026-01-06 13:42:02,391 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:06:00-05:00:H690.83/L690.55
+2026-01-06 13:42:02,392 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:09:00-05:00:H690.84/L690.76
+2026-01-06 13:42:02,393 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:12:00-05:00:H690.96/L690.80
+2026-01-06 13:42:02,394 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:15:00-05:00:H691.19/L690.92
+2026-01-06 13:42:02,395 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.06
+2026-01-06 13:42:02,395 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:21:00-05:00:H691.13/L690.92
+2026-01-06 13:42:02,396 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:42:02,397 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:27:00-05:00:H690.95/L690.83
+2026-01-06 13:42:02,398 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:30:00-05:00:H691.03/L690.85
+2026-01-06 13:42:02,399 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:33:00-05:00:H691.01/L690.65
+2026-01-06 13:42:02,400 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:36:00-05:00:H691.04/L690.84
+2026-01-06 13:44:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:44:02.002
+2026-01-06 13:44:02,054 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:44:02.053 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 13:04:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:44:02,055 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:42:00-05:00 O:691.13 H:691.40 L:691.11 C:691.37 depth=20
+2026-01-06 13:44:02,056 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(83%) DROP=FAIL(0.08%/$0.55) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:44:02,057 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.65
+2026-01-06 13:44:02,058 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:14:00-05:00:H691.11/L690.90
+2026-01-06 13:44:02,059 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:16:00-05:00:H691.19/L691.06
+2026-01-06 13:44:02,060 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.07
+2026-01-06 13:44:02,061 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:20:00-05:00:H691.16/L690.96
+2026-01-06 13:44:02,062 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:22:00-05:00:H691.10/L690.92
+2026-01-06 13:44:02,063 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:44:02,064 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:26:00-05:00:H691.04/L690.83
+2026-01-06 13:44:02,065 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:28:00-05:00:H690.95/L690.83
+2026-01-06 13:44:02,065 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:30:00-05:00:H690.99/L690.85
+2026-01-06 13:44:02,066 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:32:00-05:00:H691.03/L690.87
+2026-01-06 13:44:02,067 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:34:00-05:00:H690.94/L690.65
+2026-01-06 13:44:02,068 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:36:00-05:00:H691.03/L690.84
+2026-01-06 13:44:02,069 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:38:00-05:00:H691.04/L690.93
+2026-01-06 13:44:02,070 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:40:00-05:00:H691.14/L691.02
+2026-01-06 13:45:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:45:02.002
+2026-01-06 13:45:02,143 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:45:02.142 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 12:45:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:45:02,145 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:42:00-05:00 O:691.13 H:691.45 L:691.11 C:691.37 depth=20
+2026-01-06 13:45:02,146 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(71%) DROP=FAIL(0.09%/$0.65) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:45:02,147 - [MainOrchestrator-SPY] - INFO - [SmartReversal LOOKBACK] swing_high=691.2 drop_low=690.55
+2026-01-06 13:45:02,148 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:00:00-05:00:H690.98/L690.66
+2026-01-06 13:45:02,149 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:03:00-05:00:H690.88/L690.63
+2026-01-06 13:45:02,150 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:06:00-05:00:H690.83/L690.55
+2026-01-06 13:45:02,150 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:09:00-05:00:H690.84/L690.76
+2026-01-06 13:45:02,151 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:12:00-05:00:H690.96/L690.80
+2026-01-06 13:45:02,152 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:15:00-05:00:H691.19/L690.92
+2026-01-06 13:45:02,153 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:18:00-05:00:H691.20/L691.06
+2026-01-06 13:45:02,154 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:21:00-05:00:H691.13/L690.92
+2026-01-06 13:45:02,155 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:24:00-05:00:H691.12/L690.94
+2026-01-06 13:45:02,156 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:27:00-05:00:H690.95/L690.83
+2026-01-06 13:45:02,157 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:30:00-05:00:H691.03/L690.85
+2026-01-06 13:45:02,158 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:33:00-05:00:H691.01/L690.65
+2026-01-06 13:45:02,159 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:36:00-05:00:H691.04/L690.84
+2026-01-06 13:45:02,160 - [MainOrchestrator-SPY] - INFO -   2026-01-06 13:39:00-05:00:H691.14/L690.93
+2026-01-06 13:46:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:46:02.003
+2026-01-06 13:46:02,143 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:46:02.141 candle_end=2026-01-06 13:44:00-05:00 bars=20 range=2026-01-06 13:06:00-05:00→2026-01-06 13:44:00-05:00
+2026-01-06 13:46:02,144 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:44:00-05:00 O:691.37 H:691.50 L:691.36 C:691.48 depth=20
+2026-01-06 13:46:02,145 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:44:00-05:00 TRIGGER=PASS(79%) DROP=PASS(0.11%/$0.75) EXHAUST=PASS[disabled] RECLAIM=FAIL(110.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,011 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:48:02.008
+2026-01-06 13:48:02,141 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:48:02.131 candle_end=2026-01-06 13:46:00-05:00 bars=20 range=2026-01-06 13:08:00-05:00→2026-01-06 13:46:00-05:00
+2026-01-06 13:48:02,147 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:46:00-05:00 O:691.48 H:691.67 L:691.46 C:691.62 depth=20
+2026-01-06 13:48:02,152 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:46:00-05:00 TRIGGER=PASS(67%) DROP=PASS(0.12%/$0.85) EXHAUST=PASS[disabled] RECLAIM=FAIL(114.1%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,156 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:48:02.008
+2026-01-06 13:48:02,276 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:48:02.270 candle_end=2026-01-06 13:45:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:45:00-05:00
+2026-01-06 13:48:02,280 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:45:00-05:00 O:691.37 H:691.67 L:691.36 C:691.62 depth=20
+2026-01-06 13:48:02,283 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:45:00-05:00 TRIGGER=PASS(81%) DROP=PASS(0.13%/$0.90) EXHAUST=PASS[disabled] RECLAIM=FAIL(118.9%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:50:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:50:02.002
+2026-01-06 13:50:02,146 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:50:02.143 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 13:10:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:50:02,147 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:48:00-05:00 O:691.61 H:691.69 L:691.57 C:691.59 depth=20
+2026-01-06 13:50:02,149 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(17%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:51:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:51:02.001
+2026-01-06 13:51:02,063 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:51:02.059 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 12:51:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:51:02,066 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:48:00-05:00 O:691.61 H:691.69 L:691.51 C:691.57 depth=20
+2026-01-06 13:51:02,068 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(22%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:52:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:52:02.003
+2026-01-06 13:52:02,061 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:52:02.058 candle_end=2026-01-06 13:50:00-05:00 bars=20 range=2026-01-06 13:12:00-05:00→2026-01-06 13:50:00-05:00
+2026-01-06 13:52:02,062 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:50:00-05:00 O:691.59 H:691.64 L:691.51 C:691.57 depth=20
+2026-01-06 13:52:02,063 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:50:00-05:00 TRIGGER=FAIL(15%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:54:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:54:02.001
+2026-01-06 13:54:02,149 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:54:02.147 candle_end=2026-01-06 13:52:00-05:00 bars=20 range=2026-01-06 13:14:00-05:00→2026-01-06 13:52:00-05:00
+2026-01-06 13:54:02,151 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:52:00-05:00 O:691.57 H:691.62 L:691.52 C:691.61 depth=20
+2026-01-06 16:00:45,297 - [MainOrchestrator-SPY] - INFO - Shutdown signal received. Terminating all services...
+2026-01-06 16:00:45,303 - [MainOrchestrator-SPY] - INFO - Terminating process 'TradeService'...
+2026-01-07 08:59:15,813 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 08:59:15,817 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 08:59:15,820 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 2262.
+2026-01-07 08:59:15,821 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 08:59:15,823 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 08:59:15,824 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 08:59:15,825 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 08:59:16,102 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 08:59:16,102 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 08:59:16,103 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 08:59:16,105 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 08:59:16,107 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 08:59:16,161 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 08:59:16,265 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 08:59:16,267 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 08:59:16,267 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 08:59:16,268 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-07 08:59:17,465 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-07 08:59:17,468 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-07 08:59:17,470 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 08:59:17,473 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 08:59:17,475 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 09:00:02
+2026-01-07 08:59:17,476 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 09:00:02
+2026-01-07 09:00:02,001 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:02,902 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:00:02.899 candle_end=2026-01-06 15:58:00-05:00 bars=20 range=2026-01-06 15:20:00-05:00→2026-01-06 15:58:00-05:00
+2026-01-07 09:00:02,904 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 15:58:00-05:00 O:692.08 H:692.14 L:691.80 C:691.80 depth=20
+2026-01-07 09:00:02,905 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 15:58:00-05:00 TRIGGER=FAIL(82%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:00:02,907 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:03,102 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:00:03.100 candle_end=2026-01-06 15:57:00-05:00 bars=20 range=2026-01-06 15:00:00-05:00→2026-01-06 15:57:00-05:00
+2026-01-07 09:00:03,103 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 15:57:00-05:00 O:691.99 H:692.14 L:691.80 C:691.80 depth=20
+2026-01-07 09:00:03,104 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 15:57:00-05:00 TRIGGER=FAIL(56%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:02:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:02:02.003
+2026-01-07 09:03:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:03:02.001
+2026-01-07 09:04:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:04:02.001
+2026-01-07 09:06:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:06:02.001
+2026-01-07 09:06:02,064 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:06:02.001
+2026-01-07 09:08:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:08:02.002
+2026-01-07 09:09:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:09:02.002
+2026-01-07 09:10:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:10:02.002
+2026-01-07 09:12:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:12:02.001
+2026-01-07 09:12:02,070 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:12:02.001
+2026-01-07 09:14:02,007 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:14:02.007
+2026-01-07 09:15:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:15:02.002
+2026-01-07 09:16:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:16:02.002
+2026-01-07 09:18:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:18:02.002
+2026-01-07 09:18:02,063 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:18:02.002
+2026-01-07 09:20:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:20:02.002
+2026-01-07 09:21:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:21:02.002
+2026-01-07 09:22:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:22:02.002
+2026-01-07 09:24:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:24:02.002
+2026-01-07 09:24:02,061 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:24:02.002
+2026-01-07 09:26:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:26:02.002
+2026-01-07 09:27:02,001 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:27:02.000
+2026-01-07 09:28:02,007 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:28:02.006
+2026-01-07 09:30:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:30:02.002
+2026-01-07 09:30:02,068 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:30:02.002
+2026-01-07 09:32:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:32:02.002
+2026-01-07 09:32:02,068 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:32:02.057 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:22:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:32:02,073 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:30:00-05:00 O:692.20 H:692.43 L:691.86 C:691.97 depth=20
+2026-01-07 09:32:02,079 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(40%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:33:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:33:02.002
+2026-01-07 09:33:02,163 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:33:02.161 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:03:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:33:02,164 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:30:00-05:00 O:692.20 H:692.43 L:691.72 C:691.77 depth=20
+2026-01-07 09:33:02,166 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(61%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:34:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:34:02.002
+2026-01-07 09:34:02,240 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:34:02.239 candle_end=2026-01-07 09:32:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:32:00-05:00
+2026-01-07 09:34:02,241 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:32:00-05:00 O:691.97 H:692.09 L:691.71 C:691.73 depth=20
+2026-01-07 09:34:02,243 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:32:00-05:00 TRIGGER=FAIL(63%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,153 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:36:02.148 candle_end=2026-01-07 09:34:00-05:00 bars=20 range=2026-01-06 15:26:00-05:00→2026-01-07 09:34:00-05:00
+2026-01-07 09:36:02,154 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:34:00-05:00 O:691.72 H:692.29 L:691.71 C:692.28 depth=20
+2026-01-07 09:36:02,156 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:34:00-05:00 TRIGGER=PASS(97%) DROP=PASS(0.10%/$0.72) EXHAUST=PASS[disabled] RECLAIM=FAIL(79.2%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,157 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,554 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:36:02.552 candle_end=2026-01-07 09:33:00-05:00 bars=20 range=2026-01-06 15:06:00-05:00→2026-01-07 09:33:00-05:00
+2026-01-07 09:36:02,555 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:33:00-05:00 O:691.78 H:692.29 L:691.71 C:692.28 depth=20
+2026-01-07 09:36:02,556 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:33:00-05:00 TRIGGER=PASS(86%) DROP=PASS(0.10%/$0.71) EXHAUST=PASS[disabled] RECLAIM=FAIL(78.9%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:38:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:38:02.002
+2026-01-07 09:38:02,149 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:38:02.148 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:28:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:38:02,150 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:36:00-05:00 O:692.28 H:692.41 L:692.03 C:692.09 depth=20
+2026-01-07 09:38:02,151 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:39:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:39:02.002
+2026-01-07 09:39:02,063 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:39:02.062 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:09:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:39:02,065 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:36:00-05:00 O:692.28 H:692.41 L:692.03 C:692.20 depth=20
+2026-01-07 09:39:02,066 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:40:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:40:02.002
+2026-01-07 09:40:02,151 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:40:02.150 candle_end=2026-01-07 09:38:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:38:00-05:00
+2026-01-07 09:40:02,153 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:38:00-05:00 O:692.09 H:692.42 L:692.07 C:692.41 depth=20
+2026-01-07 09:40:02,154 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:38:00-05:00 TRIGGER=PASS(91%) DROP=PASS(0.10%/$0.72) EXHAUST=PASS[disabled] RECLAIM=FAIL(97.2%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,071 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:42:02.068 candle_end=2026-01-07 09:40:00-05:00 bars=20 range=2026-01-06 15:32:00-05:00→2026-01-07 09:40:00-05:00
+2026-01-07 09:42:02,073 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:40:00-05:00 O:692.42 H:692.80 L:692.25 C:692.73 depth=20
+2026-01-07 09:42:02,074 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:40:00-05:00 TRIGGER=FAIL(56%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,075 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,343 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:42:02.342 candle_end=2026-01-07 09:39:00-05:00 bars=20 range=2026-01-06 15:12:00-05:00→2026-01-07 09:39:00-05:00
+2026-01-07 09:42:02,344 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:39:00-05:00 O:692.20 H:692.80 L:692.18 C:692.73 depth=20
+2026-01-07 09:42:02,345 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:39:00-05:00 TRIGGER=PASS(86%) DROP=PASS(0.10%/$0.72) EXHAUST=PASS[disabled] RECLAIM=FAIL(141.7%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:44:02,001 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:44:02.000
+2026-01-07 09:44:02,141 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:44:02.140 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:34:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:44:02,142 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:42:00-05:00 O:692.73 H:692.78 L:692.52 C:692.60 depth=20
+2026-01-07 09:44:02,143 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:45:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:45:02.002
+2026-01-07 09:45:02,064 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:45:02.062 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:15:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:45:02,065 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:42:00-05:00 O:692.73 H:692.78 L:692.52 C:692.74 depth=20
+2026-01-07 09:45:02,066 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=FAIL(4%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:46:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:46:02.002
+2026-01-07 09:46:02,055 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:46:02.051 candle_end=2026-01-07 09:44:00-05:00 bars=20 range=2026-01-06 15:36:00-05:00→2026-01-07 09:44:00-05:00
+2026-01-07 09:46:02,057 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:44:00-05:00 O:692.59 H:692.95 L:692.58 C:692.82 depth=20
+2026-01-07 09:46:02,058 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:44:00-05:00 TRIGGER=PASS(62%) DROP=PASS(0.16%/$1.09) EXHAUST=PASS[disabled] RECLAIM=FAIL(101.8%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,063 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:48:02.061 candle_end=2026-01-07 09:46:00-05:00 bars=20 range=2026-01-06 15:38:00-05:00→2026-01-07 09:46:00-05:00
+2026-01-07 09:48:02,064 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:46:00-05:00 O:692.82 H:693.09 L:692.76 C:692.83 depth=20
+2026-01-07 09:48:02,065 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:46:00-05:00 TRIGGER=FAIL(3%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,066 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,346 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:48:02.345 candle_end=2026-01-07 09:45:00-05:00 bars=20 range=2026-01-06 15:18:00-05:00→2026-01-07 09:45:00-05:00
+2026-01-07 09:48:02,347 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:45:00-05:00 O:692.74 H:693.09 L:692.74 C:692.83 depth=20
+2026-01-07 09:48:02,348 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:45:00-05:00 TRIGGER=FAIL(26%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:50:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:50:02.002
+2026-01-07 09:50:02,080 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:50:02.077 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:40:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:50:02,081 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:48:00-05:00 O:692.82 H:692.96 L:692.63 C:692.69 depth=20
+2026-01-07 09:50:02,083 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(39%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:51:02,007 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:51:02.006
+2026-01-07 09:51:02,058 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:51:02.056 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:21:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:51:02,059 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:48:00-05:00 O:692.82 H:692.96 L:692.58 C:692.64 depth=20
+2026-01-07 09:51:02,061 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(47%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:52:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:52:02.002
+2026-01-07 09:52:02,145 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:52:02.143 candle_end=2026-01-07 09:50:00-05:00 bars=20 range=2026-01-06 15:42:00-05:00→2026-01-07 09:50:00-05:00
+2026-01-07 09:52:02,146 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:50:00-05:00 O:692.69 H:692.85 L:692.38 C:692.42 depth=20
+2026-01-07 09:52:02,147 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:50:00-05:00 TRIGGER=FAIL(57%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:54:02.064 candle_end=2026-01-07 09:52:00-05:00 bars=20 range=2026-01-06 15:44:00-05:00→2026-01-07 09:52:00-05:00
+2026-01-07 09:54:02,067 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:52:00-05:00 O:692.42 H:692.79 L:692.42 C:692.77 depth=20
+2026-01-07 09:54:02,068 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:52:00-05:00 TRIGGER=PASS(95%) DROP=PASS(0.20%/$1.38) EXHAUST=PASS[disabled] RECLAIM=FAIL(76.8%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,070 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,243 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:54:02.242 candle_end=2026-01-07 09:51:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:51:00-05:00
+2026-01-07 09:54:02,244 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:51:00-05:00 O:692.65 H:692.79 L:692.38 C:692.77 depth=20
+2026-01-07 09:54:02,245 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:51:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:56:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:56:02.002
+2026-01-07 09:56:02,143 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:56:02.141 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:46:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:56:02,145 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:54:00-05:00 O:692.77 H:692.79 L:692.53 C:692.76 depth=20
+2026-01-07 09:56:02,146 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=FAIL(4%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:57:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 09:57:02.002
+2026-01-07 09:57:02,063 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=09:57:02.062 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:27:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:57:02,065 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:54:00-05:00 O:692.77 H:692.84 L:692.53 C:692.77 depth=20
+2026-01-07 09:57:02,066 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=FAIL(0%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:58:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 09:58:02.002
+2026-01-07 09:58:02,068 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=09:58:02.066 candle_end=2026-01-07 09:56:00-05:00 bars=20 range=2026-01-06 15:48:00-05:00→2026-01-07 09:56:00-05:00
+2026-01-07 09:58:02,069 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:56:00-05:00 O:692.76 H:692.84 L:692.53 C:692.60 depth=20
+2026-01-07 09:58:02,070 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:56:00-05:00 TRIGGER=FAIL(52%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,202 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:00:02.201 candle_end=2026-01-07 09:58:00-05:00 bars=20 range=2026-01-06 15:50:00-05:00→2026-01-07 09:58:00-05:00
+2026-01-07 10:00:02,203 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:58:00-05:00 O:692.61 H:692.70 L:692.49 C:692.57 depth=20
+2026-01-07 10:00:02,205 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:58:00-05:00 TRIGGER=FAIL(19%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,206 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,260 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=10:00:02.258 candle_end=2026-01-07 09:57:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:57:00-05:00
+2026-01-07 10:00:02,261 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:57:00-05:00 O:692.79 H:692.80 L:692.49 C:692.57 depth=20
+2026-01-07 10:00:02,262 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:57:00-05:00 TRIGGER=FAIL(71%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:02:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:02:02.003
+2026-01-07 10:02:02,081 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:02:02.077 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:52:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:02:02,082 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:00:00-05:00 O:692.60 H:692.77 L:691.82 C:691.84 depth=20
+2026-01-07 10:02:02,083 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(80%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:03:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 10:03:02.002
+2026-01-07 10:03:02,056 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=10:03:02.054 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:33:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:03:02,057 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:00:00-05:00 O:692.60 H:692.77 L:691.74 C:691.88 depth=20
+2026-01-07 10:03:02,058 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(70%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:04:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:04:02.002
+2026-01-07 10:04:02,056 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:04:02.054 candle_end=2026-01-07 10:02:00-05:00 bars=20 range=2026-01-06 15:54:00-05:00→2026-01-07 10:02:00-05:00
+2026-01-07 10:04:02,057 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:02:00-05:00 O:691.84 H:692.05 L:691.59 C:691.76 depth=20
+2026-01-07 10:04:02,059 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:02:00-05:00 TRIGGER=FAIL(17%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:06:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:06:02.002
+2026-01-07 10:06:02,181 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:06:02.179 candle_end=2026-01-07 10:04:00-05:00 bars=20 range=2026-01-06 15:56:00-05:00→2026-01-07 10:04:00-05:00
+2026-01-07 10:06:02,183 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:04:00-05:00 O:691.77 H:692.04 L:691.64 C:691.94 depth=20
+2026-01-07 10:06:02,184 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:04:00-05:00 TRIGGER=FAIL(42%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:06:02,186 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 10:06:02.002
+2026-01-07 10:06:02,341 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=10:06:02.339 candle_end=2026-01-07 10:03:00-05:00 bars=20 range=2026-01-06 15:36:00-05:00→2026-01-07 10:03:00-05:00
+2026-01-07 10:06:02,342 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:03:00-05:00 O:691.88 H:692.04 L:691.59 C:691.94 depth=20
+2026-01-07 10:06:02,343 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:03:00-05:00 TRIGGER=FAIL(13%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:08:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:08:02.002
+2026-01-07 10:08:02,152 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:08:02.149 candle_end=2026-01-07 10:06:00-05:00 bars=20 range=2026-01-06 15:58:00-05:00→2026-01-07 10:06:00-05:00
+2026-01-07 10:08:02,153 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:06:00-05:00 O:691.92 H:692.30 L:691.88 C:692.13 depth=20
+2026-01-07 10:08:02,154 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:06:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:09:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 10:09:02.002
+2026-01-07 10:09:02,295 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=10:09:02.293 candle_end=2026-01-07 10:06:00-05:00 bars=20 range=2026-01-06 15:39:00-05:00→2026-01-07 10:06:00-05:00
+2026-01-07 10:09:02,296 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:06:00-05:00 O:691.92 H:692.30 L:691.85 C:691.86 depth=20
+2026-01-07 10:09:02,297 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:06:00-05:00 TRIGGER=FAIL(13%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:10:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:10:02.002
+2026-01-07 10:10:02,046 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:10:02.044 candle_end=2026-01-07 10:08:00-05:00 bars=20 range=2026-01-07 09:30:00-05:00→2026-01-07 10:08:00-05:00
+2026-01-07 10:10:02,047 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:08:00-05:00 O:692.15 H:692.21 L:691.85 C:691.97 depth=20
+2026-01-07 10:10:02,048 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:08:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:12:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:12:02.002
+2026-01-07 10:12:02,066 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:12:02.063 candle_end=2026-01-07 10:10:00-05:00 bars=20 range=2026-01-07 09:32:00-05:00→2026-01-07 10:10:00-05:00
+2026-01-07 10:12:02,068 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:10:00-05:00 O:691.97 H:692.01 L:691.68 C:691.79 depth=20
+2026-01-07 10:12:02,069 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:10:00-05:00 TRIGGER=FAIL(55%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:12:02,070 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 10:12:02.002
+2026-01-07 10:12:02,245 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=10:12:02.243 candle_end=2026-01-07 10:09:00-05:00 bars=20 range=2026-01-06 15:42:00-05:00→2026-01-07 10:09:00-05:00
+2026-01-07 10:12:02,246 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:09:00-05:00 O:691.86 H:692.02 L:691.68 C:691.79 depth=20
+2026-01-07 10:12:02,247 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:09:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:14:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 10:14:02.002
+2026-01-07 10:14:02,051 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=10:14:02.050 candle_end=2026-01-07 10:12:00-05:00 bars=20 range=2026-01-07 09:34:00-05:00→2026-01-07 10:12:00-05:00
+2026-01-07 10:14:02,052 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:12:00-05:00 O:691.79 H:691.82 L:691.62 C:691.67 depth=20
+2026-01-07 10:14:02,053 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:12:00-05:00 TRIGGER=FAIL(60%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:52:43,165 - [MainOrchestrator-SPY] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-07 12:52:43,167 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:52:43,167 - [MainOrchestrator-SPY] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-07 12:52:43,674 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 12:52:43.673
+2026-01-07 12:52:43,892 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:52:43,956 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=12:52:43.953 candle_end=2026-01-07 12:51:00-05:00 bars=21 range=2026-01-07 11:51:00-05:00→2026-01-07 12:51:00-05:00
+2026-01-07 12:52:43,957 - [MainOrchestrator-SPY] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 12:51:00-05:00 O:693.16 H:693.17 L:692.78 C:692.90 depth=21
+2026-01-07 12:52:43,959 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:51:00-05:00 TRIGGER=FAIL(67%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:53:06,932 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:53:06,936 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:53:06,939 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 18017.
+2026-01-07 12:53:06,940 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:53:06,943 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:53:06,944 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:53:06,945 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:53:07,220 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:53:07,221 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:53:07,221 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:53:07,223 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:53:07,224 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:53:07,228 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:53:07,230 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-07 12:53:07,230 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 12:53:07,231 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:53:07,231 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 12:53:07,633 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-07 12:53:07,633 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-07 12:53:07,634 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 12:53:07,636 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 12:53:07,637 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 12:54:02
+2026-01-07 12:53:07,638 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 12:54:02
+2026-01-07 12:54:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,160 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=12:54:02.153 candle_end=2026-01-07 12:52:00-05:00 bars=20 range=2026-01-07 12:14:00-05:00→2026-01-07 12:52:00-05:00
+2026-01-07 12:54:02,163 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:52:00-05:00 TRIGGER=FAIL(43%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:54:02,166 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,455 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=12:54:02.448 candle_end=2026-01-07 12:51:00-05:00 bars=20 range=2026-01-07 11:54:00-05:00→2026-01-07 12:51:00-05:00
+2026-01-07 12:54:02,459 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:51:00-05:00 TRIGGER=FAIL(13%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:55:17,317 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:55:17,318 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:55:17,322 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20248.
+2026-01-07 12:55:17,322 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:55:17,325 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:55:17,325 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:55:17,326 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:55:17,518 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:55:17,519 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:55:17,520 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:55:17,522 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:55:17,524 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:55:17,529 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:55:17,532 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-07 12:55:17,533 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 12:55:17,534 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:55:17,534 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 12:55:17,936 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-07 12:55:17,939 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-07 12:55:17,943 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 12:55:17,947 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 12:55:17,950 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 12:56:02
+2026-01-07 12:55:17,953 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 12:57:02
+2026-01-07 12:55:24,439 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:55:24,440 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:55:24,444 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20451.
+2026-01-07 12:55:24,444 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:55:24,447 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:55:24,448 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:55:24,448 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:55:24,622 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:55:24,622 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:55:24,623 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:55:24,624 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:55:24,625 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:55:24,629 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:55:24,677 - [MainOrchestrator-SPY] - ERROR - Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+2026-01-07 12:55:25,187 - [MainOrchestrator-SPY] - ERROR - Peer closed connection. clientId 2 already in use?
+2026-01-07 12:55:28,628 - [MainOrchestrator-SPY] - INFO - Disconnecting
+2026-01-07 12:55:28,630 - [MainOrchestrator-SPY] - ERROR - API connection failed: TimeoutError()
+2026-01-07 12:55:28,632 - [MainOrchestrator-SPY] - ERROR - Failed to connect to IB: 
+2026-01-07 12:55:29,470 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-07 12:55:30,377 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:55:30,379 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:55:30,382 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20453.
+2026-01-07 12:55:30,382 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:55:30,385 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:55:30,386 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:55:30,386 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:55:30,543 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:55:30,543 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:55:30,544 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:55:30,546 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:55:30,548 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:55:30,553 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:55:30,555 - [MainOrchestrator-SPY] - ERROR - Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+2026-01-07 12:55:31,056 - [MainOrchestrator-SPY] - ERROR - Peer closed connection. clientId 2 already in use?
+2026-01-07 12:55:34,551 - [MainOrchestrator-SPY] - INFO - Disconnecting
+2026-01-07 12:55:34,554 - [MainOrchestrator-SPY] - ERROR - API connection failed: TimeoutError()
+2026-01-07 12:55:34,556 - [MainOrchestrator-SPY] - ERROR - Failed to connect to IB: 
+2026-01-07 12:55:35,421 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-07 12:55:40,407 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:55:40,409 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:55:40,411 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20665.
+2026-01-07 12:55:40,412 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:55:40,415 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:55:40,415 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:55:40,416 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:55:40,581 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:55:40,582 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:55:40,582 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:55:40,583 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:55:40,584 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:55:40,587 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:55:40,589 - [MainOrchestrator-SPY] - ERROR - Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+2026-01-07 12:55:41,090 - [MainOrchestrator-SPY] - ERROR - Peer closed connection. clientId 2 already in use?
+2026-01-07 12:55:44,587 - [MainOrchestrator-SPY] - INFO - Disconnecting
+2026-01-07 12:55:44,589 - [MainOrchestrator-SPY] - ERROR - API connection failed: TimeoutError()
+2026-01-07 12:55:44,592 - [MainOrchestrator-SPY] - ERROR - Failed to connect to IB: 
+2026-01-07 12:55:45,443 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-07 12:55:50,411 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:55:50,413 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:55:50,416 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20699.
+2026-01-07 12:55:50,417 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:55:50,419 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:55:50,420 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:55:50,421 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:55:50,583 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:55:50,584 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:55:50,584 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:55:50,586 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:55:50,587 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:55:50,589 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:55:50,590 - [MainOrchestrator-SPY] - ERROR - Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+2026-01-07 12:55:51,096 - [MainOrchestrator-SPY] - ERROR - Peer closed connection. clientId 2 already in use?
+2026-01-07 12:55:54,590 - [MainOrchestrator-SPY] - INFO - Disconnecting
+2026-01-07 12:55:54,591 - [MainOrchestrator-SPY] - ERROR - API connection failed: TimeoutError()
+2026-01-07 12:55:54,592 - [MainOrchestrator-SPY] - ERROR - Failed to connect to IB: 
+2026-01-07 12:55:55,445 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-07 12:56:00,526 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:56:00,529 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:56:00,532 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 20881.
+2026-01-07 12:56:00,533 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:56:00,536 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:56:00,536 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:56:00,537 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:56:00,714 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:56:00,715 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:56:00,715 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:56:00,717 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:56:00,718 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:56:00,722 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:56:00,723 - [MainOrchestrator-SPY] - ERROR - Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+2026-01-07 12:56:01,228 - [MainOrchestrator-SPY] - ERROR - Peer closed connection. clientId 2 already in use?
+2026-01-07 12:56:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 12:56:02.002
+2026-01-07 12:56:02,084 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=12:56:02.077 candle_end=2026-01-07 12:54:00-05:00 bars=20 range=2026-01-07 12:16:00-05:00→2026-01-07 12:54:00-05:00
+2026-01-07 12:56:02,088 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:54:00-05:00 TRIGGER=FAIL(23%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:56:04,721 - [MainOrchestrator-SPY] - INFO - Disconnecting
+2026-01-07 12:56:04,723 - [MainOrchestrator-SPY] - ERROR - API connection failed: TimeoutError()
+2026-01-07 12:56:04,725 - [MainOrchestrator-SPY] - ERROR - Failed to connect to IB: 
+2026-01-07 12:56:05,561 - [MainOrchestrator-SPY] - INFO - Application has shut down.
+2026-01-07 12:56:32,179 - [MainOrchestrator-SPY] - INFO - Initializing application services...
+2026-01-07 12:56:32,181 - [MainOrchestrator-SPY] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:56:32,184 - [MainOrchestrator-SPY] - INFO - Process 'TradeService' started with PID 21513.
+2026-01-07 12:56:32,184 - [MainOrchestrator-SPY] - INFO - All services are running.
+2026-01-07 12:56:32,187 - [MainOrchestrator-SPY] - INFO - [TradeStation] Client initialized
+2026-01-07 12:56:32,189 - [MainOrchestrator-SPY] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:56:32,189 - [MainOrchestrator-SPY] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:56:32,351 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:56:32,352 - [MainOrchestrator-SPY] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:56:32,352 - [MainOrchestrator-SPY] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:56:32,354 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 2...
+2026-01-07 12:56:32,356 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 12:56:32,360 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 12:56:32,362 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-07 12:56:32,363 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 12:56:32,364 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:56:32,364 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 12:56:32,765 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-07 12:56:32,766 - [MainOrchestrator-SPY] - INFO - Trade Service connected to IB.
+2026-01-07 12:56:32,768 - [MainOrchestrator-SPY] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 12:56:32,772 - [MainOrchestrator-SPY] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 12:56:32,775 - [MainOrchestrator-SPY] - INFO -   2m: next fetch at 12:58:02
+2026-01-07 12:56:32,778 - [MainOrchestrator-SPY] - INFO -   3m: next fetch at 12:57:02
+2026-01-07 12:57:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 12:57:02.003
+2026-01-07 12:57:02,064 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=12:57:02.052 candle_end=2026-01-07 12:54:00-05:00 bars=20 range=2026-01-07 11:57:00-05:00→2026-01-07 12:54:00-05:00
+2026-01-07 12:57:02,066 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:54:00-05:00 TRIGGER=FAIL(44%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:58:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 12:58:02.003
+2026-01-07 12:58:02,076 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=12:58:02.068 candle_end=2026-01-07 12:56:00-05:00 bars=20 range=2026-01-07 12:18:00-05:00→2026-01-07 12:56:00-05:00
+2026-01-07 12:58:02,081 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:56:00-05:00 TRIGGER=FAIL(30%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:00:02,002 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:00:02.001
+2026-01-07 13:00:02,074 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:00:02.067 candle_end=2026-01-07 12:58:00-05:00 bars=20 range=2026-01-07 12:20:00-05:00→2026-01-07 12:58:00-05:00
+2026-01-07 13:00:02,077 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:58:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:00:02,080 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:00:02.001
+2026-01-07 13:00:02,133 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:00:02.128 candle_end=2026-01-07 12:57:00-05:00 bars=20 range=2026-01-07 12:00:00-05:00→2026-01-07 12:57:00-05:00
+2026-01-07 13:00:02,136 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:57:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:02:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:02:02.002
+2026-01-07 13:02:02,078 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:02:02.072 candle_end=2026-01-07 13:00:00-05:00 bars=20 range=2026-01-07 12:22:00-05:00→2026-01-07 13:00:00-05:00
+2026-01-07 13:02:02,082 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:00:00-05:00 TRIGGER=FAIL(4%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:03:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:03:02.003
+2026-01-07 13:03:02,068 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:03:02.064 candle_end=2026-01-07 13:00:00-05:00 bars=20 range=2026-01-07 12:03:00-05:00→2026-01-07 13:00:00-05:00
+2026-01-07 13:03:02,071 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:00:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:04:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:04:02.003
+2026-01-07 13:04:02,090 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:04:02.084 candle_end=2026-01-07 13:02:00-05:00 bars=20 range=2026-01-07 12:24:00-05:00→2026-01-07 13:02:00-05:00
+2026-01-07 13:04:02,095 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:02:00-05:00 TRIGGER=FAIL(82%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:06:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:06:02.003
+2026-01-07 13:06:02,074 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:06:02.069 candle_end=2026-01-07 13:04:00-05:00 bars=20 range=2026-01-07 12:26:00-05:00→2026-01-07 13:04:00-05:00
+2026-01-07 13:06:02,078 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:04:00-05:00 TRIGGER=FAIL(4%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:06:02,082 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:06:02.003
+2026-01-07 13:06:02,145 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:06:02.139 candle_end=2026-01-07 13:03:00-05:00 bars=20 range=2026-01-07 12:06:00-05:00→2026-01-07 13:03:00-05:00
+2026-01-07 13:06:02,149 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:03:00-05:00 TRIGGER=FAIL(12%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:08:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:08:02.001
+2026-01-07 13:08:02,069 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:08:02.061 candle_end=2026-01-07 13:06:00-05:00 bars=20 range=2026-01-07 12:28:00-05:00→2026-01-07 13:06:00-05:00
+2026-01-07 13:08:02,074 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:06:00-05:00 TRIGGER=FAIL(38%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:09:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:09:02.003
+2026-01-07 13:09:02,067 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:09:02.062 candle_end=2026-01-07 13:06:00-05:00 bars=20 range=2026-01-07 12:09:00-05:00→2026-01-07 13:06:00-05:00
+2026-01-07 13:09:02,071 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:06:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:10:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:10:02.003
+2026-01-07 13:10:02,073 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:10:02.066 candle_end=2026-01-07 13:08:00-05:00 bars=20 range=2026-01-07 12:30:00-05:00→2026-01-07 13:08:00-05:00
+2026-01-07 13:10:02,078 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:08:00-05:00 TRIGGER=FAIL(40%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:12:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:12:02.003
+2026-01-07 13:12:02,077 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:12:02.072 candle_end=2026-01-07 13:10:00-05:00 bars=20 range=2026-01-07 12:32:00-05:00→2026-01-07 13:10:00-05:00
+2026-01-07 13:12:02,081 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:10:00-05:00 TRIGGER=FAIL(92%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:12:02,085 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:12:02.003
+2026-01-07 13:12:02,132 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:12:02.126 candle_end=2026-01-07 13:09:00-05:00 bars=20 range=2026-01-07 12:12:00-05:00→2026-01-07 13:09:00-05:00
+2026-01-07 13:12:02,137 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:09:00-05:00 TRIGGER=FAIL(69%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:14:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:14:02.003
+2026-01-07 13:14:02,086 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:14:02.079 candle_end=2026-01-07 13:12:00-05:00 bars=20 range=2026-01-07 12:34:00-05:00→2026-01-07 13:12:00-05:00
+2026-01-07 13:14:02,089 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:14:02,093 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=693.79, DropLow=692.63, Drop=$1.16 (0.17%)
+2026-01-07 13:14:02,096 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:12:00-05:00 TRIGGER=PASS(70%) DROP=PASS(0.17%/$1.16) EXHAUST=PASS[disabled] RECLAIM=PASS(12.9%) BASE_BREAK=N/A result=PASS zone=IN_ZONE
+2026-01-07 13:14:02,099 - [MainOrchestrator-SPY] - INFO - 
+✨✨✨✨✨✨✨✨ SMART REVERSAL CONFIRMED ✨✨✨✨✨✨✨✨
+TRADE CONFIRMED on 2m. Drop: 0.17% | Reclaim: 12.9% | Base: disabled
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+2026-01-07 13:14:02,102 - [MainOrchestrator-SPY] - INFO - [TradeStation] Signal received. Executing limit-only order with dual stop monitoring...
+2026-01-07 13:14:02,104 - [MainOrchestrator-SPY] - INFO - [StrikeSelect] ITM | SPY: $692.78 | Strike: 692.0 | ITM by $1 | ~Delta: 0.53
+2026-01-07 13:14:02,106 - [MainOrchestrator-SPY] - INFO - [TradeStation] Option symbol: SPY 260107C692
+2026-01-07 13:14:02,328 - [MainOrchestrator-SPY] - INFO - [PERF] Option quote fetch: 221.26ms
+2026-01-07 13:14:02,330 - [MainOrchestrator-SPY] - INFO - [TradeStation] Option ask price: $1.05
+2026-01-07 13:14:02,332 - [MainOrchestrator-SPY] - INFO - [TradeStation] Profit target | Entry: ~$1.05 | Profit: $1.26 (+20%) | Stop: SPY monitoring (swing low)
+2026-01-07 13:14:02,334 - [MainOrchestrator-SPY] - CRITICAL - [TradeStation] 🚀 PLACING BUY ORDER | SPY 260107C692 | Qty: 1
+2026-01-07 13:14:02,486 - [MainOrchestrator-SPY] - INFO - [TradeStation] BUY ORDER SUBMITTED | OrderID: 1222316018
+2026-01-07 13:14:02,488 - [MainOrchestrator-SPY] - INFO - [PERF] BUY order submission: 154.81ms
+2026-01-07 13:14:02,490 - [MainOrchestrator-SPY] - INFO - [TradeStation] Waiting for order 1222316018 to fill (timeout: 10.0s, poll: 100ms)
+2026-01-07 13:14:02,529 - [MainOrchestrator-SPY] - INFO - [TradeStation] ✅ Order 1222316018 FILLED | Price: $1.05 | Qty: 0 | Polls: 1 | Time: 39ms
+2026-01-07 13:14:02,531 - [MainOrchestrator-SPY] - CRITICAL - [TradeStation] ✅ BUY ORDER FILLED | OrderID: 1222316018 | Price: $1.05
+2026-01-07 13:14:02,533 - [MainOrchestrator-SPY] - INFO - [PERF] BUY order fill confirmation: 42.48ms
+2026-01-07 13:14:02,534 - [MainOrchestrator-SPY] - INFO - [TradeStation] Profit target adjusted to actual fill | Fill: $1.05 | Profit: $1.26
+2026-01-07 13:14:02,687 - [MainOrchestrator-SPY] - CRITICAL - [TradeStation] 📊 PROFIT LIMIT PLACED | Target: $1.26 | OrderID: 1222316023
+2026-01-07 13:14:02,689 - [MainOrchestrator-SPY] - INFO - [PERF] Profit limit order placement: 152.88ms
+2026-01-07 13:14:02,691 - [MainOrchestrator-SPY] - INFO - [PERF] TOTAL order execution (limit only): 587.35ms
+2026-01-07 13:14:02,703 - [MainOrchestrator-SPY] - CRITICAL - [TradeStation] ✅ ORDER EXECUTED | Trade 119 | Symbol: SPY 260107C692 | Strike: 692.0 | Buy: $1.05 | Profit Target: $1.26 | Exec: 601ms
+2026-01-07 13:14:02,706 - [MainOrchestrator-SPY] - INFO - Connecting to 127.0.0.1:4001 with clientId 51...
+2026-01-07 13:14:02,708 - [MainOrchestrator-SPY] - INFO - Connected
+2026-01-07 13:14:02,714 - [MainOrchestrator-SPY] - INFO - Logged on to server version 176
+2026-01-07 13:14:02,718 - [MainOrchestrator-SPY] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 13:14:02,719 - [MainOrchestrator-SPY] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 13:14:02,720 - [MainOrchestrator-SPY] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 13:14:02,721 - [MainOrchestrator-SPY] - INFO - API connection ready
+2026-01-07 13:14:03,125 - [MainOrchestrator-SPY] - INFO - Synchronization complete
+2026-01-07 13:14:03,126 - [MainOrchestrator-SPY] - INFO - [TradeStation] Created IB connection for swing low calculation
+2026-01-07 13:14:03,277 - [MainOrchestrator-SPY] - WARNING - [SwingLow] Insufficient data: got 1 bars, need 15
+2026-01-07 13:14:03,279 - [MainOrchestrator-SPY] - ERROR - [TradeStation] Failed to calculate swing low for trade 119 - SPY stop DISABLED for this trade (option stop still active)!
+2026-01-07 13:14:03,282 - [MainOrchestrator-SPY] - ERROR - [DualStop-119] Fatal error in dual stop monitor: There is no current event loop in thread 'SPYMonitor-119'.
+Traceback (most recent call last):
+  File "/Users/mitz/projects/algotrade/algotrade/tradestation_execution.py", line 75, in _monitor_dual_stop_loss
+    ib_thread.connect(config.IB_HOST, config.IB_PORT, clientId=client_id)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/lib/python3.13/site-packages/ib_insync/ib.py", line 279, in connect
+    return self._run(self.connectAsync(
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+        host, port, clientId, timeout, readonly, account))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/lib/python3.13/site-packages/ib_insync/ib.py", line 318, in _run
+    return util.run(*awaitables, timeout=self.RequestTimeout)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mitz/projects/algotrade/algotrade/lib/python3.13/site-packages/ib_insync/util.py", line 309, in run
+    loop = getLoop()
+  File "/Users/mitz/projects/algotrade/algotrade/lib/python3.13/site-packages/ib_insync/util.py", line 464, in getLoop
+    return asyncio.get_event_loop_policy().get_event_loop()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'SPYMonitor-119'.
+2026-01-07 13:14:03,284 - [MainOrchestrator-SPY] - INFO - [TradeStation] Started dual stop monitoring thread for trade 119 | Swing Low: $0.00
+2026-01-07 13:14:03,302 - [MainOrchestrator-SPY] - INFO - [DualStop-119] Monitoring stopped
+2026-01-07 13:15:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:15:02.003
+2026-01-07 13:15:02,062 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:15:02.058 candle_end=2026-01-07 13:12:00-05:00 bars=20 range=2026-01-07 12:15:00-05:00→2026-01-07 13:12:00-05:00
+2026-01-07 13:15:02,065 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:12:00-05:00 TRIGGER=FAIL(54%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:15:47,225 - [MainOrchestrator-SPY] - INFO - [TradeStation] Token expired, refreshing...
+2026-01-07 13:15:47,566 - [MainOrchestrator-SPY] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 13:16:02,003 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:16:02.001
+2026-01-07 13:16:02,062 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:16:02.056 candle_end=2026-01-07 13:14:00-05:00 bars=20 range=2026-01-07 12:36:00-05:00→2026-01-07 13:14:00-05:00
+2026-01-07 13:18:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:18:02.003
+2026-01-07 13:18:02,199 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:18:02.193 candle_end=2026-01-07 13:16:00-05:00 bars=20 range=2026-01-07 12:38:00-05:00→2026-01-07 13:16:00-05:00
+2026-01-07 13:18:02,203 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:16:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:18:02,209 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:18:02.003
+2026-01-07 13:18:02,279 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:18:02.274 candle_end=2026-01-07 13:15:00-05:00 bars=20 range=2026-01-07 12:18:00-05:00→2026-01-07 13:15:00-05:00
+2026-01-07 13:18:02,283 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:15:00-05:00 TRIGGER=FAIL(73%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:20:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:20:02.003
+2026-01-07 13:20:02,079 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:20:02.071 candle_end=2026-01-07 13:18:00-05:00 bars=20 range=2026-01-07 12:40:00-05:00→2026-01-07 13:18:00-05:00
+2026-01-07 13:20:02,083 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:18:00-05:00 TRIGGER=FAIL(17%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:21:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:21:02.003
+2026-01-07 13:21:02,058 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:21:02.051 candle_end=2026-01-07 13:18:00-05:00 bars=20 range=2026-01-07 12:21:00-05:00→2026-01-07 13:18:00-05:00
+2026-01-07 13:21:02,063 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:18:00-05:00 TRIGGER=FAIL(25%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:22:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:22:02.003
+2026-01-07 13:22:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:22:02.060 candle_end=2026-01-07 13:20:00-05:00 bars=20 range=2026-01-07 12:42:00-05:00→2026-01-07 13:20:00-05:00
+2026-01-07 13:22:02,068 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:20:00-05:00 TRIGGER=FAIL(53%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:24:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:24:02.003
+2026-01-07 13:24:02,073 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:24:02.068 candle_end=2026-01-07 13:22:00-05:00 bars=20 range=2026-01-07 12:44:00-05:00→2026-01-07 13:22:00-05:00
+2026-01-07 13:24:02,078 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:22:00-05:00 TRIGGER=FAIL(14%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:24:02,083 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:24:02.003
+2026-01-07 13:24:02,140 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:24:02.134 candle_end=2026-01-07 13:21:00-05:00 bars=20 range=2026-01-07 12:24:00-05:00→2026-01-07 13:21:00-05:00
+2026-01-07 13:24:02,145 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:21:00-05:00 TRIGGER=FAIL(3%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:26:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:26:02.003
+2026-01-07 13:26:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:26:02.058 candle_end=2026-01-07 13:24:00-05:00 bars=20 range=2026-01-07 12:46:00-05:00→2026-01-07 13:24:00-05:00
+2026-01-07 13:26:02,069 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:24:00-05:00 TRIGGER=FAIL(60%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:27:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:27:02.003
+2026-01-07 13:27:02,057 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:27:02.051 candle_end=2026-01-07 13:24:00-05:00 bars=20 range=2026-01-07 12:27:00-05:00→2026-01-07 13:24:00-05:00
+2026-01-07 13:27:02,062 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:24:00-05:00 TRIGGER=FAIL(44%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:28:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:28:02.003
+2026-01-07 13:28:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:28:02.059 candle_end=2026-01-07 13:26:00-05:00 bars=20 range=2026-01-07 12:48:00-05:00→2026-01-07 13:26:00-05:00
+2026-01-07 13:28:02,069 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:26:00-05:00 TRIGGER=FAIL(14%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:29:47,461 - [MainOrchestrator-SPY] - CRITICAL - [TradeStation] ❌ TRADE EXIT | Trade 119 | Exit: $0.65 | P/L: -38.10% | $-41.60 | Status: Loss
+2026-01-07 13:29:47,463 - [MainOrchestrator-SPY] - INFO - [TradeStation] Stopped dual stop monitoring for trade 119
+2026-01-07 13:29:47,464 - [MainOrchestrator-SPY] - INFO - [TradeStation] Trade 119 cleaned up | Active trades: 0
+2026-01-07 13:30:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:30:02.002
+2026-01-07 13:30:02,078 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:30:02.071 candle_end=2026-01-07 13:28:00-05:00 bars=20 range=2026-01-07 12:50:00-05:00→2026-01-07 13:28:00-05:00
+2026-01-07 13:30:02,081 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:28:00-05:00 TRIGGER=FAIL(48%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:30:02,083 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:30:02.002
+2026-01-07 13:30:02,130 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:30:02.124 candle_end=2026-01-07 13:27:00-05:00 bars=20 range=2026-01-07 12:30:00-05:00→2026-01-07 13:27:00-05:00
+2026-01-07 13:30:02,134 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:27:00-05:00 TRIGGER=FAIL(32%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:32:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:32:02.002
+2026-01-07 13:32:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:32:02.058 candle_end=2026-01-07 13:30:00-05:00 bars=20 range=2026-01-07 12:52:00-05:00→2026-01-07 13:30:00-05:00
+2026-01-07 13:32:02,070 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:30:00-05:00 TRIGGER=FAIL(28%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:33:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:33:02.002
+2026-01-07 13:33:02,079 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:33:02.062 candle_end=2026-01-07 13:30:00-05:00 bars=20 range=2026-01-07 12:33:00-05:00→2026-01-07 13:30:00-05:00
+2026-01-07 13:33:02,084 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:30:00-05:00 TRIGGER=FAIL(39%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:34:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:34:02.003
+2026-01-07 13:34:02,071 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:34:02.066 candle_end=2026-01-07 13:32:00-05:00 bars=20 range=2026-01-07 12:54:00-05:00→2026-01-07 13:32:00-05:00
+2026-01-07 13:34:02,075 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:34:02,079 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=693.01, DropLow=692.04, Drop=$0.97 (0.14%)
+2026-01-07 13:34:02,081 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:32:00-05:00 TRIGGER=PASS(89%) DROP=PASS(0.14%/$0.97) EXHAUST=PASS[disabled] RECLAIM=FAIL(45.4%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:36:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:36:02.003
+2026-01-07 13:36:02,071 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:36:02.065 candle_end=2026-01-07 13:34:00-05:00 bars=20 range=2026-01-07 12:56:00-05:00→2026-01-07 13:34:00-05:00
+2026-01-07 13:36:02,074 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:34:00-05:00 TRIGGER=FAIL(10%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:36:02,078 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:36:02.003
+2026-01-07 13:36:02,120 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:36:02.114 candle_end=2026-01-07 13:33:00-05:00 bars=20 range=2026-01-07 12:36:00-05:00→2026-01-07 13:33:00-05:00
+2026-01-07 13:36:02,125 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:33:00-05:00 TRIGGER=FAIL(47%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:38:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:38:02.003
+2026-01-07 13:38:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:38:02.058 candle_end=2026-01-07 13:36:00-05:00 bars=20 range=2026-01-07 12:58:00-05:00→2026-01-07 13:36:00-05:00
+2026-01-07 13:38:02,069 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:38:02,074 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=692.95, DropLow=692.04, Drop=$0.91 (0.13%)
+2026-01-07 13:38:02,077 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:36:00-05:00 TRIGGER=PASS(67%) DROP=PASS(0.13%/$0.91) EXHAUST=PASS[disabled] RECLAIM=FAIL(57.1%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:39:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:39:02.003
+2026-01-07 13:39:02,065 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:39:02.060 candle_end=2026-01-07 13:36:00-05:00 bars=20 range=2026-01-07 12:39:00-05:00→2026-01-07 13:36:00-05:00
+2026-01-07 13:39:02,069 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:36:00-05:00 TRIGGER=FAIL(28%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:40:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:40:02.003
+2026-01-07 13:40:02,075 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:40:02.066 candle_end=2026-01-07 13:38:00-05:00 bars=20 range=2026-01-07 13:00:00-05:00→2026-01-07 13:38:00-05:00
+2026-01-07 13:40:02,080 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:38:00-05:00 TRIGGER=FAIL(31%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:42:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:42:02.003
+2026-01-07 13:42:02,090 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:42:02.082 candle_end=2026-01-07 13:40:00-05:00 bars=20 range=2026-01-07 13:02:00-05:00→2026-01-07 13:40:00-05:00
+2026-01-07 13:42:02,095 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:42:02,099 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=692.85, DropLow=692.04, Drop=$0.81 (0.12%)
+2026-01-07 13:42:02,102 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:40:00-05:00 TRIGGER=PASS(96%) DROP=PASS(0.12%/$0.81) EXHAUST=PASS[disabled] RECLAIM=FAIL(90.1%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:42:02,106 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:42:02.003
+2026-01-07 13:42:02,161 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:42:02.154 candle_end=2026-01-07 13:39:00-05:00 bars=20 range=2026-01-07 12:42:00-05:00→2026-01-07 13:39:00-05:00
+2026-01-07 13:42:02,164 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:42:02,167 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=693.06, DropLow=692.04, Drop=$1.02 (0.15%)
+2026-01-07 13:42:02,170 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:39:00-05:00 TRIGGER=PASS(77%) DROP=PASS(0.15%/$1.02) EXHAUST=PASS[disabled] RECLAIM=FAIL(71.6%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:44:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:44:02.002
+2026-01-07 13:44:02,076 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:44:02.072 candle_end=2026-01-07 13:42:00-05:00 bars=20 range=2026-01-07 13:04:00-05:00→2026-01-07 13:42:00-05:00
+2026-01-07 13:44:02,079 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:42:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:45:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:45:02.003
+2026-01-07 13:45:02,069 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:45:02.062 candle_end=2026-01-07 13:42:00-05:00 bars=20 range=2026-01-07 12:45:00-05:00→2026-01-07 13:42:00-05:00
+2026-01-07 13:45:02,074 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:42:00-05:00 TRIGGER=FAIL(28%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:46:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:46:02.003
+2026-01-07 13:46:02,083 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:46:02.079 candle_end=2026-01-07 13:44:00-05:00 bars=20 range=2026-01-07 13:06:00-05:00→2026-01-07 13:44:00-05:00
+2026-01-07 13:46:02,086 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:44:00-05:00 TRIGGER=FAIL(48%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:48:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:48:02.003
+2026-01-07 13:48:02,069 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:48:02.062 candle_end=2026-01-07 13:46:00-05:00 bars=20 range=2026-01-07 13:08:00-05:00→2026-01-07 13:46:00-05:00
+2026-01-07 13:48:02,074 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Lookback] Total candles passed: 15, Lookback candles: 14
+2026-01-07 13:48:02,079 - [MainOrchestrator-SPY] - DEBUG - [SmartReversal:Drop] SwingHigh=692.84, DropLow=692.04, Drop=$0.80 (0.12%)
+2026-01-07 13:48:02,082 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:46:00-05:00 TRIGGER=PASS(93%) DROP=PASS(0.12%/$0.80) EXHAUST=PASS[disabled] RECLAIM=FAIL(111.2%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:48:02,086 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:48:02.003
+2026-01-07 13:48:02,150 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:48:02.144 candle_end=2026-01-07 13:45:00-05:00 bars=20 range=2026-01-07 12:48:00-05:00→2026-01-07 13:45:00-05:00
+2026-01-07 13:48:02,153 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 13:45:00-05:00 TRIGGER=FAIL(54%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:50:02,005 - [MainOrchestrator-SPY] - INFO - [CandleSync] 2m candle boundary reached at 13:50:02.003
+2026-01-07 13:50:02,106 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=2m fetched_at=13:50:02.095 candle_end=2026-01-07 13:48:00-05:00 bars=20 range=2026-01-07 13:10:00-05:00→2026-01-07 13:48:00-05:00
+2026-01-07 13:50:02,111 - [MainOrchestrator-SPY] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 13:48:00-05:00 TRIGGER=FAIL(10%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 13:51:02,004 - [MainOrchestrator-SPY] - INFO - [CandleSync] 3m candle boundary reached at 13:51:02.003
+2026-01-07 13:51:02,064 - [MainOrchestrator-SPY] - INFO - [CandleFetch] timeframe=3m fetched_at=13:51:02.059 candle_end=2026-01-07 13:48:00-05:00 bars=20 range=2026-01-07 12:51:00-05:00→2026-01-07 13:48:00-05:00

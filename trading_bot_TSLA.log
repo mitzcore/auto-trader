@@ -1,0 +1,423 @@
+2026-01-06 13:19:05,885 - [MainOrchestrator-TSLA] - INFO - Initializing application services...
+2026-01-06 13:19:05,886 - [MainOrchestrator-TSLA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-06 13:19:05,889 - [MainOrchestrator-TSLA] - INFO - Process 'TradeService' started with PID 13174.
+2026-01-06 13:19:05,890 - [MainOrchestrator-TSLA] - INFO - All services are running.
+2026-01-06 13:19:05,893 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Client initialized
+2026-01-06 13:19:05,894 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Execution handler initialized
+2026-01-06 13:19:05,894 - [MainOrchestrator-TSLA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-06 13:19:06,075 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-06 13:19:06,076 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Connected and authenticated
+2026-01-06 13:19:06,076 - [MainOrchestrator-TSLA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-06 13:19:06,078 - [MainOrchestrator-TSLA] - INFO - Connecting to 127.0.0.1:4001 with clientId 12...
+2026-01-06 13:19:06,079 - [MainOrchestrator-TSLA] - INFO - Connected
+2026-01-06 13:19:06,084 - [MainOrchestrator-TSLA] - INFO - Logged on to server version 176
+2026-01-06 13:19:06,086 - [MainOrchestrator-TSLA] - INFO - API connection ready
+2026-01-06 13:19:06,086 - [MainOrchestrator-TSLA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 13:19:06,087 - [MainOrchestrator-TSLA] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-06 13:19:06,087 - [MainOrchestrator-TSLA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-06 13:19:06,189 - [MainOrchestrator-TSLA] - INFO - Synchronization complete
+2026-01-06 13:19:06,190 - [MainOrchestrator-TSLA] - INFO - Trade Service connected to IB.
+2026-01-06 13:19:06,191 - [MainOrchestrator-TSLA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-06 13:19:06,192 - [MainOrchestrator-TSLA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-06 13:19:06,193 - [MainOrchestrator-TSLA] - INFO -   2m: next fetch at 13:20:02
+2026-01-06 13:19:06,194 - [MainOrchestrator-TSLA] - INFO -   3m: next fetch at 13:21:02
+2026-01-06 13:19:17,069 - [MainOrchestrator-TSLA] - INFO - Shutdown signal received. Terminating all services...
+2026-01-06 13:19:17,069 - [MainOrchestrator-TSLA] - INFO - Terminating process 'TradeService'...
+2026-01-06 13:19:17,073 - [MainOrchestrator-TSLA] - INFO - Application has shut down.
+2026-01-06 13:19:48,472 - [MainOrchestrator-TSLA] - INFO - Initializing application services...
+2026-01-06 13:19:48,474 - [MainOrchestrator-TSLA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-06 13:19:48,477 - [MainOrchestrator-TSLA] - INFO - Process 'TradeService' started with PID 13248.
+2026-01-06 13:19:48,477 - [MainOrchestrator-TSLA] - INFO - All services are running.
+2026-01-06 13:19:48,480 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Client initialized
+2026-01-06 13:19:48,481 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Execution handler initialized
+2026-01-06 13:19:48,481 - [MainOrchestrator-TSLA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-06 13:19:48,671 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-06 13:19:48,671 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Connected and authenticated
+2026-01-06 13:19:48,672 - [MainOrchestrator-TSLA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-06 13:19:48,673 - [MainOrchestrator-TSLA] - INFO - Connecting to 127.0.0.1:4001 with clientId 12...
+2026-01-06 13:19:48,674 - [MainOrchestrator-TSLA] - INFO - Connected
+2026-01-06 13:19:48,678 - [MainOrchestrator-TSLA] - INFO - Logged on to server version 176
+2026-01-06 13:19:48,679 - [MainOrchestrator-TSLA] - INFO - API connection ready
+2026-01-06 13:19:48,680 - [MainOrchestrator-TSLA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 13:19:48,680 - [MainOrchestrator-TSLA] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-06 13:19:48,681 - [MainOrchestrator-TSLA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-06 13:19:49,081 - [MainOrchestrator-TSLA] - INFO - Synchronization complete
+2026-01-06 13:19:49,082 - [MainOrchestrator-TSLA] - INFO - Trade Service connected to IB.
+2026-01-06 13:19:49,083 - [MainOrchestrator-TSLA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-06 13:19:49,084 - [MainOrchestrator-TSLA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-06 13:19:49,085 - [MainOrchestrator-TSLA] - INFO -   2m: next fetch at 13:20:02
+2026-01-06 13:19:49,086 - [MainOrchestrator-TSLA] - INFO -   3m: next fetch at 13:21:02
+2026-01-06 13:20:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:20:02.001
+2026-01-06 13:20:02,188 - [MainOrchestrator-TSLA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-06 13:20:02,307 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:20:02.304 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:40:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:20:02,309 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:18:00-05:00 O:429.66 H:429.87 L:429.16 C:429.19 depth=20
+2026-01-06 13:20:02,310 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(66%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:21:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:21:02.001
+2026-01-06 13:21:02,051 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:21:02.049 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:21:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:21:02,053 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:18:00-05:00 O:429.66 H:429.87 L:428.90 C:428.99 depth=20
+2026-01-06 13:21:02,054 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(69%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:22:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:22:02.001
+2026-01-06 13:22:02,152 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:22:02.150 candle_end=2026-01-06 13:20:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:20:00-05:00
+2026-01-06 13:22:02,153 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:20:00-05:00 O:429.20 H:429.33 L:428.81 C:429.23 depth=20
+2026-01-06 13:22:02,154 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:20:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:24:02.001
+2026-01-06 13:24:02,078 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:24:02.075 candle_end=2026-01-06 13:22:00-05:00 bars=20 range=2026-01-06 12:44:00-05:00→2026-01-06 13:22:00-05:00
+2026-01-06 13:24:02,079 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:22:00-05:00 O:429.23 H:429.80 L:429.23 C:429.60 depth=20
+2026-01-06 13:24:02,081 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:22:00-05:00 TRIGGER=PASS(65%) DROP=PASS(0.36%/$1.55) EXHAUST=PASS[disabled] RECLAIM=FAIL(52.9%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,082 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:24:02.001
+2026-01-06 13:24:02,338 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:24:02.336 candle_end=2026-01-06 13:21:00-05:00 bars=20 range=2026-01-06 12:24:00-05:00→2026-01-06 13:21:00-05:00
+2026-01-06 13:24:02,339 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:21:00-05:00 O:429.00 H:429.80 L:428.81 C:429.60 depth=20
+2026-01-06 13:24:02,340 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:21:00-05:00 TRIGGER=PASS(61%) DROP=PASS(0.57%/$2.45) EXHAUST=PASS[disabled] RECLAIM=FAIL(33.5%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:26:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:26:02.001
+2026-01-06 13:26:02,048 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:26:02.047 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:46:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:26:02,049 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:24:00-05:00 O:429.60 H:429.73 L:429.46 C:429.52 depth=20
+2026-01-06 13:26:02,051 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(30%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:27:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:27:02.001
+2026-01-06 13:27:02,139 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:27:02.138 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:27:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:27:02,140 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:24:00-05:00 O:429.60 H:430.06 L:429.46 C:429.76 depth=20
+2026-01-06 13:27:02,142 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(27%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:28:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:28:02.002
+2026-01-06 13:28:02,063 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:28:02.058 candle_end=2026-01-06 13:26:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:26:00-05:00
+2026-01-06 13:28:02,066 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:26:00-05:00 O:429.51 H:430.06 L:429.50 C:429.64 depth=20
+2026-01-06 13:28:02,070 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:26:00-05:00 TRIGGER=FAIL(23%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:30:02.001
+2026-01-06 13:30:02,144 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:30:02.141 candle_end=2026-01-06 13:28:00-05:00 bars=20 range=2026-01-06 12:50:00-05:00→2026-01-06 13:28:00-05:00
+2026-01-06 13:30:02,145 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:28:00-05:00 O:429.61 H:430.41 L:429.57 C:429.75 depth=20
+2026-01-06 13:30:02,147 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:28:00-05:00 TRIGGER=FAIL(17%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,148 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:30:02.001
+2026-01-06 13:30:02,203 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:30:02.201 candle_end=2026-01-06 13:27:00-05:00 bars=20 range=2026-01-06 12:30:00-05:00→2026-01-06 13:27:00-05:00
+2026-01-06 13:30:02,204 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:27:00-05:00 O:429.75 H:430.41 L:429.57 C:429.75 depth=20
+2026-01-06 13:30:02,205 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:27:00-05:00 TRIGGER=FAIL(0%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:32:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:32:02.002
+2026-01-06 13:32:02,146 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:32:02.145 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:52:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:32:02,147 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:30:00-05:00 O:429.73 H:429.89 L:429.50 C:429.70 depth=20
+2026-01-06 13:32:02,149 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=FAIL(8%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:33:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:33:02.003
+2026-01-06 13:33:02,148 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:33:02.141 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:33:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:33:02,152 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:30:00-05:00 O:429.73 H:429.89 L:429.50 C:429.67 depth=20
+2026-01-06 13:33:02,156 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=FAIL(15%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:34:02,006 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:34:02.002
+2026-01-06 13:34:02,148 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:34:02.147 candle_end=2026-01-06 13:32:00-05:00 bars=20 range=2026-01-06 12:54:00-05:00→2026-01-06 13:32:00-05:00
+2026-01-06 13:34:02,149 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:32:00-05:00 O:429.71 H:429.85 L:429.53 C:429.67 depth=20
+2026-01-06 13:34:02,151 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:32:00-05:00 TRIGGER=FAIL(12%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,005 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,093 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:36:02.088 candle_end=2026-01-06 13:34:00-05:00 bars=20 range=2026-01-06 12:56:00-05:00→2026-01-06 13:34:00-05:00
+2026-01-06 13:36:02,095 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:34:00-05:00 O:429.65 H:430.07 L:429.28 C:430.05 depth=20
+2026-01-06 13:36:02,098 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:34:00-05:00 TRIGGER=FAIL(51%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,099 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,350 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:36:02.349 candle_end=2026-01-06 13:33:00-05:00 bars=20 range=2026-01-06 12:36:00-05:00→2026-01-06 13:33:00-05:00
+2026-01-06 13:36:02,351 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:33:00-05:00 O:429.70 H:430.07 L:429.28 C:430.05 depth=20
+2026-01-06 13:36:02,352 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:33:00-05:00 TRIGGER=FAIL(44%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:38:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:38:02.002
+2026-01-06 13:38:02,072 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:38:02.071 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:58:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:38:02,073 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:36:00-05:00 O:430.05 H:430.05 L:429.14 C:429.38 depth=20
+2026-01-06 13:38:02,075 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=FAIL(74%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:39:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:39:02.002
+2026-01-06 13:39:02,138 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:39:02.136 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:39:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:39:02,139 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:36:00-05:00 O:430.05 H:430.05 L:429.14 C:429.49 depth=20
+2026-01-06 13:39:02,140 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=FAIL(62%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:40:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:40:02.002
+2026-01-06 13:40:02,190 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:40:02.188 candle_end=2026-01-06 13:38:00-05:00 bars=20 range=2026-01-06 13:00:00-05:00→2026-01-06 13:38:00-05:00
+2026-01-06 13:40:02,191 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:38:00-05:00 O:429.38 H:430.00 L:429.21 C:429.27 depth=20
+2026-01-06 13:40:02,192 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:38:00-05:00 TRIGGER=FAIL(14%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,080 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:42:02.078 candle_end=2026-01-06 13:40:00-05:00 bars=20 range=2026-01-06 13:02:00-05:00→2026-01-06 13:40:00-05:00
+2026-01-06 13:42:02,081 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:40:00-05:00 O:429.29 H:429.87 L:429.14 C:429.83 depth=20
+2026-01-06 13:42:02,082 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:40:00-05:00 TRIGGER=PASS(74%) DROP=PASS(0.37%/$1.60) EXHAUST=PASS[disabled] RECLAIM=FAIL(63.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,084 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,243 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:42:02.242 candle_end=2026-01-06 13:39:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:39:00-05:00
+2026-01-06 13:42:02,244 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:39:00-05:00 O:429.52 H:430.00 L:429.14 C:429.83 depth=20
+2026-01-06 13:42:02,246 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:39:00-05:00 TRIGGER=FAIL(36%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:44:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:44:02.002
+2026-01-06 13:44:02,145 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:44:02.143 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 13:04:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:44:02,146 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:42:00-05:00 O:429.80 H:431.02 L:429.47 C:430.98 depth=20
+2026-01-06 13:44:02,147 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(76%) DROP=PASS(0.37%/$1.60) EXHAUST=PASS[disabled] RECLAIM=FAIL(135.6%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:45:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:45:02.002
+2026-01-06 13:45:02,234 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:45:02.232 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 12:45:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:45:02,235 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:42:00-05:00 O:429.80 H:431.16 L:429.47 C:431.10 depth=20
+2026-01-06 13:45:02,236 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(77%) DROP=PASS(0.38%/$1.63) EXHAUST=PASS[disabled] RECLAIM=FAIL(142.3%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:46:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:46:02.002
+2026-01-06 13:46:02,063 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:46:02.061 candle_end=2026-01-06 13:44:00-05:00 bars=20 range=2026-01-06 13:06:00-05:00→2026-01-06 13:44:00-05:00
+2026-01-06 13:46:02,064 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:44:00-05:00 O:431.00 H:431.57 L:430.74 C:431.50 depth=20
+2026-01-06 13:46:02,066 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:44:00-05:00 TRIGGER=PASS(60%) DROP=PASS(0.51%/$2.21) EXHAUST=PASS[disabled] RECLAIM=FAIL(121.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,011 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:48:02.008
+2026-01-06 13:48:02,174 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:48:02.171 candle_end=2026-01-06 13:46:00-05:00 bars=20 range=2026-01-06 13:08:00-05:00→2026-01-06 13:46:00-05:00
+2026-01-06 13:48:02,176 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:46:00-05:00 O:431.48 H:432.26 L:431.46 C:432.14 depth=20
+2026-01-06 13:48:02,178 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:46:00-05:00 TRIGGER=PASS(82%) DROP=PASS(0.64%/$2.76) EXHAUST=PASS[disabled] RECLAIM=FAIL(120.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,179 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:48:02.008
+2026-01-06 13:48:02,302 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:48:02.296 candle_end=2026-01-06 13:45:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:45:00-05:00
+2026-01-06 13:48:02,306 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:45:00-05:00 O:431.10 H:432.26 L:430.93 C:432.14 depth=20
+2026-01-06 13:48:02,312 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:45:00-05:00 TRIGGER=PASS(78%) DROP=PASS(0.55%/$2.38) EXHAUST=PASS[disabled] RECLAIM=FAIL(141.2%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:50:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:50:02.002
+2026-01-06 13:50:02,074 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:50:02.068 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 13:10:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:50:02,077 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:48:00-05:00 O:432.15 H:432.26 L:431.84 C:431.92 depth=20
+2026-01-06 13:50:02,082 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(55%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:51:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:51:02.001
+2026-01-06 13:51:02,144 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:51:02.142 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 12:51:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:51:02,145 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:48:00-05:00 O:432.15 H:432.26 L:431.72 C:431.91 depth=20
+2026-01-06 13:51:02,146 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(44%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:52:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:52:02.003
+2026-01-06 13:52:02,068 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:52:02.066 candle_end=2026-01-06 13:50:00-05:00 bars=20 range=2026-01-06 13:12:00-05:00→2026-01-06 13:50:00-05:00
+2026-01-06 13:52:02,070 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:50:00-05:00 O:431.93 H:432.17 L:431.72 C:432.08 depth=20
+2026-01-06 13:52:02,071 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:50:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:54:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:54:02.001
+2026-01-06 13:54:02,097 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:54:02.094 candle_end=2026-01-06 13:52:00-05:00 bars=20 range=2026-01-06 13:14:00-05:00→2026-01-06 13:52:00-05:00
+2026-01-06 13:54:02,098 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:52:00-05:00 O:432.06 H:432.06 L:431.69 C:431.88 depth=20
+2026-01-06 13:54:02,099 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:52:00-05:00 TRIGGER=FAIL(49%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:54:02,101 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:54:02.001
+2026-01-06 13:54:02,369 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:54:02.367 candle_end=2026-01-06 13:51:00-05:00 bars=20 range=2026-01-06 12:54:00-05:00→2026-01-06 13:51:00-05:00
+2026-01-06 13:54:02,370 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:51:00-05:00 O:431.93 H:432.17 L:431.69 C:431.88 depth=20
+2026-01-06 13:54:02,372 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:51:00-05:00 TRIGGER=FAIL(10%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:56:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:56:02.001
+2026-01-06 13:56:02,054 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:56:02.051 candle_end=2026-01-06 13:54:00-05:00 bars=20 range=2026-01-06 13:16:00-05:00→2026-01-06 13:54:00-05:00
+2026-01-06 13:56:02,055 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:54:00-05:00 O:431.91 H:432.00 L:431.04 C:431.11 depth=20
+2026-01-06 13:56:02,057 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:54:00-05:00 TRIGGER=FAIL(83%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:57:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 13:57:02.001
+2026-01-06 13:57:02,074 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:57:02.069 candle_end=2026-01-06 13:54:00-05:00 bars=20 range=2026-01-06 12:57:00-05:00→2026-01-06 13:54:00-05:00
+2026-01-06 13:57:02,076 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:54:00-05:00 O:431.91 H:432.00 L:430.73 C:430.85 depth=20
+2026-01-06 13:57:02,077 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:54:00-05:00 TRIGGER=FAIL(84%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:58:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 13:58:02.001
+2026-01-06 13:58:02,154 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:58:02.151 candle_end=2026-01-06 13:56:00-05:00 bars=20 range=2026-01-06 13:18:00-05:00→2026-01-06 13:56:00-05:00
+2026-01-06 13:58:02,155 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:56:00-05:00 O:431.09 H:431.14 L:430.53 C:430.60 depth=20
+2026-01-06 13:58:02,156 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:56:00-05:00 TRIGGER=FAIL(80%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:00:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 14:00:02.001
+2026-01-06 14:00:02,153 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:00:02.150 candle_end=2026-01-06 13:58:00-05:00 bars=20 range=2026-01-06 13:20:00-05:00→2026-01-06 13:58:00-05:00
+2026-01-06 14:00:02,154 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:58:00-05:00 O:430.62 H:431.16 L:430.52 C:431.11 depth=20
+2026-01-06 14:00:02,155 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:58:00-05:00 TRIGGER=PASS(77%) DROP=PASS(0.72%/$3.12) EXHAUST=PASS[disabled] RECLAIM=FAIL(63.1%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:00:02,157 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 14:00:02.001
+2026-01-06 14:00:02,363 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:00:02.361 candle_end=2026-01-06 13:57:00-05:00 bars=20 range=2026-01-06 13:00:00-05:00→2026-01-06 13:57:00-05:00
+2026-01-06 14:00:02,364 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:57:00-05:00 O:430.85 H:431.16 L:430.52 C:431.11 depth=20
+2026-01-06 14:00:02,365 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:57:00-05:00 TRIGGER=FAIL(41%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:02:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 14:02:02.002
+2026-01-06 14:02:02,067 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:02:02.064 candle_end=2026-01-06 14:00:00-05:00 bars=20 range=2026-01-06 13:22:00-05:00→2026-01-06 14:00:00-05:00
+2026-01-06 14:02:02,069 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:00:00-05:00 O:431.09 H:431.54 L:430.95 C:431.23 depth=20
+2026-01-06 14:02:02,070 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:00:00-05:00 TRIGGER=FAIL(24%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:03:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 14:03:02.002
+2026-01-06 14:03:02,139 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:03:02.137 candle_end=2026-01-06 14:00:00-05:00 bars=20 range=2026-01-06 13:03:00-05:00→2026-01-06 14:00:00-05:00
+2026-01-06 14:03:02,140 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 14:00:00-05:00 O:431.09 H:431.56 L:430.95 C:431.20 depth=20
+2026-01-06 14:03:02,141 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 14:00:00-05:00 TRIGGER=FAIL(18%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:04:02,005 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 14:04:02.002
+2026-01-06 14:04:02,097 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:04:02.094 candle_end=2026-01-06 14:02:00-05:00 bars=20 range=2026-01-06 13:24:00-05:00→2026-01-06 14:02:00-05:00
+2026-01-06 14:04:02,098 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:02:00-05:00 O:431.25 H:431.56 L:431.12 C:431.24 depth=20
+2026-01-06 14:04:02,099 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:02:00-05:00 TRIGGER=FAIL(2%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:06:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 14:06:02.002
+2026-01-06 14:06:02,061 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:06:02.059 candle_end=2026-01-06 14:04:00-05:00 bars=20 range=2026-01-06 13:26:00-05:00→2026-01-06 14:04:00-05:00
+2026-01-06 14:06:02,065 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:04:00-05:00 O:431.25 H:431.71 L:431.12 C:431.69 depth=20
+2026-01-06 14:06:02,067 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:04:00-05:00 TRIGGER=PASS(75%) DROP=PASS(0.72%/$3.12) EXHAUST=PASS[disabled] RECLAIM=FAIL(81.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:06:02,070 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 14:06:02.002
+2026-01-06 14:06:02,256 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:06:02.253 candle_end=2026-01-06 14:03:00-05:00 bars=20 range=2026-01-06 13:06:00-05:00→2026-01-06 14:03:00-05:00
+2026-01-06 14:06:02,258 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 14:03:00-05:00 O:431.22 H:431.71 L:431.12 C:431.69 depth=20
+2026-01-06 14:06:02,259 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 14:03:00-05:00 TRIGGER=PASS(80%) DROP=PASS(0.80%/$3.45) EXHAUST=PASS[disabled] RECLAIM=FAIL(83.5%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:08:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 14:08:02.002
+2026-01-06 14:08:02,261 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:08:02.257 candle_end=2026-01-06 14:06:00-05:00 bars=20 range=2026-01-06 13:28:00-05:00→2026-01-06 14:06:00-05:00
+2026-01-06 14:08:02,262 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:06:00-05:00 O:431.71 H:432.23 L:431.67 C:432.19 depth=20
+2026-01-06 14:08:02,264 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:06:00-05:00 TRIGGER=PASS(86%) DROP=PASS(0.72%/$3.12) EXHAUST=PASS[disabled] RECLAIM=FAIL(97.8%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:09:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 14:09:02.002
+2026-01-06 14:09:02,189 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:09:02.187 candle_end=2026-01-06 14:06:00-05:00 bars=20 range=2026-01-06 13:09:00-05:00→2026-01-06 14:06:00-05:00
+2026-01-07 08:59:15,961 - [MainOrchestrator-TSLA] - INFO - Initializing application services...
+2026-01-07 08:59:15,963 - [MainOrchestrator-TSLA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 08:59:15,966 - [MainOrchestrator-TSLA] - INFO - Process 'TradeService' started with PID 2263.
+2026-01-07 08:59:15,966 - [MainOrchestrator-TSLA] - INFO - All services are running.
+2026-01-07 08:59:15,969 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Client initialized
+2026-01-07 08:59:15,970 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 08:59:15,970 - [MainOrchestrator-TSLA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 08:59:16,117 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 08:59:16,118 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 08:59:16,119 - [MainOrchestrator-TSLA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 08:59:16,121 - [MainOrchestrator-TSLA] - INFO - Connecting to 127.0.0.1:4001 with clientId 12...
+2026-01-07 08:59:16,122 - [MainOrchestrator-TSLA] - INFO - Connected
+2026-01-07 08:59:16,161 - [MainOrchestrator-TSLA] - INFO - Logged on to server version 176
+2026-01-07 08:59:16,176 - [MainOrchestrator-TSLA] - INFO - API connection ready
+2026-01-07 08:59:16,181 - [MainOrchestrator-TSLA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 08:59:16,182 - [MainOrchestrator-TSLA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 08:59:16,183 - [MainOrchestrator-TSLA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 08:59:17,267 - [MainOrchestrator-TSLA] - INFO - Synchronization complete
+2026-01-07 08:59:17,269 - [MainOrchestrator-TSLA] - INFO - Trade Service connected to IB.
+2026-01-07 08:59:17,272 - [MainOrchestrator-TSLA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 08:59:17,274 - [MainOrchestrator-TSLA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 08:59:17,276 - [MainOrchestrator-TSLA] - INFO -   2m: next fetch at 09:00:02
+2026-01-07 08:59:17,277 - [MainOrchestrator-TSLA] - INFO -   3m: next fetch at 09:00:02
+2026-01-07 09:00:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:02,854 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:00:02.849 candle_end=2026-01-06 15:58:00-05:00 bars=20 range=2026-01-06 15:20:00-05:00→2026-01-06 15:58:00-05:00
+2026-01-07 09:00:02,856 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 15:58:00-05:00 O:432.89 H:433.25 L:432.53 C:432.95 depth=20
+2026-01-07 09:00:02,858 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 15:58:00-05:00 TRIGGER=FAIL(8%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:00:02,859 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:02,999 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:00:02.997 candle_end=2026-01-06 15:57:00-05:00 bars=20 range=2026-01-06 15:00:00-05:00→2026-01-06 15:57:00-05:00
+2026-01-07 09:00:03,000 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 15:57:00-05:00 O:432.94 H:433.25 L:432.53 C:432.95 depth=20
+2026-01-07 09:00:03,001 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 15:57:00-05:00 TRIGGER=FAIL(1%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:02:02,005 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:02:02.003
+2026-01-07 09:03:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:03:02.001
+2026-01-07 09:04:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:04:02.001
+2026-01-07 09:06:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:06:02.001
+2026-01-07 09:06:02,142 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:06:02.001
+2026-01-07 09:08:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:08:02.002
+2026-01-07 09:09:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:09:02.002
+2026-01-07 09:10:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:10:02.002
+2026-01-07 09:12:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:12:02.001
+2026-01-07 09:12:02,058 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:12:02.001
+2026-01-07 09:14:02,007 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:14:02.007
+2026-01-07 09:15:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:15:02.002
+2026-01-07 09:16:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:16:02.002
+2026-01-07 09:18:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:18:02.002
+2026-01-07 09:18:02,069 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:18:02.002
+2026-01-07 09:20:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:20:02.003
+2026-01-07 09:21:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:21:02.002
+2026-01-07 09:22:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:22:02.003
+2026-01-07 09:24:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:24:02.002
+2026-01-07 09:24:02,143 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:24:02.002
+2026-01-07 09:26:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:26:02.002
+2026-01-07 09:27:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:27:02.002
+2026-01-07 09:28:02,007 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:28:02.006
+2026-01-07 09:30:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:30:02.002
+2026-01-07 09:30:02,141 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:30:02.002
+2026-01-07 09:32:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:32:02.002
+2026-01-07 09:32:02,142 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:32:02.140 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:22:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:32:02,144 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:30:00-05:00 O:435.86 H:435.92 L:431.60 C:432.46 depth=20
+2026-01-07 09:32:02,145 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(79%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:33:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:33:02.002
+2026-01-07 09:33:02,092 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:33:02.085 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:03:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:33:02,094 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:30:00-05:00 O:435.86 H:435.92 L:431.60 C:432.98 depth=20
+2026-01-07 09:33:02,096 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(67%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:34:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:34:02.002
+2026-01-07 09:34:02,043 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:34:02.042 candle_end=2026-01-07 09:32:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:32:00-05:00
+2026-01-07 09:34:02,044 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:32:00-05:00 O:432.46 H:434.10 L:432.00 C:432.01 depth=20
+2026-01-07 09:34:02,045 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:32:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,070 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:36:02.068 candle_end=2026-01-07 09:34:00-05:00 bars=20 range=2026-01-06 15:26:00-05:00→2026-01-07 09:34:00-05:00
+2026-01-07 09:36:02,072 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:34:00-05:00 O:432.00 H:434.42 L:431.67 C:433.84 depth=20
+2026-01-07 09:36:02,073 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:34:00-05:00 TRIGGER=PASS(67%) DROP=PASS(1.04%/$4.54) EXHAUST=PASS[disabled] RECLAIM=FAIL(54.2%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,075 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,347 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:36:02.345 candle_end=2026-01-07 09:33:00-05:00 bars=20 range=2026-01-06 15:06:00-05:00→2026-01-07 09:33:00-05:00
+2026-01-07 09:36:02,348 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:33:00-05:00 O:433.05 H:434.42 L:431.67 C:433.84 depth=20
+2026-01-07 09:36:02,349 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:33:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:38:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:38:02.002
+2026-01-07 09:38:02,075 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:38:02.074 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:28:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:38:02,076 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:36:00-05:00 O:433.84 H:434.24 L:432.81 C:434.03 depth=20
+2026-01-07 09:38:02,077 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(13%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:39:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:39:02.002
+2026-01-07 09:39:02,138 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:39:02.136 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:09:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:39:02,139 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:36:00-05:00 O:433.84 H:434.44 L:432.81 C:434.27 depth=20
+2026-01-07 09:39:02,140 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(26%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:40:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:40:02.002
+2026-01-07 09:40:02,072 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:40:02.070 candle_end=2026-01-07 09:38:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:38:00-05:00
+2026-01-07 09:40:02,073 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:38:00-05:00 O:434.09 H:434.88 L:433.45 C:434.44 depth=20
+2026-01-07 09:40:02,075 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:38:00-05:00 TRIGGER=FAIL(24%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,142 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:42:02.139 candle_end=2026-01-07 09:40:00-05:00 bars=20 range=2026-01-06 15:32:00-05:00→2026-01-07 09:40:00-05:00
+2026-01-07 09:42:02,143 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:40:00-05:00 O:434.44 H:438.13 L:434.01 C:437.68 depth=20
+2026-01-07 09:42:02,144 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:40:00-05:00 TRIGGER=PASS(79%) DROP=PASS(0.99%/$4.32) EXHAUST=PASS[disabled] RECLAIM=FAIL(140.7%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,146 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,445 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:42:02.440 candle_end=2026-01-07 09:39:00-05:00 bars=20 range=2026-01-06 15:12:00-05:00→2026-01-07 09:39:00-05:00
+2026-01-07 09:42:02,447 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:39:00-05:00 O:434.32 H:438.13 L:433.79 C:437.68 depth=20
+2026-01-07 09:42:02,448 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:39:00-05:00 TRIGGER=PASS(77%) DROP=PASS(1.14%/$4.97) EXHAUST=PASS[disabled] RECLAIM=FAIL(135.4%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:44:02,001 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:44:02.000
+2026-01-07 09:44:02,070 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:44:02.069 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:34:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:44:02,071 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:42:00-05:00 O:437.68 H:438.00 L:436.51 C:437.68 depth=20
+2026-01-07 09:44:02,072 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=FAIL(0%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:45:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:45:02.002
+2026-01-07 09:45:02,070 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:45:02.068 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:15:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:45:02,071 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:42:00-05:00 O:437.68 H:438.00 L:436.51 C:437.37 depth=20
+2026-01-07 09:45:02,073 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:46:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:46:02.002
+2026-01-07 09:46:02,147 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:46:02.145 candle_end=2026-01-07 09:44:00-05:00 bars=20 range=2026-01-06 15:36:00-05:00→2026-01-07 09:44:00-05:00
+2026-01-07 09:46:02,148 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:44:00-05:00 O:437.64 H:437.75 L:436.54 C:437.00 depth=20
+2026-01-07 09:46:02,149 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:44:00-05:00 TRIGGER=FAIL(53%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,050 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:48:02.049 candle_end=2026-01-07 09:46:00-05:00 bars=20 range=2026-01-06 15:38:00-05:00→2026-01-07 09:46:00-05:00
+2026-01-07 09:48:02,051 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:46:00-05:00 O:437.02 H:437.18 L:436.05 C:436.85 depth=20
+2026-01-07 09:48:02,053 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:46:00-05:00 TRIGGER=FAIL(15%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,054 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,237 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:48:02.236 candle_end=2026-01-07 09:45:00-05:00 bars=20 range=2026-01-06 15:18:00-05:00→2026-01-07 09:45:00-05:00
+2026-01-07 09:48:02,238 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:45:00-05:00 O:437.39 H:437.49 L:436.05 C:436.85 depth=20
+2026-01-07 09:48:02,240 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:45:00-05:00 TRIGGER=FAIL(38%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:50:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:50:02.002
+2026-01-07 09:50:02,057 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:50:02.054 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:40:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:50:02,058 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:48:00-05:00 O:436.84 H:436.90 L:435.02 C:435.40 depth=20
+2026-01-07 09:50:02,059 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(77%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:51:02,007 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:51:02.007
+2026-01-07 09:51:02,148 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:51:02.146 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:21:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:51:02,149 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:48:00-05:00 O:436.84 H:436.90 L:435.02 C:435.87 depth=20
+2026-01-07 09:51:02,150 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(52%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:52:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:52:02.002
+2026-01-07 09:52:02,050 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:52:02.049 candle_end=2026-01-07 09:50:00-05:00 bars=20 range=2026-01-06 15:42:00-05:00→2026-01-07 09:50:00-05:00
+2026-01-07 09:52:02,051 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:50:00-05:00 O:435.36 H:436.41 L:433.46 C:433.60 depth=20
+2026-01-07 09:52:02,053 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:50:00-05:00 TRIGGER=FAIL(60%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,075 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:54:02.073 candle_end=2026-01-07 09:52:00-05:00 bars=20 range=2026-01-06 15:44:00-05:00→2026-01-07 09:52:00-05:00
+2026-01-07 09:54:02,076 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:52:00-05:00 O:433.73 H:434.40 L:433.55 C:434.16 depth=20
+2026-01-07 09:54:02,077 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:52:00-05:00 TRIGGER=FAIL(51%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,079 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,349 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:54:02.348 candle_end=2026-01-07 09:51:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:51:00-05:00
+2026-01-07 09:54:02,351 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:51:00-05:00 O:435.94 H:435.99 L:433.46 C:434.16 depth=20
+2026-01-07 09:54:02,352 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:51:00-05:00 TRIGGER=FAIL(70%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:56:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:56:02.002
+2026-01-07 09:56:02,075 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:56:02.071 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:46:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:56:02,077 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:54:00-05:00 O:434.14 H:434.42 L:433.51 C:434.37 depth=20
+2026-01-07 09:56:02,080 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=FAIL(25%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:57:02,004 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 09:57:02.002
+2026-01-07 09:57:02,143 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:57:02.140 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:27:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:57:02,144 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:54:00-05:00 O:434.14 H:434.50 L:433.51 C:433.72 depth=20
+2026-01-07 09:57:02,145 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=FAIL(42%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:58:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 09:58:02.002
+2026-01-07 09:58:02,137 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:58:02.136 candle_end=2026-01-07 09:56:00-05:00 bars=20 range=2026-01-06 15:48:00-05:00→2026-01-07 09:56:00-05:00
+2026-01-07 09:58:02,138 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:56:00-05:00 O:434.33 H:434.50 L:433.16 C:433.51 depth=20
+2026-01-07 09:58:02,139 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:56:00-05:00 TRIGGER=FAIL(61%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,208 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:00:02.205 candle_end=2026-01-07 09:58:00-05:00 bars=20 range=2026-01-06 15:50:00-05:00→2026-01-07 09:58:00-05:00
+2026-01-07 10:00:02,209 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:58:00-05:00 O:433.52 H:433.99 L:433.15 C:433.76 depth=20
+2026-01-07 10:00:02,210 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:58:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,211 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,296 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:00:02.294 candle_end=2026-01-07 09:57:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:57:00-05:00
+2026-01-07 10:00:02,297 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:57:00-05:00 O:433.73 H:433.99 L:433.15 C:433.76 depth=20
+2026-01-07 10:00:02,299 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:57:00-05:00 TRIGGER=FAIL(4%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:02:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 10:02:02.003
+2026-01-07 10:02:02,067 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:02:02.063 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:52:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:02:02,068 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:00:00-05:00 O:433.76 H:434.30 L:432.70 C:433.02 depth=20
+2026-01-07 10:02:02,070 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(46%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:03:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 10:03:02.001
+2026-01-07 10:03:02,254 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:03:02.252 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:33:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:03:02,255 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:00:00-05:00 O:433.76 H:434.30 L:432.45 C:433.27 depth=20
+2026-01-07 10:03:02,256 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(26%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:04:02,002 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 10:04:02.002
+2026-01-07 10:04:02,154 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:04:02.149 candle_end=2026-01-07 10:02:00-05:00 bars=20 range=2026-01-06 15:54:00-05:00→2026-01-07 10:02:00-05:00
+2026-01-07 10:04:02,156 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:02:00-05:00 O:433.00 H:433.33 L:432.44 C:432.71 depth=20
+2026-01-07 10:04:02,159 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:02:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:06:02,003 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 10:06:02.002
+2026-01-07 10:06:02,091 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:06:02.089 candle_end=2026-01-07 10:04:00-05:00 bars=20 range=2026-01-06 15:56:00-05:00→2026-01-07 10:04:00-05:00
+2026-01-07 10:06:02,092 - [MainOrchestrator-TSLA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:04:00-05:00 O:432.71 H:433.78 L:432.33 C:433.75 depth=20
+2026-01-07 10:06:02,093 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:04:00-05:00 TRIGGER=PASS(72%) DROP=PASS(1.30%/$5.69) EXHAUST=PASS[disabled] RECLAIM=PASS(23.0%) BASE_BREAK=N/A result=PASS zone=IN_ZONE
+2026-01-07 10:06:02,094 - [MainOrchestrator-TSLA] - INFO - 
+✨✨✨✨✨✨✨✨ SMART REVERSAL CONFIRMED ✨✨✨✨✨✨✨✨
+TRADE CONFIRMED on 2m. Drop: 1.30% | Reclaim: 23.0% | Base: disabled
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+2026-01-07 10:06:02,096 - [MainOrchestrator-TSLA] - WARNING - [TradeStation] Not connected, attempting to connect...
+2026-01-07 10:06:02,187 - [MainOrchestrator-TSLA] - INFO - Application has shut down.
+2026-01-07 12:53:07,679 - [MainOrchestrator-TSLA] - INFO - Initializing application services...
+2026-01-07 12:53:07,681 - [MainOrchestrator-TSLA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:53:07,684 - [MainOrchestrator-TSLA] - INFO - Process 'TradeService' started with PID 18019.
+2026-01-07 12:53:07,684 - [MainOrchestrator-TSLA] - INFO - All services are running.
+2026-01-07 12:53:07,687 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Client initialized
+2026-01-07 12:53:07,688 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:53:07,688 - [MainOrchestrator-TSLA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:53:07,837 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:53:07,838 - [MainOrchestrator-TSLA] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:53:07,838 - [MainOrchestrator-TSLA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:53:07,840 - [MainOrchestrator-TSLA] - INFO - Connecting to 127.0.0.1:4001 with clientId 12...
+2026-01-07 12:53:07,841 - [MainOrchestrator-TSLA] - INFO - Connected
+2026-01-07 12:53:07,844 - [MainOrchestrator-TSLA] - INFO - Logged on to server version 176
+2026-01-07 12:53:07,846 - [MainOrchestrator-TSLA] - INFO - API connection ready
+2026-01-07 12:53:07,847 - [MainOrchestrator-TSLA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 12:53:07,847 - [MainOrchestrator-TSLA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:53:07,848 - [MainOrchestrator-TSLA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 12:53:08,150 - [MainOrchestrator-TSLA] - INFO - Synchronization complete
+2026-01-07 12:53:08,152 - [MainOrchestrator-TSLA] - INFO - Trade Service connected to IB.
+2026-01-07 12:53:08,156 - [MainOrchestrator-TSLA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 12:53:08,160 - [MainOrchestrator-TSLA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 12:53:08,163 - [MainOrchestrator-TSLA] - INFO -   2m: next fetch at 12:54:02
+2026-01-07 12:53:08,166 - [MainOrchestrator-TSLA] - INFO -   3m: next fetch at 12:54:02
+2026-01-07 12:54:02,005 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 2m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,077 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=2m fetched_at=12:54:02.072 candle_end=2026-01-07 12:52:00-05:00 bars=20 range=2026-01-07 12:14:00-05:00→2026-01-07 12:52:00-05:00
+2026-01-07 12:54:02,080 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:52:00-05:00 TRIGGER=PASS(88%) DROP=PASS(0.37%/$1.62) EXHAUST=PASS[disabled] RECLAIM=FAIL(95.7%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:54:02,083 - [MainOrchestrator-TSLA] - INFO - [CandleSync] 3m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,347 - [MainOrchestrator-TSLA] - INFO - [CandleFetch] timeframe=3m fetched_at=12:54:02.341 candle_end=2026-01-07 12:51:00-05:00 bars=20 range=2026-01-07 11:54:00-05:00→2026-01-07 12:51:00-05:00
+2026-01-07 12:54:02,350 - [MainOrchestrator-TSLA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:51:00-05:00 TRIGGER=FAIL(41%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE

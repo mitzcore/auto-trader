@@ -1,0 +1,37 @@
+2026-01-07 12:55:23,845 - [Launcher] - INFO - Launcher initialized for symbols: SPY
+2026-01-07 12:55:23,846 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:55:23,846 - [Launcher] - INFO - Starting trading bot for 1 symbol(s)
+2026-01-07 12:55:23,846 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:55:23,846 - [Launcher] - INFO - [SPY] Starting process with command: /Users/mitz/projects/algotrade/algotrade/bin/python main.py --symbol SPY
+2026-01-07 12:55:23,847 - [Launcher] - INFO - [SPY] Process started with PID 20450
+2026-01-07 12:55:24,858 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:55:24,858 - [Launcher] - INFO - All 1 process(es) started successfully
+2026-01-07 12:55:24,858 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:55:24,858 - [Launcher] - INFO - Press Ctrl+C to stop all processes
+2026-01-07 12:55:24,859 - [Launcher] - INFO - 
+2026-01-07 12:56:06,283 - [Launcher] - INFO - 
+Received signal 15. Initiating graceful shutdown...
+2026-01-07 12:56:07,779 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:07,779 - [Launcher] - INFO - Shutting down all processes...
+2026-01-07 12:56:07,780 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:07,780 - [Launcher] - INFO - Waiting for processes to exit gracefully (10s timeout)...
+2026-01-07 12:56:07,780 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:07,780 - [Launcher] - INFO - All processes terminated
+2026-01-07 12:56:07,780 - [Launcher] - INFO - ================================================================================
+ARNING - [SPY] Process died after 10.0s with exit code 0
+2026-01-07 12:55:49,906 - [Launcher] - INFO - [SPY] Attempting restart...
+2026-01-07 12:55:49,906 - [Launcher] - INFO - [SPY] Starting process with command: /Users/mitz/projects/algotrade/algotrade/bin/python main.py --symbol SPY
+2026-01-07 12:55:49,911 - [Launcher] - INFO - [SPY] Process started with PID 20679
+2026-01-07 12:55:59,921 - [Launcher] - WARNING - [SPY] Process died after 10.0s with exit code 0
+2026-01-07 12:55:59,922 - [Launcher] - INFO - [SPY] Attempting restart...
+2026-01-07 12:55:59,922 - [Launcher] - INFO - [SPY] Starting process with command: /Users/mitz/projects/algotrade/algotrade/bin/python main.py --symbol SPY
+2026-01-07 12:55:59,926 - [Launcher] - INFO - [SPY] Process started with PID 20869
+2026-01-07 12:56:06,283 - [Launcher] - INFO - 
+Received signal 15. Initiating graceful shutdown...
+2026-01-07 12:56:09,945 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:09,945 - [Launcher] - INFO - Shutting down all processes...
+2026-01-07 12:56:09,945 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:09,946 - [Launcher] - INFO - Waiting for processes to exit gracefully (10s timeout)...
+2026-01-07 12:56:09,946 - [Launcher] - INFO - ================================================================================
+2026-01-07 12:56:09,946 - [Launcher] - INFO - All processes terminated
+2026-01-07 12:56:09,946 - [Launcher] - INFO - ================================================================================

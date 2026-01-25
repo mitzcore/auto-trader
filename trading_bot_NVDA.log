@@ -1,0 +1,428 @@
+2026-01-06 13:19:49,474 - [MainOrchestrator-NVDA] - INFO - Initializing application services...
+2026-01-06 13:19:49,476 - [MainOrchestrator-NVDA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-06 13:19:49,479 - [MainOrchestrator-NVDA] - INFO - Process 'TradeService' started with PID 13250.
+2026-01-06 13:19:49,479 - [MainOrchestrator-NVDA] - INFO - All services are running.
+2026-01-06 13:19:49,482 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Client initialized
+2026-01-06 13:19:49,483 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Execution handler initialized
+2026-01-06 13:19:49,483 - [MainOrchestrator-NVDA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-06 13:19:49,649 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-06 13:19:49,650 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Connected and authenticated
+2026-01-06 13:19:49,650 - [MainOrchestrator-NVDA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-06 13:19:49,652 - [MainOrchestrator-NVDA] - INFO - Connecting to 127.0.0.1:4001 with clientId 22...
+2026-01-06 13:19:49,653 - [MainOrchestrator-NVDA] - INFO - Connected
+2026-01-06 13:19:49,658 - [MainOrchestrator-NVDA] - INFO - Logged on to server version 176
+2026-01-06 13:19:49,660 - [MainOrchestrator-NVDA] - INFO - API connection ready
+2026-01-06 13:19:49,660 - [MainOrchestrator-NVDA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 13:19:49,661 - [MainOrchestrator-NVDA] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-06 13:19:49,661 - [MainOrchestrator-NVDA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-06 13:19:50,061 - [MainOrchestrator-NVDA] - INFO - Synchronization complete
+2026-01-06 13:19:50,062 - [MainOrchestrator-NVDA] - INFO - Trade Service connected to IB.
+2026-01-06 13:19:50,063 - [MainOrchestrator-NVDA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-06 13:19:50,064 - [MainOrchestrator-NVDA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-06 13:19:50,065 - [MainOrchestrator-NVDA] - INFO -   2m: next fetch at 13:20:02
+2026-01-06 13:19:50,066 - [MainOrchestrator-NVDA] - INFO -   3m: next fetch at 13:21:02
+2026-01-06 13:20:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:20:02.001
+2026-01-06 13:20:02,189 - [MainOrchestrator-NVDA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-06 13:20:02,335 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:20:02.332 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:40:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:20:02,336 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:18:00-05:00 O:188.48 H:188.65 L:188.45 C:188.48 depth=20
+2026-01-06 13:20:02,338 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(0%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:21:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:21:02.002
+2026-01-06 13:21:02,207 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:21:02.205 candle_end=2026-01-06 13:18:00-05:00 bars=20 range=2026-01-06 12:21:00-05:00→2026-01-06 13:18:00-05:00
+2026-01-06 13:21:02,208 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:18:00-05:00 O:188.48 H:188.65 L:188.45 C:188.52 depth=20
+2026-01-06 13:21:02,210 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:18:00-05:00 TRIGGER=FAIL(20%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:22:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:22:02.001
+2026-01-06 13:22:02,090 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:22:02.088 candle_end=2026-01-06 13:20:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:20:00-05:00
+2026-01-06 13:22:02,091 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:20:00-05:00 O:188.48 H:188.56 L:188.33 C:188.34 depth=20
+2026-01-06 13:22:02,092 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:20:00-05:00 TRIGGER=FAIL(61%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:24:02.002
+2026-01-06 13:24:02,161 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:24:02.158 candle_end=2026-01-06 13:22:00-05:00 bars=20 range=2026-01-06 12:44:00-05:00→2026-01-06 13:22:00-05:00
+2026-01-06 13:24:02,162 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:22:00-05:00 O:188.35 H:188.63 L:188.33 C:188.61 depth=20
+2026-01-06 13:24:02,164 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:22:00-05:00 TRIGGER=PASS(87%) DROP=PASS(0.43%/$0.82) EXHAUST=PASS[disabled] RECLAIM=FAIL(42.7%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:24:02,165 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:24:02.002
+2026-01-06 13:24:02,446 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:24:02.444 candle_end=2026-01-06 13:21:00-05:00 bars=20 range=2026-01-06 12:24:00-05:00→2026-01-06 13:21:00-05:00
+2026-01-06 13:24:02,447 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:21:00-05:00 O:188.51 H:188.63 L:188.33 C:188.61 depth=20
+2026-01-06 13:24:02,448 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:21:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:26:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:26:02.001
+2026-01-06 13:26:02,242 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:26:02.240 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:46:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:26:02,243 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:24:00-05:00 O:188.60 H:188.63 L:188.39 C:188.40 depth=20
+2026-01-06 13:26:02,244 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(83%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:27:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:27:02.001
+2026-01-06 13:27:02,071 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:27:02.069 candle_end=2026-01-06 13:24:00-05:00 bars=20 range=2026-01-06 12:27:00-05:00→2026-01-06 13:24:00-05:00
+2026-01-06 13:27:02,072 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:24:00-05:00 O:188.60 H:188.63 L:188.32 C:188.36 depth=20
+2026-01-06 13:27:02,073 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:24:00-05:00 TRIGGER=FAIL(77%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:28:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:28:02.002
+2026-01-06 13:28:02,157 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:28:02.156 candle_end=2026-01-06 13:26:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:26:00-05:00
+2026-01-06 13:28:02,159 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:26:00-05:00 O:188.40 H:188.45 L:188.29 C:188.30 depth=20
+2026-01-06 13:28:02,161 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:26:00-05:00 TRIGGER=FAIL(62%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:30:02.002
+2026-01-06 13:30:02,096 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:30:02.088 candle_end=2026-01-06 13:28:00-05:00 bars=20 range=2026-01-06 12:50:00-05:00→2026-01-06 13:28:00-05:00
+2026-01-06 13:30:02,100 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:28:00-05:00 O:188.29 H:188.36 L:188.13 C:188.21 depth=20
+2026-01-06 13:30:02,105 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:28:00-05:00 TRIGGER=FAIL(35%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:30:02,109 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:30:02.002
+2026-01-06 13:30:02,157 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:30:02.155 candle_end=2026-01-06 13:27:00-05:00 bars=20 range=2026-01-06 12:30:00-05:00→2026-01-06 13:27:00-05:00
+2026-01-06 13:30:02,158 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:27:00-05:00 O:188.37 H:188.39 L:188.13 C:188.21 depth=20
+2026-01-06 13:30:02,159 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:27:00-05:00 TRIGGER=FAIL(62%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:32:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:32:02.002
+2026-01-06 13:32:02,064 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:32:02.062 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:52:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:32:02,065 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:30:00-05:00 O:188.22 H:188.26 L:188.01 C:188.03 depth=20
+2026-01-06 13:32:02,066 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=FAIL(76%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:33:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:33:02.002
+2026-01-06 13:33:02,055 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:33:02.053 candle_end=2026-01-06 13:30:00-05:00 bars=20 range=2026-01-06 12:33:00-05:00→2026-01-06 13:30:00-05:00
+2026-01-06 13:33:02,056 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:30:00-05:00 O:188.22 H:188.26 L:187.91 C:188.02 depth=20
+2026-01-06 13:33:02,057 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:30:00-05:00 TRIGGER=FAIL(57%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:34:02,006 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:34:02.003
+2026-01-06 13:34:02,070 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:34:02.064 candle_end=2026-01-06 13:32:00-05:00 bars=20 range=2026-01-06 12:54:00-05:00→2026-01-06 13:32:00-05:00
+2026-01-06 13:34:02,074 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:32:00-05:00 O:188.03 H:188.07 L:187.64 C:187.66 depth=20
+2026-01-06 13:34:02,077 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:32:00-05:00 TRIGGER=FAIL(86%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,005 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,162 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:36:02.159 candle_end=2026-01-06 13:34:00-05:00 bars=20 range=2026-01-06 12:56:00-05:00→2026-01-06 13:34:00-05:00
+2026-01-06 13:36:02,163 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:34:00-05:00 O:187.66 H:187.74 L:187.30 C:187.72 depth=20
+2026-01-06 13:36:02,164 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:34:00-05:00 TRIGGER=FAIL(14%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:36:02,166 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:36:02.003
+2026-01-06 13:36:02,458 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:36:02.455 candle_end=2026-01-06 13:33:00-05:00 bars=20 range=2026-01-06 12:36:00-05:00→2026-01-06 13:33:00-05:00
+2026-01-06 13:36:02,459 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:33:00-05:00 O:188.02 H:188.03 L:187.30 C:187.72 depth=20
+2026-01-06 13:36:02,460 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:33:00-05:00 TRIGGER=FAIL(41%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:38:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:38:02.002
+2026-01-06 13:38:02,057 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:38:02.056 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:58:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:38:02,059 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:36:00-05:00 O:187.72 H:187.93 L:187.60 C:187.86 depth=20
+2026-01-06 13:38:02,060 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=FAIL(42%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:39:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:39:02.002
+2026-01-06 13:39:02,063 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:39:02.062 candle_end=2026-01-06 13:36:00-05:00 bars=20 range=2026-01-06 12:39:00-05:00→2026-01-06 13:36:00-05:00
+2026-01-06 13:39:02,064 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:36:00-05:00 O:187.72 H:187.93 L:187.60 C:187.81 depth=20
+2026-01-06 13:39:02,065 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:36:00-05:00 TRIGGER=FAIL(27%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:40:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:40:02.002
+2026-01-06 13:40:02,043 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:40:02.041 candle_end=2026-01-06 13:38:00-05:00 bars=20 range=2026-01-06 13:00:00-05:00→2026-01-06 13:38:00-05:00
+2026-01-06 13:40:02,044 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:38:00-05:00 O:187.86 H:187.90 L:187.74 C:187.84 depth=20
+2026-01-06 13:40:02,045 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:38:00-05:00 TRIGGER=FAIL(12%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,147 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:42:02.145 candle_end=2026-01-06 13:40:00-05:00 bars=20 range=2026-01-06 13:02:00-05:00→2026-01-06 13:40:00-05:00
+2026-01-06 13:42:02,148 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:40:00-05:00 O:187.83 H:187.98 L:187.79 C:187.93 depth=20
+2026-01-06 13:42:02,149 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:40:00-05:00 TRIGGER=FAIL(53%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:42:02,150 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:42:02.002
+2026-01-06 13:42:02,444 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:42:02.442 candle_end=2026-01-06 13:39:00-05:00 bars=20 range=2026-01-06 12:42:00-05:00→2026-01-06 13:39:00-05:00
+2026-01-06 13:42:02,445 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:39:00-05:00 O:187.80 H:187.98 L:187.74 C:187.93 depth=20
+2026-01-06 13:42:02,446 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:39:00-05:00 TRIGGER=FAIL(54%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:44:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:44:02.002
+2026-01-06 13:44:02,042 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:44:02.041 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 13:04:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:44:02,044 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:42:00-05:00 O:187.92 H:188.11 L:187.90 C:188.10 depth=20
+2026-01-06 13:44:02,045 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(86%) DROP=PASS(0.72%/$1.35) EXHAUST=PASS[disabled] RECLAIM=FAIL(59.3%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:45:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:45:02.002
+2026-01-06 13:45:02,064 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:45:02.062 candle_end=2026-01-06 13:42:00-05:00 bars=20 range=2026-01-06 12:45:00-05:00→2026-01-06 13:42:00-05:00
+2026-01-06 13:45:02,065 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:42:00-05:00 O:187.92 H:188.17 L:187.90 C:188.14 depth=20
+2026-01-06 13:45:02,066 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:42:00-05:00 TRIGGER=PASS(82%) DROP=PASS(0.78%/$1.47) EXHAUST=PASS[disabled] RECLAIM=FAIL(57.1%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:46:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:46:02.003
+2026-01-06 13:46:02,078 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:46:02.076 candle_end=2026-01-06 13:44:00-05:00 bars=20 range=2026-01-06 13:06:00-05:00→2026-01-06 13:44:00-05:00
+2026-01-06 13:46:02,079 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:44:00-05:00 O:188.11 H:188.21 L:188.03 C:188.13 depth=20
+2026-01-06 13:46:02,080 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:44:00-05:00 TRIGGER=FAIL(11%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,010 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:48:02.007
+2026-01-06 13:48:02,149 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:48:02.138 candle_end=2026-01-06 13:46:00-05:00 bars=20 range=2026-01-06 13:08:00-05:00→2026-01-06 13:46:00-05:00
+2026-01-06 13:48:02,153 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:46:00-05:00 O:188.13 H:188.34 L:188.12 C:188.18 depth=20
+2026-01-06 13:48:02,157 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:46:00-05:00 TRIGGER=FAIL(23%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:48:02,162 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:48:02.007
+2026-01-06 13:48:02,286 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:48:02.282 candle_end=2026-01-06 13:45:00-05:00 bars=20 range=2026-01-06 12:48:00-05:00→2026-01-06 13:45:00-05:00
+2026-01-06 13:48:02,290 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:45:00-05:00 O:188.13 H:188.34 L:188.03 C:188.18 depth=20
+2026-01-06 13:48:02,295 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:45:00-05:00 TRIGGER=FAIL(16%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:50:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:50:02.002
+2026-01-06 13:50:02,072 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:50:02.061 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 13:10:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:50:02,077 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:48:00-05:00 O:188.19 H:188.26 L:188.09 C:188.11 depth=20
+2026-01-06 13:50:02,082 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(47%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:51:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:51:02.001
+2026-01-06 13:51:02,076 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:51:02.072 candle_end=2026-01-06 13:48:00-05:00 bars=20 range=2026-01-06 12:51:00-05:00→2026-01-06 13:48:00-05:00
+2026-01-06 13:51:02,078 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:48:00-05:00 O:188.19 H:188.26 L:187.94 C:188.05 depth=20
+2026-01-06 13:51:02,080 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:48:00-05:00 TRIGGER=FAIL(44%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:52:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:52:02.003
+2026-01-06 13:52:02,145 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:52:02.142 candle_end=2026-01-06 13:50:00-05:00 bars=20 range=2026-01-06 13:12:00-05:00→2026-01-06 13:50:00-05:00
+2026-01-06 13:52:02,146 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:50:00-05:00 O:188.10 H:188.14 L:187.94 C:188.12 depth=20
+2026-01-06 13:52:02,147 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:50:00-05:00 TRIGGER=FAIL(10%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:54:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:54:02.001
+2026-01-06 13:54:02,083 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:54:02.081 candle_end=2026-01-06 13:52:00-05:00 bars=20 range=2026-01-06 13:14:00-05:00→2026-01-06 13:52:00-05:00
+2026-01-06 13:54:02,085 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:52:00-05:00 O:188.12 H:188.28 L:188.11 C:188.27 depth=20
+2026-01-06 13:54:02,086 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:52:00-05:00 TRIGGER=PASS(88%) DROP=PASS(0.71%/$1.33) EXHAUST=PASS[disabled] RECLAIM=FAIL(72.9%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:54:02,088 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:54:02.001
+2026-01-06 13:54:02,249 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:54:02.245 candle_end=2026-01-06 13:51:00-05:00 bars=20 range=2026-01-06 12:54:00-05:00→2026-01-06 13:51:00-05:00
+2026-01-06 13:54:02,251 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:51:00-05:00 O:188.04 H:188.28 L:188.03 C:188.27 depth=20
+2026-01-06 13:54:02,254 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:51:00-05:00 TRIGGER=PASS(92%) DROP=PASS(0.72%/$1.35) EXHAUST=PASS[disabled] RECLAIM=FAIL(71.9%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:56:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:56:02.001
+2026-01-06 13:56:02,145 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:56:02.143 candle_end=2026-01-06 13:54:00-05:00 bars=20 range=2026-01-06 13:16:00-05:00→2026-01-06 13:54:00-05:00
+2026-01-06 13:56:02,147 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:54:00-05:00 O:188.27 H:188.29 L:188.00 C:188.04 depth=20
+2026-01-06 13:56:02,148 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:54:00-05:00 TRIGGER=FAIL(79%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:57:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 13:57:02.001
+2026-01-06 13:57:02,146 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=13:57:02.144 candle_end=2026-01-06 13:54:00-05:00 bars=20 range=2026-01-06 12:57:00-05:00→2026-01-06 13:54:00-05:00
+2026-01-06 13:57:02,148 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:54:00-05:00 O:188.27 H:188.29 L:188.00 C:188.08 depth=20
+2026-01-06 13:57:02,149 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:54:00-05:00 TRIGGER=FAIL(66%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 13:58:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 13:58:02.001
+2026-01-06 13:58:02,083 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=13:58:02.077 candle_end=2026-01-06 13:56:00-05:00 bars=20 range=2026-01-06 13:18:00-05:00→2026-01-06 13:56:00-05:00
+2026-01-06 13:58:02,085 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:56:00-05:00 O:188.02 H:188.20 L:188.02 C:188.16 depth=20
+2026-01-06 13:58:02,087 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:56:00-05:00 TRIGGER=PASS(78%) DROP=PASS(0.56%/$1.06) EXHAUST=PASS[disabled] RECLAIM=FAIL(81.1%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:00:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 14:00:02.001
+2026-01-06 14:00:02,070 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:00:02.067 candle_end=2026-01-06 13:58:00-05:00 bars=20 range=2026-01-06 13:20:00-05:00→2026-01-06 13:58:00-05:00
+2026-01-06 14:00:02,071 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 13:58:00-05:00 O:188.16 H:188.28 L:188.13 C:188.24 depth=20
+2026-01-06 14:00:02,073 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 13:58:00-05:00 TRIGGER=FAIL(53%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:00:02,074 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 14:00:02.001
+2026-01-06 14:00:02,248 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:00:02.247 candle_end=2026-01-06 13:57:00-05:00 bars=20 range=2026-01-06 13:00:00-05:00→2026-01-06 13:57:00-05:00
+2026-01-06 14:00:02,249 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 13:57:00-05:00 O:188.08 H:188.28 L:188.08 C:188.24 depth=20
+2026-01-06 14:00:02,251 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 13:57:00-05:00 TRIGGER=PASS(80%) DROP=PASS(0.72%/$1.35) EXHAUST=PASS[disabled] RECLAIM=FAIL(69.6%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:02:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 14:02:02.002
+2026-01-06 14:02:02,149 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:02:02.146 candle_end=2026-01-06 14:00:00-05:00 bars=20 range=2026-01-06 13:22:00-05:00→2026-01-06 14:00:00-05:00
+2026-01-06 14:02:02,150 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:00:00-05:00 O:188.24 H:188.24 L:187.85 C:187.93 depth=20
+2026-01-06 14:02:02,152 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:00:00-05:00 TRIGGER=FAIL(80%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:03:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 14:03:02.002
+2026-01-06 14:03:02,056 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:03:02.054 candle_end=2026-01-06 14:00:00-05:00 bars=20 range=2026-01-06 13:03:00-05:00→2026-01-06 14:00:00-05:00
+2026-01-06 14:03:02,057 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 14:00:00-05:00 O:188.24 H:188.24 L:187.80 C:187.81 depth=20
+2026-01-06 14:03:02,059 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 14:00:00-05:00 TRIGGER=FAIL(98%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:04:02,005 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 14:04:02.002
+2026-01-06 14:04:02,159 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:04:02.152 candle_end=2026-01-06 14:02:00-05:00 bars=20 range=2026-01-06 13:24:00-05:00→2026-01-06 14:02:00-05:00
+2026-01-06 14:04:02,161 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:02:00-05:00 O:187.93 H:188.00 L:187.67 C:187.73 depth=20
+2026-01-06 14:04:02,164 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:02:00-05:00 TRIGGER=FAIL(61%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:06:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 14:06:02.002
+2026-01-06 14:06:02,149 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:06:02.145 candle_end=2026-01-06 14:04:00-05:00 bars=20 range=2026-01-06 13:26:00-05:00→2026-01-06 14:04:00-05:00
+2026-01-06 14:06:02,151 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:04:00-05:00 O:187.74 H:187.82 L:187.64 C:187.69 depth=20
+2026-01-06 14:06:02,153 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:04:00-05:00 TRIGGER=FAIL(28%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:06:02,155 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 14:06:02.002
+2026-01-06 14:06:02,344 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:06:02.343 candle_end=2026-01-06 14:03:00-05:00 bars=20 range=2026-01-06 13:06:00-05:00→2026-01-06 14:03:00-05:00
+2026-01-06 14:06:02,345 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 14:03:00-05:00 O:187.80 H:187.82 L:187.64 C:187.69 depth=20
+2026-01-06 14:06:02,347 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 14:03:00-05:00 TRIGGER=FAIL(61%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:08:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 14:08:02.002
+2026-01-06 14:08:02,071 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=14:08:02.066 candle_end=2026-01-06 14:06:00-05:00 bars=20 range=2026-01-06 13:28:00-05:00→2026-01-06 14:06:00-05:00
+2026-01-06 14:08:02,072 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 14:06:00-05:00 O:187.69 H:187.69 L:187.51 C:187.60 depth=20
+2026-01-06 14:08:02,074 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 14:06:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=FAIL result=FAIL zone=IN_ZONE
+2026-01-06 14:09:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 14:09:02.002
+2026-01-06 14:09:02,066 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=14:09:02.064 candle_end=2026-01-06 14:06:00-05:00 bars=20 range=2026-01-06 13:09:00-05:00→2026-01-06 14:06:00-05:00
+2026-01-06 16:00:45,297 - [MainOrchestrator-NVDA] - INFO - Shutdown signal received. Terminating all services...
+2026-01-07 08:59:16,976 - [MainOrchestrator-NVDA] - INFO - Initializing application services...
+2026-01-07 08:59:16,979 - [MainOrchestrator-NVDA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 08:59:16,982 - [MainOrchestrator-NVDA] - INFO - Process 'TradeService' started with PID 2265.
+2026-01-07 08:59:16,982 - [MainOrchestrator-NVDA] - INFO - All services are running.
+2026-01-07 08:59:16,985 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Client initialized
+2026-01-07 08:59:16,986 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 08:59:16,986 - [MainOrchestrator-NVDA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 08:59:17,133 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 08:59:17,133 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 08:59:17,134 - [MainOrchestrator-NVDA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 08:59:17,135 - [MainOrchestrator-NVDA] - INFO - Connecting to 127.0.0.1:4001 with clientId 22...
+2026-01-07 08:59:17,137 - [MainOrchestrator-NVDA] - INFO - Connected
+2026-01-07 08:59:17,139 - [MainOrchestrator-NVDA] - INFO - Logged on to server version 176
+2026-01-07 08:59:17,366 - [MainOrchestrator-NVDA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 08:59:17,368 - [MainOrchestrator-NVDA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 08:59:17,369 - [MainOrchestrator-NVDA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 08:59:17,370 - [MainOrchestrator-NVDA] - INFO - API connection ready
+2026-01-07 08:59:17,967 - [MainOrchestrator-NVDA] - INFO - Synchronization complete
+2026-01-07 08:59:17,969 - [MainOrchestrator-NVDA] - INFO - Trade Service connected to IB.
+2026-01-07 08:59:17,972 - [MainOrchestrator-NVDA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 08:59:17,975 - [MainOrchestrator-NVDA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 08:59:17,977 - [MainOrchestrator-NVDA] - INFO -   2m: next fetch at 09:00:02
+2026-01-07 08:59:17,980 - [MainOrchestrator-NVDA] - INFO -   3m: next fetch at 09:00:02
+2026-01-07 09:00:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:02,854 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:00:02.849 candle_end=2026-01-06 15:58:00-05:00 bars=20 range=2026-01-06 15:20:00-05:00→2026-01-06 15:58:00-05:00
+2026-01-07 09:00:02,856 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-06 15:58:00-05:00 O:187.25 H:187.59 L:187.19 C:187.29 depth=20
+2026-01-07 09:00:02,858 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-06 15:58:00-05:00 TRIGGER=FAIL(10%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:00:02,859 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:00:02.001
+2026-01-07 09:00:02,905 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:00:02.903 candle_end=2026-01-06 15:57:00-05:00 bars=20 range=2026-01-06 15:00:00-05:00→2026-01-06 15:57:00-05:00
+2026-01-07 09:00:02,906 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-06 15:57:00-05:00 O:187.16 H:187.59 L:187.09 C:187.29 depth=20
+2026-01-07 09:00:02,907 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-06 15:57:00-05:00 TRIGGER=FAIL(26%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:02:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:02:02.003
+2026-01-07 09:03:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:03:02.001
+2026-01-07 09:04:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:04:02.001
+2026-01-07 09:06:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:06:02.001
+2026-01-07 09:06:02,088 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:06:02.001
+2026-01-07 09:08:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:08:02.002
+2026-01-07 09:09:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:09:02.002
+2026-01-07 09:10:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:10:02.002
+2026-01-07 09:12:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:12:02.002
+2026-01-07 09:12:02,141 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:12:02.002
+2026-01-07 09:14:02,007 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:14:02.007
+2026-01-07 09:15:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:15:02.002
+2026-01-07 09:16:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:16:02.002
+2026-01-07 09:18:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:18:02.002
+2026-01-07 09:18:02,146 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:18:02.002
+2026-01-07 09:20:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:20:02.002
+2026-01-07 09:21:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:21:02.002
+2026-01-07 09:22:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:22:02.002
+2026-01-07 09:24:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:24:02.002
+2026-01-07 09:24:02,073 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:24:02.002
+2026-01-07 09:26:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:26:02.002
+2026-01-07 09:27:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:27:02.001
+2026-01-07 09:28:02,009 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:28:02.008
+2026-01-07 09:30:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:30:02.002
+2026-01-07 09:30:02,051 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:30:02.002
+2026-01-07 09:32:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:32:02.002
+2026-01-07 09:32:02,072 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:32:02.068 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:22:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:32:02,073 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:30:00-05:00 O:188.57 H:188.61 L:186.56 C:187.06 depth=20
+2026-01-07 09:32:02,079 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(74%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:33:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:33:02.003
+2026-01-07 09:33:02,071 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:33:02.068 candle_end=2026-01-07 09:30:00-05:00 bars=20 range=2026-01-06 15:03:00-05:00→2026-01-07 09:30:00-05:00
+2026-01-07 09:33:02,072 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:30:00-05:00 O:188.57 H:188.61 L:186.56 C:187.56 depth=20
+2026-01-07 09:33:02,074 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:30:00-05:00 TRIGGER=FAIL(49%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:34:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:34:02.002
+2026-01-07 09:34:02,157 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:34:02.156 candle_end=2026-01-07 09:32:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:32:00-05:00
+2026-01-07 09:34:02,158 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:32:00-05:00 O:187.02 H:188.25 L:187.00 C:187.66 depth=20
+2026-01-07 09:34:02,159 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:32:00-05:00 TRIGGER=FAIL(51%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,061 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:36:02.058 candle_end=2026-01-07 09:34:00-05:00 bars=20 range=2026-01-06 15:26:00-05:00→2026-01-07 09:34:00-05:00
+2026-01-07 09:36:02,062 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:34:00-05:00 O:187.66 H:188.14 L:187.65 C:187.81 depth=20
+2026-01-07 09:36:02,063 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:34:00-05:00 TRIGGER=FAIL(31%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:36:02,065 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:36:02.002
+2026-01-07 09:36:02,247 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:36:02.243 candle_end=2026-01-07 09:33:00-05:00 bars=20 range=2026-01-06 15:06:00-05:00→2026-01-07 09:33:00-05:00
+2026-01-07 09:36:02,248 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:33:00-05:00 O:187.57 H:188.25 L:187.42 C:187.81 depth=20
+2026-01-07 09:36:02,249 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:33:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:38:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:38:02.002
+2026-01-07 09:38:02,066 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:38:02.062 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:28:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:38:02,067 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:36:00-05:00 O:187.79 H:187.89 L:186.91 C:187.29 depth=20
+2026-01-07 09:38:02,069 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(51%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:39:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:39:02.002
+2026-01-07 09:39:02,053 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:39:02.051 candle_end=2026-01-07 09:36:00-05:00 bars=20 range=2026-01-06 15:09:00-05:00→2026-01-07 09:36:00-05:00
+2026-01-07 09:39:02,054 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:36:00-05:00 O:187.79 H:187.99 L:186.91 C:187.92 depth=20
+2026-01-07 09:39:02,055 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:36:00-05:00 TRIGGER=FAIL(12%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:40:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:40:02.002
+2026-01-07 09:40:02,053 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:40:02.051 candle_end=2026-01-07 09:38:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:38:00-05:00
+2026-01-07 09:40:02,054 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:38:00-05:00 O:187.30 H:188.37 L:187.28 C:188.08 depth=20
+2026-01-07 09:40:02,056 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:38:00-05:00 TRIGGER=PASS(72%) DROP=PASS(1.09%/$2.05) EXHAUST=PASS[disabled] RECLAIM=FAIL(74.1%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,061 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:42:02.058 candle_end=2026-01-07 09:40:00-05:00 bars=20 range=2026-01-06 15:32:00-05:00→2026-01-07 09:40:00-05:00
+2026-01-07 09:42:02,062 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:40:00-05:00 O:188.09 H:188.24 L:187.64 C:187.97 depth=20
+2026-01-07 09:42:02,063 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:40:00-05:00 TRIGGER=FAIL(20%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:42:02,065 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:42:02.002
+2026-01-07 09:42:02,242 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:42:02.241 candle_end=2026-01-07 09:39:00-05:00 bars=20 range=2026-01-06 15:12:00-05:00→2026-01-07 09:39:00-05:00
+2026-01-07 09:42:02,246 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:39:00-05:00 O:187.93 H:188.37 L:187.64 C:187.97 depth=20
+2026-01-07 09:42:02,247 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:39:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:44:02,001 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:44:02.000
+2026-01-07 09:44:02,060 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:44:02.058 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:34:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:44:02,061 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:42:00-05:00 O:187.95 H:188.10 L:187.78 C:188.05 depth=20
+2026-01-07 09:44:02,062 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=FAIL(31%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:45:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:45:02.002
+2026-01-07 09:45:02,138 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:45:02.136 candle_end=2026-01-07 09:42:00-05:00 bars=20 range=2026-01-06 15:15:00-05:00→2026-01-07 09:42:00-05:00
+2026-01-07 09:45:02,139 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:42:00-05:00 O:187.95 H:188.69 L:187.78 C:188.68 depth=20
+2026-01-07 09:45:02,141 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:42:00-05:00 TRIGGER=PASS(80%) DROP=PASS(1.09%/$2.05) EXHAUST=PASS[disabled] RECLAIM=FAIL(103.4%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:46:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:46:02.002
+2026-01-07 09:46:02,068 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:46:02.066 candle_end=2026-01-07 09:44:00-05:00 bars=20 range=2026-01-06 15:36:00-05:00→2026-01-07 09:44:00-05:00
+2026-01-07 09:46:02,069 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:44:00-05:00 O:188.05 H:188.84 L:188.05 C:188.38 depth=20
+2026-01-07 09:46:02,070 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:44:00-05:00 TRIGGER=FAIL(42%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,140 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:48:02.139 candle_end=2026-01-07 09:46:00-05:00 bars=20 range=2026-01-06 15:38:00-05:00→2026-01-07 09:46:00-05:00
+2026-01-07 09:48:02,141 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:46:00-05:00 O:188.36 H:188.80 L:188.29 C:188.53 depth=20
+2026-01-07 09:48:02,142 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:46:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:48:02,144 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:48:02.002
+2026-01-07 09:48:02,441 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:48:02.439 candle_end=2026-01-07 09:45:00-05:00 bars=20 range=2026-01-06 15:18:00-05:00→2026-01-07 09:45:00-05:00
+2026-01-07 09:48:02,442 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:45:00-05:00 O:188.65 H:188.84 L:188.27 C:188.53 depth=20
+2026-01-07 09:48:02,443 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:45:00-05:00 TRIGGER=FAIL(21%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:50:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:50:02.002
+2026-01-07 09:50:02,146 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:50:02.144 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:40:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:50:02,148 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:48:00-05:00 O:188.52 H:188.76 L:188.41 C:188.48 depth=20
+2026-01-07 09:50:02,149 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(11%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:51:02,010 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:51:02.009
+2026-01-07 09:51:02,247 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:51:02.245 candle_end=2026-01-07 09:48:00-05:00 bars=20 range=2026-01-06 15:21:00-05:00→2026-01-07 09:48:00-05:00
+2026-01-07 09:51:02,248 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:48:00-05:00 O:188.52 H:188.76 L:188.30 C:188.31 depth=20
+2026-01-07 09:51:02,249 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:48:00-05:00 TRIGGER=FAIL(46%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:52:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:52:02.002
+2026-01-07 09:52:02,062 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:52:02.061 candle_end=2026-01-07 09:50:00-05:00 bars=20 range=2026-01-06 15:42:00-05:00→2026-01-07 09:50:00-05:00
+2026-01-07 09:52:02,063 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:50:00-05:00 O:188.49 H:188.55 L:188.24 C:188.40 depth=20
+2026-01-07 09:52:02,065 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:50:00-05:00 TRIGGER=FAIL(29%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,143 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:54:02.142 candle_end=2026-01-07 09:52:00-05:00 bars=20 range=2026-01-06 15:44:00-05:00→2026-01-07 09:52:00-05:00
+2026-01-07 09:54:02,144 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:52:00-05:00 O:188.40 H:189.28 L:188.35 C:189.27 depth=20
+2026-01-07 09:54:02,146 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:52:00-05:00 TRIGGER=PASS(94%) DROP=PASS(1.21%/$2.28) EXHAUST=PASS[disabled] RECLAIM=FAIL(118.9%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:54:02,147 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:54:02.002
+2026-01-07 09:54:02,445 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:54:02.443 candle_end=2026-01-07 09:51:00-05:00 bars=20 range=2026-01-06 15:24:00-05:00→2026-01-07 09:51:00-05:00
+2026-01-07 09:54:02,446 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:51:00-05:00 O:188.32 H:189.28 L:188.24 C:189.27 depth=20
+2026-01-07 09:54:02,447 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:51:00-05:00 TRIGGER=PASS(91%) DROP=PASS(1.21%/$2.28) EXHAUST=PASS[disabled] RECLAIM=FAIL(118.9%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:56:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:56:02.002
+2026-01-07 09:56:02,062 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:56:02.059 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:46:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:56:02,063 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:54:00-05:00 O:189.25 H:189.69 L:189.07 C:189.65 depth=20
+2026-01-07 09:56:02,065 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=PASS(64%) DROP=PASS(1.44%/$2.72) EXHAUST=PASS[disabled] RECLAIM=FAIL(113.6%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:57:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 09:57:02.002
+2026-01-07 09:57:02,053 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=09:57:02.050 candle_end=2026-01-07 09:54:00-05:00 bars=20 range=2026-01-06 15:27:00-05:00→2026-01-07 09:54:00-05:00
+2026-01-07 09:57:02,054 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:54:00-05:00 O:189.25 H:189.97 L:189.07 C:189.92 depth=20
+2026-01-07 09:57:02,056 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:54:00-05:00 TRIGGER=PASS(74%) DROP=PASS(1.44%/$2.72) EXHAUST=PASS[disabled] RECLAIM=FAIL(123.5%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 09:58:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 09:58:02.002
+2026-01-07 09:58:02,056 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=09:58:02.055 candle_end=2026-01-07 09:56:00-05:00 bars=20 range=2026-01-06 15:48:00-05:00→2026-01-07 09:56:00-05:00
+2026-01-07 09:58:02,057 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:56:00-05:00 O:189.65 H:190.10 L:189.64 C:189.88 depth=20
+2026-01-07 09:58:02,059 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:56:00-05:00 TRIGGER=FAIL(50%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,200 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:00:02.195 candle_end=2026-01-07 09:58:00-05:00 bars=20 range=2026-01-06 15:50:00-05:00→2026-01-07 09:58:00-05:00
+2026-01-07 10:00:02,202 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 09:58:00-05:00 O:189.89 H:190.20 L:189.86 C:190.10 depth=20
+2026-01-07 10:00:02,203 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 09:58:00-05:00 TRIGGER=PASS(62%) DROP=PASS(1.86%/$3.54) EXHAUST=PASS[disabled] RECLAIM=FAIL(100.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:00:02,205 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 10:00:02.002
+2026-01-07 10:00:02,244 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:00:02.242 candle_end=2026-01-07 09:57:00-05:00 bars=20 range=2026-01-06 15:30:00-05:00→2026-01-07 09:57:00-05:00
+2026-01-07 10:00:02,245 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 09:57:00-05:00 O:189.92 H:190.20 L:189.65 C:190.10 depth=20
+2026-01-07 10:00:02,246 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 09:57:00-05:00 TRIGGER=FAIL(33%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:02:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:02:02.003
+2026-01-07 10:02:02,148 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:02:02.145 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:52:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:02:02,150 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:00:00-05:00 O:190.10 H:190.27 L:189.43 C:189.45 depth=20
+2026-01-07 10:02:02,152 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(77%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:03:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 10:03:02.002
+2026-01-07 10:03:02,066 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:03:02.065 candle_end=2026-01-07 10:00:00-05:00 bars=20 range=2026-01-06 15:33:00-05:00→2026-01-07 10:00:00-05:00
+2026-01-07 10:03:02,067 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:00:00-05:00 O:190.10 H:190.27 L:189.28 C:189.54 depth=20
+2026-01-07 10:03:02,069 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:00:00-05:00 TRIGGER=FAIL(57%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:04:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:04:02.002
+2026-01-07 10:04:02,066 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:04:02.065 candle_end=2026-01-07 10:02:00-05:00 bars=20 range=2026-01-06 15:54:00-05:00→2026-01-07 10:02:00-05:00
+2026-01-07 10:04:02,067 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:02:00-05:00 O:189.44 H:189.74 L:189.28 C:189.72 depth=20
+2026-01-07 10:04:02,069 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:02:00-05:00 TRIGGER=PASS(61%) DROP=PASS(1.77%/$3.36) EXHAUST=PASS[disabled] RECLAIM=FAIL(83.6%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:06:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:06:02.002
+2026-01-07 10:06:02,053 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:06:02.052 candle_end=2026-01-07 10:04:00-05:00 bars=20 range=2026-01-06 15:56:00-05:00→2026-01-07 10:04:00-05:00
+2026-01-07 10:06:02,054 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:04:00-05:00 O:189.73 H:190.20 L:189.51 C:190.07 depth=20
+2026-01-07 10:06:02,056 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:04:00-05:00 TRIGGER=FAIL(49%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:06:02,057 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 10:06:02.002
+2026-01-07 10:06:02,244 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:06:02.242 candle_end=2026-01-07 10:03:00-05:00 bars=20 range=2026-01-06 15:36:00-05:00→2026-01-07 10:03:00-05:00
+2026-01-07 10:06:02,245 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:03:00-05:00 O:189.53 H:190.20 L:189.41 C:190.07 depth=20
+2026-01-07 10:06:02,246 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:03:00-05:00 TRIGGER=PASS(68%) DROP=PASS(1.95%/$3.71) EXHAUST=PASS[disabled] RECLAIM=FAIL(94.6%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:08:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:08:02.002
+2026-01-07 10:08:02,066 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:08:02.063 candle_end=2026-01-07 10:06:00-05:00 bars=20 range=2026-01-06 15:58:00-05:00→2026-01-07 10:06:00-05:00
+2026-01-07 10:08:02,067 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:06:00-05:00 O:190.06 H:190.97 L:190.05 C:190.96 depth=20
+2026-01-07 10:08:02,068 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:06:00-05:00 TRIGGER=PASS(98%) DROP=PASS(1.57%/$2.99) EXHAUST=PASS[disabled] RECLAIM=FAIL(123.1%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:09:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 10:09:02.002
+2026-01-07 10:09:02,250 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:09:02.248 candle_end=2026-01-07 10:06:00-05:00 bars=20 range=2026-01-06 15:39:00-05:00→2026-01-07 10:06:00-05:00
+2026-01-07 10:09:02,251 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:06:00-05:00 O:190.06 H:191.08 L:190.05 C:190.87 depth=20
+2026-01-07 10:09:02,252 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:06:00-05:00 TRIGGER=PASS(79%) DROP=PASS(1.95%/$3.71) EXHAUST=PASS[disabled] RECLAIM=FAIL(116.2%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:10:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:10:02.002
+2026-01-07 10:10:02,157 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:10:02.156 candle_end=2026-01-07 10:08:00-05:00 bars=20 range=2026-01-07 09:30:00-05:00→2026-01-07 10:08:00-05:00
+2026-01-07 10:10:02,158 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:08:00-05:00 O:190.96 H:191.08 L:190.64 C:190.75 depth=20
+2026-01-07 10:10:02,160 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:08:00-05:00 TRIGGER=FAIL(48%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:12:02,003 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:12:02.002
+2026-01-07 10:12:02,148 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:12:02.142 candle_end=2026-01-07 10:10:00-05:00 bars=20 range=2026-01-07 09:32:00-05:00→2026-01-07 10:10:00-05:00
+2026-01-07 10:12:02,149 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:10:00-05:00 O:190.74 H:190.84 L:190.44 C:190.52 depth=20
+2026-01-07 10:12:02,150 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:10:00-05:00 TRIGGER=FAIL(55%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:12:02,152 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 10:12:02.002
+2026-01-07 10:12:02,345 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=10:12:02.344 candle_end=2026-01-07 10:09:00-05:00 bars=20 range=2026-01-06 15:42:00-05:00→2026-01-07 10:09:00-05:00
+2026-01-07 10:12:02,346 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 10:09:00-05:00 O:190.89 H:190.99 L:190.44 C:190.52 depth=20
+2026-01-07 10:12:02,347 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 10:09:00-05:00 TRIGGER=FAIL(67%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 10:14:02,002 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 10:14:02.002
+2026-01-07 10:14:02,146 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=10:14:02.144 candle_end=2026-01-07 10:12:00-05:00 bars=20 range=2026-01-07 09:34:00-05:00→2026-01-07 10:12:00-05:00
+2026-01-07 10:14:02,147 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=2m end_bar=2026-01-07 10:12:00-05:00 O:190.52 H:190.84 L:190.48 C:190.54 depth=20
+2026-01-07 10:14:02,148 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 10:12:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:52:43,166 - [MainOrchestrator-NVDA] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-07 12:52:43,167 - [MainOrchestrator-NVDA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:52:43,167 - [MainOrchestrator-NVDA] - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2026-01-07 12:52:43,674 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 12:52:43.673
+2026-01-07 12:52:43,892 - [MainOrchestrator-NVDA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:52:43,946 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=12:52:43.943 candle_end=2026-01-07 12:51:00-05:00 bars=21 range=2026-01-07 11:51:00-05:00→2026-01-07 12:51:00-05:00
+2026-01-07 12:52:43,947 - [MainOrchestrator-NVDA] - INFO - [PatternIngest] timeframe=3m end_bar=2026-01-07 12:51:00-05:00 O:189.95 H:189.96 L:189.77 C:189.82 depth=21
+2026-01-07 12:52:43,948 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:51:00-05:00 TRIGGER=FAIL(68%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:53:08,684 - [MainOrchestrator-NVDA] - INFO - Initializing application services...
+2026-01-07 12:53:08,686 - [MainOrchestrator-NVDA] - WARNING - DEMAND_ZONE_TRADING is disabled. Only starting TradeService.
+2026-01-07 12:53:08,689 - [MainOrchestrator-NVDA] - INFO - Process 'TradeService' started with PID 18021.
+2026-01-07 12:53:08,689 - [MainOrchestrator-NVDA] - INFO - All services are running.
+2026-01-07 12:53:08,692 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Client initialized
+2026-01-07 12:53:08,693 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Execution handler initialized
+2026-01-07 12:53:08,693 - [MainOrchestrator-NVDA] - INFO - TradeStation Live trading mode enabled with native OCO.
+2026-01-07 12:53:08,863 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Authenticated successfully, expires in 1200s
+2026-01-07 12:53:08,864 - [MainOrchestrator-NVDA] - INFO - [TradeStation] Connected and authenticated
+2026-01-07 12:53:08,864 - [MainOrchestrator-NVDA] - INFO - Trade Service initialized | Patterns: 6_candle | Timeframes: ['2m', '3m']
+2026-01-07 12:53:08,866 - [MainOrchestrator-NVDA] - INFO - Connecting to 127.0.0.1:4001 with clientId 22...
+2026-01-07 12:53:08,867 - [MainOrchestrator-NVDA] - INFO - Connected
+2026-01-07 12:53:08,870 - [MainOrchestrator-NVDA] - INFO - Logged on to server version 176
+2026-01-07 12:53:08,872 - [MainOrchestrator-NVDA] - INFO - API connection ready
+2026-01-07 12:53:08,872 - [MainOrchestrator-NVDA] - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 12:53:08,873 - [MainOrchestrator-NVDA] - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 12:53:08,873 - [MainOrchestrator-NVDA] - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2026-01-07 12:53:09,277 - [MainOrchestrator-NVDA] - INFO - Synchronization complete
+2026-01-07 12:53:09,279 - [MainOrchestrator-NVDA] - INFO - Trade Service connected to IB.
+2026-01-07 12:53:09,281 - [MainOrchestrator-NVDA] - INFO - Trade Service starting main polling loop (using fresh historical bars each cycle)...
+2026-01-07 12:53:09,287 - [MainOrchestrator-NVDA] - INFO - [CandleSync] Initialized candle boundary tracking:
+2026-01-07 12:53:09,290 - [MainOrchestrator-NVDA] - INFO -   2m: next fetch at 12:54:02
+2026-01-07 12:53:09,293 - [MainOrchestrator-NVDA] - INFO -   3m: next fetch at 12:54:02
+2026-01-07 12:54:02,004 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 2m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,072 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=2m fetched_at=12:54:02.057 candle_end=2026-01-07 12:52:00-05:00 bars=20 range=2026-01-07 12:14:00-05:00→2026-01-07 12:52:00-05:00
+2026-01-07 12:54:02,074 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=2m zone=N/A bar=2026-01-07 12:52:00-05:00 TRIGGER=FAIL(6%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE
+2026-01-07 12:54:02,077 - [MainOrchestrator-NVDA] - INFO - [CandleSync] 3m candle boundary reached at 12:54:02.003
+2026-01-07 12:54:02,250 - [MainOrchestrator-NVDA] - INFO - [CandleFetch] timeframe=3m fetched_at=12:54:02.247 candle_end=2026-01-07 12:51:00-05:00 bars=20 range=2026-01-07 11:54:00-05:00→2026-01-07 12:51:00-05:00
+2026-01-07 12:54:02,252 - [MainOrchestrator-NVDA] - INFO - [SmartReversal] tf=3m zone=N/A bar=2026-01-07 12:51:00-05:00 TRIGGER=FAIL(37%) DROP=FAIL(0.00%/$0.00) EXHAUST=FAIL[none] RECLAIM=FAIL(0.0%) BASE_BREAK=N/A result=FAIL zone=IN_ZONE

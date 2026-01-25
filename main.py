@@ -2,21 +2,82 @@ import multiprocessing
 import logging
 import time
 import sys
-import redis
-import json
+import argparse
 import config
 
-# It's good practice to put service imports in a try-except block 
+# It's good practice to put service imports in a try-except block
 # to provide clearer error messages if dependencies are missing.
 try:
     from algotrade.analysis_service import start_analysis_service
     from algotrade.trade_service import start_trade_service
     from algotrade.invalidation_service import start_invalidation_service
-    from algotrade.database import clear_demand_zones, create_db_and_tables
+    from algotrade.database import clear_demand_zones, create_db_and_tables, sync_config_zones_to_db
 except ImportError as e:
     print(f"Error importing services: {e}")
     print("Please ensure all dependencies are installed and the algotrade package is correctly structured.")
     sys.exit(1)
+
+
+def apply_symbol_config(symbol):
+    """
+    Apply symbol-specific configuration from SYMBOLS_CONFIG.
+
+    Args:
+        symbol: Symbol to configure (e.g., "SPY", "QQQ", "NVDA")
+    """
+    if not hasattr(config, 'SYMBOLS_CONFIG') or symbol not in config.SYMBOLS_CONFIG:
+        logging.warning(f"No configuration found for symbol {symbol} in SYMBOLS_CONFIG. Using defaults.")
+        config.SYMBOL = symbol
+        return
+
+    symbol_config = config.SYMBOLS_CONFIG[symbol]
+
+    # Set symbol
+    config.SYMBOL = symbol
+
+    # Set strike spacing
+    if "strike_spacing" in symbol_config:
+        config.STRIKE_SPACING = symbol_config["strike_spacing"]
+
+    # Set strike selection mode (ITM/ATM/OTM)
+    if "strike_selection_mode" in symbol_config:
+        config.STRIKE_SELECTION_MODE = symbol_config["strike_selection_mode"]
+
+    # Set ITM offset
+    if "itm_offset" in symbol_config:
+        config.ITM_OFFSET = symbol_config["itm_offset"]
+
+    # Set OTM offset
+    if "otm_offset" in symbol_config:
+        config.OTM_OFFSET = symbol_config["otm_offset"]
+
+    # Set IB client ID offset
+    if "client_id_offset" in symbol_config:
+        config.IB_CLIENT_ID = config.IB_CLIENT_ID + symbol_config["client_id_offset"]
+
+    # Override timeframes if specified
+    if "timeframes" in symbol_config:
+        config.TRADING_TIMEFRAMES = symbol_config["timeframes"]
+
+    # Apply any symbol-specific pattern settings
+    if "min_drop_pct" in symbol_config:
+        config.SMART_REVERSAL_MIN_DROP_PCT = symbol_config["min_drop_pct"]
+
+    # Update log file to include symbol
+    if hasattr(config, 'LOG_FILE'):
+        base_name = config.LOG_FILE.replace('.log', '')
+        config.LOG_FILE = f"{base_name}_{symbol}.log"
+    else:
+        config.LOG_FILE = f"trading_bot_{symbol}.log"
+
+    logging.info(f"Applied configuration for symbol: {symbol}")
+    logging.info(f"  Strike Spacing: {config.STRIKE_SPACING}")
+    logging.info(f"  Strike Selection: {config.STRIKE_SELECTION_MODE}")
+    logging.info(f"  ITM Offset: ${config.ITM_OFFSET}")
+    logging.info(f"  OTM Offset: ${config.OTM_OFFSET}")
+    logging.info(f"  IB Client ID: {config.IB_CLIENT_ID}")
+    logging.info(f"  Timeframes: {config.TRADING_TIMEFRAMES}")
+    logging.info(f"  Log File: {config.LOG_FILE}")
 
 def main():
     """
@@ -31,36 +92,14 @@ def main():
     # Clear demand zones from the database at the start
     clear_demand_zones()
 
-    # Connect to Redis for initial setup
-    redis_client = redis.Redis(decode_responses=True)
-
-    # Clear all existing demand zones from Redis on startup
-    logging.info("Clearing all existing demand zones from Redis...")
-    redis_client.delete("active_demand_zones")
-    logging.info("Existing demand zones cleared from Redis.")
-
     # A list to hold the process objects
     processes = []
 
     try:
         if config.DEMAND_ZONE_TRADING:
             if config.CUSTOM_DEMAND_ZONES:
-                logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones.")
-                
-                # Publish each custom zone to the updates channel
-                for custom_zone_config in config.CUSTOM_DEMAND_ZONES:
-                    zone = {
-                        "zone_top": custom_zone_config["zone_top"],
-                        "zone_bottom": custom_zone_config["zone_bottom"],
-                        "zone_timeframe": "custom",
-                        "status": "active",
-                        "entry_confirmation": None,
-                        "invalidation_confirmation": None,
-                    }
-                    # Use hset to store the zone in the hash, with zone_id as the field
-                    zone_id = f"custom_zone_{custom_zone_config['zone_top']}_{custom_zone_config['zone_bottom']}"
-                    redis_client.hset("active_demand_zones", zone_id, json.dumps(zone))
-                    logging.info(f"Loaded custom demand zone into Redis: {zone}")
+                logging.info(f"Custom demand zones found in config. Loading {len(config.CUSTOM_DEMAND_ZONES)} zones to database.")
+                sync_config_zones_to_db()
             else:
                 logging.info("No custom demand zones found.")
 
@@ -116,18 +155,39 @@ def main():
 
 
 if __name__ == "__main__":
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description='AlgoTrade - Algorithmic Trading Bot')
+    parser.add_argument('--symbol', type=str, default=None,
+                        help='Symbol to trade (e.g., SPY, QQQ, NVDA). Overrides config.SYMBOL.')
+    args = parser.parse_args()
+
+    # Apply symbol-specific configuration if provided
+    if args.symbol:
+        # Need basic logging before apply_symbol_config
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+        apply_symbol_config(args.symbol.upper())
+
     # Configure logging for the main orchestrator process
+    # If symbol was specified, logging will go to symbol-specific file
+    log_handlers = [logging.StreamHandler(sys.stdout)]
+
+    # Add file handler if LOG_FILE is set
+    if hasattr(config, 'LOG_FILE') and config.LOG_FILE:
+        try:
+            log_handlers.append(logging.FileHandler(config.LOG_FILE))
+        except Exception as e:
+            print(f"Warning: Could not create log file {config.LOG_FILE}: {e}")
+
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - [MainOrchestrator] - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler(sys.stdout)  # Ensure logs go to standard output
-        ]
+        format=f'%(asctime)s - [MainOrchestrator-{config.SYMBOL}] - %(levelname)s - %(message)s',
+        handlers=log_handlers,
+        force=True  # Override any existing config
     )
-    
+
     # Set start method for multiprocessing for compatibility across platforms (e.g., macOS, Windows)
     # 'fork' is generally fine for Unix-like systems, but 'spawn' is safer and more cross-platform.
     # Consider 'spawn' if you encounter issues on different OSes.
     multiprocessing.set_start_method('fork')
-    
+
     main()

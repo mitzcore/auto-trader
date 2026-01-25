@@ -1,0 +1,433 @@
+# GEX (Gamma Exposure) Integration Plan
+# Created: 2024-12-30
+# Purpose: Add GEX confirmation layer to reversal trades
+
+================================================================================
+## OVERVIEW
+================================================================================
+
+GEX (Gamma Exposure) measures how sensitive market maker delta hedging is to
+price changes. When integrated with pattern-based trading:
+
+- Positive GEX = Mean reversion environment = GOOD for reversal trades
+- Negative GEX = Trend amplification = RISKY for reversal trades
+
+Research shows trades informed by options flow data have 15% higher success rate.
+
+================================================================================
+## FREE GEX DATA OPTIONS
+================================================================================
+
+| Option                     | Data Source    | Real-time? | Ease | Best For          |
+|----------------------------|----------------|------------|------|-------------------|
+| gex-tracker                | CBOE scraping  | Delayed    | Easy | Quick start       |
+| gamma-exposure-indicator   | CBOE scraping  | Delayed    | Med  | Full features     |
+| Tradier API (RECOMMENDED)  | Tradier sandbox| Real-time  | Easy | API-based, clean  |
+| DIY CBOE                   | Manual download| EOD        | Hard | Learning          |
+
+================================================================================
+## OPTION 1: gex-tracker (Easiest)
+================================================================================
+
+GitHub: https://github.com/Matteo-Ferrara/gex-tracker
+
+Setup:
+```bash
+git clone https://github.com/Matteo-Ferrara/gex-tracker.git
+cd gex-tracker
+pip install pandas requests matplotlib
+python main.py
+# Enter: SPY
+```
+
+Pros: Simple, 3 dependencies, works immediately
+Cons: CBOE scraping may break if site changes
+
+================================================================================
+## OPTION 2: gamma-exposure-indicator (Most Complete)
+================================================================================
+
+GitHub: https://github.com/VandersonTorres/gamma-exposure-indicator
+
+Setup:
+```bash
+git clone https://github.com/VandersonTorres/gamma-exposure-indicator.git
+cd gamma-exposure-indicator
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+playwright install
+
+# Run for SPY
+python app.py --ticker SPY
+```
+
+Features:
+- Supports SPY, SPX, ES futures
+- Calculates GEX flip point (HVL)
+- Generates TradingView Pine Script
+- Interactive charts
+- Telegram bot integration
+
+Pros: Full-featured, actively maintained, Apache 2.0 license
+Cons: More complex setup (Playwright browser automation)
+
+================================================================================
+## OPTION 3: Tradier API (RECOMMENDED)
+================================================================================
+
+Free sandbox account with real-time options chain data including Greeks.
+
+### Setup Steps:
+1. Sign up at https://developer.tradier.com/ (free, 30 seconds)
+2. Get sandbox API token from dashboard
+3. Use their API for options chain with Greeks included
+
+### Python Implementation:
+
+```python
+# File: algotrade/gex_service.py
+# pip install requests pandas numpy
+
+import requests
+import pandas as pd
+import numpy as np
+import time
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+class TradierGEX:
+    """Free GEX calculator using Tradier sandbox API."""
+
+    def __init__(self, api_token: str, sandbox: bool = True):
+        self.api_token = api_token
+        self.base_url = "https://sandbox.tradier.com" if sandbox else "https://api.tradier.com"
+        self.headers = {
+            "Authorization": f"Bearer {api_token}",
+            "Accept": "application/json"
+        }
+
+    def get_options_chain(self, symbol: str, expiration: str = None) -> pd.DataFrame:
+        """Fetch options chain with Greeks from Tradier."""
+        # Get expirations if not specified
+        if not expiration:
+            expiration = self._get_nearest_expiration(symbol)
+
+        url = f"{self.base_url}/v1/markets/options/chains"
+        params = {
+            "symbol": symbol,
+            "expiration": expiration,
+            "greeks": "true"  # Include Greeks!
+        }
+
+        response = requests.get(url, headers=self.headers, params=params)
+        data = response.json()
+
+        if "options" in data and data["options"]:
+            return pd.DataFrame(data["options"]["option"])
+        return pd.DataFrame()
+
+    def _get_nearest_expiration(self, symbol: str) -> str:
+        """Get nearest expiration (0DTE if available)."""
+        url = f"{self.base_url}/v1/markets/options/expirations"
+        params = {"symbol": symbol}
+        response = requests.get(url, headers=self.headers, params=params)
+        data = response.json()
+
+        if "expirations" in data and data["expirations"]:
+            return data["expirations"]["date"][0]  # First = nearest
+        return None
+
+    def calculate_gex(self, symbol: str, spot_price: float = None) -> dict:
+        """
+        Calculate Gamma Exposure (GEX) for a symbol.
+
+        Assumes dealers are:
+        - LONG calls (positive gamma)
+        - SHORT puts (negative gamma, flipped to positive for calc)
+        """
+        chain = self.get_options_chain(symbol)
+
+        if chain.empty:
+            return {"error": "No options data"}
+
+        # Get spot price if not provided
+        if not spot_price:
+            spot_price = self._get_spot_price(symbol)
+
+        contract_size = 100
+
+        # Calculate GEX per strike
+        # Call GEX = gamma * OI * contract_size * spot^2 * 0.01
+        # Put GEX = -gamma * OI * contract_size * spot^2 * 0.01 (dealers short puts)
+
+        calls = chain[chain["option_type"] == "call"].copy()
+        puts = chain[chain["option_type"] == "put"].copy()
+
+        # Extract gamma from Greeks
+        calls["gamma"] = calls["greeks"].apply(
+            lambda x: x.get("gamma", 0) if isinstance(x, dict) else 0
+        )
+        puts["gamma"] = puts["greeks"].apply(
+            lambda x: x.get("gamma", 0) if isinstance(x, dict) else 0
+        )
+
+        calls["gex"] = (
+            calls["gamma"] * calls["open_interest"] *
+            contract_size * spot_price**2 * 0.01
+        )
+        puts["gex"] = (
+            -puts["gamma"] * puts["open_interest"] *
+            contract_size * spot_price**2 * 0.01
+        )
+
+        # Aggregate by strike
+        call_gex = calls.groupby("strike")["gex"].sum()
+        put_gex = puts.groupby("strike")["gex"].sum()
+
+        total_gex = call_gex.add(put_gex, fill_value=0)
+        net_gex = total_gex.sum()
+
+        # Find key levels
+        max_gamma_strike = total_gex.idxmax() if not total_gex.empty else None
+
+        # Find gamma flip (where cumulative GEX crosses zero)
+        cumulative = total_gex.sort_index().cumsum()
+        flip_candidates = cumulative[cumulative.shift(1, fill_value=0) * cumulative < 0]
+        gamma_flip = flip_candidates.index[0] if len(flip_candidates) > 0 else None
+
+        return {
+            "symbol": symbol,
+            "spot_price": spot_price,
+            "net_gex": net_gex,
+            "net_gex_billions": net_gex / 1e9,
+            "gamma_flip": gamma_flip,  # HVL level
+            "max_gamma_strike": max_gamma_strike,
+            "gex_by_strike": total_gex.to_dict(),
+            "gex_positive": net_gex > 0,  # True = mean reversion environment
+            "interpretation": "Mean reversion likely" if net_gex > 0 else "Trend amplification likely"
+        }
+
+    def _get_spot_price(self, symbol: str) -> float:
+        """Get current spot price."""
+        url = f"{self.base_url}/v1/markets/quotes"
+        params = {"symbols": symbol}
+        response = requests.get(url, headers=self.headers, params=params)
+        data = response.json()
+
+        if "quotes" in data and data["quotes"]:
+            return data["quotes"]["quote"]["last"]
+        return 0
+
+
+class GEXChecker:
+    """GEX environment checker for trade confirmation."""
+
+    def __init__(self, tradier_token: str):
+        self.gex_client = TradierGEX(tradier_token, sandbox=True)
+        self._cached_gex = None
+        self._cache_time = None
+
+    def get_gex_environment(self, symbol: str = "SPY") -> dict:
+        """Get current GEX environment. Cache for 5 minutes."""
+        if self._cached_gex and self._cache_time:
+            if time.time() - self._cache_time < 300:  # 5 min cache
+                return self._cached_gex
+
+        try:
+            self._cached_gex = self.gex_client.calculate_gex(symbol)
+            self._cache_time = time.time()
+            return self._cached_gex
+        except Exception as e:
+            logger.error(f"GEX fetch failed: {e}")
+            return {"gex_positive": None, "error": str(e)}
+
+    def should_trade_reversal(self, spy_price: float) -> tuple:
+        """
+        Check if GEX environment supports reversal trade.
+
+        Returns: (should_trade: bool, reason: str)
+        """
+        gex = self.get_gex_environment()
+
+        if "error" in gex:
+            return True, "GEX unavailable, proceeding with pattern"
+
+        gamma_flip = gex.get("gamma_flip")
+        is_positive = gex.get("gex_positive")
+
+        # Positive GEX = mean reversion environment = good for reversals
+        if is_positive:
+            return True, f"Positive GEX (${gex['net_gex_billions']:.1f}B) - reversal supported"
+
+        # Negative GEX but above gamma flip = still ok
+        if gamma_flip and spy_price > gamma_flip:
+            return True, f"Above gamma flip ({gamma_flip}) - reversal ok"
+
+        # Negative GEX below gamma flip = risky for reversals
+        return False, f"Negative GEX below flip ({gamma_flip}) - skip reversal"
+
+
+# Standalone test
+if __name__ == "__main__":
+    # Get free token from https://developer.tradier.com/
+    API_TOKEN = "YOUR_SANDBOX_TOKEN"
+
+    gex = TradierGEX(API_TOKEN, sandbox=True)
+    result = gex.calculate_gex("SPY")
+
+    print(f"SPY GEX Analysis:")
+    print(f"  Net GEX: ${result['net_gex_billions']:.2f}B")
+    print(f"  Gamma Flip (HVL): {result['gamma_flip']}")
+    print(f"  Max Gamma Strike: {result['max_gamma_strike']}")
+    print(f"  Environment: {result['interpretation']}")
+```
+
+================================================================================
+## TRADE SERVICE INTEGRATION
+================================================================================
+
+### Config Addition (config.py):
+
+```python
+# GEX Integration
+GEX_ENABLED = True
+TRADIER_API_TOKEN = "YOUR_SANDBOX_TOKEN"  # Get from developer.tradier.com
+GEX_SKIP_ON_NEGATIVE = True  # Skip trades when GEX is negative below flip
+```
+
+### Trade Service Integration (trade_service.py):
+
+```python
+# Add import at top
+from algotrade.gex_service import GEXChecker
+
+# In __init__ method, add:
+if config.GEX_ENABLED:
+    self._gex_checker = GEXChecker(config.TRADIER_API_TOKEN)
+    logger.info("GEX confirmation layer enabled")
+
+# In _process_6_candle_confirmation, add before execute_order:
+if pattern_passed:
+    # Check GEX before executing
+    if hasattr(self, '_gex_checker') and config.GEX_SKIP_ON_NEGATIVE:
+        should_trade, reason = self._gex_checker.should_trade_reversal(
+            spy_price=candles[-1]['close']
+        )
+        logger.info(f"[GEX Check] {reason}")
+
+        if not should_trade:
+            logger.warning(f"[GEX] Skipping trade - unfavorable environment")
+            return
+
+    # Proceed with trade execution...
+    self._execution_handler.execute_order(order, alert_timestamp=alert_timestamp)
+```
+
+================================================================================
+## GEX INTERPRETATION GUIDE
+================================================================================
+
+### Key Levels:
+
+1. HVL (High Volatility Level / Gamma Flip)
+   - Above HVL: Positive gamma, low volatility, mean reversion
+   - Below HVL: Negative gamma, high volatility, trend continuation
+
+2. Gamma Walls
+   - Call Wall = Resistance (dealers sell into rallies)
+   - Put Wall = Support (dealers buy into dips)
+
+### Trading Rules:
+
+| GEX State      | SPY Position    | Reversal Trade? |
+|----------------|-----------------|-----------------|
+| Positive       | Any             | YES - supported |
+| Negative       | Above flip      | YES - cautious  |
+| Negative       | Below flip      | NO - skip trade |
+
+### Log Output Example:
+
+```
+[GEX Check] Positive GEX ($2.3B) - reversal supported
+[GEX Check] Above gamma flip (585.00) - reversal ok
+[GEX Check] Negative GEX below flip (585.00) - skip reversal
+```
+
+================================================================================
+## OPTION 4: DIY FROM CBOE (Educational Reference)
+================================================================================
+
+Manual process for understanding:
+
+1. Go to https://www.cboe.com/delayed_quotes
+2. Search "SPY", click Options tab
+3. Set Options Range: "All", Expiration: "All"
+4. Click "Download CSV"
+5. Process with Python:
+
+```python
+import pandas as pd
+from py_vollib.black_scholes.greeks.analytical import gamma
+
+# Load CBOE CSV
+df = pd.read_csv("spy_options.csv")
+
+# Calculate GEX per row
+# GEX = Gamma x Open Interest x 100 x Spot^2 x 0.01
+spot = 590  # Current SPY price
+
+df["gex"] = df["gamma"] * df["open_interest"] * 100 * (spot ** 2) * 0.01
+
+# Flip sign for puts (dealers short)
+df.loc[df["option_type"] == "put", "gex"] *= -1
+
+# Net GEX
+net_gex = df["gex"].sum()
+print(f"Net GEX: ${net_gex/1e9:.2f}B")
+```
+
+================================================================================
+## IMPLEMENTATION STEPS
+================================================================================
+
+1. [ ] Sign up at https://developer.tradier.com/ (free)
+2. [ ] Copy sandbox API token
+3. [ ] Create algotrade/gex_service.py with TradierGEX and GEXChecker classes
+4. [ ] Add config variables to config.py
+5. [ ] Integrate GEXChecker into trade_service.py
+6. [ ] Test with: python -c "from algotrade.gex_service import TradierGEX; ..."
+7. [ ] Monitor logs for GEX check output during live trading
+
+================================================================================
+## SOURCES
+================================================================================
+
+- gex-tracker: https://github.com/Matteo-Ferrara/gex-tracker
+- gamma-exposure-indicator: https://github.com/VandersonTorres/gamma-exposure-indicator
+- Tradier Developer Portal: https://developer.tradier.com/
+- Tradier API Docs: https://documentation.tradier.com/
+- GEX Calculation Tutorial: https://perfiliev.com/blog/how-to-calculate-gamma-exposure-and-zero-gamma-level/
+- SpotGamma (paid reference): https://spotgamma.com/
+- Barchart Free GEX: https://www.barchart.com/etfs-funds/quotes/SPY/gamma-exposure
+
+================================================================================
+## RESEARCH FINDINGS (Why This Matters)
+================================================================================
+
+From academic and practitioner research:
+
+1. Positive GEX = Market makers dampen volatility (sell rallies, buy dips)
+   -> Mean reversion more likely -> GOOD for reversal trades
+
+2. Negative GEX = Market makers amplify moves (sell weakness, buy strength)
+   -> Trends continue -> BAD for reversal trades
+
+3. "Studies show trades informed by dark pool/flow data have 15% higher
+    success rate compared to those that rely solely on public data"
+
+4. "The largest intraday moves occur when market gamma exposure is negative.
+    Volatility is heavily stifled when market gamma reaches positive extremes."
+
+5. Key insight: Use GEX as CONFIRMATION layer, not standalone signal

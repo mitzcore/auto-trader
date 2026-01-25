@@ -1,0 +1,4 @@
+  File "run_pattern_backtest.py", line 19
+    def _convert_tf_to_ib_format(tf_string: str) -> str:
+                                          ^
+SyntaxError: invalid syntax

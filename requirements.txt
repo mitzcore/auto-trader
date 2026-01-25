@@ -1,6 +1,5 @@
 pandas
 ib_insync
-redis
 nest_asyncio
 fastapi
 uvicorn[standard]

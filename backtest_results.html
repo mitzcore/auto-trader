@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtest Results - SPY</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #1a1a1a; margin-bottom: 10px; }
+        h2 { color: #444; margin: 30px 0 15px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+        .meta { color: #666; margin-bottom: 30px; }
+        .meta span { margin-right: 20px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card-title { font-size: 14px; color: #888; text-transform: uppercase; }
+        .card-value { font-size: 32px; font-weight: bold; color: #1a1a1a; }
+        .card-value.win { color: #22c55e; }
+        .card-value.loss { color: #ef4444; }
+        .charts { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; margin: 30px 0; }
+        .chart-container { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .chart-title { font-size: 14px; color: #888; margin-bottom: 15px; text-align: center; }
+        .legend { display: flex; gap: 20px; justify-content: center; margin-top: 15px; }
+        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+        .legend-color { width: 12px; height: 12px; border-radius: 2px; }
+        .legend-win { background: #22c55e; }
+        .legend-loss { background: #ef4444; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #f8f9fa; font-weight: 600; color: #555; font-size: 13px; text-transform: uppercase; }
+        tr:hover { background: #f8f9fa; }
+        .status-win { color: #22c55e; font-weight: bold; }
+        .status-loss { color: #ef4444; font-weight: bold; }
+        .status-unknown { color: #f59e0b; }
+        .number { text-align: right; font-family: 'SF Mono', Monaco, monospace; }
+        .timestamp { font-size: 12px; color: #666; }
+        .pattern-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .pattern-sm { background: #dbeafe; color: #1d4ed8; }
+        .pattern-3c { background: #fef3c7; color: #b45309; }
+        footer { text-align: center; color: #888; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Backtest Results</h1>
+        <div class="meta">
+            <span><strong>Symbol:</strong> SPY</span>
+            <span><strong>Date Range:</strong> 2026-01-11 to 2026-01-11</span>
+            <span><strong>Pattern Mode:</strong> 6_candle</span>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-title">Total Trades</div>
+                <div class="card-value">0</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Wins</div>
+                <div class="card-value win">0</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Losses</div>
+                <div class="card-value loss">0</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Win Rate</div>
+                <div class="card-value">0.0%</div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-container">
+                <div class="chart-title">Win/Loss Distribution</div>
+                <svg width="200" height="200"><text x="100" y="100" text-anchor="middle">No Data</text></svg>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-color legend-win"></div> Wins (0)</div>
+                    <div class="legend-item"><div class="legend-color legend-loss"></div> Losses (0)</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Summary by Timeframe</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timeframe</th>
+                    <th class="number">Total</th>
+                    <th class="number">Wins</th>
+                    <th class="number">Losses</th>
+                    <th class="number">Win Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Trade Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Timestamp</th>
+                    <th>TF</th>
+                    <th>Pattern</th>
+                    <th class="number">Drop %</th>
+                    <th class="number">Reclaim %</th>
+                    <th class="number">Entry</th>
+                    <th class="number">Swing High</th>
+                    <th class="number">Swing Low</th>
+                    <th>Status</th>
+                    <th class="number">Lowest</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <footer>
+            Generated by Pattern Backtest | 2026-01-12 19:07:22
+        </footer>
+    </div>
+</body>
+</html>
